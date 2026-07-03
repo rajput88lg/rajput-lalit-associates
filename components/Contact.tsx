@@ -1,4 +1,8 @@
 "use client";
+
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -8,6 +12,45 @@ import {
 } from "react-icons/fa";
 
 export default function Contact() {
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+
+    e.preventDefault();
+
+        if (!form.current) return;
+
+    setLoading(true);
+    setStatus("");
+
+    try {
+
+      await emailjs.sendForm(
+        "service_omi5m0r",
+        "template_ni2x60v",
+        form.current,
+        "aslDxgzgmR4GWDM2D"
+      );
+
+      form.current.reset();
+
+      setStatus("✅ Message Sent Successfully");
+
+    } catch (error) {
+
+      console.log(error);
+
+      setStatus("❌ Failed to Send Message");
+
+    }
+
+    setLoading(false);
+
+  };
   return (
     <section id="contact" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
@@ -56,7 +99,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-lg">Email</h4>
                   <p className="text-gray-600">
-                    rajput88lg@gmail.com
+                    gst3603@gmail.com
                   </p>
                 </div>
               </div>
@@ -96,38 +139,60 @@ export default function Contact() {
               Send us a Message
             </h3>
 
-            <form className="space-y-5">
+            <form
+  ref={form}
+  onSubmit={sendEmail}
+  className="space-y-5"
+>
+              <input
+  type="text"
+  name="name"
+  required
+  placeholder="Your Name"
+  className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
+/>
 
               <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
-              />
+  type="email"
+  name="email"
+  required
+  placeholder="Your Email"
+  className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
+/>
 
               <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
-              />
-
-              <input
-                type="tel"
-                placeholder="Mobile Number"
-                className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
-              />
+  type="tel"
+  name="phone"
+  required
+  placeholder="Mobile Number"
+  className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
+/>
 
               <textarea
-                rows={6}
-                placeholder="Your Message"
-                className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
-              />
+  rows={6}
+  name="message"
+  required
+  placeholder="Your Message"
+  className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-700"
+/>
 
               <button
-                type="submit"
-                className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition duration-300"
-              >
-                Send Message
-              </button>
+  type="submit"
+  disabled={loading}
+  className="w-full bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {loading ? "Sending..." : "Send Message"}
+</button>
+
+{status && (
+  <div
+    className={`text-center font-semibold mt-4 ${
+      status.includes("✅") ? "text-green-600" : "text-red-600"
+    }`}
+  >
+    {status}
+  </div>
+)}
 
             </form>
 
