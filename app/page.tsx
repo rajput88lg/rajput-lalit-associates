@@ -10,6 +10,8 @@ import Map from "../components/Map";
 import Footer from "../components/Footer";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import FloatingButtons from "../components/FloatingButtons";
+import GoogleReviews from "@/components/GoogleReviews";
+import BookAppointment from "@/components/BookAppointment";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
       <Footer />
       <FloatingWhatsApp />
       <FloatingButtons />
+      <GoogleReviews />
+      <BookAppointment />
     </>
   );
 }
