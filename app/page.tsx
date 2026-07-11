@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
-import WhyChooseUs from "../components/WhyChooseUs";
+import WhyChooseGST from "../components/WhyChooseGST";
 import Founder from "../components/Founder";
 import Stats from "../components/Stats";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
-        <WhyChooseUs />
+        <WhyChooseGST />
         <Founder />
         <Stats />
         <GoogleReviews />

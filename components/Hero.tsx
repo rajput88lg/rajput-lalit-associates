@@ -190,7 +190,7 @@ export default function Hero() {
             <div>
 
               <p className="text-3xl md:text-4xl font-extrabold text-[#f0b84b]">
-                2500+
+                6000+
               </p>
 
               <p className="text-sm text-blue-100 mt-2">

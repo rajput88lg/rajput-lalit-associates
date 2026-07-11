@@ -28,7 +28,7 @@ export default function Navbar() {
                 src="/logo.png"
                 alt="Rajput Lalit & Associates"
                 fill
-                size="62px"
+                sizes="62px"
                 className="object-contain"
                 priority
               />

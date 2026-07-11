@@ -16,6 +16,7 @@ import GSTEligibility from "@/components/GSTEligibility";
 import WhyChooseGST from "@/components/WhyChooseGST";
 import GSTFAQ from "@/components/GSTFAQ";
 import GSTRegistrationTypes from "@/components/GSTRegistrationTypes";
+import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
   title:
@@ -79,10 +80,13 @@ export default function GSTRegistrationPage() {
 
         <BookAppointment />
 
+        <GoogleReviews />
+
         <GSTFAQ />
 
         <Contact />
 
+        
         <Map />
       </main>
 
