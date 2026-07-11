@@ -6,6 +6,7 @@ import WhyChooseGST from "../components/WhyChooseGST";
 import Founder from "../components/Founder";
 import Stats from "../components/Stats";
 import GoogleReviews from "@/components/GoogleReviews";
+import LatestBlogs from "@/components/LatestBlogs";
 import BookAppointment from "@/components/BookAppointment";
 import Contact from "../components/Contact";
 import Map from "../components/Map";
@@ -25,6 +26,10 @@ export default function Home() {
         <WhyChooseGST />
         <Founder />
         <Stats />
+
+        {/* Latest Blog Section */}
+        <LatestBlogs />
+
         <GoogleReviews />
         <BookAppointment />
         <Contact />
