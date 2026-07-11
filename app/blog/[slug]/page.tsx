@@ -1,12 +1,59 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogs } from "@/data/blogs";
 import GSTRegistrationOnlineIndia from "@/content/blogs/gst-registration-online-india";
+import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const blog = blogs.find((item) => item.slug === slug);
+
+  if (!blog) {
+    return {
+      title: "Blog Not Found",
+    };
+  }
+
+  return {
+    title: blog.title,
+    description: blog.description,
+
+    alternates: {
+      canonical: `https://www.rajputlalitassociates.in/blog/${blog.slug}`,
+    },
+
+    openGraph: {
+      title: blog.title,
+      description: blog.description,
+      url: `https://www.rajputlalitassociates.in/blog/${blog.slug}`,
+      type: "article",
+      images: [
+        {
+          url: blog.image,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: blog.title,
+      description: blog.description,
+      images: [blog.image],
+    },
+  };
 }
 
 export default async function BlogDetails({ params }: PageProps) {
@@ -20,8 +67,14 @@ export default async function BlogDetails({ params }: PageProps) {
 
   return (
     <main className="max-w-5xl mx-auto px-6 py-20">
-
-      {/* Hero Image */}
+      <BlogSchema
+  title={blog.title}
+  description={blog.description}
+  image={blog.image}
+  slug={blog.slug}
+  datePublished={blog.date}
+  author={blog.author}
+/>
       <Image
         src={blog.image}
         alt={blog.title}
@@ -31,26 +84,22 @@ export default async function BlogDetails({ params }: PageProps) {
         priority
       />
 
-      {/* Category */}
       <div className="mb-4">
         <span className="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium">
           {blog.category}
         </span>
       </div>
 
-      {/* Title */}
       <h1 className="text-5xl font-bold text-[#002b5c] leading-tight">
         {blog.title}
       </h1>
 
-      {/* Meta */}
       <div className="flex flex-wrap gap-6 text-gray-500 mt-5 text-sm border-b pb-6">
         <span>👤 {blog.author}</span>
         <span>📅 {blog.date}</span>
         <span>⏱️ {blog.readTime}</span>
       </div>
 
-      {/* Table of Contents */}
       <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mt-10">
         <h2 className="text-2xl font-bold text-[#002b5c] mb-4">
           📑 Table of Contents
@@ -67,14 +116,11 @@ export default async function BlogDetails({ params }: PageProps) {
         </ul>
       </div>
 
-      {/* Article */}
       <article className="prose prose-lg max-w-none mt-12">
-  <GSTRegistrationOnlineIndia />
-</article>
+        <GSTRegistrationOnlineIndia />
+      </article>
 
-      {/* CTA */}
       <section className="bg-[#002b5c] text-white rounded-2xl p-10 mt-16 text-center">
-
         <h2 className="text-3xl font-bold">
           Need GST Registration?
         </h2>
@@ -85,7 +131,6 @@ export default async function BlogDetails({ params }: PageProps) {
         </p>
 
         <div className="flex flex-wrap justify-center gap-5 mt-8">
-
           <a
             href="tel:9354953603"
             className="bg-white text-[#002b5c] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition"
@@ -101,11 +146,8 @@ export default async function BlogDetails({ params }: PageProps) {
           >
             💬 WhatsApp
           </a>
-
         </div>
-
       </section>
-
     </main>
   );
 }
