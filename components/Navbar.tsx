@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -69,6 +70,12 @@ export default function Navbar() {
             >
               Services
             </a>
+            <Link
+  href="/blog"
+  className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+>
+  Blog
+</Link>
 
             <a
               href="#contact"
@@ -134,6 +141,13 @@ export default function Navbar() {
               >
                 Services
               </a>
+              <Link
+  href="/blog"
+  onClick={closeMenu}
+  className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+>
+  Blog
+</Link>
 
               <a
                 href="#contact"
