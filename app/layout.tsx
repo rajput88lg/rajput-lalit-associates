@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import OrganizationSchema from "@/components/OrganizationSchema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,29 +20,31 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Rajput Lalit & Associates | GST & Income Tax Consultants in Ambala",
+    default:
+  "Rajput Lalit & Associates | GST, Income Tax & Business Registration Services in India",
     template: "%s | Rajput Lalit & Associates",
   },
 
   description:
-    "Rajput Lalit & Associates provides GST Registration, GST Return Filing, Income Tax Return, Accounting, TDS, MSME Registration, Company Registration and Tax Consultancy services in Ambala, Haryana.",
+    "Rajput Lalit & Associates provides GST Registration, GST Return Filing, Income Tax Return, Accounting, TDS, MSME Registration, Company Registration and Tax Consultancy services across India.",
 
   keywords: [
-    "GST Consultant Ambala",
-    "Income Tax Consultant Ambala",
-    "GST Registration",
-    "GST Return Filing",
-    "Income Tax Return",
-    "Accounting Services",
-    "Bookkeeping",
-    "TDS Filing",
-    "MSME Registration",
-    "Company Registration",
-    "Tax Consultant Haryana",
-    "CA Services Ambala",
-    "GST Filing Haryana",
-  ],
-
+  "GST Registration India",
+  "GST Return Filing",
+  "Income Tax Return Filing",
+  "GST Consultant India",
+  "Tax Consultant India",
+  "Accounting Services",
+  "Bookkeeping Services",
+  "MSME Registration",
+  "Company Registration",
+  "Private Limited Company Registration",
+  "LLP Registration",
+  "Startup Registration",
+  "GST Notice Reply",
+  "GST Consultant",
+  "Business Registration India",
+],
   authors: [
     {
       name: "Rajput Lalit & Associates",
@@ -95,7 +98,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rajput Lalit & Associates",
     description:
-      "GST, Income Tax, Accounting and Business Registration Services in Ambala.",
+      "GST, Income Tax, Accounting and Business Registration Services across India.",
 
     images: ["/logo.png"],
   },
@@ -114,8 +117,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
-      </body>
+
+  <OrganizationSchema />
+
+  {children}
+
+</body>
 
       <GoogleAnalytics gaId="G-GMQ64JDQG5" />
     </html>
