@@ -41,8 +41,8 @@ export default function Navbar() {
               </h1>
 
               <p className="text-[12px] md:text-[13px] text-[#d99a2b] font-semibold tracking-wide mt-1">
-                GST • INCOME TAX • ACCOUNTING
-              </p>
+  GST • INCOME TAX • ACCOUNTING • WEBSITE DEVELOPMENT
+</p>
             </div>
           </a>
 
@@ -50,49 +50,56 @@ export default function Navbar() {
           {/* DESKTOP MENU */}
 
           <div className="hidden lg:flex items-center gap-7">
-            <a
-              href="#home"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
-            >
-              Home
-            </a>
+  <a
+    href="#home"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    Home
+  </a>
 
-            <a
-              href="#about"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
-            >
-              About
-            </a>
+  <a
+    href="#about"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    About
+  </a>
 
-            <a
-              href="#services"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
-            >
-              Services
-            </a>
-            <Link
-  href="/blog"
-  className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
->
-  Blog
-</Link>
+  <a
+    href="#services"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    Services
+  </a>
 
-            <a
-              href="#contact"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
-            >
-              Contact
-            </a>
+  <Link
+    href="/website-development"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    Website Development
+  </Link>
 
-            <a
-              href="#appointment"
-              className="inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-3 rounded-lg font-bold transition shadow-md"
-            >
-              <CalendarDays size={18} />
-              Book Appointment
-            </a>
-          </div>
+  <Link
+    href="/blog"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    Blog
+  </Link>
 
+  <a
+    href="#contact"
+    className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+  >
+    Contact
+  </a>
+
+  <a
+    href="#appointment"
+    className="inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-3 rounded-lg font-bold transition shadow-md"
+  >
+    <CalendarDays size={18} />
+    Book Consultation
+  </a>
+</div>
 
           {/* MOBILE MENU BUTTON */}
 
@@ -114,63 +121,72 @@ export default function Navbar() {
 
         {/* MOBILE MENU */}
 
-        {menuOpen && (
-          <div className="lg:hidden border-t border-gray-100 py-5">
-            <div className="flex flex-col gap-2">
+{menuOpen && (
+  <div className="lg:hidden border-t border-gray-100 py-5">
+    <div className="flex flex-col gap-2">
 
-              <a
-                href="#home"
-                onClick={closeMenu}
-                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
-              >
-                Home
-              </a>
+      <a
+        href="#home"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        Home
+      </a>
 
-              <a
-                href="#about"
-                onClick={closeMenu}
-                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
-              >
-                About
-              </a>
+      <a
+        href="#about"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        About
+      </a>
 
-              <a
-                href="#services"
-                onClick={closeMenu}
-                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
-              >
-                Services
-              </a>
-              <Link
-  href="/blog"
-  onClick={closeMenu}
-  className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
->
-  Blog
-</Link>
+      <a
+        href="#services"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        Services
+      </a>
 
-              <a
-                href="#contact"
-                onClick={closeMenu}
-                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
-              >
-                Contact
-              </a>
+      <Link
+        href="/website-development"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        Website Development
+      </Link>
 
-              <a
-                href="#appointment"
-                onClick={closeMenu}
-                className="mt-2 flex items-center justify-center gap-2 bg-[#d99a2b] text-white px-5 py-3 rounded-lg font-bold"
-              >
-                <CalendarDays size={18} />
-                Book Appointment
-              </a>
+      <Link
+        href="/blog"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        Blog
+      </Link>
 
-            </div>
-          </div>
-        )}
+      <a
+        href="#contact"
+        onClick={closeMenu}
+        className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+      >
+        Contact
+      </a>
 
-      </nav>
-    </header>
+      <a
+        href="#appointment"
+        onClick={closeMenu}
+        className="mt-2 flex items-center justify-center gap-2 bg-[#d99a2b] text-white px-5 py-3 rounded-lg font-bold"
+      >
+        <CalendarDays size={18} />
+        Book Consultation
+      </a>
+
+    </div>
+  </div>
+)}
+
+</nav>
+</header>
   );
 }

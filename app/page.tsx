@@ -13,6 +13,9 @@ import Map from "../components/Map";
 import Footer from "../components/Footer";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import FloatingButtons from "../components/FloatingButtons";
+import BusinessSolutions from "@/components/BusinessSolutions";
+import Technologies from "@/components/Technologies";
+import PortfolioGallery from "@/components/PortfolioGallery";
 
 export default function Home() {
   return (
@@ -21,17 +24,21 @@ export default function Home() {
 
       <main>
         <Hero />
+        <BusinessSolutions />
         <About />
         <Services />
+        <Technologies />
         <WhyChooseGST />
         <Founder />
         <Stats />
+        <LatestBlogs />
 
         {/* Latest Blog Section */}
         <LatestBlogs />
 
         <GoogleReviews />
         <BookAppointment />
+        <PortfolioGallery />
         <Contact />
         <Map />
       </main>
