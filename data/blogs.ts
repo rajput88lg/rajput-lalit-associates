@@ -46,4 +46,37 @@ export const blogs: Blog[] = [
       "Online GST",
     ],
   },
+
+  {
+    slug: "gst-registration-fees-india",
+
+    title: "GST Registration Fees in India",
+
+    description:
+      "Know the Government Fee, Professional Charges, Hidden Costs and Complete GST Registration Fee Structure in India.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 July 2026",
+
+    image: "/blogs/gst-registration-fees-india.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "GST Registration Fees in India (2026) | Government Fee & Professional Charges",
+
+    seoDescription:
+      "Complete guide on GST Registration Fees in India including Government Fee, CA Charges, Professional Fees and FAQs.",
+
+    keywords: [
+      "GST Registration Fees",
+      "GST Registration Cost",
+      "GST Government Fee",
+      "GST Professional Charges",
+      "GST Registration India",
+    ],
+  },
 ];

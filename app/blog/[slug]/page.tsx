@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogs } from "@/data/blogs";
+
 import GSTRegistrationOnlineIndia from "@/content/blogs/gst-registration-online-india";
+import GSTRegistrationFeesIndia from "@/content/blogs/gst-registration-fees-india";
+
 import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
@@ -25,16 +28,17 @@ export async function generateMetadata({
   }
 
   return {
-    title: blog.title,
-    description: blog.description,
+    title: blog.seoTitle,
+    description: blog.seoDescription,
+    keywords: blog.keywords,
 
     alternates: {
       canonical: `https://www.rajputlalitassociates.in/blog/${blog.slug}`,
     },
 
     openGraph: {
-      title: blog.title,
-      description: blog.description,
+      title: blog.seoTitle,
+      description: blog.seoDescription,
       url: `https://www.rajputlalitassociates.in/blog/${blog.slug}`,
       type: "article",
       images: [
@@ -49,8 +53,8 @@ export async function generateMetadata({
 
     twitter: {
       card: "summary_large_image",
-      title: blog.title,
-      description: blog.description,
+      title: blog.seoTitle,
+      description: blog.seoDescription,
       images: [blog.image],
     },
   };
@@ -65,16 +69,33 @@ export default async function BlogDetails({ params }: PageProps) {
     notFound();
   }
 
+  let BlogContent;
+
+  switch (slug) {
+    case "gst-registration-online-india":
+      BlogContent = GSTRegistrationOnlineIndia;
+      break;
+
+    case "gst-registration-fees-india":
+      BlogContent = GSTRegistrationFeesIndia;
+      break;
+
+    default:
+      notFound();
+  }
+
   return (
     <main className="max-w-5xl mx-auto px-6 py-20">
+
       <BlogSchema
-  title={blog.title}
-  description={blog.description}
-  image={blog.image}
-  slug={blog.slug}
-  datePublished={blog.date}
-  author={blog.author}
-/>
+        title={blog.title}
+        description={blog.description}
+        image={blog.image}
+        slug={blog.slug}
+        datePublished={blog.date}
+        author={blog.author}
+      />
+
       <Image
         src={blog.image}
         alt={blog.title}
@@ -117,10 +138,9 @@ export default async function BlogDetails({ params }: PageProps) {
       </div>
 
       <article className="prose prose-lg max-w-none mt-12">
-        <GSTRegistrationOnlineIndia />
+        <BlogContent />
       </article>
-
-      <section className="bg-[#002b5c] text-white rounded-2xl p-10 mt-16 text-center">
+            <section className="bg-[#002b5c] text-white rounded-2xl p-10 mt-16 text-center">
         <h2 className="text-3xl font-bold">
           Need GST Registration?
         </h2>
@@ -148,6 +168,7 @@ export default async function BlogDetails({ params }: PageProps) {
           </a>
         </div>
       </section>
+
     </main>
   );
 }
