@@ -79,4 +79,37 @@ export const blogs: Blog[] = [
       "GST Registration India",
     ],
   },
+
+  {
+    slug: "gst-registration-documents-india",
+
+    title: "GST Registration Documents Required in India",
+
+    description:
+      "Complete list of documents required for GST Registration in India for Proprietorship, Partnership, LLP and Private Limited Company.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 July 2026",
+
+    image: "/blogs/gst-registration-documents-india.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "GST Registration Documents Required in India (2026) | Complete Checklist",
+
+    seoDescription:
+      "Check the complete GST Registration document checklist for Proprietorship, Partnership, LLP and Private Limited Company.",
+
+    keywords: [
+      "GST Registration Documents",
+      "GST Documents",
+      "GST Registration Checklist",
+      "Documents Required for GST",
+      "GST Registration India",
+    ],
+  },
 ];

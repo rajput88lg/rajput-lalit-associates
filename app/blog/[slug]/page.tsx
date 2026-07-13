@@ -5,6 +5,7 @@ import { blogs } from "@/data/blogs";
 
 import GSTRegistrationOnlineIndia from "@/content/blogs/gst-registration-online-india";
 import GSTRegistrationFeesIndia from "@/content/blogs/gst-registration-fees-india";
+import GSTRegistrationDocumentsIndia from "@/content/blogs/gst-registration-documents-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -79,6 +80,10 @@ export default async function BlogDetails({ params }: PageProps) {
     case "gst-registration-fees-india":
       BlogContent = GSTRegistrationFeesIndia;
       break;
+
+      case "gst-registration-documents-india":
+    BlogContent = GSTRegistrationDocumentsIndia;
+    break;
 
     default:
       notFound();
