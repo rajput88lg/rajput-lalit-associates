@@ -89,7 +89,7 @@ export default function Navbar() {
     href="#contact"
     className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
   >
-    Contact
+    contact
   </a>
 
   <a
