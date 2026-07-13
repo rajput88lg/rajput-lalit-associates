@@ -16,11 +16,17 @@ import FloatingButtons from "../components/FloatingButtons";
 import BusinessSolutions from "@/components/BusinessSolutions";
 import Technologies from "@/components/Technologies";
 import PortfolioGallery from "@/components/PortfolioGallery";
+import PageHero from "@/components/PageHero";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+
+       <PageHero
+        title="About Rajput Lalit & Associates"
+        subtitle="Trusted GST, Income Tax, Accounting and Business Consultancy firm serving businesses across India."
+      />
 
       <main>
         <Hero />
