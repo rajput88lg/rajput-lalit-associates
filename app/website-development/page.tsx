@@ -5,7 +5,6 @@ import WebsitePortfolio from "@/components/WebsitePortfolio";
 import WebsiteConsultation from "@/components/WebsiteConsultation";
 import WebsiteFAQ from "@/components/WebsiteFAQ";
 import WebsiteCTA from "@/components/WebsiteCTA";
-import BusinessSolutions from "@/components/BusinessSolutions";
 
 export const metadata = {
   title: "Website Development | Rajput Lalit & Associates",
