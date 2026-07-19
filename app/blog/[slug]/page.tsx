@@ -7,6 +7,7 @@ import GSTRegistrationOnlineIndia from "@/content/blogs/gst-registration-online-
 import GSTRegistrationFeesIndia from "@/content/blogs/gst-registration-fees-india";
 import GSTRegistrationDocumentsIndia from "@/content/blogs/gst-registration-documents-india";
 import GSTReturnFilingIndia from "@/content/blogs/gst-return-filing-india";
+import GSTRegistrationCancellationIndia from "@/content/blogs/gst-registration-cancellation-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -90,6 +91,10 @@ export default async function BlogDetails({ params }: PageProps) {
   BlogContent = GSTReturnFilingIndia;
   break;
 
+  case "gst-registration-cancellation-india":
+  BlogContent = GSTRegistrationCancellationIndia;
+  break;
+
     default:
       notFound();
   }
@@ -148,8 +153,8 @@ export default async function BlogDetails({ params }: PageProps) {
       </div>
 
       <article className="prose prose-lg max-w-none mt-12">
-        <BlogContent />
-      </article>
+  <GSTRegistrationOnlineIndia />
+</article>
             <section className="bg-[#002b5c] text-white rounded-2xl p-10 mt-16 text-center">
         <h2 className="text-3xl font-bold">
           Need GST Registration?
