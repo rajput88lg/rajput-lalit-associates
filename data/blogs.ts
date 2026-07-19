@@ -112,4 +112,39 @@ export const blogs: Blog[] = [
       "GST Registration India",
     ],
   },
+
+  {
+    slug: "gst-return-filing-india",
+
+    title: "GST Return Filing in India (2026)",
+
+    description:
+      "Complete guide to GST Return Filing in India including GSTR-1, GSTR-3B, GSTR-9, due dates, late fees, filing process and FAQs.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "19 July 2026",
+
+    image: "/blogs/gst-return-filing-india.png",
+
+    readTime: "10 min read",
+
+    seoTitle:
+      "GST Return Filing in India (2026) | Complete Guide to GSTR-1, GSTR-3B & GSTR-9",
+
+    seoDescription:
+      "Learn everything about GST Return Filing in India including GSTR-1, GSTR-3B, GSTR-9, due dates, penalties, filing process and FAQs.",
+
+    keywords: [
+      "GST Return Filing",
+      "GST Return",
+      "GSTR-1",
+      "GSTR-3B",
+      "GSTR-9",
+      "GST Filing",
+      "GST Return Filing India",
+    ],
+  },
 ];
