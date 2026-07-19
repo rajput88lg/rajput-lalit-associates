@@ -24,10 +24,12 @@ export async function POST() {
   } catch (error) {
     console.error("Razorpay order error:", error);
 
+    // Yahan humne error ki details add kar di hain taaki screen par pata chal sake
     return NextResponse.json(
       {
         success: false,
         message: "Unable to create payment order",
+        exact_error: error // YEH LINE ADD KI HAI
       },
       { status: 500 }
     );
