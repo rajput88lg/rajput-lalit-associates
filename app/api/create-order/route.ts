@@ -3,13 +3,29 @@ import Razorpay from "razorpay";
 
 export async function POST() {
   try {
+    // Environment Variables Check
+    if (
+      !process.env.RAZORPAY_KEY_ID ||
+      !process.env.RAZORPAY_KEY_SECRET
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Razorpay environment variables are missing.",
+        },
+        { status: 500 }
+      );
+    }
+
+    // Razorpay Instance
     const razorpay = new Razorpay({
-      key_id: process.env.RAZORPAY_KEY_ID!,
-      key_secret: process.env.RAZORPAY_KEY_SECRET!,
+      key_id: process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
     });
 
+    // Create Order
     const order = await razorpay.orders.create({
-      amount: 99900,
+      amount: 99900, // ₹999.00
       currency: "INR",
       receipt: `consult_${Date.now()}`,
       notes: {
@@ -21,15 +37,14 @@ export async function POST() {
       success: true,
       order,
     });
-  } catch (error) {
-    console.error("Razorpay order error:", error);
+  } catch (error: any) {
+    console.error("Razorpay Order Error:", error);
 
-    // Yahan humne error ki details add kar di hain taaki screen par pata chal sake
     return NextResponse.json(
       {
         success: false,
-        message: "Unable to create payment order",
-        exact_error: error // YEH LINE ADD KI HAI
+        message: "Unable to create payment order.",
+        error: error?.message || "Unknown Error",
       },
       { status: 500 }
     );
