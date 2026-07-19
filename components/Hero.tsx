@@ -5,9 +5,11 @@ import {
 } from "react-icons/fa";
 
 import { CalendarDays } from "lucide-react";
+import Reveal from "@/components/Reveal";
 
 export default function Hero() {
   return (
+    <Reveal>  
     <section
       id="home"
       className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white"
@@ -211,5 +213,6 @@ export default function Hero() {
       <div className="h-1 bg-gradient-to-r from-[#d99a2b] via-[#f0b84b] to-[#d99a2b]" />
 
     </section>
+</Reveal>
   );
 }
