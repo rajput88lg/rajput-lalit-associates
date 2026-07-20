@@ -72,13 +72,19 @@ export default function BookAppointment() {
   method: "POST",
 });
 
-      const orderData = await orderResponse.json();
+const orderData = await orderResponse.json();
 
-      if (!orderResponse.ok || !orderData.success) {
-        setMessage("Unable to create payment order.");
-        setLoading(false);
-        return;
-      }
+console.log("ORDER RESPONSE:", orderData);
+
+if (!orderResponse.ok || !orderData.success) {
+  setMessage(
+    orderData?.error?.description ||
+    orderData?.message ||
+    "Unable to create payment order."
+  );
+  setLoading(false);
+  return;
+}
 
       const options = {
         // FIXED: Added fallback for TypeScript
