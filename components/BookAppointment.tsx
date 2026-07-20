@@ -68,9 +68,9 @@ export default function BookAppointment() {
       }
 
       // FIXED: URL changed to /api/order
-      const orderResponse = await fetch("/api/order", {
-        method: "POST",
-      });
+      const orderResponse = await fetch("/api/create-order", {
+  method: "POST",
+});
 
       const orderData = await orderResponse.json();
 
@@ -96,13 +96,13 @@ export default function BookAppointment() {
         }) {
           try {
             // FIXED: URL changed to /api/verify
-            const verifyResponse = await fetch("/api/verify", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(response),
-            });
+            const verifyResponse = await fetch("/api/verify-payment", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(response),
+});
 
             const verifyData = await verifyResponse.json();
 
