@@ -147,6 +147,40 @@ export const blogs: Blog[] = [
       
     ],
   },
+  {
+  slug: "income-tax-return-filing-online-india",
+
+  title: "Income Tax Return Filing Online in India",
+
+  description:
+    "Complete guide to Income Tax Return (ITR) Filing Online in India including eligibility, documents, ITR forms, tax regimes, refunds, due dates and FAQs.",
+
+  category: "Income Tax",
+
+  author: "Rajput Lalit & Associates",
+
+  date: "23 July 2026",
+
+  image: "/blogs/income-tax-return-filing-online-india.png",
+
+  readTime: "15 min read",
+
+  seoTitle:
+    "Income Tax Return Filing Online in India (2026) | Complete ITR Guide",
+
+  seoDescription:
+    "Complete guide to Income Tax Return Filing Online in India including eligibility, documents, ITR forms, filing process, refunds, due dates and FAQs.",
+
+  keywords: [
+    "Income Tax Return",
+    "ITR Filing",
+    "Income Tax Return Filing",
+    "ITR Online",
+    "Income Tax India",
+    "Income Tax Return Online",
+    "ITR Guide",
+  ],
+},
       {
     slug: "gst-registration-cancellation-india",
 
