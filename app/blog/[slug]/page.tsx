@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogs } from "@/data/blogs";
 
+import IncomeTaxReturnFilingOnlineIndia from "@/content/blogs/income-tax-return-filing-online-india";
 import GSTRegistrationOnlineIndia from "@/content/blogs/gst-registration-online-india";
 import GSTRegistrationFeesIndia from "@/content/blogs/gst-registration-fees-india";
 import GSTRegistrationDocumentsIndia from "@/content/blogs/gst-registration-documents-india";
@@ -85,6 +86,9 @@ export default async function BlogDetails({ params }: PageProps) {
     case "gst-registration-cancellation-india":
       BlogContent = GSTRegistrationCancellationIndia;
       break;
+      case "income-tax-return-filing-online-india":
+  BlogContent = IncomeTaxReturnFilingOnlineIndia;
+  break;
     default:
       notFound();
       return null;

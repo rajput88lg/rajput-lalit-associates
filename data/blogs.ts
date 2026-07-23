@@ -147,7 +147,7 @@ export const blogs: Blog[] = [
       
     ],
   },
-    {
+      {
     slug: "gst-registration-cancellation-india",
 
     title: "GST Registration Cancellation in India (2026)",
