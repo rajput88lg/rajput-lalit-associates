@@ -40,12 +40,12 @@ export default function Home() {
         <Stats />
 
         <LatestBlogs />
-
-        <GoogleReviews />
-
+      
         <BookAppointment />
 
         <PortfolioGallery />
+
+        <GoogleReviews />
 
         <Contact />
 

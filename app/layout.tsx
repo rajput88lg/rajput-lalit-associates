@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import OrganizationSchema from "@/components/OrganizationSchema";
+import Script from "next/script";
 // DHYAAN DEIN: Agar aapke paas Navbar aur Footer components hain, toh unhe yahan import karein
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
@@ -124,6 +125,11 @@ export default function RootLayout({
         </main>
 
         {/* <Footer /> -- Yahan Footer add karein */}
+
+        <Script
+  src="https://elfsightcdn.com/platform.js"
+  strategy="afterInteractive"
+/>
 
       </body>
 
