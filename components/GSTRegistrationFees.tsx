@@ -1,4 +1,5 @@
-import { FaCheckCircle, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { FaCheckCircle } from "react-icons/fa";
 
 const plans = [
   {
@@ -92,27 +93,14 @@ export default function GSTRegistrationFees() {
 
                 </div>
 
-                <div className="grid gap-3 mt-8">
-
-                  <a
-                    href="tel:+919354953603"
-                    className="flex justify-center items-center gap-2 bg-[#002b5c] text-white py-3 rounded-lg font-bold hover:bg-[#001b39] transition"
-                  >
-                    <FaPhoneAlt />
-                    Call Now
-                  </a>
-
-                  <a
-                    href="https://wa.me/919354953603"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex justify-center items-center gap-2 bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition"
-                  >
-                    <FaWhatsapp />
-                    WhatsApp
-                  </a>
-
-                </div>
+                <div className="mt-8">
+  <Link
+    href="/appointment"
+    className="flex justify-center items-center bg-[#002b5c] text-white py-3 rounded-lg font-bold hover:bg-[#001b39] transition"
+  >
+    Book GST Consultation
+  </Link>
+</div>
 
               </div>
             </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaCamera,
   FaMapMarkerAlt,
@@ -104,14 +105,12 @@ export default function GPSPhotoRequirement() {
 
             </div>
 
-            <a
-              href="https://wa.me/919354953603"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-10 bg-[#d99a2b] hover:bg-[#f0b84b] px-8 py-4 rounded-lg font-bold transition"
-            >
-              Get WhatsApp Support
-            </a>
+            <Link
+  href="/appointment"
+  className="inline-block mt-10 bg-[#d99a2b] hover:bg-[#f0b84b] px-8 py-4 rounded-lg font-bold transition"
+>
+  Book GST Consultation
+</Link>
 
           </div>
 

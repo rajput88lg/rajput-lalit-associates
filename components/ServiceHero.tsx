@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { CalendarDays } from "lucide-react";
 
 type Props = {
@@ -26,34 +25,15 @@ export default function ServiceHero({ title, subtitle }: Props) {
             {subtitle}
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-
-            <a
-              href="#appointment"
-              className="bg-[#d99a2b] hover:bg-[#f0b84b] px-7 py-4 rounded-lg font-bold transition flex items-center gap-2"
-            >
-              <CalendarDays size={20} />
-              Book Appointment
-            </a>
-
-            <a
-              href="tel:+919354953603"
-              className="bg-white text-[#002b5c] px-7 py-4 rounded-lg font-bold flex items-center gap-2"
-            >
-              <FaPhoneAlt />
-              Call Now
-            </a>
-
-            <a
-              href="https://wa.me/919354953603"
-              target="_blank"
-              className="border border-white px-7 py-4 rounded-lg font-bold flex items-center gap-2"
-            >
-              <FaWhatsapp />
-              WhatsApp
-            </a>
-
-          </div>
+          <div className="mt-10 flex justify-center">
+  <Link
+    href="/appointment"
+    className="bg-[#d99a2b] hover:bg-[#f0b84b] px-8 py-4 rounded-lg font-bold transition flex items-center gap-2"
+  >
+    <CalendarDays size={20} />
+    Book Appointment
+  </Link>
+</div>
 
         </div>
 

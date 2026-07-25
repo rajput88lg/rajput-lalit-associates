@@ -1,4 +1,5 @@
-import { Phone, MessageCircle, BadgeCheck, ClipboardCheck } from "lucide-react";
+import Link from "next/link";
+import { BadgeCheck, ClipboardCheck } from "lucide-react";
 
 export default function WebsiteConsultation() {
   return (
@@ -59,27 +60,14 @@ export default function WebsiteConsultation() {
               the final project cost at our discretion.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-
-              <a
-                href="tel:9354953603"
-                className="bg-white text-[#002b5c] font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-gray-100 transition"
-              >
-                <Phone size={20} />
-                Call Now
-              </a>
-
-              <a
-                href="https://wa.me/919354953603"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white hover:text-[#002b5c] transition"
-              >
-                <MessageCircle size={20} />
-                WhatsApp
-              </a>
-
-            </div>
+            <div className="mt-10 flex justify-center">
+  <Link
+    href="/appointment"
+    className="bg-white text-[#002b5c] font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition"
+  >
+    Book Consultation
+  </Link>
+</div>
 
           </div>
 

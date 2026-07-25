@@ -110,21 +110,19 @@ export default function BusinessSolutions() {
 
           <div className="flex flex-wrap justify-center gap-5 mt-10">
 
-            <a
-              href="tel:9354953603"
-              className="bg-[#d99a2b] hover:bg-[#c88920] text-white px-8 py-4 rounded-xl font-bold transition"
-            >
-              📞 Call Now
-            </a>
+            <Link
+  href="/appointment"
+  className="bg-[#d99a2b] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#c88920] transition"
+>
+  Book Consultation
+</Link>
 
-            <a
-              href="https://wa.me/919354953603"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[#002b5c] transition"
-            >
-              💬 WhatsApp
-            </a>
+<Link
+  href="/website-development"
+  className="bg-white text-[#002b5c] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition"
+>
+  Website Development
+</Link>
 
             <Link
               href="/website-development"
