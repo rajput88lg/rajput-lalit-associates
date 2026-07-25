@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import FloatingButtons from "@/components/FloatingButtons";
+
 import Contact from "@/components/Contact";
 import Map from "@/components/Map";
 import BookAppointment from "@/components/BookAppointment";
@@ -92,9 +91,6 @@ export default function GSTRegistrationPage() {
 
       <Footer />
 
-      <FloatingWhatsApp />
-
-      <FloatingButtons />
-    </>
+          </>
   );
 }

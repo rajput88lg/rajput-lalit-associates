@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import FloatingButtons from "@/components/FloatingButtons";
 import Services from "@/components/Services";
 import PageHero from "@/components/PageHero";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -29,8 +27,7 @@ export default function ServicesPage() {
       <CallToAction />
 
       <Footer />
-      <FloatingWhatsApp />
-      <FloatingButtons />
+      
     </>
   );
 }

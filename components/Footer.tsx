@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  FaPhoneAlt,
-  FaWhatsapp,
   FaEnvelope,
   FaMapMarkerAlt,
   FaClock,
@@ -57,26 +55,10 @@ export default function Footer() {
 
             {/* CONTACT BUTTONS */}
             <div className="mt-7 flex flex-wrap gap-3">
+             
+              
               <a
-                href="tel:+919354953603"
-                className="w-11 h-11 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center hover:bg-[#d99a2b] transition"
-                aria-label="Call Rajput Lalit & Associates"
-              >
-                <FaPhoneAlt />
-              </a>
-
-              <a
-                href="https://wa.me/919354953603"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center hover:bg-[#d99a2b] transition"
-                aria-label="WhatsApp Rajput Lalit & Associates"
-              >
-                <FaWhatsapp className="text-xl" />
-              </a>
-
-              <a
-                href="mailto:gst3603@gmail.com"
+                href="mailto:info@rajputlalitassociates.in"
                 className="w-11 h-11 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center hover:bg-[#d99a2b] transition"
                 aria-label="Email Rajput Lalit & Associates"
               >
@@ -151,28 +133,31 @@ export default function Footer() {
           </div>
 
           {/* CONTACT INFO */}
-          <div>
-            <h3 className="text-xl font-extrabold">Contact Information</h3>
-            <div className="w-12 h-1 bg-[#d99a2b] rounded-full mt-3" />
+<div>
+  <h3 className="text-xl font-extrabold">Contact Information</h3>
+  <div className="w-12 h-1 bg-[#d99a2b] rounded-full mt-3" />
 
-            <div className="mt-6 space-y-5">
-              <a
-                href="tel:+919354953603"
-                className="flex items-start gap-3 group"
-              >
-                <div className="w-9 h-9 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
-                  <FaPhoneAlt className="text-sm" />
-                </div>
-                <div>
-                  <p className="text-sm text-blue-200">Phone</p>
-                  <p className="mt-1 font-semibold group-hover:text-[#f0b84b] transition">
-                    +91 9354953603
-                  </p>
-                </div>
-              </a>
+  <div className="mt-6 space-y-5">
 
+    <a
+      href="mailto:info@rajputlalitassociates.in"
+      className="flex items-start gap-3 group"
+    >
+      <div className="w-9 h-9 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
+        <FaEnvelope className="text-sm" />
+      </div>
+
+      <div className="min-w-0">
+        <p className="text-sm text-blue-200">Email</p>
+        <p className="mt-1 font-semibold break-all group-hover:text-[#f0b84b] transition">
+          info@rajputlalitassociates.in
+        </p>
+      </div>
+    </a>
+
+    {/* Address aur Office Hours neeche waise hi rahenge */}
               <a
-                href="mailto:gst3603@gmail.com"
+                href="mailto:info@rajputlalitassociates.in"
                 className="flex items-start gap-3 group"
               >
                 <div className="w-9 h-9 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
@@ -181,7 +166,7 @@ export default function Footer() {
                 <div className="min-w-0">
                   <p className="text-sm text-blue-200">Email</p>
                   <p className="mt-1 font-semibold break-all group-hover:text-[#f0b84b] transition">
-                    gst3603@gmail.com
+                    info@rajputlalitassociates.in
                   </p>
                 </div>
               </a>

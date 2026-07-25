@@ -76,11 +76,11 @@ export default function ThankYouPage() {
         <div className="mt-5">
 
           <a
-            href="mailto:gst3603@gmail.com"
+            href="mailto:info@rajputlalitassociates.in"
             className="inline-flex items-center gap-2 text-[#002B5C] hover:underline"
           >
             <FaEnvelope />
-            gst3603@gmail.com
+            info@rajputlalitassociates.in
           </a>
 
         </div>

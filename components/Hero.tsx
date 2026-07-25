@@ -1,8 +1,4 @@
-import {
-  FaPhoneAlt,
-  FaWhatsapp,
-  FaCheckCircle,
-} from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 import { CalendarDays } from "lucide-react";
 import Reveal from "@/components/Reveal";
@@ -131,30 +127,7 @@ export default function Hero() {
             </a>
 
 
-            <a
-              href="tel:+919354953603"
-              className="inline-flex items-center justify-center gap-3 bg-white text-[#002b5c] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg"
-            >
-
-              <FaPhoneAlt />
-
-              Call Now
-
-            </a>
-
-
-            <a
-              href="https://wa.me/919354953603"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 border border-white/40 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition"
-            >
-
-              <FaWhatsapp className="text-xl" />
-
-              WhatsApp
-
-            </a>
+            
 
           </div>
 

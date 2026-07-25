@@ -9,8 +9,7 @@ export default function OrganizationSchema() {
         url: "https://www.rajputlalitassociates.in",
         logo: "https://www.rajputlalitassociates.in/logo.png",
         image: "https://www.rajputlalitassociates.in/logo.png",
-        telephone: "+91-9354953603",
-        email: "gst3603@gmail.com",
+        email: "info@rajputlalitassociates.in",
         priceRange: "₹₹",
         description:
           "Rajput Lalit & Associates provides GST Registration, GST Return Filing, Income Tax Return Filing, Accounting, TDS, MSME Registration, Company Registration and Tax Consultancy services across India.",

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 
 export default function CallToAction() {
   return (
@@ -18,33 +18,14 @@ export default function CallToAction() {
           services across India.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-5 mt-10">
-
-          <a
-            href="tel:+919354953603"
-            className="bg-white text-[#002b5c] px-7 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition"
-          >
-            <FaPhoneAlt />
-            Call Now
-          </a>
-
-          <a
-            href="https://wa.me/919354953603"
-            target="_blank"
-            className="bg-green-600 text-white px-7 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition"
-          >
-            <FaWhatsapp />
-            WhatsApp
-          </a>
-
+        <div className="flex justify-center mt-10">
           <Link
             href="/appointment"
-            className="bg-[#d99a2b] text-white px-7 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition"
+            className="bg-[#d99a2b] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition duration-300 shadow-lg"
           >
             <FaCalendarCheck />
             Book Consultation
           </Link>
-
         </div>
 
       </div>

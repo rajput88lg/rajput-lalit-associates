@@ -89,36 +89,15 @@ export default function Contact() {
 
               <div className="mt-8 space-y-4">
                 
-                {/* PHONE */}
-                <a href="tel:+919354953603" className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition">
-                  <div className="w-11 h-11 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
-                    <FaPhoneAlt />
-                  </div>
-                  <div>
-                    <p className="font-bold">Phone</p>
-                    <p className="text-blue-100 mt-1">+91 9354953603</p>
-                  </div>
-                </a>
-
-                {/* WHATSAPP */}
-                <a href="https://wa.me/919354953603" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition">
-                  <div className="w-11 h-11 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
-                    <FaWhatsapp className="text-xl" />
-                  </div>
-                  <div>
-                    <p className="font-bold">WhatsApp</p>
-                    <p className="text-blue-100 mt-1">+91 9354953603</p>
-                  </div>
-                </a>
-
+                             
                 {/* EMAIL */}
-                <a href="mailto:gst3603@gmail.com" className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition">
+                <a href="mailto:info@rajputlalitassociates.in" className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition">
                   <div className="w-11 h-11 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
                     <FaEnvelope />
                   </div>
                   <div>
                     <p className="font-bold">Email</p>
-                    <p className="text-blue-100 mt-1 break-all">gst3603@gmail.com</p>
+                    <p className="text-blue-100 mt-1 break-all">info@rajputlalitassociates.in</p>
                   </div>
                 </a>
 

@@ -60,11 +60,12 @@ export default function Founder() {
                 <div className="relative w-full h-full">
 
                   <Image
-                    src="/lalit-professional.png"
-                    alt="Lalit Rajput - Founder of Rajput Lalit & Associates"
-                    fill
-                    className="object-contain object-bottom"
-                  />
+  src="/lalit-professional.png"
+  alt="Lalit Rajput"
+  fill
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+  className="object-cover"
+/>
 
                 </div>
 

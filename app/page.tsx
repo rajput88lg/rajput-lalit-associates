@@ -11,8 +11,6 @@ import BookAppointment from "@/components/BookAppointment";
 import Contact from "@/components/Contact";
 import Map from "@/components/Map";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import FloatingButtons from "@/components/FloatingButtons";
 import BusinessSolutions from "@/components/BusinessSolutions";
 import Technologies from "@/components/Technologies";
 import PortfolioGallery from "@/components/PortfolioGallery";
@@ -54,9 +52,7 @@ export default function Home() {
 
       <Footer />
 
-      <FloatingWhatsApp />
-
-      <FloatingButtons />
-    </>
+      
+          </>
   );
 }
