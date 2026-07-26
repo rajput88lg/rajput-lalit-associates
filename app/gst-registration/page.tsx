@@ -16,6 +16,7 @@ import WhyChooseGST from "@/components/WhyChooseGST";
 import GSTFAQ from "@/components/GSTFAQ";
 import GSTRegistrationTypes from "@/components/GSTRegistrationTypes";
 import GoogleReviews from "@/components/GoogleReviews";
+import ServiceSchema from "@/components/components/ServiceSchema";
 
 export const metadata: Metadata = {
   title:
@@ -56,10 +57,16 @@ export const metadata: Metadata = {
 
 export default function GSTRegistrationPage() {
   return (
-    <>
-      <Navbar />
+  <>
+    <ServiceSchema
+      name="GST Registration"
+      description="Professional Online GST Registration Services across India."
+      url="https://www.rajputlalitassociates.in/gst-registration"
+    />
 
-      <main>
+    <Navbar />
+
+    <main>
         <ServiceHero
           title="Online GST Registration Services in India"
           subtitle="Get your GST Registration completed online anywhere in India with complete documentation support, expert guidance and fast processing."

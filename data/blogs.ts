@@ -181,6 +181,34 @@ export const blogs: Blog[] = [
     "ITR Guide",
   ],
 },
+{
+  slug: "msme-registration-online-india",
+  title: "MSME Registration Online in India",
+  description:
+    "Complete guide to MSME (Udyam) Registration Online in India including eligibility, documents, benefits, registration process and FAQs.",
+  category: "Business Registration",
+  author: "Rajput Lalit & Associates",
+  date: "July 2026",
+  image: "/blogs/msme-registration.png",
+  readTime: "12 min read",
+
+  seoTitle:
+    "MSME Registration Online in India (2026): Complete Guide | Rajput Lalit & Associates",
+
+  seoDescription:
+    "Learn everything about MSME Registration (Udyam Registration) Online in India including eligibility, documents, benefits, registration process and FAQs.",
+
+  keywords: [
+    "MSME Registration",
+    "MSME Registration Online",
+    "Udyam Registration",
+    "Udyam Certificate",
+    "MSME Certificate",
+    "Small Business Registration",
+    "MSME Registration India",
+    "Udyam Registration Online"
+  ]
+},
       {
     slug: "gst-registration-cancellation-india",
 
@@ -204,6 +232,7 @@ export const blogs: Blog[] = [
 
     seoDescription:
       "Learn GST Registration Cancellation in India including eligibility, required documents, online cancellation process, revocation and FAQs.",
+      
 
     keywords: [
       "GST Registration Cancellation",
