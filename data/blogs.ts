@@ -242,5 +242,33 @@ export const blogs: Blog[] = [
       "GST Revocation",
       "GST India",
     ],
-  }
+  },
+  {
+  slug: "gst-notice-reply-online-india",
+  title: "GST Notice Reply Online in India",
+  description:
+    "Complete guide to GST notice reply online in India. Learn common GST notice types, documents required, reply process, mistakes to avoid and FAQs.",
+  category: "GST Services",
+  author: "Rajput Lalit & Associates",
+  date: "August 2026",
+  image: "/blogs/gst-notice-reply.png",
+  readTime: "10 min read",
+
+  seoTitle:
+    "GST Notice Reply Online in India (2026): Types, Process & Documents",
+
+  seoDescription:
+    "Received a GST notice? Learn how to verify, understand and reply to GST notices online in India. Guide covering notice types, documents, process and FAQs.",
+
+  keywords: [
+    "GST Notice Reply",
+    "GST Notice Reply Online",
+    "GST Notice Reply India",
+    "GST Show Cause Notice Reply",
+    "GST Notice Consultant",
+    "GST Notice Documents",
+    "GST Notice Response",
+    "GST Notice Help",
+  ],
+},
 ];

@@ -10,6 +10,7 @@ import GSTRegistrationDocumentsIndia from "@/content/blogs/gst-registration-docu
 import GSTReturnFilingIndia from "@/content/blogs/gst-return-filing-india";
 import GSTRegistrationCancellationIndia from "@/content/blogs/gst-registration-cancellation-india";
 import MSMERegistrationOnlineIndia from "@/content/blogs/msme-registration-online-india";
+import GSTNoticeReplyOnlineIndia from "@/content/blogs/gst-notice-reply-online-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -97,6 +98,11 @@ export default async function BlogDetails({ params }: PageProps) {
 case "msme-registration-online-india":
   BlogContent = MSMERegistrationOnlineIndia;
   break;
+
+  case "gst-notice-reply-online-india":
+  BlogContent = GSTNoticeReplyOnlineIndia;
+  break;
+  
     default:
       notFound();
       return null;
