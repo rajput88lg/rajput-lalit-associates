@@ -271,4 +271,32 @@ export const blogs: Blog[] = [
     "GST Notice Help",
   ],
 },
+{
+  slug: "private-limited-company-registration-india",
+  title: "Private Limited Company Registration in India",
+  description:
+    "Complete guide to Private Limited Company Registration in India. Learn eligibility, required documents, incorporation process, benefits, compliance and FAQs.",
+  category: "Business Registration",
+  author: "Rajput Lalit & Associates",
+  date: "August 2026",
+  image: "/blogs/private-limited-company-registration.png",
+  readTime: "11 min read",
+
+  seoTitle:
+    "Private Limited Company Registration in India (2026): Complete Guide",
+
+  seoDescription:
+    "Learn how to register a Private Limited Company in India. Complete guide covering eligibility, directors, documents, SPICe+ process, benefits and compliance.",
+
+  keywords: [
+    "Private Limited Company Registration",
+    "Private Limited Company Registration India",
+    "Company Registration Online",
+    "Pvt Ltd Company Registration",
+    "Private Limited Company Documents",
+    "SPICe Plus Registration",
+    "Startup Company Registration",
+    "Company Incorporation India",
+  ],
+},
 ];

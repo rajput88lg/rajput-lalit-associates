@@ -11,6 +11,7 @@ import GSTReturnFilingIndia from "@/content/blogs/gst-return-filing-india";
 import GSTRegistrationCancellationIndia from "@/content/blogs/gst-registration-cancellation-india";
 import MSMERegistrationOnlineIndia from "@/content/blogs/msme-registration-online-india";
 import GSTNoticeReplyOnlineIndia from "@/content/blogs/gst-notice-reply-online-india";
+import PrivateLimitedCompanyRegistrationIndia from "@/content/blogs/private-limited-company-registration-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -101,6 +102,10 @@ case "msme-registration-online-india":
 
   case "gst-notice-reply-online-india":
   BlogContent = GSTNoticeReplyOnlineIndia;
+  break;
+
+  case "private-limited-company-registration-india":
+  BlogContent = PrivateLimitedCompanyRegistrationIndia;
   break;
   
     default:
