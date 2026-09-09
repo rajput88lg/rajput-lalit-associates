@@ -12,6 +12,7 @@ import GSTRegistrationCancellationIndia from "@/content/blogs/gst-registration-c
 import MSMERegistrationOnlineIndia from "@/content/blogs/msme-registration-online-india";
 import GSTNoticeReplyOnlineIndia from "@/content/blogs/gst-notice-reply-online-india";
 import PrivateLimitedCompanyRegistrationIndia from "@/content/blogs/private-limited-company-registration-india";
+import HowToEarnMoneyInIndia from "@/content/blogs/how-to-earn-money-in-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -92,9 +93,6 @@ export default async function BlogDetails({ params }: PageProps) {
       case "income-tax-return-filing-online-india":
   BlogContent = IncomeTaxReturnFilingOnlineIndia;
   break;
-  case "income-tax-return-filing-online-india":
-  BlogContent = IncomeTaxReturnFilingOnlineIndia;
-  break;
 
 case "msme-registration-online-india":
   BlogContent = MSMERegistrationOnlineIndia;
@@ -107,7 +105,11 @@ case "msme-registration-online-india":
   case "private-limited-company-registration-india":
   BlogContent = PrivateLimitedCompanyRegistrationIndia;
   break;
-  
+
+  case "how-to-earn-money-in-india":
+  BlogContent = HowToEarnMoneyInIndia;
+  break;
+
     default:
       notFound();
       return null;
