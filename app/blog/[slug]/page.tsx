@@ -13,6 +13,7 @@ import MSMERegistrationOnlineIndia from "@/content/blogs/msme-registration-onlin
 import GSTNoticeReplyOnlineIndia from "@/content/blogs/gst-notice-reply-online-india";
 import PrivateLimitedCompanyRegistrationIndia from "@/content/blogs/private-limited-company-registration-india";
 import HowToEarnMoneyInIndia from "@/content/blogs/how-to-earn-money-in-india";
+import Section87ARebate12LakhIncomeTax from "@/content/blogs/section-87a-rebate-12-lakh-income-tax";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -108,6 +109,10 @@ case "msme-registration-online-india":
 
   case "how-to-earn-money-in-india":
   BlogContent = HowToEarnMoneyInIndia;
+  break;
+
+  case "section-87a-rebate-12-lakh-income-tax":
+  BlogContent = Section87ARebate12LakhIncomeTax;
   break;
 
     default:
