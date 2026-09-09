@@ -332,4 +332,37 @@ export const blogs: Blog[] = [
     "Side Income India",
   ],
 },
+{
+  slug: "section-87a-rebate-12-lakh-income-tax",
+
+  title: "₹12 Lakh Tak Zero Tax Kaise? Section 87A Rebate Explained (FY 2026-27)",
+
+  description:
+    "Section 87A rebate ke through ₹12 lakh tak income par zero tax kaise possible hai, marginal relief kaise kaam karta hai aur kis income par ye rebate nahi milta - complete guide.",
+
+  category: "Income Tax",
+
+  author: "Rajput Lalit & Associates",
+
+  date: "9 September 2026",
+
+  image: "/blogs/section-87a-rebate-12-lakh-income-tax.png",
+
+  readTime: "8 min read",
+
+  seoTitle:
+    "Section 87A Rebate 2026: ₹12 Lakh Tak Zero Income Tax Kaise?",
+
+  seoDescription:
+    "Complete guide to Section 87A rebate for FY 2026-27 - how ₹12 lakh income becomes tax-free under new regime, marginal relief calculation and eligibility rules.",
+
+  keywords: [
+    "Section 87A Rebate",
+    "12 Lakh Income Tax",
+    "Zero Tax Income",
+    "New Tax Regime Rebate",
+    "Income Tax Slab 2026-27",
+    "Marginal Relief Income Tax",
+  ],
+},
 ];
