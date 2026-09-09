@@ -299,4 +299,37 @@ export const blogs: Blog[] = [
     "Company Incorporation India",
   ],
 },
+{
+  slug: "how-to-earn-money-in-india",
+
+  title: "How to Earn Money in India: 10 Practical Ways to Increase Your Income",
+
+  description:
+    "Learn how to earn money in India with practical methods including freelancing, YouTube, blogging, online services, AI skills, affiliate marketing and small business ideas.",
+
+  category: "Business & Finance",
+
+  author: "Rajput Lalit & Associates",
+
+  date: "8 September 2026",
+
+  image: "/blogs/how-to-earn-money-in-india.png",
+
+  readTime: "9 min read",
+
+  seoTitle:
+    "How to Earn Money in India (2026): 10 Practical Ways to Increase Your Income",
+
+  seoDescription:
+    "Discover 10 practical ways to earn money in India including freelancing, YouTube, blogging, online services, affiliate marketing, digital products and AI skills.",
+
+  keywords: [
+    "How to Earn Money in India",
+    "Earn Money Online India",
+    "Freelancing India",
+    "Online Income Ideas",
+    "Ways to Earn Money",
+    "Side Income India",
+  ],
+},
 ];
