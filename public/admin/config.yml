@@ -2,8 +2,8 @@ backend:
   name: github
   repo: rajput88lg/rajput-lalit-associates
   branch: main
-  base_url: https://splendorous-buttercream-b0b0d2.netlify.app
-  site_domain: splendorous-buttercream-b0b0d2.netlify.app
+  base_url: https://earnest-sawine-e89e73.netlify.app
+  site_domain: earnest-sawine-e89e73.netlify.app
 
 media_folder: "public/blog-images"
 public_folder: "/blog-images"
