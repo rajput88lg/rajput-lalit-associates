@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: rajput88lg/rajput-lalit-associates   # aapka GitHub repo
+  branch: main                                # aapki branch
+  base_url: https://YOUR-NETLIFY-SITE-NAME.netlify.app   # <-- step 3 mein ye replace karna hoga
+
+# Media library - blog images yahan upload/store hongi
+media_folder: "public/blog-images"
+public_folder: "/blog-images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blogs"      # aapke repo mein yahi folder hai
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "URL mein jo dikhega, jaise: gst-registration-guide" }
+      - { label: "Category", name: "category", widget: "select", options: ["GST", "Income Tax", "Accounting & TDS", "Business Registration", "Business & Finance"] }
+      - { label: "Short Description", name: "description", widget: "text", hint: "Blog list mein jo preview dikhega (1-2 lines)" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Read Time (minutes)", name: "readTime", widget: "string", default: "8 min read" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Blog Content", name: "body", widget: "markdown" }
