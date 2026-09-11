@@ -366,6 +366,40 @@ export const blogs: Blog[] = [
   ],
 },
   {
+    slug: "tds-return-filing-guide-india",
+
+    title: "TDS Return Filing Guide: Due Dates, Form 24Q/26Q, Late Fee & Penalty",
+
+    description:
+      "Complete TDS Return Filing guide under the Income-tax Act, 2025 — Form 24Q/26Q now Form 138/140, quarterly due dates, late fee under Section 427 and penalty under Section 461.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "11 September 2026",
+
+    image: "/blogs/tds-return-filing-guide-india.png",
+
+    readTime: "9 min read",
+
+    seoTitle:
+      "TDS Return Filing Guide (2026): Due Dates, Form 24Q/26Q, Late Fee & Penalty",
+
+    seoDescription:
+      "TDS Return Filing guide for Tax Year 2026-27 under the Income-tax Act, 2025 — Form 24Q/26Q renamed to Form 138/140, quarterly due dates, Section 427 late fee and Section 461 penalty explained.",
+
+    keywords: [
+      "TDS Return Filing",
+      "TDS Return Due Date",
+      "Form 24Q",
+      "Form 26Q",
+      "TDS Late Fee",
+      "TDS Penalty",
+      "Income Tax Act 2025 TDS",
+    ],
+  },
+  {
     slug: "gst-registration-ambala",
 
     title: "GST Registration in Ambala: Process, Documents & Fees (2026)",
