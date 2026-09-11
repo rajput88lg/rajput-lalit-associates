@@ -95,7 +95,7 @@ export default function GSTRegistrationFees() {
 
                 <div className="mt-8">
   <Link
-    href="/appointment"
+    href="/#appointment"
     className="flex justify-center items-center bg-[#002b5c] text-white py-3 rounded-lg font-bold hover:bg-[#001b39] transition"
   >
     Book GST Consultation

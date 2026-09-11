@@ -26,8 +26,29 @@ const faqs = [
   },
 ];
 export default function GSTFAQ() {
+  // FAQPage schema — isse Google search results mein ye FAQs expandable
+  // rich snippet ki tarah dikh sakte hain (pehle sirf visual FAQ tha,
+  // schema nahi tha, isliye rich snippet nahi ban raha tha).
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section className="py-20 bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="max-w-5xl mx-auto px-6">
 
         <h2 className="text-4xl font-bold text-center text-[#002b5c]">

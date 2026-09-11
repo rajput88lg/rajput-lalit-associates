@@ -27,7 +27,7 @@ export default function ServiceHero({ title, subtitle }: Props) {
 
           <div className="mt-10 flex justify-center">
   <Link
-    href="/appointment"
+    href="/#appointment"
     className="bg-[#d99a2b] hover:bg-[#f0b84b] px-8 py-4 rounded-lg font-bold transition flex items-center gap-2"
   >
     <CalendarDays size={20} />
