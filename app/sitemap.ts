@@ -15,6 +15,7 @@ const servicePages = [
   "/company-registration",
   "/msme-registration",
   "/gst-notice-reply",
+  "/accounting-bookkeeping-services",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

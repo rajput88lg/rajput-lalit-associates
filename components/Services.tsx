@@ -52,11 +52,11 @@ const services: ServiceCategory[] = [
     description:
       "Reliable accounting and financial reporting solutions for your business.",
     items: [
-      { label: "Bookkeeping" },
-      { label: "Accounting" },
+      { label: "Bookkeeping", href: "/accounting-bookkeeping-services" },
+      { label: "Accounting", href: "/accounting-bookkeeping-services" },
       { label: "TDS Return" },
       { label: "Payroll" },
-      { label: "Financial Statements" },
+      { label: "Financial Statements", href: "/accounting-bookkeeping-services" },
     ],
   },
   {

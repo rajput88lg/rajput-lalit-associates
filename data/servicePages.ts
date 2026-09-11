@@ -481,4 +481,130 @@ export const servicePages: ServicePageData[] = [
       },
     ],
   },
+
+  {
+    slug: "accounting-bookkeeping-services",
+    metaTitle:
+      "Accounting & Bookkeeping Services in Ambala | Rajput Lalit & Associates",
+    metaDescription:
+      "Monthly accounting and bookkeeping for businesses in Ambala and across India — entries, bank & GST reconciliation, TDS, payroll and year-end financial statements.",
+    keywords: [
+      "Accounting Services in Ambala",
+      "Bookkeeping Services in Ambala",
+      "Accounting and Bookkeeping Services",
+      "Outsourced Accounting for Small Business",
+      "Monthly Bookkeeping Services India",
+      "Accountant in Ambala",
+      "Financial Statements Preparation",
+    ],
+    heroTitle: "Accounting & Bookkeeping Services in Ambala",
+    heroSubtitle:
+      "Monthly bookkeeping, reconciliations and financial statements for small and growing businesses — accurate books that make GST, TDS and ITR filing smooth.",
+    schemaName: "Accounting and Bookkeeping Services",
+    schemaDescription:
+      "Monthly accounting, bookkeeping, bank and GST reconciliation, payroll and financial statement preparation for businesses in Ambala, Haryana and across India.",
+    content: {
+      overviewTitle: "Accounting & Bookkeeping — Accurate Books, Stress-free Compliance",
+      overviewParagraphs: [
+        "Saaf aur up-to-date books of account har business ki buniyaad hain. Jab entries time par hoti hain, to har mahine pata rehta hai ki kitna profit ho raha hai, kisse payment leni hai aur kise deni hai — aur GST return, TDS aur Income Tax Return bina last-minute bhaag-daud ke file ho jaate hain.",
+        "Kanoon ke hisaab se bhi books rakhna zaroori hai. Income-tax Act, 2025 ke Section 62 (pehle Section 44AA) ke tahat specified professionals aur ek limit se upar ke businesses ko books of account maintain karni hoti hain. GST registered businesses ke liye CGST Act ka Section 35 aur companies ke liye Companies Act, 2013 ka Section 128 bhi books rakhna mandatory karta hai.",
+        "Hum Ambala aur poore India ke clients ke liye monthly bookkeeping, bank aur GST reconciliation, TDS aur payroll entries, aur saal ke end mein Profit & Loss Account aur Balance Sheet taiyaar karte hain — taaki aapki books hamesha audit-ready rahein aur aap apne business par focus kar sakein.",
+      ],
+      servicesIncluded: [
+        "Daily sales, purchase, expense aur receipt/payment entries",
+        "Monthly bank reconciliation (sabhi business accounts)",
+        "GST reconciliation — books vs GSTR-1, GSTR-3B aur GSTR-2B",
+        "Debtors/creditors ledger aur outstanding reports",
+        "TDS entries aur quarterly TDS compliance support",
+        "Payroll aur salary register",
+        "Monthly/quarterly MIS — profit, expenses aur cash position",
+        "Year-end finalisation — Profit & Loss Account aur Balance Sheet",
+        "Tax audit ke liye books aur schedules ki taiyari",
+      ],
+      relatedLinks: [
+        { label: "GST Return Filing", href: "/gst-return-filing" },
+        { label: "Income Tax Return Filing", href: "/income-tax-return-filing" },
+        { label: "Company Registration", href: "/company-registration" },
+      ],
+      whoNeedsThis: [
+        "Traders, retailers aur wholesalers (proprietorship ya partnership firm)",
+        "Manufacturers aur service businesses jinke daily transactions zyada hain",
+        "Doctors, lawyers, architects aur consultants jaise professionals",
+        "Private Limited companies, LLPs aur startups",
+        "GST registered businesses jinhe har mahine ITC reconciliation chahiye",
+        "Businesses jinki pichhle mahino ki books pending hain (backlog)",
+      ],
+      documentsRequired: [
+        "Sales aur purchase invoices (ya billing software ka export)",
+        "Sabhi business bank accounts ke statements",
+        "Expense bills aur cash vouchers",
+        "GST portal login ya GSTR-2B (reconciliation ke liye)",
+        "Salary details aur TDS challans (agar applicable ho)",
+        "Pichhle saal ki Balance Sheet / opening balances",
+        "Loan statements aur fixed assets ke purchase bills",
+      ],
+      process: [
+        {
+          title: "Understanding & Setup",
+          description:
+            "Aapka business type, transactions ki volume aur current records samajh kar chart of accounts aur opening balances set karte hain.",
+        },
+        {
+          title: "Monthly Data Collection",
+          description:
+            "Har mahine invoices, bank statements aur bills email, WhatsApp ya shared folder ke through collect karte hain.",
+        },
+        {
+          title: "Entries & Reconciliation",
+          description:
+            "Saari entries record karke bank, GST aur party ledgers reconcile karte hain taaki koi mismatch na rahe.",
+        },
+        {
+          title: "Reports & Year-end",
+          description:
+            "Monthly summary reports share karte hain aur saal ke end mein P&L aur Balance Sheet taiyaar karte hain — ITR aur audit ke liye ready.",
+        },
+      ],
+      whyChooseUs: [
+        "Accounting, GST, TDS aur Income Tax — sab ek hi team ke paas, isliye books aur returns mein mismatch nahi",
+        "Har mahine time par entries — saal ke end mein backlog ka stress nahi",
+        "Reconciled books — notice aur ITC loss ka risk kam",
+        "Aapke financial data ki confidentiality ka pura dhyan",
+        "Seedhi, simple reports — accounting jargon nahi",
+        "Ambala mein in-person meeting aur poore India ke clients ke liye online service",
+      ],
+    },
+    faqs: [
+      {
+        question: "Kya chhote business ko bhi books of account rakhni zaroori hai?",
+        answer:
+          "Income-tax Act, 2025 ke Section 62 ke hisaab se individual ya HUF business ko books tab rakhni hoti hain jab pichhle 3 saal mein kisi bhi saal income ₹2.5 lakh ya turnover ₹25 lakh se zyada ho (firm, LLP, company jaise baaki persons ke liye ye limit ₹1.2 lakh income ya ₹10 lakh turnover hai). Doctors, lawyers, CA, engineers jaise specified professionals aur GST registered businesses ke liye bhi books rakhna zaroori hai. Limit se neeche hon tab bhi books rakhna faydemand hai — loan, GST aur ITR mein kaam aati hain.",
+      },
+      {
+        question: "Books of account kitne saal tak sambhal kar rakhni hoti hain?",
+        answer:
+          "GST ke liye records annual return ki due date se 72 mahine (6 saal) tak rakhne hote hain (CGST Act, Section 36). Companies ko Companies Act ke Section 128 ke tahat 8 financial years tak books preserve karni hoti hain. Income Tax ke liye bhi rules mein prescribed period tak records rakhne hote hain — isliye practically kam se kam 8 saal ka record safe rakhna best rehta hai.",
+      },
+      {
+        question: "Tax audit kab karwana padta hai?",
+        answer:
+          "Income-tax Act, 2025 ke Section 63 (pehle Section 44AB) ke tahat business ka turnover ₹1 crore se zyada ho to tax audit lagta hai. Agar cash receipts total receipts ke 5% se zyada na hon aur cash payments bhi total payments ke 5% se zyada na hon, to ye limit ₹10 crore ho jaati hai. Professionals ke liye gross receipts ₹50 lakh se zyada hone par audit lagta hai. Presumptive taxation wale cases mein alag conditions hain — apna case humse check karwa sakte hain.",
+      },
+      {
+        question: "Kya aap online bookkeeping service bhi dete hain?",
+        answer:
+          "Haan. Documents email, WhatsApp ya shared folder se bhej sakte hain, isliye hum poore India ke clients ki books maintain karte hain. Ambala ke clients ke liye office meeting bhi available hai.",
+      },
+      {
+        question: "Hamari pichhle kai mahino ki books pending hain — kya aap catch-up kar sakte hain?",
+        answer:
+          "Haan. Hum pending (backlog) books ko priority par complete karke bank aur GST ke saath reconcile karte hain, phir aage monthly basis par current rakhte hain.",
+      },
+      {
+        question: "Kya accounting ke saath GST return aur ITR filing bhi karte hain?",
+        answer:
+          "Haan. Hum GST return filing, TDS returns aur Income Tax Return filing bhi karte hain. Books aur returns ek hi team ke paas hone se figures match rehte hain aur notice ka risk kam hota hai.",
+      },
+    ],
+  },
 ];

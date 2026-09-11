@@ -13,6 +13,10 @@ export type ServiceContentData = {
   documentsRequired: string[];
   process: ProcessStep[];
   whyChooseUs: string[];
+  // Optional — sirf un pages par dikhte hain jinke data mein ye diye gaye
+  // hon. Purane 5 service pages par koi farak nahi padta.
+  servicesIncluded?: string[];
+  relatedLinks?: { label: string; href: string }[];
 };
 
 // Generic, reusable content section for service pages (Income Tax Return
@@ -29,6 +33,8 @@ export default function ServiceContentBlock({
   documentsRequired,
   process,
   whyChooseUs,
+  servicesIncluded,
+  relatedLinks,
 }: ServiceContentData) {
   return (
     <>
@@ -46,8 +52,48 @@ export default function ServiceContentBlock({
               </p>
             ))}
           </div>
+
+          {relatedLinks && relatedLinks.length > 0 && (
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <span className="text-sm font-semibold text-[#002b5c]">
+                Related services:
+              </span>
+              {relatedLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm px-4 py-2 rounded-full border border-[#d99a2b]/40 text-[#002b5c] hover:bg-[#d99a2b] hover:text-white transition"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
+
+      {/* SERVICES INCLUDED (optional) */}
+      {servicesIncluded && servicesIncluded.length > 0 && (
+        <section className="pb-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              What&apos;s Included
+            </h2>
+            <div className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+            <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {servicesIncluded.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#f7f9fc] p-5"
+                >
+                  <FaCheckCircle className="mt-1 shrink-0 text-[#d99a2b]" />
+                  <span className="text-gray-700 leading-7">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* WHO NEEDS THIS + DOCUMENTS REQUIRED */}
       <section className="py-20 bg-[#f7f9fc]">
