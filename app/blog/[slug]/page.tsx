@@ -15,6 +15,7 @@ import PrivateLimitedCompanyRegistrationIndia from "@/content/blogs/private-limi
 import HowToEarnMoneyInIndia from "@/content/blogs/how-to-earn-money-in-india";
 import Section87ARebate12LakhIncomeTax from "@/content/blogs/section-87a-rebate-12-lakh-income-tax";
 import GSTRegistrationAmbala from "@/content/blogs/gst-registration-ambala";
+import TDSReturnFilingGuide from "@/content/blogs/tds-return-filing-guide-india";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -118,6 +119,10 @@ case "msme-registration-online-india":
 
   case "gst-registration-ambala":
   BlogContent = GSTRegistrationAmbala;
+  break;
+
+  case "tds-return-filing-guide-india":
+  BlogContent = TDSReturnFilingGuide;
   break;
 
     default:
