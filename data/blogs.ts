@@ -365,4 +365,38 @@ export const blogs: Blog[] = [
     "Marginal Relief Income Tax",
   ],
 },
+  {
+    slug: "gst-registration-ambala",
+
+    title: "GST Registration in Ambala: Process, Documents & Fees (2026)",
+
+    description:
+      "Step-by-step guide to GST registration in Ambala City and Ambala Cantt — turnover limits in Haryana, documents, biometric verification at GST Suvidha Kendra, timelines and fees.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "11 September 2026",
+
+    image: "/blogs/gst-registration-ambala.png",
+
+    readTime: "9 min read",
+
+    seoTitle:
+      "GST Registration in Ambala (2026): Process, Documents & Fees",
+
+    seoDescription:
+      "Get GST registration in Ambala City & Ambala Cantt. Haryana turnover limits, documents required, biometric verification at GSK, timelines, fees and common mistakes explained.",
+
+    keywords: [
+      "GST Registration in Ambala",
+      "GST Registration Ambala",
+      "GST Consultant in Ambala",
+      "GST Registration Ambala Cantt",
+      "GST Registration Haryana",
+      "GST Registration Documents",
+      "GST Suvidha Kendra Ambala",
+    ],
+  },
 ];
