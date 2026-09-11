@@ -29,6 +29,7 @@ provider: {
         logo: "https://www.rajputlalitassociates.in/logo.png",
         image: "https://www.rajputlalitassociates.in/logo.png",
         email: "info@rajputlalitassociates.in",
+        telephone: "+91-9354953603",
         priceRange: "₹₹",
         description:
           "Rajput Lalit & Associates provides GST Registration, GST Return Filing, Income Tax Return Filing, Accounting, TDS, MSME Registration, Company Registration and Tax Consultancy services across India.",
@@ -40,6 +41,16 @@ provider: {
           addressRegion: "Haryana",
           postalCode: "134003",
           addressCountry: "IN",
+        },
+
+        // NOTE: Ye approximate coordinates Ambala City, Sector-9 ke hain.
+        // Exact office location ke liye Google Maps par apni office par
+        // right-click karke "What's here?" se exact lat/long copy karke
+        // yahan replace kar dein — thoda sa precise ho jayega.
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 30.3628,
+          longitude: 76.8206,
         },
 
         areaServed: {

@@ -106,7 +106,7 @@ export default function GPSPhotoRequirement() {
             </div>
 
             <Link
-  href="/appointment"
+  href="/#appointment"
   className="inline-block mt-10 bg-[#d99a2b] hover:bg-[#f0b84b] px-8 py-4 rounded-lg font-bold transition"
 >
   Book GST Consultation

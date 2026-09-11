@@ -20,7 +20,7 @@ export default function CallToAction() {
 
         <div className="flex justify-center mt-10">
           <Link
-            href="/appointment"
+            href="/#appointment"
             className="bg-[#d99a2b] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition duration-300 shadow-lg"
           >
             <FaCalendarCheck />

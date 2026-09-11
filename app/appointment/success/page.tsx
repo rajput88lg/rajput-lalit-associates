@@ -5,6 +5,10 @@ export const metadata = {
   title: "Appointment Confirmed | Rajput Lalit & Associates",
   description:
     "Your consultation appointment has been successfully booked.",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function AppointmentSuccessPage() {

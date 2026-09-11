@@ -9,6 +9,10 @@ export const metadata = {
   title: "Thank You | Rajput Lalit & Associates",
   description:
     "Thank you for contacting Rajput Lalit & Associates. Our team will contact you soon.",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function ThankYouPage() {

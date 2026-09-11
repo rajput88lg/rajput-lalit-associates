@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaFileInvoiceDollar,
   FaChartPie,
@@ -8,17 +9,29 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const services = [
+// Har item ab { label, href? } object hai — jinke paas apna dedicated
+// service page hai unhe link kiya gaya hai (pehle sab plain text the, koi
+// bhi dedicated page tak nahi le jaata tha). `href` explicitly optional
+// type kiya hai taaki TypeScript strict mode mein error na aaye.
+type ServiceItem = { label: string; href?: string };
+type ServiceCategory = {
+  icon: typeof FaFileInvoiceDollar;
+  title: string;
+  description: string;
+  items: ServiceItem[];
+};
+
+const services: ServiceCategory[] = [
   {
     icon: FaFileInvoiceDollar,
     title: "GST Services",
     description:
       "Complete GST compliance and professional consultancy support for businesses.",
     items: [
-      "GST Registration",
-      "GST Return Filing",
-      "GST Notice Reply",
-      "GST Consultancy",
+      { label: "GST Registration", href: "/gst-registration" },
+      { label: "GST Return Filing", href: "/gst-return-filing" },
+      { label: "GST Notice Reply", href: "/gst-notice-reply" },
+      { label: "GST Consultancy" },
     ],
   },
   {
@@ -27,10 +40,10 @@ const services = [
     description:
       "Professional income tax filing, planning and notice assistance services.",
     items: [
-      "ITR Filing",
-      "Tax Planning",
-      "Income Tax Notice Reply",
-      "Tax Consultancy",
+      { label: "ITR Filing", href: "/income-tax-return-filing" },
+      { label: "Tax Planning" },
+      { label: "Income Tax Notice Reply" },
+      { label: "Tax Consultancy" },
     ],
   },
   {
@@ -39,11 +52,11 @@ const services = [
     description:
       "Reliable accounting and financial reporting solutions for your business.",
     items: [
-      "Bookkeeping",
-      "Accounting",
-      "TDS Return",
-      "Payroll",
-      "Financial Statements",
+      { label: "Bookkeeping" },
+      { label: "Accounting" },
+      { label: "TDS Return" },
+      { label: "Payroll" },
+      { label: "Financial Statements" },
     ],
   },
   {
@@ -52,10 +65,10 @@ const services = [
     description:
       "Professional assistance for starting and registering your business.",
     items: [
-      "Company Registration",
-      "LLP Registration",
-      "Partnership Firm Registration",
-      "MSME Registration",
+      { label: "Company Registration", href: "/company-registration" },
+      { label: "LLP Registration", href: "/company-registration" },
+      { label: "Partnership Firm Registration", href: "/company-registration" },
+      { label: "MSME Registration", href: "/msme-registration" },
     ],
   },
   {
@@ -64,11 +77,11 @@ const services = [
     description:
       "Additional registration and compliance services for individuals and businesses.",
     items: [
-      "LEI Registration",
-      "IEC Registration",
-      "Trademark Registration",
-      "Digital Signature (DSC)",
-      "PAN / TAN Registration",
+      { label: "LEI Registration" },
+      { label: "IEC Registration" },
+      { label: "Trademark Registration" },
+      { label: "Digital Signature (DSC)" },
+      { label: "PAN / TAN Registration" },
     ],
   },
 ];
@@ -162,7 +175,7 @@ export default function Services() {
 
                   {service.items.map((item) => (
                     <div
-                      key={item}
+                      key={item.label}
                       className="flex items-start gap-3"
                     >
 
@@ -172,9 +185,18 @@ export default function Services() {
 
                       </div>
 
-                      <span className="text-gray-700 font-medium">
-                        {item}
-                      </span>
+                      {item.href ? (
+                        <Link
+                          href={item.href}
+                          className="text-gray-700 font-medium hover:text-[#d99a2b] hover:underline transition"
+                        >
+                          {item.label}
+                        </Link>
+                      ) : (
+                        <span className="text-gray-700 font-medium">
+                          {item.label}
+                        </span>
+                      )}
 
                     </div>
                   ))}
@@ -184,14 +206,14 @@ export default function Services() {
 
                 {/* CONTACT LINK */}
 
-                <a
-                  href="#contact"
+                <Link
+                  href="/#contact"
                   className="mt-7 inline-flex items-center gap-2 text-[#002b5c] font-bold group-hover:text-[#d99a2b] transition"
                 >
                   Get Professional Help
 
                   <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
 
               </div>
             );
@@ -221,12 +243,12 @@ export default function Services() {
 
               <div className="mt-7 flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-3">
 
-                <a
-                  href="#appointment"
+                <Link
+                  href="/#appointment"
                   className="inline-flex justify-center items-center bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-5 py-3 rounded-lg font-bold transition"
                 >
                   Book Appointment
-                </a>
+                </Link>
 
                 <a
                   href="tel:+919354953603"
