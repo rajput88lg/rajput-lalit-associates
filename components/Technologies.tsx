@@ -81,7 +81,7 @@ export default function Technologies() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
 
           <span className="bg-blue-100 text-[#002b5c] px-5 py-2 rounded-full font-semibold">
             Modern Technologies
@@ -103,9 +103,11 @@ export default function Technologies() {
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+              data-reveal
+              data-reveal-delay={(index % 4) + 1}
+              className="group bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-xl bg-[#002b5c] text-white flex items-center justify-center mb-6">
+              <div className="icon-pop w-16 h-16 rounded-xl bg-[#002b5c] text-white flex items-center justify-center mb-6 group-hover:bg-[#d99a2b] transition-colors duration-300">
                 {tech.icon}
               </div>
 

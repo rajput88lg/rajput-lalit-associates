@@ -5,28 +5,34 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 
+import CountUp from "@/components/CountUp";
+
 const stats = [
   {
     icon: FaAward,
-    number: "15+",
+    value: 15,
+    suffix: "+",
     label: "Years of Practical Experience",
     text: "Delivering trusted GST, Income Tax and accounting solutions",
   },
   {
     icon: FaUsers,
-    number: "200+",
+    value: 200,
+    suffix: "+",
     label: "Happy Business Clients",
     text: "Serving individuals, startups, SMEs and established businesses",
   },
   {
     icon: FaFileAlt,
-    number: "6000+",
+    value: 6000,
+    suffix: "+",
     label: "GST & Income Tax Filings Completed",
     text: "Accurate, timely and compliant tax filing services",
   },
   {
     icon: FaHandshake,
-    number: "100%",
+    value: 100,
+    suffix: "%",
     label: "Client Commitment",
     text: "Professional guidance with complete transparency and dedication",
   },
@@ -37,13 +43,13 @@ export default function Stats() {
     <section className="relative overflow-hidden bg-gradient-to-r from-[#001d40] via-[#002b5c] to-[#06477f] py-16 md:py-20">
 
       {/* BACKGROUND DECORATION */}
-      <div className="absolute -top-32 -right-20 w-96 h-96 rounded-full border-[60px] border-white/[0.03]" />
-      <div className="absolute -bottom-40 -left-20 w-96 h-96 rounded-full bg-[#d99a2b]/5" />
+      <div className="float-soft absolute -top-32 -right-20 w-96 h-96 rounded-full border-[60px] border-white/[0.03]" />
+      <div className="float-soft-slow absolute -bottom-40 -left-20 w-96 h-96 rounded-full bg-[#d99a2b]/5" />
 
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* TOP TEXT */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-reveal>
           <p className="text-[#f0b84b] font-bold uppercase tracking-[0.2em] text-sm">
             Our Journey in Numbers
           </p>
@@ -56,23 +62,25 @@ export default function Stats() {
         {/* STATS GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-          {stats.map((stat) => {
+          {stats.map((stat, index) => {
             const Icon = stat.icon;
 
             return (
               <div
                 key={stat.label}
-                className="group relative overflow-hidden bg-white/[0.08] backdrop-blur-sm border border-white/15 rounded-2xl p-6 text-center hover:bg-white/[0.13] hover:-translate-y-1 transition-all duration-300"
+                data-reveal
+                data-reveal-delay={index + 1}
+                className="group relative overflow-hidden bg-white/[0.08] backdrop-blur-sm border border-white/15 rounded-2xl p-6 text-center hover:bg-white/[0.13] hover:-translate-y-1.5 transition-all duration-300"
               >
 
                 {/* ICON */}
-                <div className="mx-auto w-14 h-14 rounded-xl bg-[#d99a2b] text-white flex items-center justify-center shadow-lg group-hover:bg-[#f0b84b] transition">
+                <div className="icon-pop mx-auto w-14 h-14 rounded-xl bg-[#d99a2b] text-white flex items-center justify-center shadow-lg group-hover:bg-[#f0b84b] transition">
                   <Icon className="text-2xl" />
                 </div>
 
                 {/* NUMBER */}
                 <h3 className="mt-5 text-4xl md:text-5xl font-extrabold text-[#f0b84b]">
-                  {stat.number}
+                  <CountUp end={stat.value} suffix={stat.suffix} />
                 </h3>
 
                 {/* LABEL */}

@@ -1,29 +1,51 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X, CalendarDays } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
+  // Scroll hone par navbar thoda compact ho jata hai (professional touch).
+  // Passive listener use kiya hai taaki scroll performance par asar na pade.
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <header
+      className={`navbar-shell sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm ${
+        scrolled ? "is-scrolled" : ""
+      }`}
+    >
       <nav className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="h-[82px] flex items-center justify-between">
-          
+        <div
+          className={`navbar-row flex items-center justify-between ${
+            scrolled ? "h-[68px]" : "h-[82px]"
+          }`}
+        >
+
           {/* LOGO AND FIRM NAME */}
           <Link
             href="/"
             className="flex items-center gap-3 min-w-0"
             onClick={closeMenu}
           >
-            <div className="relative w-[62px] h-[62px] flex-shrink-0">
+            <div className="navbar-logo relative w-[62px] h-[62px] flex-shrink-0">
               <Image
                 src="/logo.png"
                 alt="Rajput Lalit & Associates"
@@ -48,49 +70,49 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-7">
             <Link
               href="/#home"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Home
             </Link>
 
             <Link
               href="/#about"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               About
             </Link>
 
             <Link
               href="/#services"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Services
             </Link>
 
             <Link
               href="/website-development"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Website Development
             </Link>
 
             <Link
               href="/blog"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Blog
             </Link>
 
             <Link
               href="/#contact"
-              className="relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Contact
             </Link>
 
             <Link
               href="/#appointment"
-              className="inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-3 rounded-lg font-bold transition shadow-md"
+              className="btn-shine inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-3 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
             >
               <CalendarDays size={18} />
               Book Consultation
@@ -110,7 +132,7 @@ export default function Navbar() {
 
         {/* MOBILE MENU */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-gray-100 py-5">
+          <div className="menu-in lg:hidden border-t border-gray-100 py-5">
             <div className="flex flex-col gap-2">
               <Link
                 href="/#home"

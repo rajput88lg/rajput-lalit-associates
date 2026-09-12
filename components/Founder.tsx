@@ -11,16 +11,16 @@ export default function Founder() {
 
       {/* BACKGROUND DECORATION */}
 
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
+      <div className="float-soft absolute top-0 right-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
 
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#d99a2b]/10 rounded-full blur-3xl" />
+      <div className="float-soft-slow absolute bottom-0 left-0 w-80 h-80 bg-[#d99a2b]/10 rounded-full blur-3xl" />
 
 
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* HEADING */}
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
 
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
             Leadership
@@ -37,7 +37,11 @@ export default function Founder() {
 
         {/* MAIN FOUNDER CARD */}
 
-        <div className="mt-14 overflow-hidden rounded-3xl bg-white border border-gray-200 shadow-2xl">
+        <div
+          data-reveal
+          data-reveal-delay="1"
+          className="mt-14 overflow-hidden rounded-3xl bg-white border border-gray-200 shadow-2xl"
+        >
 
           <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
 

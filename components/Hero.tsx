@@ -1,20 +1,26 @@
 import { FaCheckCircle } from "react-icons/fa";
 
 import { CalendarDays } from "lucide-react";
-import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
+
+const highlights = [
+  "GST & Tax Consultancy",
+  "Accounting Services",
+  "Business Registration",
+  "Notice & Compliance Support",
+];
 
 export default function Hero() {
   return (
-    <Reveal>  
     <section
       id="home"
       className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white"
     >
       {/* BACKGROUND DECORATION */}
 
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+      <div className="blob-top-right absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
 
-      <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-[#d99a2b]/10 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
+      <div className="blob-bottom-left absolute bottom-0 left-0 w-[450px] h-[450px] bg-[#d99a2b]/10 rounded-full blur-3xl" />
 
 
       {/* MAIN CONTENT */}
@@ -26,9 +32,9 @@ export default function Hero() {
 
           {/* TRUST BADGE */}
 
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-sm px-5 py-2 rounded-full">
+          <div className="hero-in hero-in-1 inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-sm px-5 py-2 rounded-full">
 
-            <span className="w-2 h-2 bg-[#f0b84b] rounded-full" />
+            <span className="soft-pulse w-2 h-2 bg-[#f0b84b] rounded-full" />
 
             <p className="text-sm font-semibold tracking-wide">
               Trusted Tax & Financial Consultancy
@@ -39,7 +45,7 @@ export default function Hero() {
 
           {/* MAIN HEADING */}
 
-          <h1 className="mt-8 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.08]">
+          <h1 className="hero-in hero-in-2 mt-8 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.08]">
 
             Smart Tax Solutions.
 
@@ -52,7 +58,7 @@ export default function Hero() {
 
           {/* DESCRIPTION */}
 
-          <p className="mt-7 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
+          <p className="hero-in hero-in-3 mt-7 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
 
             Professional GST, Income Tax, Accounting and Business
             Compliance services backed by over 15 years of practical
@@ -65,59 +71,31 @@ export default function Hero() {
 
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-            <div className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-4">
+            {highlights.map((item, index) => (
+              <div
+                key={item}
+                className={`hero-in hero-in-${index + 3} group flex items-center justify-center gap-3 bg-white/5 hover:bg-white/[0.12] border border-white/10 hover:border-[#f0b84b]/40 rounded-xl px-4 py-4 transition-all duration-300 hover:-translate-y-1`}
+              >
 
-              <FaCheckCircle className="text-[#f0b84b] flex-shrink-0" />
+                <FaCheckCircle className="icon-pop text-[#f0b84b] flex-shrink-0" />
 
-              <span>
-                GST & Tax Consultancy
-              </span>
+                <span>
+                  {item}
+                </span>
 
-            </div>
-
-
-            <div className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-4">
-
-              <FaCheckCircle className="text-[#f0b84b] flex-shrink-0" />
-
-              <span>
-                Accounting Services
-              </span>
-
-            </div>
-
-
-            <div className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-4">
-
-              <FaCheckCircle className="text-[#f0b84b] flex-shrink-0" />
-
-              <span>
-                Business Registration
-              </span>
-
-            </div>
-
-
-            <div className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-4">
-
-              <FaCheckCircle className="text-[#f0b84b] flex-shrink-0" />
-
-              <span>
-                Notice & Compliance Support
-              </span>
-
-            </div>
+              </div>
+            ))}
 
           </div>
 
 
           {/* BUTTONS */}
 
-          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+          <div className="hero-in hero-in-6 mt-10 flex flex-col sm:flex-row justify-center gap-4">
 
             <a
               href="#appointment"
-              className="inline-flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-8 py-4 rounded-lg font-bold transition shadow-lg"
+              className="btn-shine inline-flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1"
             >
 
               <CalendarDays size={20} />
@@ -126,20 +104,17 @@ export default function Hero() {
 
             </a>
 
-
-            
-
           </div>
 
 
           {/* STATS */}
 
-          <div className="mt-14 pt-9 border-t border-white/20 grid grid-cols-3 max-w-2xl mx-auto">
+          <div className="hero-in hero-in-6 mt-14 pt-9 border-t border-white/20 grid grid-cols-3 max-w-2xl mx-auto">
 
             <div>
 
               <p className="text-3xl md:text-4xl font-extrabold text-[#f0b84b]">
-                15+
+                <CountUp end={15} suffix="+" />
               </p>
 
               <p className="text-sm text-blue-100 mt-2">
@@ -152,7 +127,7 @@ export default function Hero() {
             <div className="border-x border-white/20">
 
               <p className="text-3xl md:text-4xl font-extrabold text-[#f0b84b]">
-                200+
+                <CountUp end={200} suffix="+" />
               </p>
 
               <p className="text-sm text-blue-100 mt-2">
@@ -165,7 +140,7 @@ export default function Hero() {
             <div>
 
               <p className="text-3xl md:text-4xl font-extrabold text-[#f0b84b]">
-                6000+
+                <CountUp end={6000} suffix="+" />
               </p>
 
               <p className="text-sm text-blue-100 mt-2">
@@ -183,9 +158,8 @@ export default function Hero() {
 
       {/* GOLD BOTTOM LINE */}
 
-      <div className="h-1 bg-gradient-to-r from-[#d99a2b] via-[#f0b84b] to-[#d99a2b]" />
+      <div className="gold-shimmer h-1" />
 
     </section>
-</Reveal>
   );
 }

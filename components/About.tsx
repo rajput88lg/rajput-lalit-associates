@@ -12,12 +12,12 @@ export default function About() {
       className="relative overflow-hidden bg-white py-20 md:py-24"
     >
       {/* Background Decoration */}
-      <div className="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-[#d99a2b]/5 blur-3xl" />
+      <div className="float-soft absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-[#d99a2b]/5 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADING */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
 
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
             About Us
@@ -43,7 +43,10 @@ export default function About() {
         <div className="mt-14 grid lg:grid-cols-2 gap-10 items-stretch">
 
           {/* LEFT CARD */}
-          <div className="bg-gradient-to-br from-[#002b5c] to-[#06477f] text-white rounded-2xl p-8 md:p-10 shadow-xl">
+          <div
+            data-reveal="left"
+            className="bg-gradient-to-br from-[#002b5c] to-[#06477f] text-white rounded-2xl p-8 md:p-10 shadow-xl"
+          >
 
             <p className="text-[#f0b84b] font-bold uppercase tracking-wider text-sm">
               Who We Are
@@ -98,11 +101,15 @@ export default function About() {
           {/* RIGHT FEATURES */}
           <div className="grid gap-5">
 
-            <div className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+            <div
+              data-reveal="right"
+              data-reveal-delay="1"
+              className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-[#d99a2b]/40 transition-all duration-300"
+            >
 
               <div className="flex gap-5">
 
-                <div className="w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
+                <div className="icon-pop w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
                   <FaAward className="text-2xl" />
                 </div>
 
@@ -121,11 +128,15 @@ export default function About() {
             </div>
 
 
-            <div className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+            <div
+              data-reveal="right"
+              data-reveal-delay="2"
+              className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-[#d99a2b]/40 transition-all duration-300"
+            >
 
               <div className="flex gap-5">
 
-                <div className="w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
+                <div className="icon-pop w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
                   <FaHandshake className="text-2xl" />
                 </div>
 
@@ -144,11 +155,15 @@ export default function About() {
             </div>
 
 
-            <div className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+            <div
+              data-reveal="right"
+              data-reveal-delay="3"
+              className="group bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-[#d99a2b]/40 transition-all duration-300"
+            >
 
               <div className="flex gap-5">
 
-                <div className="w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
+                <div className="icon-pop w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
                   <FaChartLine className="text-2xl" />
                 </div>
 

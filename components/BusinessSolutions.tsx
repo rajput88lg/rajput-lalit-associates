@@ -47,7 +47,7 @@ export default function BusinessSolutions() {
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto" data-reveal>
 
           <span className="inline-block bg-blue-100 text-[#002b5c] px-5 py-2 rounded-full font-semibold">
             Complete Business Solutions
@@ -69,9 +69,11 @@ export default function BusinessSolutions() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+              data-reveal
+              data-reveal-delay={(index % 3) + 1}
+              className="group bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:border-[#d99a2b]/40 transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-xl bg-[#002b5c] text-white flex items-center justify-center mb-6">
+              <div className="icon-pop w-16 h-16 rounded-xl bg-[#002b5c] text-white flex items-center justify-center mb-6 group-hover:bg-[#d99a2b] transition-colors duration-300">
                 {service.icon}
               </div>
 

@@ -48,13 +48,13 @@ export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden bg-white py-20 md:py-24">
       {/* BACKGROUND DECORATION */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#d99a2b]/10 rounded-full blur-3xl" />
+      <div className="float-soft absolute top-0 left-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
+      <div className="float-soft-slow absolute bottom-0 right-0 w-96 h-96 bg-[#d99a2b]/10 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6">
-        
+
         {/* HEADING */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
             Get in Touch
           </p>
@@ -71,7 +71,10 @@ export default function Contact() {
         <div className="mt-14 grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
           
           {/* LEFT CONTACT INFORMATION */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-8 md:p-10 shadow-2xl">
+          <div
+            data-reveal="left"
+            className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-8 md:p-10 shadow-2xl"
+          >
             <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full border-[45px] border-white/[0.04]" />
             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-[#d99a2b]/10 rounded-full" />
 
@@ -134,7 +137,11 @@ export default function Contact() {
           </div>
 
           {/* RIGHT CONTACT FORM */}
-          <div className="bg-white border border-gray-200 rounded-3xl p-7 md:p-10 shadow-xl">
+          <div
+            data-reveal="right"
+            data-reveal-delay="1"
+            className="bg-white border border-gray-200 rounded-3xl p-7 md:p-10 shadow-xl"
+          >
             <div>
               <p className="text-[#d99a2b] font-bold uppercase tracking-[0.15em] text-sm">
                 Send a Message

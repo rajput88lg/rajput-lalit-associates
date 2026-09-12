@@ -38,12 +38,12 @@ export default function BookAppointment() {
       className="relative overflow-hidden bg-[#f7f9fc] py-20 md:py-24"
     >
       {/* BACKGROUND DECORATION */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#d99a2b]/10 rounded-full blur-3xl" />
+      <div className="float-soft absolute top-0 right-0 w-96 h-96 bg-[#002b5c]/5 rounded-full blur-3xl" />
+      <div className="float-soft-slow absolute bottom-0 left-0 w-96 h-96 bg-[#d99a2b]/10 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* SECTION HEADING */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
             Free Consultation
           </p>
@@ -61,7 +61,10 @@ export default function BookAppointment() {
         <div className="mt-14 grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
 
           {/* LEFT CONSULTATION INFORMATION */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-8 md:p-10 shadow-2xl">
+          <div
+            data-reveal="left"
+            className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-8 md:p-10 shadow-2xl"
+          >
             <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full border-[45px] border-white/[0.04]" />
             <div className="absolute -left-16 -bottom-16 w-56 h-56 bg-[#d99a2b]/10 rounded-full" />
             <div className="relative">
@@ -134,7 +137,11 @@ export default function BookAppointment() {
           </div>
 
           {/* RIGHT REQUEST CARD */}
-          <div className="bg-white border border-gray-200 rounded-3xl p-7 md:p-10 shadow-xl">
+          <div
+            data-reveal="right"
+            data-reveal-delay="1"
+            className="bg-white border border-gray-200 rounded-3xl p-7 md:p-10 shadow-xl"
+          >
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
                 <MessageSquareText size={27} />
@@ -216,7 +223,7 @@ export default function BookAppointment() {
               type="button"
               onClick={handleRequestConsultation}
               disabled={!service || showForm}
-              className="mt-7 w-full flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white py-4 px-5 rounded-xl font-extrabold transition shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none"
+              className="btn-shine mt-7 w-full flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white py-4 px-5 rounded-xl font-extrabold transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none disabled:translate-y-0"
             >
               {showForm ? (
                 <>

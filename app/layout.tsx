@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import OrganizationSchema from "@/components/OrganizationSchema";
+import ScrollReveal from "@/components/ScrollReveal";
 import Script from "next/script";
 // DHYAAN DEIN: Agar aapke paas Navbar aur Footer components hain, toh unhe yahan import karein
 // import Navbar from "@/components/Navbar";
@@ -114,8 +115,26 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
-        
+
+        {/*
+          Ye chhoti script baaki page paint hone se PEHLE chalti hai. Ye <html>
+          par `reveal-ready` class lagati hai taaki scroll-animation wale
+          elements bina flicker ke hidden start hon.
+
+          Agar browser purana ho ya user ne apne device me "reduce motion" on
+          kar rakha ho, ye class lagti hi nahi — poora content normally visible
+          rehta hai. Isliye SEO ya accessibility ko koi risk nahi.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{if(!('IntersectionObserver' in window))return;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var d=document.documentElement;d.classList.add('reveal-ready');window.setTimeout(function(){if(!window.__revealActive){d.classList.remove('reveal-ready');}},4000);}catch(e){}})();",
+          }}
+        />
+
         <OrganizationSchema />
+
+        <ScrollReveal />
         
         {/* <Navbar /> -- Yahan Navbar add karein taki wo har page par dikhe */}
 

@@ -32,7 +32,10 @@ export default function ServiceFAQ({ faqs }: Props) {
       />
 
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-[#002b5c]">
+        <h2
+          data-reveal
+          className="text-4xl font-bold text-center text-[#002b5c]"
+        >
           Frequently Asked Questions
         </h2>
 
@@ -40,7 +43,9 @@ export default function ServiceFAQ({ faqs }: Props) {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border rounded-xl p-6 shadow-sm"
+              data-reveal
+              data-reveal-delay={Math.min(index + 1, 6)}
+              className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-[#d99a2b]/40 transition-all duration-300"
             >
               <h3 className="text-xl font-bold text-[#002b5c]">
                 {faq.question}

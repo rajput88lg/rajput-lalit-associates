@@ -6,7 +6,7 @@ export default function LatestBlogs() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-14" data-reveal>
           <h2 className="text-4xl font-bold text-[#002b5c]">
             Latest Articles
           </h2>
@@ -19,19 +19,23 @@ export default function LatestBlogs() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {blogs.slice(0, 3).map((blog) => (
+          {blogs.slice(0, 3).map((blog, index) => (
 
             <Link
               key={blog.slug}
               href={`/blog/${blog.slug}`}
-              className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
+              data-reveal
+              data-reveal-delay={index + 1}
+              className="group bg-white rounded-2xl shadow hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
             >
 
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-52 object-cover"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
               <div className="p-6">
 
@@ -39,7 +43,7 @@ export default function LatestBlogs() {
                   {blog.category}
                 </span>
 
-                <h3 className="text-2xl font-bold mt-3 text-[#002b5c]">
+                <h3 className="text-2xl font-bold mt-3 text-[#002b5c] group-hover:text-[#d99a2b] transition-colors duration-300">
                   {blog.title}
                 </h3>
 
@@ -60,11 +64,11 @@ export default function LatestBlogs() {
 
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-reveal>
 
           <Link
             href="/blog"
-            className="inline-block bg-[#002b5c] text-white px-8 py-4 rounded-xl hover:bg-blue-900 transition"
+            className="btn-shine inline-block bg-[#002b5c] text-white px-8 py-4 rounded-xl hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1"
           >
             View All Articles
           </Link>

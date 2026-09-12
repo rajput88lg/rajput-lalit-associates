@@ -44,7 +44,10 @@ export default function WhyChooseGST() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-[#002b5c]">
+        <h2
+          data-reveal
+          className="text-4xl font-bold text-center text-[#002b5c]"
+        >
           Why Choose Rajput Lalit & Associates
         </h2>
 
@@ -52,9 +55,11 @@ export default function WhyChooseGST() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="border rounded-xl p-8 hover:shadow-lg transition"
+              data-reveal
+              data-reveal-delay={(index % 3) + 1}
+              className="group border rounded-xl p-8 hover:shadow-xl hover:-translate-y-1.5 hover:border-[#d99a2b]/40 transition-all duration-300"
             >
-              <div className="text-[#d99a2b]">{item.icon}</div>
+              <div className="icon-pop text-[#d99a2b]">{item.icon}</div>
 
               <h3 className="mt-5 text-2xl font-bold text-[#002b5c]">
                 {item.title}

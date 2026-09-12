@@ -94,16 +94,16 @@ export default function Services() {
     >
       {/* BACKGROUND DECORATION */}
 
-      <div className="absolute top-0 right-0 w-80 h-80 bg-[#002b5c]/5 rounded-full blur-3xl" />
+      <div className="float-soft absolute top-0 right-0 w-80 h-80 bg-[#002b5c]/5 rounded-full blur-3xl" />
 
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#d99a2b]/10 rounded-full blur-3xl" />
+      <div className="float-soft-slow absolute bottom-0 left-0 w-80 h-80 bg-[#d99a2b]/10 rounded-full blur-3xl" />
 
 
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* HEADING */}
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
 
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
             Our Services
@@ -134,7 +134,9 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className={`group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-7 md:p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ${
+                data-reveal
+                data-reveal-delay={(index % 3) + 1}
+                className={`group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-7 md:p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300 ${
                   index === 4
                     ? "md:col-span-2 lg:col-span-1"
                     : ""
@@ -148,7 +150,7 @@ export default function Services() {
 
                 {/* ICON */}
 
-                <div className="w-16 h-16 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                <div className="icon-pop w-16 h-16 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
 
                   <Icon className="text-3xl" />
 
@@ -222,9 +224,13 @@ export default function Services() {
 
           {/* CTA CARD */}
 
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#002b5c] to-[#06477f] p-8 text-white shadow-xl flex flex-col justify-center">
+          <div
+            data-reveal
+            data-reveal-delay="2"
+            className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#002b5c] to-[#06477f] p-8 text-white shadow-xl flex flex-col justify-center"
+          >
 
-            <div className="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-white/10" />
+            <div className="float-soft absolute -right-16 -top-16 w-48 h-48 rounded-full bg-white/10" />
 
             <div className="relative">
 
@@ -245,7 +251,7 @@ export default function Services() {
 
                 <Link
                   href="/#appointment"
-                  className="inline-flex justify-center items-center bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-5 py-3 rounded-lg font-bold transition"
+                  className="btn-shine inline-flex justify-center items-center bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-5 py-3 rounded-lg font-bold transition-all duration-300 hover:-translate-y-0.5"
                 >
                   Book Appointment
                 </Link>
