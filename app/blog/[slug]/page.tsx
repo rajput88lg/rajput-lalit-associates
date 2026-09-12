@@ -16,6 +16,7 @@ import HowToEarnMoneyInIndia from "@/content/blogs/how-to-earn-money-in-india";
 import Section87ARebate12LakhIncomeTax from "@/content/blogs/section-87a-rebate-12-lakh-income-tax";
 import GSTRegistrationAmbala from "@/content/blogs/gst-registration-ambala";
 import TDSReturnFilingDueDatesLateFee from "@/content/blogs/tds-return-filing-due-dates-late-fee";
+import BelatedRevisedITRAY202627 from "@/content/blogs/belated-revised-itr-ay-2026-27";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -123,6 +124,10 @@ case "msme-registration-online-india":
 
   case "tds-return-filing-due-dates-late-fee":
   BlogContent = TDSReturnFilingDueDatesLateFee;
+  break;
+
+  case "belated-revised-itr-ay-2026-27":
+  BlogContent = BelatedRevisedITRAY202627;
   break;
 
     default:

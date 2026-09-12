@@ -434,4 +434,39 @@ export const blogs: Blog[] = [
       "TDS Interest Late Deposit",
     ],
   },
+
+  {
+    slug: "belated-revised-itr-ay-2026-27",
+
+    title: "Belated & Revised ITR for AY 2026-27: What to Do If You Missed the Due Date",
+
+    description:
+      "Missed the 31 July 2026 ITR due date? Complete guide to filing a belated return (Section 139(4)), revised return (Section 139(5)), late fee under Section 234F, interest under Section 234A, and the updated return (ITR-U) option.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "12 September 2026",
+
+    image: "/blogs/belated-revised-itr-ay-2026-27.png",
+
+    readTime: "9 min read",
+
+    seoTitle:
+      "Belated & Revised ITR for AY 2026-27 — Due Dates, Late Fee & ITR-U",
+
+    seoDescription:
+      "Belated return deadline 31 Dec 2026, revised return deadline 31 Mar 2027, Section 234F late fee, Section 234A interest, and Updated Return (ITR-U) rules for AY 2026-27 explained simply.",
+
+    keywords: [
+      "Belated ITR AY 2026-27",
+      "Revised ITR",
+      "ITR Due Date Missed",
+      "Section 234F Late Fee",
+      "Belated Return Section 139(4)",
+      "Revised Return Section 139(5)",
+      "ITR-U Updated Return",
+    ],
+  },
 ];
