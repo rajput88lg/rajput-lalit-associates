@@ -13,21 +13,40 @@ import Breadcrumb from "@/components/Breadcrumb";
 import ServiceSchema from "@/components/components/ServiceSchema";
 import { servicePages } from "@/data/servicePages";
 
-const data = servicePages.find((s) => s.slug === "company-registration")!;
+const SLUG = "company-registration";
+const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
+const OG_IMAGE = `/og/${SLUG}.png`;
+
+const data = servicePages.find((s) => s.slug === SLUG)!;
 
 export const metadata: Metadata = {
   title: data.metaTitle,
   description: data.metaDescription,
   keywords: data.keywords,
   alternates: {
-    canonical: "/company-registration",
+    canonical: `/${SLUG}`,
   },
   openGraph: {
     title: data.metaTitle,
     description: data.metaDescription,
-    url: `https://www.rajputlalitassociates.in/company-registration`,
+    url: PAGE_URL,
     siteName: "Rajput Lalit & Associates",
+    locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Company & Business Registration Services — Rajput Lalit & Associates",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: data.metaTitle,
+    description: data.metaDescription,
+    images: [OG_IMAGE],
   },
 };
 
@@ -37,7 +56,7 @@ export default function Page() {
       <ServiceSchema
         name={data.schemaName}
         description={data.schemaDescription}
-        url={`https://www.rajputlalitassociates.in/company-registration`}
+        url={PAGE_URL}
       />
 
       <Navbar />
