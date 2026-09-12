@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { blogs } from "@/data/blogs";
 
 export default function LatestBlogs() {
@@ -29,11 +30,20 @@ export default function LatestBlogs() {
               className="group bg-white rounded-2xl shadow hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
             >
 
-              <div className="overflow-hidden">
-                <img
+              {/*
+                Pehle yahan plain <img> tha, jo 1.9 MB ki original PNG
+                seedha download karta tha (3 cards = ~5.6 MB) — yahi mobile
+                PageSpeed par LCP 23s ka sabse bada karan tha.
+                next/image automatically sahi size bhejta hai, WebP me
+                convert karta hai, aur neeche wali images lazy-load karta hai.
+              */}
+              <div className="relative h-52 overflow-hidden">
+                <Image
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 

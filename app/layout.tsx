@@ -83,12 +83,16 @@ export const metadata: Metadata = {
     siteName: "Rajput Lalit & Associates",
     locale: "en_IN",
     type: "website",
+    // Pehle yahan /logo.png tha — wo 4000x3111 ka square logo hai, jabki
+    // yahan 1200x630 declare kiya gaya tha (galat dimensions), aur social
+    // apps use raw download karti hain (555 KB). Ab proper 1200x630 branded
+    // OG banner hai, baaki service pages jaisa.
     images: [
       {
-        url: "/logo.png",
+        url: "/og/home.png",
         width: 1200,
         height: 630,
-        alt: "Rajput Lalit & Associates Logo",
+        alt: "Rajput Lalit & Associates — GST, Income Tax & Accounting Consultants, Ambala",
       },
     ],
   },
@@ -98,7 +102,7 @@ export const metadata: Metadata = {
     title: "Rajput Lalit & Associates",
     description:
       "GST, Income Tax, Accounting and Business Registration Services across India.",
-    images: ["/logo.png"],
+    images: ["/og/home.png"],
   },
 
   category: "Accounting",
