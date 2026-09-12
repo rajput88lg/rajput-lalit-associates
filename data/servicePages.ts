@@ -607,4 +607,126 @@ export const servicePages: ServicePageData[] = [
       },
     ],
   },
+  {
+    slug: "tds-return-filing",
+    metaTitle: "TDS Return Filing Services in India | Rajput Lalit & Associates",
+    metaDescription:
+      "Accurate, on-time TDS Return Filing — Form 24Q, 26Q, 27Q & 27EQ — with challan matching and Form 16/16A generation by Rajput Lalit & Associates, Ambala.",
+    keywords: [
+      "TDS Return Filing",
+      "TDS Return Filing Services",
+      "TDS Return Filing Online",
+      "Form 24Q Filing",
+      "Form 26Q Filing",
+      "TDS Return Due Date",
+      "TDS Consultant Ambala",
+      "Form 16 Form 16A",
+    ],
+    heroTitle: "TDS Return Filing Services in India",
+    heroSubtitle:
+      "Timely, error-free TDS Return filing — Form 24Q, 26Q, 27Q aur 27EQ — challan matching aur Form 16/16A issuance ke saath, taaki late fee, interest ya notice ka risk na rahe.",
+    schemaName: "TDS Return Filing",
+    schemaDescription:
+      "Professional TDS Return Filing services (Form 24Q, 26Q, 27Q, 27EQ) with Form 16/16A generation for businesses and individuals across India.",
+    content: {
+      overviewTitle: "TDS Return Filing — Complete Compliance Support",
+      overviewParagraphs: [
+        "Salary, professional fees, rent, contractor payments, commission ya property purchase par TDS deduct karne wale har deductor (company, firm, proprietorship ya individual under tax audit) ko har quarter apni TDS statement file karni hoti hai — chahe us quarter mein deduction ho ya na ho. Ye obligation Income-tax Act, 2025 ki Section 397(3)(b) (purani Section 200(3)) aur Rule 219 (purani Rule 31A) ke tahat aata hai.",
+        "Due date miss hone par ₹200/din late fee (capped TDS amount tak) aur ₹10,000 se ₹1,00,000 tak ki penalty lag sakti hai, iske alawa deposit late hone par alag se interest bhi charge hota hai. Hum aapke challans sahi se match karke, sahi form (24Q/26Q/27Q/27EQ) select karke, due date se pehle return file karte hain aur employees/vendors ke liye Form 16 ya 16A bhi time par issue karte hain.",
+      ],
+      servicesIncluded: [
+        "TDS applicability aur deduction rate check (salary, professional fees, rent, contractor, commission)",
+        "Quarterly TDS return preparation — Form 24Q (salary), 26Q (non-salary resident), 27Q (non-resident), 27EQ (TCS)",
+        "Property purchase TDS — Form 26QB/26QC/26QD/26QE filing",
+        "Challan verification aur PAN/deductee data matching (FVU validation)",
+        "Correction statements (agar pichhli return mein mismatch ho)",
+        "Form 16 (annual, salary) aur Form 16A (quarterly, non-salary) generation aur issuance",
+        "Late fee, penalty aur interest calculation ki advance jaankari — surprises nahi",
+        "TDS compliance calendar — har quarter ki due date ka reminder",
+      ],
+      relatedLinks: [
+        { label: "Income Tax Return Filing", href: "/income-tax-return-filing" },
+        { label: "Accounting & Bookkeeping", href: "/accounting-bookkeeping-services" },
+        { label: "GST Return Filing", href: "/gst-return-filing" },
+      ],
+      whoNeedsThis: [
+        "Companies, LLPs aur firms jo salary, rent, professional fees ya contractor payments karte hain",
+        "Proprietorship/individuals jinka pichhle saal tax audit hua ho (TDS deduct karna mandatory)",
+        "Property buyers jinhe ₹50 lakh se zyada ki property purchase par TDS deduct karna hai",
+        "Landlords ko rent dene wale tenants jinhe TDS deduct karna zaroori hai",
+        "Businesses jinke paas active TAN registration hai aur return file karni hai",
+        "Employers jinhe employees ko Form 16 aur vendors ko Form 16A issue karna hai",
+      ],
+      documentsRequired: [
+        "TAN aur PAN details (deductor ke)",
+        "Deductees (employees/vendors) ke PAN aur payment details",
+        "Challan details — BSR code, challan number, deposit date aur amount",
+        "Salary structure / invoice-wise payment aur deduction details",
+        "Pichhli quarter ki filed return (correction ke case mein)",
+        "Property transactions ki details (26QB/26QC applicable ho to)",
+      ],
+      process: [
+        {
+          title: "Data Collection & TAN Verification",
+          description:
+            "Aapke payments, deductions aur challan details collect karke TAN registration aur deductee PAN details verify karte hain.",
+        },
+        {
+          title: "Return Preparation & Challan Matching",
+          description:
+            "Sahi form (24Q/26Q/27Q/27EQ) mein data taiyar karke challans se match karte hain taaki FVU validation mein koi error na aaye.",
+        },
+        {
+          title: "Filing Before Due Date",
+          description:
+            "Return ko due date se pehle TRACES/e-filing portal par file karke acknowledgment aapko share karte hain.",
+        },
+        {
+          title: "Form 16 / 16A Issuance",
+          description:
+            "Return process hone ke baad TRACES se Form 16 (salary, annual) ya Form 16A (non-salary, quarterly) generate karke employees/vendors ko time par issue karte hain.",
+        },
+      ],
+      whyChooseUs: [
+        "Accounting, GST aur TDS ek hi team ke paas — figures mismatch ka risk nahi",
+        "Har quarter due date se pehle filing — late fee aur penalty se bachaav",
+        "Challan-level matching se FVU/TRACES errors kam",
+        "Form 16/16A time par mile isliye employees/vendors ke ITR filing mein delay nahi",
+        "Correction statements bhi handle karte hain agar purani return mein mismatch ho",
+        "Ambala mein in-person meeting aur poore India ke clients ke liye online service",
+      ],
+    },
+    faqs: [
+      {
+        question: "TDS return kis quarter mein kab file karni hoti hai?",
+        answer:
+          "FY 2026-27 ke liye due dates: Q1 (Apr–Jun) 31 July 2026, Q2 (Jul–Sep) 31 October 2026, Q3 (Oct–Dec) 31 January 2027, aur Q4 (Jan–Mar) 31 May 2027. Ye statement Income-tax Act, 2025 ki Section 397(3)(b) (purani Section 200(3)) ke tahat file hoti hai.",
+      },
+      {
+        question: "TDS return late file karne par kya penalty lagti hai?",
+        answer:
+          "Section 427 (purani Section 234E) ke tahat ₹200 per din late fee lagta hai, jo total TDS amount tak capped hai. Isके alawa Section 461 (purani Section 271H) ke tahat ₹10,000 se ₹1,00,000 tak ki alag penalty bhi lag sakti hai — halaanki return due date se ek mahine ke andar file ho jaaye aur TDS/interest deposit ho chuka ho, to ye penalty nahi lagti (relaxation period).",
+      },
+      {
+        question: "TDS deposit karne ki due date kya hai?",
+        answer:
+          "Har mahine deduct kiya gaya TDS agle mahine ki 7 tareekh tak deposit karna hota hai. March mahine ke liye ye due date 30 April hai. Government offices ke liye same-day book entry rule alag se applicable hai.",
+      },
+      {
+        question: "TDS return ke liye kaunse forms file karne hote hain?",
+        answer:
+          "Salary payments ke liye Form 24Q (naya number 138), non-salary resident payments ke liye Form 26Q (140), non-resident payments ke liye Form 27Q (144), aur TCS ke liye Form 27EQ (143) file hota hai. Property purchase par TDS ke liye Form 26QB/26QC/26QD/26QE (141) alag se file hota hai — ye challan-cum-statement hai, isliye TAN ki zaroorat nahi.",
+      },
+      {
+        question: "Form 16 aur Form 16A kab issue karna zaroori hai?",
+        answer:
+          "Salary ke liye Form 16 (naya number 130) financial year khatam hone ke baad 15 June tak annually issue karna hota hai. Non-salary payments ke liye Form 16A (131) quarterly issue hota hai — generally quarter khatam hone ke 15 din ke andar (15 Aug/Nov/Feb/Jun).",
+      },
+      {
+        question: "TDS late deposit karne par interest kitna lagta hai?",
+        answer:
+          "Section 398(3) (purani Section 201(1A)) ke tahat agar TDS deduct hi nahi kiya gaya to 1% per month interest lagta hai, aur agar deduct karke deposit karne mein deri hui hai to 1.5% per month interest lagta hai — dono cases mein interest deduction/deposit ke mahine se lekar actual deposit ke mahine tak calculate hota hai (part of a month bhi full month gina jaata hai).",
+      },
+    ],
+  },
 ];

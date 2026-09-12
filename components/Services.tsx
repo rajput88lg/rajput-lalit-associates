@@ -54,7 +54,7 @@ const services: ServiceCategory[] = [
     items: [
       { label: "Bookkeeping", href: "/accounting-bookkeeping-services" },
       { label: "Accounting", href: "/accounting-bookkeeping-services" },
-      { label: "TDS Return" },
+      { label: "TDS Return", href: "/tds-return-filing" },
       { label: "Payroll" },
       { label: "Financial Statements", href: "/accounting-bookkeeping-services" },
     ],

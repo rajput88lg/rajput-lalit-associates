@@ -15,10 +15,10 @@ const nextConfig: NextConfig = {
       { source: "/services/msme-registration", destination: "/msme-registration", permanent: true },
       { source: "/services/company-incorporation", destination: "/company-registration", permanent: true },
       { source: "/services/company-registration", destination: "/company-registration", permanent: true },
-      // TDS / PAN ka dedicated page abhi nahi hai — temporary redirect,
-      // page banne par isse badal denge.
-      { source: "/services/tds", destination: "/services", permanent: false },
-      { source: "/services/tds-return-filing", destination: "/services", permanent: false },
+      // TDS ka dedicated page ab ban gaya hai — permanent redirect.
+      { source: "/services/tds", destination: "/tds-return-filing", permanent: true },
+      { source: "/services/tds-return-filing", destination: "/tds-return-filing", permanent: true },
+      // PAN ka dedicated page abhi nahi hai — temporary redirect.
       { source: "/services/pan-card", destination: "/services", permanent: false },
     ];
   },
