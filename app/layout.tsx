@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import OrganizationSchema from "@/components/OrganizationSchema";
 import ScrollReveal from "@/components/ScrollReveal";
-import Script from "next/script";
 // DHYAAN DEIN: Agar aapke paas Navbar aur Footer components hain, toh unhe yahan import karein
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+/*
+  PERFORMANCE NOTE (13 Sept 2026):
+  Yahan pehle Geist aur Geist_Mono fonts Google se load ho rahe the, lekin
+  site me unka kahin bhi use nahi tha — globals.css me body ka font
+  "Arial, Helvetica, sans-serif" set hai, aur --font-geist-sans /
+  --font-geist-mono variables kisi bhi component ya CSS me reference nahi hote.
+  Matlab har page par do font families bekaar download ho rahi thi.
+  Hata di gayi hain — website ka look bilkul same rahega.
+*/
 
 const siteUrl = "https://www.rajputlalitassociates.in";
 
@@ -116,7 +114,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
 
@@ -149,10 +147,13 @@ export default function RootLayout({
 
         {/* <Footer /> -- Yahan Footer add karein */}
 
-        <Script
-  src="https://elfsightcdn.com/platform.js"
-  strategy="afterInteractive"
-/>
+        {/*
+          PERFORMANCE NOTE (13 Sept 2026):
+          Elfsight ki platform.js pehle yahan thi, matlab SAARE 23 pages par
+          load hoti thi — jabki Google Reviews widget sirf 9 pages par hai.
+          Ab wo script components/GoogleReviews.tsx ke andar chali gayi hai,
+          `lazyOnload` strategy ke saath. Isse Total Blocking Time kam hota hai.
+        */}
 
       </body>
 
