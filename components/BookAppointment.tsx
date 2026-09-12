@@ -4,25 +4,17 @@ import { useState } from "react";
 import {
   CalendarDays,
   Clock,
-  IndianRupee,
   ShieldCheck,
   CheckCircle2,
-  CreditCard,
+  MessageSquareText,
   ArrowRight,
 } from "lucide-react";
 import AppointmentForm from "./AppointmentForm";
 
-declare global {
-  interface Window {
-    Razorpay: any;
-  }
-}
-
 export default function BookAppointment() {
   const [service, setService] = useState("");
-  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const [paymentId, setPaymentId] = useState("");
+  const [showForm, setShowForm] = useState(false);
 
   const services = [
     "GST Consultation",
@@ -31,129 +23,13 @@ export default function BookAppointment() {
     "Accounting & Business Consultation",
   ];
 
-  const loadRazorpayScript = (): Promise<boolean> => {
-    return new Promise((resolve) => {
-      if (window.Razorpay) {
-        resolve(true);
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
-
-      script.onload = () => resolve(true);
-      script.onerror = () => resolve(false);
-
-      document.body.appendChild(script);
-    });
-  };
-
-  const handlePayment = async () => {
+  const handleRequestConsultation = () => {
     if (!service) {
       setMessage("Please select a consultation service.");
       return;
     }
-
-    try {
-      setLoading(true);
-      setMessage("");
-      setPaymentId("");
-
-      const scriptLoaded = await loadRazorpayScript();
-
-      if (!scriptLoaded) {
-        setMessage("Payment system could not be loaded.");
-        setLoading(false);
-        return;
-      }
-
-      // FIXED: URL changed to /api/order
-      const orderResponse = await fetch("/api/create-order", {
-  method: "POST",
-});
-
-const orderData = await orderResponse.json();
-
-console.log("ORDER RESPONSE:", orderData);
-
-if (!orderResponse.ok || !orderData.success) {
-  setMessage(
-    orderData?.error?.description ||
-    orderData?.message ||
-    "Unable to create payment order."
-  );
-  setLoading(false);
-  return;
-}
-
-      const options = {
-        // FIXED: Added fallback for TypeScript
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "",
-        amount: orderData.order.amount,
-        currency: orderData.order.currency,
-        name: "Rajput Lalit & Associates",
-        description: service,
-        order_id: orderData.order.id,
-
-        handler: async function (response: {
-          razorpay_order_id: string;
-          razorpay_payment_id: string;
-          razorpay_signature: string;
-        }) {
-          try {
-            // FIXED: URL changed to /api/verify
-            const verifyResponse = await fetch("/api/verify-payment", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(response),
-});
-
-            const verifyData = await verifyResponse.json();
-
-            if (verifyResponse.ok && verifyData.success) {
-              setPaymentId(verifyData.paymentId);
-              setMessage(
-                "Payment verified successfully. Please complete your appointment details below."
-              );
-            } else {
-              setMessage(
-                "Payment received but verification failed. Please contact support."
-              );
-            }
-          } catch {
-            setMessage("Payment verification error. Please contact support.");
-          } finally {
-            setLoading(false);
-          }
-        },
-
-        modal: {
-          ondismiss: function () {
-            setLoading(false);
-            setMessage("Payment cancelled. Appointment was not booked.");
-          },
-        },
-
-        theme: {
-          color: "#002b5c",
-        },
-      };
-
-      const paymentObject = new window.Razorpay(options);
-
-      paymentObject.on("payment.failed", function () {
-        setLoading(false);
-        setMessage("Payment failed. Appointment was not booked.");
-      });
-
-      paymentObject.open();
-    } catch (error) {
-      console.error(error);
-      setMessage("Something went wrong. Please try again.");
-      setLoading(false);
-    }
+    setMessage("");
+    setShowForm(true);
   };
 
   return (
@@ -169,7 +45,7 @@ if (!orderResponse.ok || !orderData.success) {
         {/* SECTION HEADING */}
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-[#d99a2b] font-bold tracking-[0.2em] uppercase text-sm">
-            Professional Consultation
+            Free Consultation
           </p>
           <h2 className="mt-3 text-3xl md:text-5xl font-extrabold text-[#002b5c]">
             Book an Appointment
@@ -177,13 +53,13 @@ if (!orderResponse.ok || !orderData.success) {
           <div className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
           <p className="mt-6 text-gray-600 text-lg leading-8">
             Get professional guidance for GST, Income Tax, notices, accounting and
-            business compliance matters.
+            business compliance matters — no payment required.
           </p>
         </div>
 
         {/* MAIN BOOKING AREA */}
         <div className="mt-14 grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
-          
+
           {/* LEFT CONSULTATION INFORMATION */}
           <div className="relative overflow-hidden bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-8 md:p-10 shadow-2xl">
             <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full border-[45px] border-white/[0.04]" />
@@ -199,8 +75,8 @@ if (!orderResponse.ok || !orderData.success) {
                 </span>
               </h3>
               <p className="mt-6 text-blue-100 leading-8">
-                Select the consultation service you need, complete the secure payment
-                and submit your preferred appointment details.
+                Select the consultation service you need and submit your preferred
+                appointment details. Our team will call you back to confirm.
               </p>
 
               {/* DETAIL ITEMS */}
@@ -224,7 +100,7 @@ if (!orderResponse.ok || !orderData.success) {
                   <div>
                     <p className="font-bold">Appointment Scheduling</p>
                     <p className="text-sm text-blue-100 mt-1">
-                      Select preferred date and time after payment
+                      Select your preferred date and time
                     </p>
                   </div>
                 </div>
@@ -234,9 +110,9 @@ if (!orderResponse.ok || !orderData.success) {
                     <ShieldCheck size={22} />
                   </div>
                   <div>
-                    <p className="font-bold">Secure Payment</p>
+                    <p className="font-bold">No Payment Required</p>
                     <p className="text-sm text-blue-100 mt-1">
-                      Appointment form opens after payment verification
+                      Submit your request, our team will call you back
                     </p>
                   </div>
                 </div>
@@ -245,27 +121,27 @@ if (!orderResponse.ok || !orderData.success) {
               {/* PRICE */}
               <div className="mt-8 pt-7 border-t border-white/20">
                 <p className="text-blue-100 text-sm">
-                  Professional Consultation Fee
+                  Initial Consultation
                 </p>
                 <div className="mt-2 flex items-end gap-2">
                   <span className="text-5xl font-extrabold text-[#f0b84b]">
-                    ₹999
+                    Free
                   </span>
-                  <span className="text-blue-100 mb-1">per consultation</span>
+                  <span className="text-blue-100 mb-1">no charges to enquire</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* RIGHT PAYMENT CARD */}
+          {/* RIGHT REQUEST CARD */}
           <div className="bg-white border border-gray-200 rounded-3xl p-7 md:p-10 shadow-xl">
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 rounded-xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center flex-shrink-0">
-                <CreditCard size={27} />
+                <MessageSquareText size={27} />
               </div>
               <div>
                 <p className="text-sm text-[#d99a2b] font-bold uppercase tracking-wider">
-                  Secure Booking
+                  Free Enquiry
                 </p>
                 <h3 className="mt-1 text-2xl md:text-3xl font-extrabold text-[#002b5c]">
                   Select Consultation
@@ -275,7 +151,7 @@ if (!orderResponse.ok || !orderData.success) {
 
             <p className="mt-6 text-gray-600 leading-7">
               Choose the service you want to discuss. Your appointment details can be
-              submitted after successful payment verification.
+              submitted right away — no payment needed.
             </p>
 
             {/* SERVICE SELECT */}
@@ -288,7 +164,7 @@ if (!orderResponse.ok || !orderData.success) {
                 onChange={(e) => {
                   setService(e.target.value);
                   setMessage("");
-                  setPaymentId("");
+                  setShowForm(false);
                 }}
                 className="w-full border border-gray-300 rounded-xl p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/30 focus:border-[#d99a2b]"
               >
@@ -301,25 +177,25 @@ if (!orderResponse.ok || !orderData.success) {
               </select>
             </div>
 
-            {/* PRICE SUMMARY */}
+            {/* FREE BADGE */}
             <div className="mt-6 bg-[#f7f9fc] border border-gray-200 rounded-2xl p-5">
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-[#d99a2b]/15 text-[#d99a2b] flex items-center justify-center">
-                    <IndianRupee size={20} />
+                    <ShieldCheck size={20} />
                   </div>
                   <div>
                     <p className="font-bold text-[#002b5c]">Consultation Fee</p>
                     <p className="text-sm text-gray-500 mt-1">
-                      Secure online payment
+                      No payment required
                     </p>
                   </div>
                 </div>
-                <span className="text-3xl font-extrabold text-[#002b5c]">₹999</span>
+                <span className="text-3xl font-extrabold text-[#002b5c]">Free</span>
               </div>
             </div>
 
-            {/* PAYMENT PROCESS */}
+            {/* PROCESS */}
             <div className="mt-6 space-y-3">
               <div className="flex items-center gap-3 text-sm text-gray-600">
                 <CheckCircle2 size={18} className="text-[#d99a2b]" />
@@ -327,31 +203,29 @@ if (!orderResponse.ok || !orderData.success) {
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-600">
                 <CheckCircle2 size={18} className="text-[#d99a2b]" />
-                Complete secure online payment
+                Submit your preferred date and time
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-600">
                 <CheckCircle2 size={18} className="text-[#d99a2b]" />
-                Submit appointment details after verification
+                Our team will call you back to confirm
               </div>
             </div>
 
-            {/* PAYMENT BUTTON */}
+            {/* REQUEST BUTTON */}
             <button
               type="button"
-              onClick={handlePayment}
-              disabled={!service || loading || Boolean(paymentId)}
+              onClick={handleRequestConsultation}
+              disabled={!service || showForm}
               className="mt-7 w-full flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white py-4 px-5 rounded-xl font-extrabold transition shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none"
             >
-              {paymentId ? (
+              {showForm ? (
                 <>
                   <CheckCircle2 size={21} />
-                  Payment Successful
+                  Service Selected
                 </>
-              ) : loading ? (
-                "Processing Payment..."
               ) : (
                 <>
-                  Pay ₹999 & Book Appointment
+                  Request Free Consultation
                   <ArrowRight size={20} />
                 </>
               )}
@@ -359,28 +233,22 @@ if (!orderResponse.ok || !orderData.success) {
 
             <div className="mt-4 flex items-center justify-center gap-2 text-xs text-gray-500 text-center">
               <ShieldCheck size={16} />
-              Appointment request is available only after successful payment verification.
+              100% free enquiry — no payment or card details required.
             </div>
 
             {/* STATUS MESSAGE */}
             {message && (
-              <div
-                className={`mt-5 rounded-xl p-4 text-center text-sm font-medium border ${
-                  paymentId
-                    ? "bg-green-50 border-green-200 text-green-700"
-                    : "bg-[#fff9ed] border-[#d99a2b]/30 text-[#7a5514]"
-                }`}
-              >
+              <div className="mt-5 rounded-xl p-4 text-center text-sm font-medium border bg-[#fff9ed] border-[#d99a2b]/30 text-[#7a5514]">
                 {message}
               </div>
             )}
           </div>
         </div>
 
-        {/* APPOINTMENT FORM AFTER PAYMENT */}
-        {paymentId && (
+        {/* APPOINTMENT FORM */}
+        {showForm && (
           <div className="mt-10">
-            <AppointmentForm service={service} paymentId={paymentId} />
+            <AppointmentForm service={service} />
           </div>
         )}
       </div>

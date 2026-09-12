@@ -16,7 +16,7 @@ import {
 
 type AppointmentFormProps = {
   service: string;
-  paymentId: string;
+  paymentId?: string;
 };
 
 export default function AppointmentForm({
@@ -58,10 +58,10 @@ export default function AppointmentForm({
       date: formData.date,
       time: formData.time,
       service: service,
-      payment_id: paymentId,
+      payment_id: paymentId || "Free Consultation (No Payment)",
 
       message: `
-New Appointment Booking
+New Appointment Enquiry (Free Consultation)
 
 Name: ${formData.name}
 Mobile: ${formData.mobile}
@@ -69,7 +69,6 @@ Email: ${formData.email}
 Consultation: ${service}
 Preferred Date: ${formData.date}
 Preferred Time: ${formData.time}
-Payment ID: ${paymentId}
       `,
     };
 
@@ -117,7 +116,7 @@ Payment ID: ${paymentId}
           <div>
 
             <p className="text-[#f0b84b] font-bold uppercase tracking-wider text-sm">
-              Payment Verified
+              Free Consultation
             </p>
 
             <h3 className="mt-1 text-2xl md:text-3xl font-extrabold">
@@ -125,7 +124,7 @@ Payment ID: ${paymentId}
             </h3>
 
             <p className="mt-2 text-blue-100">
-              Your payment was successful. Please provide your preferred appointment details.
+              No payment required. Please provide your preferred appointment details below.
             </p>
 
           </div>
@@ -178,11 +177,11 @@ Payment ID: ${paymentId}
                 <div className="min-w-0">
 
                   <p className="font-bold text-[#002b5c]">
-                    Verified Payment ID
+                    Consultation: {service}
                   </p>
 
-                  <p className="mt-2 text-sm text-gray-600 break-all">
-                    {paymentId}
+                  <p className="mt-2 text-sm text-gray-600">
+                    Our team will call you shortly to confirm your appointment.
                   </p>
 
                 </div>
@@ -385,7 +384,7 @@ Payment ID: ${paymentId}
                 <div className="min-w-0">
 
                   <p className="font-extrabold text-[#002b5c]">
-                    Verified Booking Summary
+                    Booking Summary
                   </p>
 
 
@@ -400,16 +399,9 @@ Payment ID: ${paymentId}
 
                     <p>
                       <strong className="text-gray-800">
-                        Fee Paid:
+                        Consultation Fee:
                       </strong>{" "}
-                      ₹999
-                    </p>
-
-                    <p className="break-all">
-                      <strong className="text-gray-800">
-                        Payment ID:
-                      </strong>{" "}
-                      {paymentId}
+                      Free — no payment required
                     </p>
 
                   </div>
