@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
 
-import { Calculator, UserCheck, ArrowRight, Clock } from "lucide-react";
+import { Calculator, UserCheck, FileCheck2, Send, ArrowRight, Clock } from "lucide-react";
 
 const SLUG = "tools";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
@@ -15,7 +15,7 @@ const OG_IMAGE = `/og/tools.png`;
 const TITLE =
   "Free NRI & India Tax Tools | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free calculators for NRIs and Indian taxpayers — work out TDS on an NRI property sale under Section 393(2), and check whether you are an NRI, RNOR or Resident for tax year 2026-27.";
+  "Free tools for NRIs and Indian taxpayers — work out TDS on an NRI property sale, check whether you are an NRI, RNOR or Resident for tax year 2026-27, get your Form 128 (Lower TDS Certificate) checklist, and find which Part of Form 145/146 applies to repatriating your funds.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     "NRI tax calculator India",
     "NRI property TDS calculator",
     "NRI residential status calculator",
+    "Form 128 checklist",
+    "Form 145 146 repatriation guide",
     "India tax calculators for NRIs",
   ],
   alternates: { canonical: `/${SLUG}` },
@@ -81,11 +83,37 @@ const tools = [
       "Explains what India can tax in each case",
     ],
   },
+  {
+    href: "/nri-lower-tds-certificate-checklist",
+    icon: FileCheck2,
+    title: "Lower TDS Certificate (Form 128) Checklist",
+    answers: "What documents do I need, and how long will it actually take?",
+    description:
+      "Applying for a Lower/Nil TDS Certificate stalls most often because of missing paperwork, not the tax computation. Check off exactly what you need — identity, property, capital gains and buyer documents — before you file.",
+    points: [
+      "19-item interactive checklist",
+      "Real step-by-step application process",
+      "4–8 week processing timeline explained",
+      "Save or print your progress anytime",
+    ],
+  },
+  {
+    href: "/nri-fund-repatriation-guide",
+    icon: Send,
+    title: "Fund Repatriation Guide (Form 145/146)",
+    answers: "Which Part applies to my remittance, and do I need a CA certificate?",
+    description:
+      "Form 15CA and 15CB are now Form 145 and Form 146. Answer two or three questions about your remittance to find out which Part applies, whether Form 146 (CA certificate) is required, and exactly what your CA needs to prepare it.",
+    points: [
+      "Covers property sale, rent, NRO interest & more",
+      "₹5 lakh threshold explained",
+      "Tells you when a CA certificate is skippable",
+      "Document list for Form 146 preparation",
+    ],
+  },
 ];
 
 const upcoming = [
-  "Lower TDS Certificate (Form 128) — document checklist",
-  "Repatriating sale proceeds — Form 15CA / 15CB guide",
   "Do I need to file an Indian tax return as an NRI?",
 ];
 
@@ -243,10 +271,12 @@ export default function Page() {
                 <strong>Income-tax Act, 2025</strong> replaced the 1961 Act, and
                 a great many provisions were renumbered — TDS on payments to
                 non-residents moved from Section 195 to{" "}
-                <strong>Section 393(2)</strong>, and the Lower TDS Certificate
+                <strong>Section 393(2)</strong>, the Lower TDS Certificate
                 moved from Section 197 / Form 13 to{" "}
-                <strong>Section 395 / Form 128</strong>. Most calculators online
-                still quote the old numbers.
+                <strong>Section 395 / Form 128</strong>, and the remittance
+                forms every NRI knew as{" "}
+                <strong>Form 15CA and 15CB are now Form 145 and Form 146</strong>.
+                Most calculators online still quote the old numbers.
               </p>
               <p data-reveal data-reveal-delay="2">
                 These tools were built against the current provisions and are

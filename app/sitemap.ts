@@ -20,6 +20,8 @@ const servicePages = [
   // Free tools — NRI India-Tax Toolkit
   "/nri-property-tds-calculator",
   "/nri-residential-status-calculator",
+  "/nri-lower-tds-certificate-checklist",
+  "/nri-fund-repatriation-guide",
   "/tools",
 ];
 

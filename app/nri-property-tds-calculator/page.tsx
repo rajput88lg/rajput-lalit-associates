@@ -214,7 +214,14 @@ export default function Page() {
                 instead. The catch is timing — a certificate cannot undo tax
                 already deducted, so the application has to be made and approved{" "}
                 <strong>before the payment and registry</strong>. The department
-                typically takes around a month to process it.
+                typically takes 4 to 8 weeks to process it — see our{" "}
+                <Link
+                  href="/nri-lower-tds-certificate-checklist"
+                  className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                >
+                  Form 128 document checklist
+                </Link>{" "}
+                to see exactly what to prepare.
               </p>
               <p data-reveal data-reveal-delay="4">
                 All of this rests on one prior question: are you actually a
@@ -241,7 +248,16 @@ export default function Page() {
                 <li>• Following up with the Assessing Officer until the certificate is issued</li>
                 <li>• Guiding the buyer on TAN, challan, Form 144 return and Form 131 certificate</li>
                 <li>• Filing your Indian income tax return and claiming any refund due</li>
-                <li>• Form 15CA / 15CB certification for repatriating the sale proceeds abroad</li>
+                <li>
+                  •{" "}
+                  <Link
+                    href="/nri-fund-repatriation-guide"
+                    className="underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                  >
+                    Form 145/146 (earlier 15CA/15CB)
+                  </Link>{" "}
+                  certification for repatriating the sale proceeds abroad
+                </li>
               </ul>
 
               <Link
