@@ -273,20 +273,20 @@ export const blogs: Blog[] = [
 },
 {
   slug: "private-limited-company-registration-india",
-  title: "Private Limited Company Registration in India",
+  title: "Private Limited Company Registration in India — Process, Cost & Timeline (2026)",
   description:
-    "Complete guide to Private Limited Company Registration in India. Learn eligibility, required documents, incorporation process, benefits, compliance and FAQs.",
+    "Complete guide to Private Limited Company Registration in India — eligibility, documents, actual government costs, realistic 10-20 day timeline, the Form INC-20A deadline that catches new founders out, benefits, compliance and FAQs.",
   category: "Business Registration",
   author: "Rajput Lalit & Associates",
-  date: "August 2026",
+  date: "13 September 2026",
   image: "/blogs/private-limited-company-registration.png",
-  readTime: "11 min read",
+  readTime: "12 min read",
 
   seoTitle:
-    "Private Limited Company Registration in India (2026): Complete Guide",
+    "Private Limited Company Registration in India (2026): Cost, Process & Timeline",
 
   seoDescription:
-    "Learn how to register a Private Limited Company in India. Complete guide covering eligibility, directors, documents, SPICe+ process, benefits and compliance.",
+    "How to register a Private Limited Company in India: eligibility, documents, SPICe+ process, real government costs (₹3,000-6,000), 10-20 day timeline, Form INC-20A deadline, benefits and compliance.",
 
   keywords: [
     "Private Limited Company Registration",
@@ -297,6 +297,9 @@ export const blogs: Blog[] = [
     "SPICe Plus Registration",
     "Startup Company Registration",
     "Company Incorporation India",
+    "Company Registration Cost India",
+    "Company Registration Timeline",
+    "Form INC-20A",
   ],
 },
 {
