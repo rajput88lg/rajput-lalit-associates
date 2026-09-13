@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import BusinessSolutions from "@/components/BusinessSolutions";
 import Technologies from "@/components/Technologies";
 import PortfolioGallery from "@/components/PortfolioGallery";
+import FreeToolsBand from "@/components/FreeToolsBand";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         <About />
 
         <Services />
+
+        <FreeToolsBand />
 
         <Technologies />
 
