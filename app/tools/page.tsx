@@ -17,6 +17,9 @@ import {
   Briefcase,
   TrendingUp,
   Wallet,
+  Landmark,
+  Building2,
+  Percent,
 } from "lucide-react";
 
 const SLUG = "tools";
@@ -26,12 +29,16 @@ const OG_IMAGE = `/og/tools.png`;
 const TITLE =
   "Free Tax, Loan & Investment Calculators | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free calculators and tools for NRIs, taxpayers and borrowers — NRI property TDS, residential status, Home Loan EMI, Business Loan EMI, general EMI and SIP calculators, plus Lower TDS Certificate checklist, fund repatriation guide and ITR filing requirement checker. No sign-up needed.";
+  "Free calculators and tools for taxpayers, NRIs and borrowers — Income Tax Calculator (Old vs New Regime), HRA Exemption Calculator, GST Calculator, Home Loan EMI, Business Loan EMI, general EMI and SIP calculators, plus NRI property TDS, residential status, Lower TDS Certificate checklist and more. No sign-up needed.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
+    "free income tax calculator",
+    "old vs new tax regime calculator",
+    "HRA exemption calculator",
+    "GST calculator online free",
     "free NRI tax tools",
     "NRI tax calculator India",
     "NRI property TDS calculator",
@@ -144,6 +151,51 @@ const tools = [
   },
 ];
 
+const taxCalcTools = [
+  {
+    href: "/income-tax-calculator",
+    icon: Landmark,
+    title: "Income Tax Calculator",
+    answers: "Old Regime or New Regime — which one actually saves me more?",
+    description:
+      "Enter your income once and see both regimes side-by-side — with Section 87A rebate, marginal relief and a full slab-by-slab breakdown — for FY 2025-26 (AY 2026-27).",
+    points: [
+      "Old vs New Regime, side-by-side",
+      "Section 87A rebate + marginal relief",
+      "Full slab-by-slab breakdown",
+      "Free detailed report by email",
+    ],
+  },
+  {
+    href: "/hra-exemption-calculator",
+    icon: Building2,
+    title: "HRA Exemption Calculator",
+    answers: "How much of my House Rent Allowance is actually tax-free?",
+    description:
+      "Enter your basic salary, HRA received, rent paid and city type to see the exact exempt amount using the real three-way minimum rule.",
+    points: [
+      "Metro (50%) vs non-metro (40%) rule",
+      "Shows which of the 3 limits applies",
+      "Old Regime only — clearly explained",
+      "Free detailed report by email",
+    ],
+  },
+  {
+    href: "/gst-calculator",
+    icon: Percent,
+    title: "GST Calculator",
+    answers: "What's the GST-inclusive price, or the base price before GST?",
+    description:
+      "Add GST to a base price or work backwards from a GST-inclusive amount — 5%, 12%, 18%, 28% or a custom rate, with the CGST/SGST split shown instantly.",
+    points: [
+      "Add GST or remove GST, both ways",
+      "5% / 12% / 18% / 28% + custom rate",
+      "CGST + SGST split shown",
+      "Free detailed report by email",
+    ],
+  },
+];
+
 const loanTools = [
   {
     href: "/home-loan-emi-calculator",
@@ -203,7 +255,7 @@ const loanTools = [
   },
 ];
 
-const allTools = [...tools, ...loanTools];
+const allTools = [...taxCalcTools, ...loanTools, ...tools];
 
 const listSchema = {
   "@context": "https://schema.org",
@@ -246,9 +298,11 @@ export default function Page() {
             </h1>
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
-              Practical calculators built by a working tax practice — from
-              NRI tax tools applying the Income-tax Act, 2025 as it stands
-              today, to Home Loan, Business Loan, EMI and SIP calculators.
+              Practical calculators built by a working tax practice — Income
+              Tax, HRA and GST calculators for every taxpayer, Home Loan,
+              Business Loan, EMI and SIP calculators for borrowers and
+              investors, and NRI tax tools applying the Income-tax Act, 2025
+              as it stands today.
             </p>
           </div>
 
@@ -256,6 +310,67 @@ export default function Page() {
         </section>
 
         <Breadcrumb current="Free Tools" />
+
+        {/* TAX CALCULATORS */}
+        <section className="py-20 bg-[#f7f9fc]">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Tax Calculators
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {taxCalcTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={i + 1}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-7 md:p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-16 h-16 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={30} />
+                    </div>
+
+                    <h3 className="mt-6 text-2xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-3 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-4 text-gray-600 leading-7">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-5 space-y-2 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2.5 text-sm text-gray-700"
+                        >
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-7 inline-flex items-center gap-2 font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={18}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
 
         {/* LOAN & INVESTMENT CALCULATORS */}
         <section className="py-20 bg-white">

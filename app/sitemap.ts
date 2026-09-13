@@ -29,6 +29,10 @@ const servicePages = [
   "/business-loan-emi-calculator",
   "/sip-calculator",
   "/emi-calculator",
+  // Free tools — Tax Calculators
+  "/income-tax-calculator",
+  "/hra-exemption-calculator",
+  "/gst-calculator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
