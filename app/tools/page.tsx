@@ -6,16 +6,27 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
 
-import { Calculator, UserCheck, FileCheck2, Send, FileQuestion, ArrowRight } from "lucide-react";
+import {
+  Calculator,
+  UserCheck,
+  FileCheck2,
+  Send,
+  FileQuestion,
+  ArrowRight,
+  Home,
+  Briefcase,
+  TrendingUp,
+  Wallet,
+} from "lucide-react";
 
 const SLUG = "tools";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
 const OG_IMAGE = `/og/tools.png`;
 
 const TITLE =
-  "Free NRI & India Tax Tools | Rajput Lalit & Associates";
+  "Free Tax, Loan & Investment Calculators | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free tools for NRIs and Indian taxpayers — work out TDS on an NRI property sale, check whether you are an NRI, RNOR or Resident for tax year 2026-27, get your Form 128 (Lower TDS Certificate) checklist, find which Part of Form 145/146 applies to repatriating your funds, and check whether you must file an Indian ITR at all.";
+  "Free calculators and tools for NRIs, taxpayers and borrowers — NRI property TDS, residential status, Home Loan EMI, Business Loan EMI, general EMI and SIP calculators, plus Lower TDS Certificate checklist, fund repatriation guide and ITR filing requirement checker. No sign-up needed.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -30,6 +41,10 @@ export const metadata: Metadata = {
     "NRI ITR filing requirement checker",
     "does NRI need to file ITR",
     "India tax calculators for NRIs",
+    "home loan EMI calculator",
+    "business loan EMI calculator",
+    "SIP calculator",
+    "EMI calculator online free",
   ],
   alternates: { canonical: `/${SLUG}` },
   openGraph: {
@@ -129,12 +144,73 @@ const tools = [
   },
 ];
 
+const loanTools = [
+  {
+    href: "/home-loan-emi-calculator",
+    icon: Home,
+    title: "Home Loan EMI Calculator",
+    answers: "What will my monthly EMI be, and how much total interest will I pay?",
+    description:
+      "Enter your loan amount, interest rate and tenure to see your exact monthly EMI, total interest payable, and a full year-wise principal-vs-interest breakdown.",
+    points: [
+      "Instant EMI, total interest & total payment",
+      "Year-wise repayment schedule",
+      "Compare tenure vs interest trade-off",
+      "Compare live home loan offers",
+    ],
+  },
+  {
+    href: "/business-loan-emi-calculator",
+    icon: Briefcase,
+    title: "Business Loan EMI Calculator",
+    answers: "What will my MSME or business loan EMI look like?",
+    description:
+      "Built for business/MSME loan ranges and rates — see your monthly EMI, total interest, and a year-wise schedule before you approach a lender.",
+    points: [
+      "Tuned for typical business loan rates & tenure",
+      "Year-wise repayment schedule",
+      "Documents lenders usually ask for",
+      "Compare live business loan offers",
+    ],
+  },
+  {
+    href: "/sip-calculator",
+    icon: TrendingUp,
+    title: "SIP Calculator",
+    answers: "How much could my monthly SIP grow to over time?",
+    description:
+      "Enter your monthly investment, expected return and duration to see total invested amount, estimated returns and projected maturity value.",
+    points: [
+      "Total invested vs estimated returns",
+      "Year-wise growth projection",
+      "Works for any mutual fund SIP",
+      "Free detailed report by email",
+    ],
+  },
+  {
+    href: "/emi-calculator",
+    icon: Wallet,
+    title: "EMI Calculator (General)",
+    answers: "What's the EMI for any personal, car or consumer loan?",
+    description:
+      "A general-purpose reducing-balance EMI calculator that works for personal, car, consumer durable or any other term loan.",
+    points: [
+      "Works for any loan type",
+      "Instant EMI & total interest",
+      "Year-wise repayment schedule",
+      "Compare live loan offers",
+    ],
+  },
+];
+
+const allTools = [...tools, ...loanTools];
+
 const listSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Free NRI & India Tax Tools",
+  name: "Free Tax, Loan & Investment Calculators",
   url: PAGE_URL,
-  itemListElement: tools.map((t, i) => ({
+  itemListElement: allTools.map((t, i) => ({
     "@type": "ListItem",
     position: i + 1,
     name: t.title,
@@ -165,14 +241,14 @@ export default function Page() {
             </p>
 
             <h1 className="hero-in hero-in-2 mt-7 text-4xl md:text-6xl font-extrabold leading-tight">
-              Free Tax Tools
-              <span className="block text-[#f0b84b] mt-2">for NRIs</span>
+              Free Tax, Loan &amp;
+              <span className="block text-[#f0b84b] mt-2">Investment Calculators</span>
             </h1>
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
-              Practical calculators built by a working tax practice, applying the
-              Income-tax Act, 2025 as it stands today — not last year&apos;s
-              section numbers.
+              Practical calculators built by a working tax practice — from
+              NRI tax tools applying the Income-tax Act, 2025 as it stands
+              today, to Home Loan, Business Loan, EMI and SIP calculators.
             </p>
           </div>
 
@@ -181,10 +257,76 @@ export default function Page() {
 
         <Breadcrumb current="Free Tools" />
 
+        {/* LOAN & INVESTMENT CALCULATORS */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Loan &amp; Investment Calculators
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {loanTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={i + 1}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-1.5 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2 text-xs text-gray-700"
+                        >
+                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* TOOL CARDS */}
         <section className="py-20 bg-[#f7f9fc]">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Free Tax Tools for NRIs
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {tools.map((tool, i) => {
                 const Icon = tool.icon;
                 return (

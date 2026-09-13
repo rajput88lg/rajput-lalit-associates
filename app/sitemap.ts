@@ -24,6 +24,11 @@ const servicePages = [
   "/nri-fund-repatriation-guide",
   "/nri-itr-filing-requirement-checker",
   "/tools",
+  // Free tools — Loan & Investment Calculators
+  "/home-loan-emi-calculator",
+  "/business-loan-emi-calculator",
+  "/sip-calculator",
+  "/emi-calculator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
