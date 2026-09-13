@@ -3,38 +3,12 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-export const faqs = [
-  {
-    question: "How much does a website cost?",
-    answer:
-      "Website pricing depends on your business requirements, number of pages, features and functionality. Contact us for a customized quotation.",
-  },
-  {
-    question: "How long does it take to build a website?",
-    answer:
-      "Most business websites are completed within 7–21 working days depending on the project scope.",
-  },
-  {
-    question: "Will my website work on mobile phones?",
-    answer:
-      "Yes. Every website we develop is fully responsive and works smoothly on mobile, tablet and desktop devices.",
-  },
-  {
-    question: "Do you provide SEO services?",
-    answer:
-      "Yes. We build SEO-friendly websites and can also help with Google Search Console, Google Business Profile and basic SEO setup.",
-  },
-  {
-    question: "Do you provide website maintenance?",
-    answer:
-      "Yes. We offer website maintenance, security updates, backups and ongoing technical support.",
-  },
-  {
-    question: "How do I start my website project?",
-    answer:
-      "Simply call or WhatsApp us. We will schedule a consultation, understand your requirements and provide a customized quotation.",
-  },
-];
+import { faqs } from "@/lib/websiteFaqs";
+
+// Re-exported for backward compatibility with any file that still does
+// `import { faqs } from "@/components/WebsiteFAQ"`. New code should import
+// from "@/lib/websiteFaqs" directly (server components MUST do so).
+export { faqs };
 
 export default function WebsiteFAQ() {
   const [open, setOpen] = useState<number | null>(0);

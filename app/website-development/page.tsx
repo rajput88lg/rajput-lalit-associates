@@ -8,7 +8,8 @@ import WhyChooseUs from "@/components/website/WhyChooseUs";
 
 import WebsiteServices from "@/components/WebsiteServices";
 import WebsiteConsultation from "@/components/WebsiteConsultation";
-import WebsiteFAQ, { faqs } from "@/components/WebsiteFAQ";
+import WebsiteFAQ from "@/components/WebsiteFAQ";
+import { faqs } from "@/lib/websiteFaqs";
 import WebsiteCTA from "@/components/WebsiteCTA";
 import WebsiteProcess from "@/components/website/WebsiteProcess";
 import Technologies from "@/components/website/Technologies";
