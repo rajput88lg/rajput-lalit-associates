@@ -467,6 +467,49 @@ html.reveal-ready [data-reveal-delay="8"] { transition-delay: 0.56s; }
 }
 
 /* =========================
+   PRINT / PDF REPORT
+   NRI TDS calculator ka result jab user "Save as PDF" karta hai, browser
+   ka print dialog khulta hai. Yahan usko saaf, letterhead jaisa banaya
+   gaya hai — bina koi extra library add kiye (bundle bhaari nahi hota).
+========================= */
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  /* Scroll-animation wale elements print me kabhi chhupe na rahein */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  #tds-report {
+    margin: 0 !important;
+  }
+
+  #tds-report .shadow-xl,
+  #tds-report .shadow-2xl,
+  #tds-report .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  #tds-report .rounded-3xl,
+  #tds-report .rounded-2xl {
+    border-radius: 6px !important;
+    break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+}
+
+/* =========================
    MOBILE PERFORMANCE
    Background blobs par bhaari blur lagta hai. Mobile par unhe animate
    karna battery aur scroll smoothness dono par asar daalta hai, isliye

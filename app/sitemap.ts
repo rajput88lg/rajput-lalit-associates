@@ -17,6 +17,8 @@ const servicePages = [
   "/gst-notice-reply",
   "/accounting-bookkeeping-services",
   "/tds-return-filing",
+  // Free tools — NRI India-Tax Toolkit
+  "/nri-property-tds-calculator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
