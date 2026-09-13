@@ -60,14 +60,20 @@ export default function Navbar() {
               <h1 className="text-[20px] md:text-[22px] font-extrabold text-[#002b5c] leading-tight">
                 Rajput Lalit & Associates
               </h1>
-              <p className="text-[12px] md:text-[13px] text-[#d99a2b] font-semibold tracking-wide mt-1">
+              {/*
+                Tagline sirf tab tak dikhti hai jab tak hamburger menu chalu
+                hai (sm se lg tak). lg se upar poora desktop menu khulta hai
+                aur us tagline (~325px) ke liye jagah nahi bachti — measure
+                karke confirm kiya. Firm ka naam upar har jagah dikhta hai.
+              */}
+              <p className="hidden sm:block lg:hidden text-[12px] md:text-[13px] text-[#d99a2b] font-semibold tracking-wide mt-1">
                 GST • INCOME TAX • ACCOUNTING • WEBSITE DEVELOPMENT
               </p>
             </div>
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden lg:flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-5">
             <Link
               href="/#home"
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
@@ -94,6 +100,15 @@ export default function Navbar() {
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               Website Development
+            </Link>
+
+            {/* Free tools — gold accent taaki dhyaan jaaye, kyunki yahi
+                visitors ko site par kheench kar laate hain */}
+            <Link
+              href="/tools"
+              className="nav-link relative text-[#d99a2b] font-bold hover:text-[#002b5c] transition"
+            >
+              Free Tools
             </Link>
 
             <Link
@@ -164,6 +179,14 @@ export default function Navbar() {
                 className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
               >
                 Website Development
+              </Link>
+
+              <Link
+                href="/tools"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg text-[#d99a2b] font-bold hover:bg-gray-50"
+              >
+                Free Tools
               </Link>
 
               <Link

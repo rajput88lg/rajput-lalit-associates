@@ -117,6 +117,32 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
+              {/* Free tools — footer link so every page passes internal
+                  link equity to the toolkit */}
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/tools" className="hover:text-[#f0b84b] transition">
+                  Free NRI Tax Tools
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link
+                  href="/nri-property-tds-calculator"
+                  className="hover:text-[#f0b84b] transition"
+                >
+                  NRI Property TDS Calculator
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link
+                  href="/nri-residential-status-calculator"
+                  className="hover:text-[#f0b84b] transition"
+                >
+                  NRI Residential Status Check
+                </Link>
+              </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <Link href="/#appointment" className="hover:text-[#f0b84b] transition">

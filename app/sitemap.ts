@@ -20,6 +20,7 @@ const servicePages = [
   // Free tools — NRI India-Tax Toolkit
   "/nri-property-tds-calculator",
   "/nri-residential-status-calculator",
+  "/tools",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
