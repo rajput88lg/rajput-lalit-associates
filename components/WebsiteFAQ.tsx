@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const faqs = [
+export const faqs = [
   {
     question: "How much does a website cost?",
     answer:
