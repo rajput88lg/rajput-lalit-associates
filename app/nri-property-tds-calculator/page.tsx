@@ -216,6 +216,19 @@ export default function Page() {
                 <strong>before the payment and registry</strong>. The department
                 typically takes around a month to process it.
               </p>
+              <p data-reveal data-reveal-delay="4">
+                All of this rests on one prior question: are you actually a
+                non-resident in the year of sale? The rules turn on day counts,
+                not on your passport — and a borderline year changes the TDS
+                treatment entirely. If you are not certain, check first with our{" "}
+                <Link
+                  href="/nri-residential-status-calculator"
+                  className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                >
+                  NRI Residential Status Calculator
+                </Link>
+                .
+              </p>
             </div>
 
             <div data-reveal className="mt-10 bg-[#f7f9fc] border border-gray-200 rounded-2xl p-7">
