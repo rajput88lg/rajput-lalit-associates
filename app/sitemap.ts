@@ -22,6 +22,7 @@ const servicePages = [
   "/nri-residential-status-calculator",
   "/nri-lower-tds-certificate-checklist",
   "/nri-fund-repatriation-guide",
+  "/nri-itr-filing-requirement-checker",
   "/tools",
 ];
 

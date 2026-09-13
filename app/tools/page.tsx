@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
 
-import { Calculator, UserCheck, FileCheck2, Send, ArrowRight, Clock } from "lucide-react";
+import { Calculator, UserCheck, FileCheck2, Send, FileQuestion, ArrowRight } from "lucide-react";
 
 const SLUG = "tools";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
@@ -15,7 +15,7 @@ const OG_IMAGE = `/og/tools.png`;
 const TITLE =
   "Free NRI & India Tax Tools | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free tools for NRIs and Indian taxpayers — work out TDS on an NRI property sale, check whether you are an NRI, RNOR or Resident for tax year 2026-27, get your Form 128 (Lower TDS Certificate) checklist, and find which Part of Form 145/146 applies to repatriating your funds.";
+  "Free tools for NRIs and Indian taxpayers — work out TDS on an NRI property sale, check whether you are an NRI, RNOR or Resident for tax year 2026-27, get your Form 128 (Lower TDS Certificate) checklist, find which Part of Form 145/146 applies to repatriating your funds, and check whether you must file an Indian ITR at all.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     "NRI residential status calculator",
     "Form 128 checklist",
     "Form 145 146 repatriation guide",
+    "NRI ITR filing requirement checker",
+    "does NRI need to file ITR",
     "India tax calculators for NRIs",
   ],
   alternates: { canonical: `/${SLUG}` },
@@ -111,10 +113,20 @@ const tools = [
       "Document list for Form 146 preparation",
     ],
   },
-];
-
-const upcoming = [
-  "Do I need to file an Indian tax return as an NRI?",
+  {
+    href: "/nri-itr-filing-requirement-checker",
+    icon: FileQuestion,
+    title: "NRI ITR Filing Requirement Checker",
+    answers: "Do I actually need to file an Indian tax return this year?",
+    description:
+      "Income below the exemption limit doesn't always mean you can skip filing, and TDS deducted on your Indian income is often a refund you're leaving unclaimed. Answer a few questions to find out where you stand.",
+    points: [
+      "₹4L (new regime) / ₹2.5L (old regime) exemption check",
+      "Covers the 3 mandatory high-value triggers",
+      "Flags TDS refund and loss carry-forward cases",
+      "Clarifies foreign asset reporting doesn't apply to NRIs",
+    ],
+  },
 ];
 
 const listSchema = {
@@ -172,7 +184,7 @@ export default function Page() {
         {/* TOOL CARDS */}
         <section className="py-20 bg-[#f7f9fc]">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {tools.map((tool, i) => {
                 const Icon = tool.icon;
                 return (
@@ -221,32 +233,6 @@ export default function Page() {
                   </Link>
                 );
               })}
-            </div>
-
-            {/* COMING SOON */}
-            <div
-              data-reveal
-              className="mt-10 bg-white border border-dashed border-gray-300 rounded-2xl p-7 md:p-8"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-[#f7f9fc] text-[#d99a2b] flex items-center justify-center flex-shrink-0">
-                  <Clock size={24} />
-                </div>
-                <div>
-                  <h3 className="font-extrabold text-[#002b5c] text-xl">
-                    Being built next
-                  </h3>
-                  <ul className="mt-4 space-y-2 text-gray-600 leading-7">
-                    {upcoming.map((u) => (
-                      <li key={u}>• {u}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-4 text-sm text-gray-500">
-                    Need one of these now? Ask us directly — we do this work for
-                    clients every week.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

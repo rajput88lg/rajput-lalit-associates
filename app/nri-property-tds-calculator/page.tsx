@@ -205,7 +205,16 @@ export default function Page() {
                 deduct 14.95% of the <em>full ₹1.5 crore</em> — about ₹22.4 lakh.
                 That leaves roughly <strong>₹6.3 lakh of the seller&apos;s own
                 money sitting with the department</strong>, recoverable only
-                after filing a return and waiting for the refund to be processed.
+                after filing a return and waiting for the refund to be
+                processed — filing is the only way to get it back, even if
+                your income is otherwise below the exemption limit (see our{" "}
+                <Link
+                  href="/nri-itr-filing-requirement-checker"
+                  className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                >
+                  ITR Filing Requirement Checker
+                </Link>
+                ).
               </p>
               <p data-reveal data-reveal-delay="3">
                 This is avoidable. Section 395 allows you to apply in{" "}
@@ -248,6 +257,16 @@ export default function Page() {
                 <li>• Following up with the Assessing Officer until the certificate is issued</li>
                 <li>• Guiding the buyer on TAN, challan, Form 144 return and Form 131 certificate</li>
                 <li>• Filing your Indian income tax return and claiming any refund due</li>
+                <li>
+                  •{" "}
+                  <Link
+                    href="/nri-itr-filing-requirement-checker"
+                    className="underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                  >
+                    Checking whether filing is mandatory
+                  </Link>{" "}
+                  in your specific case
+                </li>
                 <li>
                   •{" "}
                   <Link

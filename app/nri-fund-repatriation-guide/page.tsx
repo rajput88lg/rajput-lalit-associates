@@ -215,6 +215,16 @@ export default function Page() {
                 <li>• Advising whether a Form 128 Lower/Nil TDS Certificate is worth applying for first</li>
                 <li>• DTAA and Tax Residency Certificate guidance where treaty relief applies</li>
                 <li>• End-to-end support from property sale to funds credited in your foreign account</li>
+                <li>
+                  •{" "}
+                  <Link
+                    href="/nri-itr-filing-requirement-checker"
+                    className="underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition"
+                  >
+                    Checking whether you also need to file an Indian ITR
+                  </Link>{" "}
+                  once the remittance is done
+                </li>
               </ul>
 
               <Link
