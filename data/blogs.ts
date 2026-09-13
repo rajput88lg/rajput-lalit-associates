@@ -469,4 +469,72 @@ export const blogs: Blog[] = [
       "ITR-U Updated Return",
     ],
   },
+
+  {
+    slug: "new-income-tax-act-2025-vs-1961",
+
+    title: "New Income-tax Act, 2025 vs Old Act, 1961: What Changes from FY 2026-27",
+
+    description:
+      "Complete guide to the Income-tax Act, 2025 vs the Income-tax Act, 1961 — effective date, the new 'Tax Year' concept, section renumbering (80C, 87A, 115BAC, 192, 195, 197 and more), and what does not change.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "13 September 2026",
+
+    image: "/blogs/new-income-tax-act-2025-vs-1961.png",
+
+    readTime: "10 min read",
+
+    seoTitle:
+      "Income-tax Act 2025 vs 1961 — What Changes from FY 2026-27 | Full Guide",
+
+    seoDescription:
+      "Income-tax Act 2025 explained: effective 1 April 2026, 'Tax Year' replaces Previous/Assessment Year, section renumbering (80C→123, 87A→156, 115BAC→202, 192→392, 195→393(2)), and what stays the same.",
+
+    keywords: [
+      "Income Tax Act 2025",
+      "Income Tax Act 2025 vs 1961",
+      "New Income Tax Act",
+      "Tax Year Income Tax Act 2025",
+      "Income Tax Act 2025 section mapping",
+      "Income Tax Act 2025 effective date",
+    ],
+  },
+
+  {
+    slug: "gstr-9-annual-return-filing-guide-fy-2025-26",
+
+    title: "GSTR-9 Annual Return Filing Guide FY 2025-26 — Due Date, Applicability & Late Fee",
+
+    description:
+      "Complete guide to GSTR-9 annual return for FY 2025-26 — due date 31 December 2026, ₹2 crore turnover threshold for GSTR-9, ₹5 crore threshold for GSTR-9C, self-certification rule, late fee, exemptions, and the 3-year time-bar deadline that also falls this year.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "13 September 2026",
+
+    image: "/blogs/gstr-9-annual-return-filing-guide-fy-2025-26.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "GSTR-9 Annual Return FY 2025-26 — Due Date, Applicability & Late Fee",
+
+    seoDescription:
+      "GSTR-9 due date 31 Dec 2026 for FY 2025-26. Mandatory above ₹2 crore turnover, GSTR-9C above ₹5 crore (self-certified, no CA certificate needed), late fee ₹200/day, and who's exempt.",
+
+    keywords: [
+      "GSTR-9 due date FY 2025-26",
+      "GST annual return filing",
+      "GSTR-9 applicability turnover limit",
+      "GSTR-9C due date",
+      "GSTR-9 late fee",
+      "GST annual return due date 2026",
+    ],
+  },
 ];
