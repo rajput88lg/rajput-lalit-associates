@@ -21,6 +21,8 @@ import NewIncomeTaxAct2025Vs1961 from "@/content/blogs/new-income-tax-act-2025-v
 import GSTR9AnnualReturnFilingGuideFY202526 from "@/content/blogs/gstr-9-annual-return-filing-guide-fy-2025-26";
 import GSTCompositionSchemeEligibilityRates from "@/content/blogs/gst-composition-scheme-eligibility-rates";
 import InputTaxCreditGSTRulesReversal from "@/content/blogs/input-tax-credit-gst-rules-reversal";
+import GSTEwayBillRulesValidityLimit from "@/content/blogs/gst-eway-bill-rules-validity-limit";
+import GSTFreelancersExportOfServicesLUT from "@/content/blogs/gst-freelancers-export-of-services-lut";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -148,6 +150,14 @@ case "msme-registration-online-india":
 
   case "input-tax-credit-gst-rules-reversal":
   BlogContent = InputTaxCreditGSTRulesReversal;
+  break;
+
+  case "gst-eway-bill-rules-validity-limit":
+  BlogContent = GSTEwayBillRulesValidityLimit;
+  break;
+
+  case "gst-freelancers-export-of-services-lut":
+  BlogContent = GSTFreelancersExportOfServicesLUT;
   break;
 
     default:

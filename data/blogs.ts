@@ -608,4 +608,72 @@ export const blogs: Blog[] = [
       "ineligible ITC GST",
     ],
   },
+
+  {
+    slug: "gst-eway-bill-rules-validity-limit",
+
+    title: "GST E-Way Bill — Rules, Threshold Limit, Validity & Penalty",
+
+    description:
+      "Complete guide to GST e-way bill — when it's required, the ₹50,000 national threshold and state-wise limits, validity period based on distance, Part A/Part B, exemptions, and penalty for non-compliance.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/gst-eway-bill-rules-validity-limit.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST E-Way Bill Rules 2026 — Threshold, Validity & Limit",
+
+    seoDescription:
+      "GST e-way bill explained: ₹50,000 threshold, state-wise limits, validity by distance (200 km/day), Part A & Part B, exemptions, and penalty for non-compliance.",
+
+    keywords: [
+      "GST e-way bill rules",
+      "e-way bill threshold limit",
+      "e-way bill validity period",
+      "e-way bill state wise limit",
+      "e-way bill Part A Part B",
+      "e-way bill penalty",
+    ],
+  },
+
+  {
+    slug: "gst-freelancers-export-of-services-lut",
+
+    title: "GST for Freelancers — Export of Services & LUT Explained",
+
+    description:
+      "GST guide for freelancers and consultants with foreign clients — whether GST registration is mandatory, what counts as export of services, zero-rated supply, and how to file a LUT to invoice without paying IGST.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/gst-freelancers-export-of-services-lut.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST for Freelancers 2026 — Export of Services & LUT Guide",
+
+    seoDescription:
+      "Does a freelancer with foreign clients need GST registration? Export of services rules, zero-rated supply conditions, and how LUT (RFD-11) avoids paying IGST upfront.",
+
+    keywords: [
+      "GST for freelancers export of services",
+      "GST registration freelancer foreign clients",
+      "LUT GST export services",
+      "export of services GST rules",
+      "zero rated supply GST freelancer",
+      "GST RFD-11 LUT",
+    ],
+  },
 ];
