@@ -19,6 +19,8 @@ import TDSReturnFilingDueDatesLateFee from "@/content/blogs/tds-return-filing-du
 import BelatedRevisedITRAY202627 from "@/content/blogs/belated-revised-itr-ay-2026-27";
 import NewIncomeTaxAct2025Vs1961 from "@/content/blogs/new-income-tax-act-2025-vs-1961";
 import GSTR9AnnualReturnFilingGuideFY202526 from "@/content/blogs/gstr-9-annual-return-filing-guide-fy-2025-26";
+import GSTCompositionSchemeEligibilityRates from "@/content/blogs/gst-composition-scheme-eligibility-rates";
+import InputTaxCreditGSTRulesReversal from "@/content/blogs/input-tax-credit-gst-rules-reversal";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -138,6 +140,14 @@ case "msme-registration-online-india":
 
   case "gstr-9-annual-return-filing-guide-fy-2025-26":
   BlogContent = GSTR9AnnualReturnFilingGuideFY202526;
+  break;
+
+  case "gst-composition-scheme-eligibility-rates":
+  BlogContent = GSTCompositionSchemeEligibilityRates;
+  break;
+
+  case "input-tax-credit-gst-rules-reversal":
+  BlogContent = InputTaxCreditGSTRulesReversal;
   break;
 
     default:

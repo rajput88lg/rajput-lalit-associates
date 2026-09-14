@@ -540,4 +540,72 @@ export const blogs: Blog[] = [
       "GST annual return due date 2026",
     ],
   },
+
+  {
+    slug: "gst-composition-scheme-eligibility-rates",
+
+    title: "GST Composition Scheme — Eligibility, Tax Rates & Limitations (2026 Guide)",
+
+    description:
+      "Complete guide to the GST composition scheme — ₹1.5 crore turnover limit (₹75 lakh special category, ₹50 lakh for services), tax rates of 1%/5%/6%, who cannot opt in, no input tax credit, and CMP-08/GSTR-4 filing deadlines.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/gst-composition-scheme-eligibility-rates.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST Composition Scheme 2026 — Eligibility, Tax Rates & Limitations",
+
+    seoDescription:
+      "GST composition scheme explained: ₹1.5 crore turnover limit, 1%/5%/6% tax rates, who cannot opt in, no ITC, and CMP-08/GSTR-4 due dates — full 2026 guide.",
+
+    keywords: [
+      "GST composition scheme eligibility",
+      "GST composition scheme turnover limit",
+      "GST composition scheme tax rate",
+      "CMP-08 due date",
+      "GSTR-4 due date",
+      "composition scheme vs regular GST",
+    ],
+  },
+
+  {
+    slug: "input-tax-credit-gst-rules-reversal",
+
+    title: "Input Tax Credit (ITC) Under GST — Rules, Blocked Credits & 180-Day Reversal",
+
+    description:
+      "Complete guide to claiming Input Tax Credit under GST — the 5 conditions under Section 16, blocked credits under Section 17(5) (cars, food, construction), the 180-day supplier payment rule, and the 30 November deadline to claim ITC.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/input-tax-credit-gst-rules-reversal.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "Input Tax Credit (ITC) Under GST 2026 — Rules & Blocked Credits",
+
+    seoDescription:
+      "ITC under GST explained: 5 conditions to claim it, Section 17(5) blocked credits (cars, food, construction), the 180-day payment rule, and the 30 November claim deadline.",
+
+    keywords: [
+      "input tax credit GST rules",
+      "ITC blocked credits Section 17(5)",
+      "ITC 180 days payment rule",
+      "ITC claim deadline GST",
+      "how to claim GST input tax credit",
+      "ineligible ITC GST",
+    ],
+  },
 ];
