@@ -744,4 +744,72 @@ export const blogs: Blog[] = [
       "GST special audit section 66",
     ],
   },
+
+  {
+    slug: "advance-tax-payment-due-dates-interest",
+
+    title: "Advance Tax — Who Pays, Due Dates & Interest for Default",
+
+    description:
+      "Complete guide to advance tax in India — who must pay (₹10,000 threshold), the 4 quarterly due dates for FY 2026-27, the single-instalment option for 44AD/44ADA taxpayers, and interest under Sections 424 & 425 (old 234B/234C) for missed or short payments.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/advance-tax-payment-due-dates-interest.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Advance Tax FY 2026-27 — Due Dates & Interest Explained",
+
+    seoDescription:
+      "Advance tax explained: who must pay (₹10,000 threshold), quarterly due dates for FY 2026-27, presumptive taxation single instalment, and interest under Sections 424 & 425.",
+
+    keywords: [
+      "advance tax due dates FY 2026-27",
+      "who needs to pay advance tax",
+      "advance tax interest 234B 234C",
+      "advance tax presumptive taxation 44AD",
+      "advance tax calculator India",
+      "advance tax installment percentage",
+    ],
+  },
+
+  {
+    slug: "form-26as-ais-tis-reconciliation-itr",
+
+    title: "Form 26AS, AIS & TIS — How to Reconcile Before Filing ITR",
+
+    description:
+      "How to reconcile Form 26AS, AIS (Annual Information Statement) and TIS (Taxpayer Information Summary) before filing your ITR — what each document shows, how to fix incorrect AIS entries, and why mismatches trigger income tax notices.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/form-26as-ais-tis-reconciliation-itr.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Form 26AS vs AIS vs TIS 2026 — Reconciliation Guide Before ITR",
+
+    seoDescription:
+      "Form 26AS, AIS and TIS explained: what each shows, how to submit AIS feedback for wrong entries, and a practical checklist to reconcile before filing your ITR.",
+
+    keywords: [
+      "Form 26AS AIS TIS difference",
+      "AIS reconciliation before ITR filing",
+      "how to correct AIS entry income tax",
+      "Form 26AS vs AIS",
+      "AIS feedback income tax portal",
+      "income tax mismatch notice AIS",
+    ],
+  },
 ];

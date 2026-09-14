@@ -25,6 +25,8 @@ import GSTEwayBillRulesValidityLimit from "@/content/blogs/gst-eway-bill-rules-v
 import GSTFreelancersExportOfServicesLUT from "@/content/blogs/gst-freelancers-export-of-services-lut";
 import GSTTCSEcommerceSellersRules from "@/content/blogs/gst-tcs-ecommerce-sellers-rules";
 import GSTAuditAssessmentTypesNotice from "@/content/blogs/gst-audit-assessment-types-notice";
+import AdvanceTaxPaymentDueDatesInterest from "@/content/blogs/advance-tax-payment-due-dates-interest";
+import Form26ASAISTISReconciliationITR from "@/content/blogs/form-26as-ais-tis-reconciliation-itr";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -168,6 +170,14 @@ case "msme-registration-online-india":
 
   case "gst-audit-assessment-types-notice":
   BlogContent = GSTAuditAssessmentTypesNotice;
+  break;
+
+  case "advance-tax-payment-due-dates-interest":
+  BlogContent = AdvanceTaxPaymentDueDatesInterest;
+  break;
+
+  case "form-26as-ais-tis-reconciliation-itr":
+  BlogContent = Form26ASAISTISReconciliationITR;
   break;
 
     default:
