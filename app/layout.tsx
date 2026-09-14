@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import OrganizationSchema from "@/components/OrganizationSchema";
 import ScrollReveal from "@/components/ScrollReveal";
+import AIChatWidget from "@/components/AIChatWidget";
 // DHYAAN DEIN: Agar aapke paas Navbar aur Footer components hain, toh unhe yahan import karein
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
@@ -146,6 +147,15 @@ export default function RootLayout({
         </main>
 
         {/* <Footer /> -- Yahan Footer add karein */}
+
+        {/*
+          AI CHAT WIDGET (14 Sept 2026) — floating chat button, bottom-right,
+          on every page (placed here in the root layout, not per-page, so it
+          doesn't depend on whether a page imports Navbar/Footer). Talks to
+          app/api/chat/route.ts, which needs the ANTHROPIC_API_KEY env var
+          set in Vercel — see claude/implementation-24-ai-chat-widget.md.
+        */}
+        <AIChatWidget />
 
         {/*
           PERFORMANCE NOTE (13 Sept 2026):
