@@ -23,6 +23,8 @@ import GSTCompositionSchemeEligibilityRates from "@/content/blogs/gst-compositio
 import InputTaxCreditGSTRulesReversal from "@/content/blogs/input-tax-credit-gst-rules-reversal";
 import GSTEwayBillRulesValidityLimit from "@/content/blogs/gst-eway-bill-rules-validity-limit";
 import GSTFreelancersExportOfServicesLUT from "@/content/blogs/gst-freelancers-export-of-services-lut";
+import GSTTCSEcommerceSellersRules from "@/content/blogs/gst-tcs-ecommerce-sellers-rules";
+import GSTAuditAssessmentTypesNotice from "@/content/blogs/gst-audit-assessment-types-notice";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -158,6 +160,14 @@ case "msme-registration-online-india":
 
   case "gst-freelancers-export-of-services-lut":
   BlogContent = GSTFreelancersExportOfServicesLUT;
+  break;
+
+  case "gst-tcs-ecommerce-sellers-rules":
+  BlogContent = GSTTCSEcommerceSellersRules;
+  break;
+
+  case "gst-audit-assessment-types-notice":
+  BlogContent = GSTAuditAssessmentTypesNotice;
   break;
 
     default:

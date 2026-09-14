@@ -676,4 +676,72 @@ export const blogs: Blog[] = [
       "GST RFD-11 LUT",
     ],
   },
+
+  {
+    slug: "gst-tcs-ecommerce-sellers-rules",
+
+    title: "GST for E-commerce Sellers — TCS Under Section 52 Explained",
+
+    description:
+      "GST rules for sellers on Amazon, Flipkart and other online marketplaces — compulsory registration regardless of turnover, how TCS (Tax Collected at Source) works, the current 0.5% rate, and how to claim TCS credit in GSTR-3B.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/gst-tcs-ecommerce-sellers-rules.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "GST for E-commerce Sellers 2026 — TCS Rules & Rate Explained",
+
+    seoDescription:
+      "GST for e-commerce sellers explained: compulsory registration (no turnover limit), TCS rate 0.5% under Section 52, how to claim TCS credit, and composition scheme restrictions.",
+
+    keywords: [
+      "GST for e-commerce sellers",
+      "TCS under GST section 52",
+      "GST registration e-commerce mandatory",
+      "TCS rate GST 2026",
+      "GSTR-8 e-commerce",
+      "claim TCS credit GST",
+    ],
+  },
+
+  {
+    slug: "gst-audit-assessment-types-notice",
+
+    title: "GST Audit & Assessment — Types, Notices & What They Mean",
+
+    description:
+      "Complete guide to GST scrutiny, audit and assessment — Section 61 scrutiny of returns (ASMT-10), best judgment assessment for non-filers (Section 62), assessment of unregistered persons (Section 63), summary assessment (Section 64), and departmental/special audit (Sections 65 & 66).",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "14 September 2026",
+
+    image: "/blogs/gst-audit-assessment-types-notice.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "GST Audit & Assessment 2026 — Types & Notices Explained",
+
+    seoDescription:
+      "GST scrutiny, audit and assessment explained: ASMT-10 scrutiny notice, best judgment assessment for non-filers, unregistered person assessment, and Section 65/66 audit process.",
+
+    keywords: [
+      "GST audit types",
+      "GST assessment section 62 63 64",
+      "GST scrutiny of returns section 61",
+      "ASMT-10 notice GST",
+      "GST departmental audit section 65",
+      "GST special audit section 66",
+    ],
+  },
 ];
