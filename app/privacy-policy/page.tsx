@@ -107,7 +107,68 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-2xl font-semibold text-[#002B5C] mb-3">
-              8. Contact Us
+              8. Google API Services Disclosure
+            </h2>
+
+            <p className="mb-3">
+              Rajput Lalit & Associates uses Google/YouTube Data API Services
+              to manage and publish content to our own official YouTube
+              channel (DASHINGLALITT) through an internal automated workflow.
+              This includes uploading videos, setting titles, descriptions,
+              tags, thumbnails, and scheduling publication on our own channel
+              only. We do not access, collect, or process YouTube data
+              belonging to any other user, channel, or third party.
+            </p>
+
+            <p className="mb-3">
+              Our use and transfer of information received from Google APIs
+              to any other app will adhere to the{" "}
+              <a
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#002B5C] underline"
+              >
+                Google API Services User Data Policy
+              </a>
+              , including the Limited Use requirements.
+            </p>
+
+            <p className="mb-3">
+              For more information on how Google handles data, please refer
+              to the{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#002B5C] underline"
+              >
+                Google Privacy Policy
+              </a>
+              .
+            </p>
+
+            <p>
+              <strong>Data Retention and Deletion:</strong> Authentication
+              credentials (OAuth tokens) used to access the YouTube API are
+              stored securely and used solely for the purpose described
+              above. You may revoke this access at any time via your{" "}
+              <a
+                href="https://myaccount.google.com/permissions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#002B5C] underline"
+              >
+                Google Account permissions page
+              </a>
+              . To request deletion of any data associated with this
+              integration, please contact us at rajput88lg@gmail.com.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-[#002B5C] mb-3">
+              9. Contact Us
             </h2>
 
             <p>
