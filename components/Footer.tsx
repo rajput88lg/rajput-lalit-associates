@@ -5,6 +5,7 @@ import {
   FaMapMarkerAlt,
   FaClock,
   FaArrowRight,
+  FaYoutube,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -63,6 +64,16 @@ export default function Footer() {
                 aria-label="Email Rajput Lalit & Associates"
               >
                 <FaEnvelope />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@DASHINGLALLY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center hover:bg-[#d99a2b] transition"
+                aria-label="Rajput Lalit & Associates on YouTube (DASHINGLALITT)"
+              >
+                <FaYoutube />
               </a>
             </div>
           </div>
@@ -240,6 +251,15 @@ export default function Footer() {
           <p className="text-sm text-blue-200">
             © {currentYear} Rajput Lalit & Associates. All Rights Reserved.
           </p>
+          <div className="flex items-center gap-4 text-sm text-blue-200">
+            <Link href="/privacy-policy" className="hover:text-[#f0b84b] transition">
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">|</span>
+            <Link href="/terms-of-service" className="hover:text-[#f0b84b] transition">
+              Terms of Service
+            </Link>
+          </div>
           <p className="text-sm text-blue-200">
             GST • Income Tax • Accounting • Business Compliance
           </p>
