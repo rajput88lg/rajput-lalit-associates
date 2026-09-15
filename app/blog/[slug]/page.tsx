@@ -27,6 +27,8 @@ import GSTTCSEcommerceSellersRules from "@/content/blogs/gst-tcs-ecommerce-selle
 import GSTAuditAssessmentTypesNotice from "@/content/blogs/gst-audit-assessment-types-notice";
 import AdvanceTaxPaymentDueDatesInterest from "@/content/blogs/advance-tax-payment-due-dates-interest";
 import Form26ASAISTISReconciliationITR from "@/content/blogs/form-26as-ais-tis-reconciliation-itr";
+import CapitalGainsTaxSharesMutualFundsSTCGLTCG from "@/content/blogs/capital-gains-tax-shares-mutual-funds-stcg-ltcg";
+import HUFHinduUndividedFamilyTaxBenefits from "@/content/blogs/huf-hindu-undivided-family-tax-benefits";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -178,6 +180,14 @@ case "msme-registration-online-india":
 
   case "form-26as-ais-tis-reconciliation-itr":
   BlogContent = Form26ASAISTISReconciliationITR;
+  break;
+
+  case "capital-gains-tax-shares-mutual-funds-stcg-ltcg":
+  BlogContent = CapitalGainsTaxSharesMutualFundsSTCGLTCG;
+  break;
+
+  case "huf-hindu-undivided-family-tax-benefits":
+  BlogContent = HUFHinduUndividedFamilyTaxBenefits;
   break;
 
     default:

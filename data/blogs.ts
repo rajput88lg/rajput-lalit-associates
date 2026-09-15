@@ -812,4 +812,72 @@ export const blogs: Blog[] = [
       "income tax mismatch notice AIS",
     ],
   },
+
+  {
+    slug: "capital-gains-tax-shares-mutual-funds-stcg-ltcg",
+
+    title: "Capital Gains Tax on Shares & Mutual Funds — STCG vs LTCG",
+
+    description:
+      "Capital gains tax on shares and equity mutual funds explained — the 20% STCG rate on gains held under 12 months, the 12.5% LTCG rate with a ₹1.25 lakh annual exemption, how debt funds are taxed differently, and how to set off capital losses.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "15 September 2026",
+
+    image: "/blogs/capital-gains-tax-shares-mutual-funds-stcg-ltcg.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Capital Gains Tax on Shares & Mutual Funds 2026 — STCG/LTCG Rates",
+
+    seoDescription:
+      "STCG and LTCG on shares/mutual funds explained: 20% short-term rate, 12.5% long-term rate with ₹1.25 lakh exemption, debt fund taxation, and capital loss set-off rules.",
+
+    keywords: [
+      "capital gains tax shares mutual funds",
+      "STCG LTCG rate 2026",
+      "long term capital gains exemption limit",
+      "short term capital gains equity tax rate",
+      "debt mutual fund taxation",
+      "capital loss set off carry forward",
+    ],
+  },
+
+  {
+    slug: "huf-hindu-undivided-family-tax-benefits",
+
+    title: "HUF (Hindu Undivided Family) — Tax Benefits & How to Form One",
+
+    description:
+      "Complete guide to forming a Hindu Undivided Family (HUF) for tax planning — Karta and coparceners explained, the 3 steps to form an HUF, legitimate sources of HUF income, the clubbing-of-income trap, and HUF tax slabs vs individual slabs.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "15 September 2026",
+
+    image: "/blogs/huf-hindu-undivided-family-tax-benefits.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "HUF Tax Benefits 2026 — Formation, Karta & Clubbing Rules",
+
+    seoDescription:
+      "HUF tax benefits explained: how to form an HUF (deed, PAN, bank account), legitimate income sources, the clubbing-of-income trap, and HUF tax slabs vs individuals.",
+
+    keywords: [
+      "HUF tax benefits",
+      "how to form HUF",
+      "HUF Karta coparcener",
+      "HUF income tax slab",
+      "HUF clubbing of income",
+      "Hindu Undivided Family tax saving",
+    ],
+  },
 ];
