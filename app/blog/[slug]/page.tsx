@@ -36,6 +36,9 @@ import TaxForFreelancersConsultantsSection44ADAPresumptiveTaxation from "@/conte
 import IncomeTaxNoticeTypes143_1_148_139_9Explained from "@/content/blogs/income-tax-notice-types-143-1-148-139-9-explained";
 import LLPRegistrationProcessCostVsPvtLtd from "@/content/blogs/llp-registration-process-cost-vs-pvt-ltd";
 import PartnershipFirmRegistrationAndPartnershipDeed from "@/content/blogs/partnership-firm-registration-and-partnership-deed";
+import TrademarkRegistrationForSmallBusiness from "@/content/blogs/trademark-registration-for-small-business";
+import WhySmallBusinessesNeedMonthlyBookkeeping from "@/content/blogs/why-small-businesses-need-monthly-bookkeeping";
+import NREandNROandFCNRBankAccountsExplained from "@/content/blogs/nre-nro-fcnr-bank-accounts-explained";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -223,6 +226,18 @@ case "msme-registration-online-india":
 
   case "partnership-firm-registration-and-partnership-deed":
   BlogContent = PartnershipFirmRegistrationAndPartnershipDeed;
+  break;
+
+  case "trademark-registration-for-small-business":
+  BlogContent = TrademarkRegistrationForSmallBusiness;
+  break;
+
+  case "why-small-businesses-need-monthly-bookkeeping":
+  BlogContent = WhySmallBusinessesNeedMonthlyBookkeeping;
+  break;
+
+  case "nre-nro-fcnr-bank-accounts-explained":
+  BlogContent = NREandNROandFCNRBankAccountsExplained;
   break;
 
     default:
