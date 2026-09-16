@@ -880,4 +880,158 @@ export const blogs: Blog[] = [
       "Hindu Undivided Family tax saving",
     ],
   },
+
+  {
+    slug: "tds-on-rent-section-194ib",
+
+    title: "TDS on Rent — Section 194-IB for Tenants Paying Above ₹50,000/Month",
+
+    description:
+      "TDS on rent for individual and HUF tenants explained — who must deduct, the 2% rate, once-a-year deduction (not monthly), how to file Form 26QC (Form 141) without a TAN, and issuing Form 16C to your landlord.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "15 September 2026",
+
+    image: "/blogs/tds-on-rent-section-194ib.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "TDS on Rent 2026 — Section 194-IB Guide for Tenants",
+
+    seoDescription:
+      "TDS on rent explained: who must deduct (individuals/HUF paying above ₹50,000/month), the 2% rate, Form 26QC (Form 141) filing, and Form 16C for landlords.",
+
+    keywords: [
+      "TDS on rent section 194IB",
+      "TDS on rent above 50000",
+      "Form 26QC filing",
+      "TDS on rent individual tenant",
+      "Form 16C rent TDS",
+      "TDS rent rate 2026",
+    ],
+  },
+
+  {
+    slug: "tds-on-professional-fees-section-194j",
+
+    title: "TDS on Professional Fees — Section 194J Rates & Threshold",
+
+    description:
+      "TDS on professional and technical fees explained — 10% rate for professional services, 2% for technical services, the ₹50,000 threshold (raised from ₹30,000 in 2025), who must deduct, and the 30% expense disallowance for non-deduction.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "15 September 2026",
+
+    image: "/blogs/tds-on-professional-fees-section-194j.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "TDS on Professional Fees 2026 — Section 194J Rate & Limit",
+
+    seoDescription:
+      "Section 194J TDS explained: 10% on professional fees, 2% on technical fees, ₹50,000 threshold, who must deduct, and consequences of non-deduction.",
+
+    keywords: [
+      "TDS on professional fees section 194J",
+      "194J TDS rate threshold",
+      "TDS professional fees limit 50000",
+      "technical services TDS rate",
+      "section 393 income tax act",
+      "TDS non deduction disallowance",
+    ],
+  },
+
+  {
+    slug: "tds-on-salary-form-16-explained",
+
+    title: "TDS on Salary — Form 16 Explained",
+
+    description:
+      "How TDS on salary is calculated by employers — the average rate method, new vs old tax regime declaration (Form 122), Form 16 (now Form 130), and what to check when you change jobs mid-year.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "15 September 2026",
+
+    image: "/blogs/tds-on-salary-form-16-explained.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "TDS on Salary 2026 — How It's Calculated & Form 16 Guide",
+
+    seoDescription:
+      "TDS on salary explained: how employers calculate monthly deduction, new regime default, Form 122 declaration, Form 16 (now Form 130), and mid-year job change tips.",
+
+    keywords: [
+      "TDS on salary explained",
+      "Form 16 income tax",
+      "how TDS calculated on salary",
+      "new tax regime default TDS",
+      "Form 130 income tax",
+      "TDS salary section 392",
+    ],
+  },
+  {
+    slug: "tax-for-freelancers-consultants-section-44ada-presumptive-taxation",
+    title: "Tax for Freelancers & Consultants — Section 44ADA Presumptive Taxation",
+    description: "Section 44ADA explained for freelancers, consultants and professionals — who qualifies, the 50% presumptive income rule, the ₹50 lakh/₹75 lakh receipts limit, and when books of account and audit become mandatory.",
+    category: "Income Tax",
+    author: "Rajput Lalit & Associates",
+    date: "15 September 2026",
+    image: "/blogs/tax-for-freelancers-consultants-section-44ada-presumptive-taxation.png",
+    readTime: "6 min read",
+    seoTitle: "Section 44ADA for Freelancers 2026 — Presumptive Tax Guide",
+    seoDescription: "Section 44ADA presumptive taxation for freelancers and professionals: 50% income rule, ₹50 lakh/₹75 lakh limit, advance tax in one instalment, and when audit applies.",
+    keywords: ["Section 44ADA presumptive taxation", "freelancer tax India", "44ADA 50 percent rule", "presumptive tax professionals", "44ADA limit 75 lakh", "freelancer income tax filing"],
+  },
+  {
+    slug: "income-tax-notice-types-143-1-148-139-9-explained",
+    title: "Income Tax Notice Types — Section 143(1), 148 & 139(9) Explained",
+    description: "A plain-language guide to the most common income tax notices — 143(1) intimation, 139(9) defective return, and 148 reassessment — what triggers each, response deadlines, and the shortened Section 148 time limits after the 2024 amendment.",
+    category: "Income Tax",
+    author: "Rajput Lalit & Associates",
+    date: "15 September 2026",
+    image: "/blogs/income-tax-notice-types-143-1-148-139-9-explained.png",
+    readTime: "7 min read",
+    seoTitle: "Income Tax Notice Types 2026 — 143(1), 148, 139(9) Guide",
+    seoDescription: "Income tax notice types explained: Section 143(1) intimation, 139(9) defective return, and 148 reassessment — triggers, deadlines, and how to respond.",
+    keywords: ["income tax notice types", "section 143(1) intimation", "section 139(9) defective return", "section 148 income tax notice", "income tax notice reply", "148 time limit 2024"],
+  },
+  {
+    slug: "llp-registration-process-cost-vs-pvt-ltd",
+    title: "LLP Registration — Process, Cost & Comparison with Pvt Ltd",
+    description: "Complete guide to LLP registration in India — step-by-step process, government fee slabs, realistic total cost, annual compliance (Form 11, Form 8), and an honest comparison with Private Limited Company on tax, audit and fundraising.",
+    category: "Business Registration",
+    author: "Rajput Lalit & Associates",
+    date: "15 September 2026",
+    image: "/blogs/llp-registration-process-cost-vs-pvt-ltd.png",
+    readTime: "7 min read",
+    seoTitle: "LLP Registration 2026 — Process, Cost & LLP vs Pvt Ltd",
+    seoDescription: "LLP registration process and cost in India: fee slabs, DSC, RUN-LLP, FiLLiP, Form 11/Form 8 due dates, and a detailed LLP vs Private Limited Company comparison.",
+    keywords: ["LLP registration process", "LLP registration cost India", "LLP vs Pvt Ltd", "LLP annual compliance Form 11 Form 8", "LLP registration fees 2026", "limited liability partnership India"],
+  },
+  {
+    slug: "partnership-firm-registration-and-partnership-deed",
+    title: "Partnership Firm Registration & Partnership Deed — Complete Guide",
+    description: "Partnership firm registration in India explained — why registration matters even though it's optional, essential partnership deed clauses, partner remuneration and interest tax limits (Section 40(b)), and how the firm and partners are taxed.",
+    category: "Business Registration",
+    author: "Rajput Lalit & Associates",
+    date: "15 September 2026",
+    image: "/blogs/partnership-firm-registration-and-partnership-deed.png",
+    readTime: "6 min read",
+    seoTitle: "Partnership Firm Registration & Deed Guide 2026",
+    seoDescription: "Partnership firm registration and partnership deed guide: essential clauses, Section 69 non-registration risks, partner remuneration limits, and firm taxation.",
+    keywords: ["partnership firm registration India", "partnership deed format", "partnership firm registration process", "partner remuneration limit section 40b", "unregistered partnership firm risk", "partnership firm taxation"],
+  },
 ];

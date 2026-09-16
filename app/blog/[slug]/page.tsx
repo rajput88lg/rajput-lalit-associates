@@ -29,6 +29,13 @@ import AdvanceTaxPaymentDueDatesInterest from "@/content/blogs/advance-tax-payme
 import Form26ASAISTISReconciliationITR from "@/content/blogs/form-26as-ais-tis-reconciliation-itr";
 import CapitalGainsTaxSharesMutualFundsSTCGLTCG from "@/content/blogs/capital-gains-tax-shares-mutual-funds-stcg-ltcg";
 import HUFHinduUndividedFamilyTaxBenefits from "@/content/blogs/huf-hindu-undivided-family-tax-benefits";
+import TDSOnRentSection194IB from "@/content/blogs/tds-on-rent-section-194ib";
+import TDSOnProfessionalFeesSection194J from "@/content/blogs/tds-on-professional-fees-section-194j";
+import TDSOnSalaryForm16Explained from "@/content/blogs/tds-on-salary-form-16-explained";
+import TaxForFreelancersConsultantsSection44ADAPresumptiveTaxation from "@/content/blogs/tax-for-freelancers-consultants-section-44ada-presumptive-taxation";
+import IncomeTaxNoticeTypes143_1_148_139_9Explained from "@/content/blogs/income-tax-notice-types-143-1-148-139-9-explained";
+import LLPRegistrationProcessCostVsPvtLtd from "@/content/blogs/llp-registration-process-cost-vs-pvt-ltd";
+import PartnershipFirmRegistrationAndPartnershipDeed from "@/content/blogs/partnership-firm-registration-and-partnership-deed";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -188,6 +195,34 @@ case "msme-registration-online-india":
 
   case "huf-hindu-undivided-family-tax-benefits":
   BlogContent = HUFHinduUndividedFamilyTaxBenefits;
+  break;
+
+  case "tds-on-rent-section-194ib":
+  BlogContent = TDSOnRentSection194IB;
+  break;
+
+  case "tds-on-professional-fees-section-194j":
+  BlogContent = TDSOnProfessionalFeesSection194J;
+  break;
+
+  case "tds-on-salary-form-16-explained":
+  BlogContent = TDSOnSalaryForm16Explained;
+  break;
+
+  case "tax-for-freelancers-consultants-section-44ada-presumptive-taxation":
+  BlogContent = TaxForFreelancersConsultantsSection44ADAPresumptiveTaxation;
+  break;
+
+  case "income-tax-notice-types-143-1-148-139-9-explained":
+  BlogContent = IncomeTaxNoticeTypes143_1_148_139_9Explained;
+  break;
+
+  case "llp-registration-process-cost-vs-pvt-ltd":
+  BlogContent = LLPRegistrationProcessCostVsPvtLtd;
+  break;
+
+  case "partnership-firm-registration-and-partnership-deed":
+  BlogContent = PartnershipFirmRegistrationAndPartnershipDeed;
   break;
 
     default:
