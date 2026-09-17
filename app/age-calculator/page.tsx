@@ -131,20 +131,13 @@ export default function Page() {
             <div className="mt-8 space-y-5 text-gray-700 leading-8 text-lg">
               <p data-reveal data-reveal-delay="1">
                 This is one of our free online calculators used by people
-                worldwide. See the full set — finance, health, everyday and
-                unit-conversion tools — on our{" "}
-                <Link href="/free-tools" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
-                  Free Tools hub
+                worldwide. See the full set — percentage, age, BMI, interest,
+                discount and tip calculators, unit converters, plus India
+                Income Tax, GST, HRA, EMI and SIP calculators — on our{" "}
+                <Link href="/tools" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
+                  Free Tools page
                 </Link>
                 .
-              </p>
-              <p data-reveal data-reveal-delay="2">
-                Based in India and need GST, income tax or business
-                compliance help? Our{" "}
-                <Link href="/tools" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
-                  India Tax &amp; Loan Calculators
-                </Link>{" "}
-                cover income tax, GST, HRA, EMI, SIP and more.
               </p>
             </div>
 

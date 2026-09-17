@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
       { source: "/services/tds-return-filing", destination: "/tds-return-filing", permanent: true },
       // PAN ka dedicated page abhi nahi hai — temporary redirect.
       { source: "/services/pan-card", destination: "/services", permanent: false },
+      // /free-tools ek alag hub page tha, ab /tools mein hi merge kar diya
+      // gaya hai (sab calculators ek hi jagah) — permanent redirect.
+      { source: "/free-tools", destination: "/tools", permanent: true },
     ];
   },
 };

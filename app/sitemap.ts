@@ -33,8 +33,7 @@ const servicePages = [
   "/income-tax-calculator",
   "/hra-exemption-calculator",
   "/gst-calculator",
-  // Free tools — Worldwide Calculators & Converters (Round 1)
-  "/free-tools",
+  // Free tools — Worldwide Calculators & Converters (Round 1, merged into /tools)
   "/percentage-calculator",
   "/age-calculator",
   "/bmi-calculator",

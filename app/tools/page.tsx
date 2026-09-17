@@ -20,6 +20,13 @@ import {
   Landmark,
   Building2,
   Percent,
+  Cake,
+  HeartPulse,
+  CalendarRange,
+  Tag,
+  Utensils,
+  Ruler,
+  Thermometer,
 } from "lucide-react";
 
 const SLUG = "tools";
@@ -27,9 +34,9 @@ const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
 const OG_IMAGE = `/og/tools.png`;
 
 const TITLE =
-  "Free Tax, Loan & Investment Calculators | Rajput Lalit & Associates";
+  "Free Tax, Loan, Investment & Everyday Calculators | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free calculators and tools for taxpayers, NRIs and borrowers — Income Tax Calculator (Old vs New Regime), HRA Exemption Calculator, GST Calculator, Home Loan EMI, Business Loan EMI, general EMI and SIP calculators, plus NRI property TDS, residential status, Lower TDS Certificate checklist and more. No sign-up needed.";
+  "Free calculators and tools for taxpayers, NRIs, borrowers and everyone else — Income Tax Calculator (Old vs New Regime), HRA Exemption, GST, Home Loan EMI, Business Loan EMI, EMI, SIP, NRI property TDS, residential status, Lower TDS Certificate checklist, plus percentage, age, BMI, interest, discount, tip calculators and unit converters used worldwide. No sign-up needed.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -52,6 +59,11 @@ export const metadata: Metadata = {
     "business loan EMI calculator",
     "SIP calculator",
     "EMI calculator online free",
+    "percentage calculator",
+    "age calculator",
+    "bmi calculator",
+    "compound interest calculator",
+    "free online calculators worldwide",
   ],
   alternates: { canonical: `/${SLUG}` },
   openGraph: {
@@ -255,12 +267,168 @@ const loanTools = [
   },
 ];
 
-const allTools = [...taxCalcTools, ...loanTools, ...tools];
+const worldwideFinanceTools = [
+  {
+    href: "/compound-interest-calculator",
+    icon: TrendingUp,
+    title: "Compound Interest Calculator",
+    answers: "How much will my money grow with compound interest?",
+    description:
+      "See how your money grows with compound interest — annually, quarterly or monthly — over any time period, with a year-wise growth schedule. Works in any currency.",
+    points: [
+      "Annual / quarterly / monthly compounding",
+      "Year-wise growth schedule",
+      "Works in any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/simple-interest-calculator",
+    icon: Landmark,
+    title: "Simple Interest Calculator",
+    answers: "What's the simple interest and total amount on my principal?",
+    description:
+      "Calculate simple interest and total amount using the classic Principal × Rate × Time formula.",
+    points: [
+      "Classic P × R × T formula",
+      "Total interest & maturity amount",
+      "Works in any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/discount-calculator",
+    icon: Tag,
+    title: "Discount Calculator",
+    answers: "What's the sale price, or how much discount am I actually getting?",
+    description:
+      "Work out the sale price from a discount %, or the discount % from the final price — either direction.",
+    points: [
+      "Sale price from discount %",
+      "Discount % from final price",
+      "Shows exact amount you save",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/tip-calculator",
+    icon: Utensils,
+    title: "Tip Calculator",
+    answers: "How much tip should I leave, and what's each person's share?",
+    description:
+      "Work out the tip amount, total bill, and per-person split for any group size, anywhere in the world.",
+    points: [
+      "Preset & custom tip percentages",
+      "Splits bill for any group size",
+      "Total per person shown instantly",
+      "Free — used worldwide",
+    ],
+  },
+];
+
+const worldwideEverydayTools = [
+  {
+    href: "/percentage-calculator",
+    icon: Percent,
+    title: "Percentage Calculator",
+    answers: "What's X% of Y, or the % change between two numbers?",
+    description:
+      "Find X% of Y, what percent one number is of another, or the percentage increase/decrease between two values.",
+    points: [
+      "X% of any number, instantly",
+      "Reverse: what % is A of B",
+      "% increase / decrease calculator",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/age-calculator",
+    icon: Cake,
+    title: "Age Calculator",
+    answers: "What's my exact age, or my age on a specific date?",
+    description:
+      "Find your exact age in years, months and days — or your age on any specific past or future date.",
+    points: [
+      "Exact years, months & days",
+      "Age on any past/future date",
+      "Next birthday countdown",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/bmi-calculator",
+    icon: HeartPulse,
+    title: "BMI Calculator",
+    answers: "What's my Body Mass Index, and which category does it fall in?",
+    description:
+      "Calculate your Body Mass Index using the standard WHO formula, in metric or imperial units.",
+    points: [
+      "Metric (kg/cm) or Imperial (lb/ft-in)",
+      "Standard WHO BMI categories",
+      "Instant, private, no sign-up",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/date-difference-calculator",
+    icon: CalendarRange,
+    title: "Date Difference Calculator",
+    answers: "How many years, months or days are between two dates?",
+    description:
+      "Find the exact number of years, months, days or weeks between any two dates.",
+    points: [
+      "Years, months & days breakdown",
+      "Total days and weeks shown",
+      "Works for past or future dates",
+      "Free — used worldwide",
+    ],
+  },
+];
+
+const worldwideConverterTools = [
+  {
+    href: "/length-converter",
+    icon: Ruler,
+    title: "Length Converter",
+    answers: "How do I convert between metric and imperial length units?",
+    description:
+      "Convert between millimetres, centimetres, metres, kilometres, inches, feet, yards and miles instantly.",
+    points: [
+      "8 units — metric & imperial",
+      "All conversions shown at once",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/temperature-converter",
+    icon: Thermometer,
+    title: "Temperature Converter",
+    answers: "How do I convert between Celsius, Fahrenheit and Kelvin?",
+    description:
+      "Convert between Celsius, Fahrenheit and Kelvin instantly, with all three shown at once.",
+    points: [
+      "Celsius, Fahrenheit & Kelvin",
+      "All three shown at once",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+];
+
+const allTools = [
+  ...taxCalcTools,
+  ...loanTools,
+  ...tools,
+  ...worldwideFinanceTools,
+  ...worldwideEverydayTools,
+  ...worldwideConverterTools,
+];
 
 const listSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Free Tax, Loan & Investment Calculators",
+  name: "Free Tax, Loan, Investment & Everyday Calculators",
   url: PAGE_URL,
   itemListElement: allTools.map((t, i) => ({
     "@type": "ListItem",
@@ -294,15 +462,16 @@ export default function Page() {
 
             <h1 className="hero-in hero-in-2 mt-7 text-4xl md:text-6xl font-extrabold leading-tight">
               Free Tax, Loan &amp;
-              <span className="block text-[#f0b84b] mt-2">Investment Calculators</span>
+              <span className="block text-[#f0b84b] mt-2">Everyday Calculators</span>
             </h1>
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
               Practical calculators built by a working tax practice — Income
               Tax, HRA and GST calculators for every taxpayer, Home Loan,
               Business Loan, EMI and SIP calculators for borrowers and
-              investors, and NRI tax tools applying the Income-tax Act, 2025
-              as it stands today.
+              investors, NRI tax tools applying the Income-tax Act, 2025 as it
+              stands today, plus percentage, age, BMI, interest, discount, tip
+              calculators and unit converters used by people worldwide.
             </p>
           </div>
 
@@ -494,30 +663,176 @@ export default function Page() {
           </div>
         </section>
 
-        {/* CROSS-LINK TO WORLDWIDE FREE TOOLS HUB */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
-            <div
-              data-reveal
-              className="bg-[#f7f9fc] border border-gray-200 rounded-2xl p-7 md:p-9 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
-            >
-              <div>
-                <h3 className="text-xl md:text-2xl font-extrabold text-[#002b5c]">
-                  Looking for everyday calculators too?
-                </h3>
-                <p className="mt-2 text-gray-600 leading-7">
-                  Percentage, age, BMI, compound &amp; simple interest, discount,
-                  tip and unit converters — free tools used by people worldwide,
-                  not just India-specific taxpayers.
-                </p>
-              </div>
-              <Link
-                href="/free-tools"
-                className="btn-shine flex-shrink-0 inline-flex items-center gap-2 bg-[#002b5c] hover:bg-[#06477f] text-white px-6 py-3.5 rounded-xl font-bold transition-all duration-300 whitespace-nowrap"
-              >
-                See Free Tools Hub
-                <ArrowRight size={18} />
-              </Link>
+        {/* WORLDWIDE FINANCE CALCULATORS */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Everyday Finance Calculators
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+            <p data-reveal className="mt-5 text-center text-gray-600 max-w-2xl mx-auto">
+              Used by people worldwide, not just India-specific taxpayers.
+            </p>
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {worldwideFinanceTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={i + 1}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-1.5 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2 text-xs text-gray-700"
+                        >
+                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* WORLDWIDE EVERYDAY & HEALTH CALCULATORS */}
+        <section className="py-20 bg-[#f7f9fc]">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Everyday &amp; Health Calculators
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {worldwideEverydayTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={i + 1}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-1.5 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2 text-xs text-gray-700"
+                        >
+                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* UNIT CONVERTERS */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Unit Converters
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+
+            <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {worldwideConverterTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={i + 1}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
