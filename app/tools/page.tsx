@@ -27,6 +27,15 @@ import {
   Utensils,
   Ruler,
   Thermometer,
+  Receipt,
+  Store,
+  BarChart3,
+  Target,
+  PiggyBank,
+  Umbrella,
+  Clock,
+  Laptop,
+  Repeat,
 } from "lucide-react";
 
 const SLUG = "tools";
@@ -416,6 +425,149 @@ const worldwideConverterTools = [
   },
 ];
 
+const businessFinanceTools = [
+  {
+    href: "/sales-tax-calculator",
+    icon: Receipt,
+    title: "Sales Tax / VAT Calculator",
+    answers: "What's the tax-inclusive price, or the price before tax?",
+    description:
+      "Add sales tax or VAT to a price, or work backwards from a tax-inclusive total — any country, any rate.",
+    points: [
+      "Add tax or remove tax, both ways",
+      "Works for any country's rate",
+      "Not India-GST-specific (see GST Calculator for that)",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/markup-calculator",
+    icon: Store,
+    title: "Markup Calculator",
+    answers: "What selling price do I need for my desired markup %?",
+    description:
+      "Work out your selling price from cost price and desired markup percentage — and see the actual profit margin too.",
+    points: [
+      "Cost + markup % → selling price",
+      "Shows gross profit & real margin %",
+      "Clarifies markup vs margin confusion",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/profit-margin-calculator",
+    icon: BarChart3,
+    title: "Profit Margin Calculator",
+    answers: "What's my gross profit margin on this revenue and cost?",
+    description:
+      "Find your gross profit margin from revenue and cost, plus the equivalent markup on cost.",
+    points: [
+      "Revenue & cost → margin %",
+      "Shows gross profit amount",
+      "Equivalent markup % shown too",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/break-even-calculator",
+    icon: Target,
+    title: "Break-Even Point Calculator",
+    answers: "How many units do I need to sell to cover my fixed costs?",
+    description:
+      "Find out exactly how many units you need to sell to break even, from fixed costs, variable cost and price.",
+    points: [
+      "Fixed + variable cost → break-even units",
+      "Break-even revenue shown too",
+      "Contribution margin % explained",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/savings-goal-calculator",
+    icon: PiggyBank,
+    title: "Savings Goal Calculator",
+    answers: "How much do I need to save monthly to hit my target?",
+    description:
+      "Find out how much you need to save each month to hit a target amount, at a given expected return.",
+    points: [
+      "Target amount → required monthly saving",
+      "Shows contribution vs growth split",
+      "Works in any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/loan-amortization-calculator",
+    icon: Building2,
+    title: "Loan Amortization Calculator",
+    answers: "What's my monthly payment on any loan or mortgage, worldwide?",
+    description:
+      "Work out the monthly payment and full year-wise repayment schedule for any loan or mortgage, in any currency.",
+    points: [
+      "Standard reducing-balance formula",
+      "Year-wise principal vs interest schedule",
+      "Works for any loan type, any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/retirement-corpus-calculator",
+    icon: Umbrella,
+    title: "Retirement Corpus Calculator",
+    answers: "How much will my monthly retirement savings grow to?",
+    description:
+      "See how a monthly contribution grows into a retirement fund over time, in any currency.",
+    points: [
+      "Monthly contribution → projected corpus",
+      "Year-wise growth schedule",
+      "Works in any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/salary-wage-converter",
+    icon: Clock,
+    title: "Salary / Wage Converter",
+    answers: "What's my hourly rate worth annually, or vice versa?",
+    description:
+      "Convert between hourly, daily, weekly, monthly and annual pay, using your own work schedule.",
+    points: [
+      "Hourly ⇄ daily ⇄ weekly ⇄ monthly ⇄ annual",
+      "Adjustable work-schedule assumptions",
+      "Gross pay, any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/freelancer-rate-calculator",
+    icon: Laptop,
+    title: "Freelancer Hourly Rate Calculator",
+    answers: "What hourly rate should I charge to hit my income goal?",
+    description:
+      "Work out the hourly rate you need to charge to hit your target income, after expenses and billable hours.",
+    points: [
+      "Target income + expenses → hourly rate",
+      "Accounts for realistic billable hours",
+      "Works in any currency",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/rule-of-72-calculator",
+    icon: Repeat,
+    title: "Rule of 72 (Doubling Time) Calculator",
+    answers: "How long until my money doubles at this rate of return?",
+    description:
+      "Quickly estimate how long it takes your money to double at a given rate of return, or the rate you'd need.",
+    points: [
+      "Rate → years to double",
+      "Reverse: years → rate needed",
+      "Classic quick investing shortcut",
+      "Free — used worldwide",
+    ],
+  },
+];
+
 const allTools = [
   ...taxCalcTools,
   ...loanTools,
@@ -423,6 +575,7 @@ const allTools = [
   ...worldwideFinanceTools,
   ...worldwideEverydayTools,
   ...worldwideConverterTools,
+  ...businessFinanceTools,
 ];
 
 const listSchema = {
@@ -837,8 +990,72 @@ export default function Page() {
           </div>
         </section>
 
-        {/* WHY TRUST */}
+        {/* BUSINESS & FINANCE CALCULATORS (Round 2) */}
         <section className="py-20 bg-[#f7f9fc]">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Business &amp; Finance Calculators
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+            <p data-reveal className="mt-5 text-center text-gray-600 max-w-2xl mx-auto">
+              For small businesses, freelancers and anyone managing money — used worldwide.
+            </p>
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {businessFinanceTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={Math.min(i + 1, 6)}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-1.5 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2 text-xs text-gray-700"
+                        >
+                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* WHY TRUST */}
+        <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
             <h2
               data-reveal

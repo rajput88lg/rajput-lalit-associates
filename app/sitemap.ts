@@ -44,6 +44,17 @@ const servicePages = [
   "/simple-interest-calculator",
   "/length-converter",
   "/temperature-converter",
+  // Free tools — Business & Finance Calculators (Round 2, merged into /tools)
+  "/sales-tax-calculator",
+  "/markup-calculator",
+  "/profit-margin-calculator",
+  "/break-even-calculator",
+  "/savings-goal-calculator",
+  "/loan-amortization-calculator",
+  "/retirement-corpus-calculator",
+  "/salary-wage-converter",
+  "/freelancer-rate-calculator",
+  "/rule-of-72-calculator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -325,6 +325,259 @@ export function convertTemperature(value: number, from: TempUnit, to: TempUnit):
 }
 
 /* ---------------------------------------------------------------- */
+/* 11. Sales Tax / VAT Calculator                                     */
+/* ---------------------------------------------------------------- */
+
+export type SalesTaxResult = {
+  basePrice: number;
+  taxAmount: number;
+  totalPrice: number;
+  ratePct: number;
+};
+
+/** Add tax on top of a base (tax-exclusive) price. */
+export function calculateSalesTaxAdd(basePrice: number, ratePct: number): SalesTaxResult {
+  const taxAmount = round2((ratePct / 100) * basePrice);
+  return {
+    basePrice: round2(basePrice),
+    taxAmount,
+    totalPrice: round2(basePrice + taxAmount),
+    ratePct: round2(ratePct),
+  };
+}
+
+/** Work backwards from a tax-inclusive total to find the base price and tax. */
+export function calculateSalesTaxRemove(totalPrice: number, ratePct: number): SalesTaxResult {
+  const basePrice = round2(totalPrice / (1 + ratePct / 100));
+  const taxAmount = round2(totalPrice - basePrice);
+  return { basePrice, taxAmount, totalPrice: round2(totalPrice), ratePct: round2(ratePct) };
+}
+
+/* ---------------------------------------------------------------- */
+/* 12. Markup Calculator                                              */
+/* ---------------------------------------------------------------- */
+
+export type MarkupResult = {
+  cost: number;
+  markupPct: number;
+  sellingPrice: number;
+  grossProfit: number;
+  marginPct: number;
+};
+
+export function calculateMarkup(cost: number, markupPct: number): MarkupResult {
+  const sellingPrice = round2(cost * (1 + markupPct / 100));
+  const grossProfit = round2(sellingPrice - cost);
+  const marginPct = sellingPrice ? round2((grossProfit / sellingPrice) * 100) : 0;
+  return { cost: round2(cost), markupPct: round2(markupPct), sellingPrice, grossProfit, marginPct };
+}
+
+/* ---------------------------------------------------------------- */
+/* 13. Profit Margin Calculator                                       */
+/* ---------------------------------------------------------------- */
+
+export type ProfitMarginResult = {
+  revenue: number;
+  cost: number;
+  grossProfit: number;
+  marginPct: number;
+  markupPct: number;
+};
+
+export function calculateProfitMargin(revenue: number, cost: number): ProfitMarginResult {
+  const grossProfit = round2(revenue - cost);
+  const marginPct = revenue ? round2((grossProfit / revenue) * 100) : 0;
+  const markupPct = cost ? round2((grossProfit / cost) * 100) : 0;
+  return { revenue: round2(revenue), cost: round2(cost), grossProfit, marginPct, markupPct };
+}
+
+/* ---------------------------------------------------------------- */
+/* 14. Break-Even Point Calculator                                    */
+/* ---------------------------------------------------------------- */
+
+export type BreakEvenResult = {
+  unitsToBreakEven: number;
+  revenueAtBreakEven: number;
+  contributionMarginPerUnit: number;
+  contributionMarginPct: number;
+};
+
+export function calculateBreakEven(
+  fixedCosts: number,
+  variableCostPerUnit: number,
+  pricePerUnit: number
+): BreakEvenResult {
+  const contributionMarginPerUnit = round2(pricePerUnit - variableCostPerUnit);
+  const unitsToBreakEven =
+    contributionMarginPerUnit > 0 ? Math.ceil(fixedCosts / contributionMarginPerUnit) : 0;
+  const contributionMarginPct = pricePerUnit
+    ? round2((contributionMarginPerUnit / pricePerUnit) * 100)
+    : 0;
+  return {
+    unitsToBreakEven,
+    revenueAtBreakEven: round2(unitsToBreakEven * pricePerUnit),
+    contributionMarginPerUnit,
+    contributionMarginPct,
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 15. Savings Goal Calculator                                        */
+/* ---------------------------------------------------------------- */
+
+export type SavingsGoalResult = {
+  requiredMonthlyContribution: number;
+  totalContributed: number;
+  totalGrowth: number;
+};
+
+/**
+ * Reverse of the SIP future-value formula (annuity due, matches the site's
+ * existing SIP calculator convention in lib/loanCalculations.ts):
+ *   FV = PMT * [ ((1+i)^n - 1) / i ] * (1+i)  =>  PMT = FV / ( [((1+i)^n - 1)/i] * (1+i) )
+ */
+export function calculateSavingsGoal(
+  targetAmount: number,
+  annualRatePct: number,
+  months: number
+): SavingsGoalResult {
+  const n = Math.max(0, Math.round(months));
+  const i = annualRatePct / 12 / 100;
+
+  let requiredMonthlyContribution = 0;
+  if (n > 0) {
+    if (i === 0) {
+      requiredMonthlyContribution = targetAmount / n;
+    } else {
+      const factor = ((Math.pow(1 + i, n) - 1) / i) * (1 + i);
+      requiredMonthlyContribution = factor > 0 ? targetAmount / factor : 0;
+    }
+  }
+
+  const totalContributed = round2(requiredMonthlyContribution * n);
+  const totalGrowth = Math.max(0, round2(targetAmount - totalContributed));
+
+  return {
+    requiredMonthlyContribution: round2(requiredMonthlyContribution),
+    totalContributed,
+    totalGrowth,
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 16 & 17. Loan Amortization & Retirement Corpus Calculators          */
+/*    — these reuse the site's existing, already-verified              */
+/*    calculateEmi() / calculateSip() from lib/loanCalculations.ts      */
+/*    (same maths as the Home Loan EMI & SIP calculators), just         */
+/*    presented with a currency-agnostic UI. No new formulas needed.    */
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* 18. Salary / Wage Converter                                        */
+/* ---------------------------------------------------------------- */
+
+export type WageAssumptions = {
+  hoursPerDay: number;
+  daysPerWeek: number;
+  weeksPerYear: number;
+};
+
+export type WageResult = {
+  hourly: number;
+  daily: number;
+  weekly: number;
+  monthly: number;
+  annual: number;
+};
+
+export const DEFAULT_WAGE_ASSUMPTIONS: WageAssumptions = {
+  hoursPerDay: 8,
+  daysPerWeek: 5,
+  weeksPerYear: 52,
+};
+
+export type WagePeriod = "hourly" | "daily" | "weekly" | "monthly" | "annual";
+
+export function convertWage(
+  amount: number,
+  period: WagePeriod,
+  assumptions: WageAssumptions = DEFAULT_WAGE_ASSUMPTIONS
+): WageResult {
+  const { hoursPerDay, daysPerWeek, weeksPerYear } = assumptions;
+  const hoursPerWeek = hoursPerDay * daysPerWeek;
+  const hoursPerYear = hoursPerWeek * weeksPerYear;
+
+  let hourly: number;
+  switch (period) {
+    case "hourly":
+      hourly = amount;
+      break;
+    case "daily":
+      hourly = hoursPerDay ? amount / hoursPerDay : 0;
+      break;
+    case "weekly":
+      hourly = hoursPerWeek ? amount / hoursPerWeek : 0;
+      break;
+    case "monthly":
+      hourly = hoursPerYear ? (amount * 12) / hoursPerYear : 0;
+      break;
+    case "annual":
+      hourly = hoursPerYear ? amount / hoursPerYear : 0;
+      break;
+  }
+
+  return {
+    hourly: round2(hourly),
+    daily: round2(hourly * hoursPerDay),
+    weekly: round2(hourly * hoursPerWeek),
+    monthly: round2((hourly * hoursPerYear) / 12),
+    annual: round2(hourly * hoursPerYear),
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 19. Freelancer Hourly Rate Calculator                               */
+/* ---------------------------------------------------------------- */
+
+export type FreelancerRateResult = {
+  hourlyRate: number;
+  totalBillableHours: number;
+  grossAnnualRevenueAtRate: number;
+};
+
+export function calculateFreelancerRate(
+  targetAnnualIncome: number,
+  annualBusinessExpenses: number,
+  billableHoursPerWeek: number,
+  weeksPerYear: number
+): FreelancerRateResult {
+  const totalBillableHours = Math.max(0, billableHoursPerWeek) * Math.max(0, weeksPerYear);
+  const requiredRevenue = Math.max(0, targetAnnualIncome) + Math.max(0, annualBusinessExpenses);
+  const hourlyRate = totalBillableHours > 0 ? round2(requiredRevenue / totalBillableHours) : 0;
+  return {
+    hourlyRate,
+    totalBillableHours: round2(totalBillableHours),
+    grossAnnualRevenueAtRate: round2(hourlyRate * totalBillableHours),
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 20. Rule of 72 (Doubling Time) Calculator                          */
+/* ---------------------------------------------------------------- */
+
+export type RuleOf72Result = {
+  yearsToDouble: number;
+};
+
+export function calculateYearsToDouble(annualRatePct: number): RuleOf72Result {
+  return { yearsToDouble: annualRatePct > 0 ? round1(72 / annualRatePct) : 0 };
+}
+
+export function calculateRequiredRateToDouble(years: number): { ratePct: number } {
+  return { ratePct: years > 0 ? round1(72 / years) : 0 };
+}
+
+/* ---------------------------------------------------------------- */
 /* shared helpers                                                     */
 /* ---------------------------------------------------------------- */
 
