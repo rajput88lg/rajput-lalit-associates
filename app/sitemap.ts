@@ -33,6 +33,18 @@ const servicePages = [
   "/income-tax-calculator",
   "/hra-exemption-calculator",
   "/gst-calculator",
+  // Free tools — Worldwide Calculators & Converters (Round 1)
+  "/free-tools",
+  "/percentage-calculator",
+  "/age-calculator",
+  "/bmi-calculator",
+  "/compound-interest-calculator",
+  "/date-difference-calculator",
+  "/discount-calculator",
+  "/tip-calculator",
+  "/simple-interest-calculator",
+  "/length-converter",
+  "/temperature-converter",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

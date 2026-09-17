@@ -494,8 +494,36 @@ export default function Page() {
           </div>
         </section>
 
+        {/* CROSS-LINK TO WORLDWIDE FREE TOOLS HUB */}
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6">
+            <div
+              data-reveal
+              className="bg-[#f7f9fc] border border-gray-200 rounded-2xl p-7 md:p-9 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+            >
+              <div>
+                <h3 className="text-xl md:text-2xl font-extrabold text-[#002b5c]">
+                  Looking for everyday calculators too?
+                </h3>
+                <p className="mt-2 text-gray-600 leading-7">
+                  Percentage, age, BMI, compound &amp; simple interest, discount,
+                  tip and unit converters — free tools used by people worldwide,
+                  not just India-specific taxpayers.
+                </p>
+              </div>
+              <Link
+                href="/free-tools"
+                className="btn-shine flex-shrink-0 inline-flex items-center gap-2 bg-[#002b5c] hover:bg-[#06477f] text-white px-6 py-3.5 rounded-xl font-bold transition-all duration-300 whitespace-nowrap"
+              >
+                See Free Tools Hub
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* WHY TRUST */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-[#f7f9fc]">
           <div className="max-w-4xl mx-auto px-6">
             <h2
               data-reveal
