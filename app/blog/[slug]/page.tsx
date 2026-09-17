@@ -40,6 +40,27 @@ import TrademarkRegistrationForSmallBusiness from "@/content/blogs/trademark-reg
 import WhySmallBusinessesNeedMonthlyBookkeeping from "@/content/blogs/why-small-businesses-need-monthly-bookkeeping";
 import NREandNROandFCNRBankAccountsExplained from "@/content/blogs/nre-nro-fcnr-bank-accounts-explained";
 
+import GSTR9CReconciliationStatementGuideFY202526 from "@/content/blogs/gstr-9c-reconciliation-statement-guide-fy-2025-26";
+import GSTRates2026SlabListItemWise from "@/content/blogs/gst-rates-2026-slab-list-item-wise";
+import GSTRefundProcessExportersInvertedDutyStructure from "@/content/blogs/gst-refund-process-exporters-inverted-duty-structure";
+import GSTInputServiceDistributorISDRules from "@/content/blogs/gst-input-service-distributor-isd-rules";
+import GSTReverseChargeMechanismRCMExplained from "@/content/blogs/gst-reverse-charge-mechanism-rcm-explained";
+import GSTOnRealEstateUnderConstructionProperty from "@/content/blogs/gst-on-real-estate-under-construction-property";
+import TaxAuditSection44ABApplicabilityTurnoverLimit from "@/content/blogs/tax-audit-section-44ab-applicability-turnover-limit";
+import TDSOnCashWithdrawalEcommerceSection194N194O from "@/content/blogs/tds-on-cash-withdrawal-ecommerce-section-194n-194o";
+import NewITRFormsAY202627ChangesExplained from "@/content/blogs/new-itr-forms-ay-2026-27-changes-explained";
+import IncomeTaxSlabsNewVsOldRegimeFY202627 from "@/content/blogs/income-tax-slabs-new-vs-old-regime-fy-2026-27";
+import Deductions80CTo80UOldRegimeGuide from "@/content/blogs/deductions-80c-to-80u-old-regime-guide";
+import OnePersonCompanyOPCRegistrationGuide from "@/content/blogs/one-person-company-opc-registration-guide";
+import SoleProprietorshipRegistrationGuideIndia from "@/content/blogs/sole-proprietorship-registration-guide-india";
+import ROCAnnualComplianceCalendarPvtLtdLLP from "@/content/blogs/roc-annual-compliance-calendar-pvt-ltd-llp";
+import DigitalSignatureCertificateDSCGuideBusinessRegistration from "@/content/blogs/digital-signature-certificate-dsc-guide-business-registration";
+import AccrualVsCashAccountingSmallBusiness from "@/content/blogs/accrual-vs-cash-accounting-small-business";
+import FinancialStatementsChecklistBankLoanCCLimit from "@/content/blogs/financial-statements-checklist-bank-loan-cc-limit";
+import NRISaleOfInheritedPropertyTaxTDSGuide from "@/content/blogs/nri-sale-of-inherited-property-tax-tds-guide";
+import NRIITRFilingWhichFormDTAARelief from "@/content/blogs/nri-itr-filing-which-form-dtaa-relief";
+import Section195TDSOnNRIPaymentsOverview from "@/content/blogs/section-195-tds-on-nri-payments-overview";
+
 import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
@@ -239,6 +260,67 @@ case "msme-registration-online-india":
   case "nre-nro-fcnr-bank-accounts-explained":
   BlogContent = NREandNROandFCNRBankAccountsExplained;
   break;
+
+  case "gstr-9c-reconciliation-statement-guide-fy-2025-26":
+    BlogContent = GSTR9CReconciliationStatementGuideFY202526;
+    break;
+  case "gst-rates-2026-slab-list-item-wise":
+    BlogContent = GSTRates2026SlabListItemWise;
+    break;
+  case "gst-refund-process-exporters-inverted-duty-structure":
+    BlogContent = GSTRefundProcessExportersInvertedDutyStructure;
+    break;
+  case "gst-input-service-distributor-isd-rules":
+    BlogContent = GSTInputServiceDistributorISDRules;
+    break;
+  case "gst-reverse-charge-mechanism-rcm-explained":
+    BlogContent = GSTReverseChargeMechanismRCMExplained;
+    break;
+  case "gst-on-real-estate-under-construction-property":
+    BlogContent = GSTOnRealEstateUnderConstructionProperty;
+    break;
+  case "tax-audit-section-44ab-applicability-turnover-limit":
+    BlogContent = TaxAuditSection44ABApplicabilityTurnoverLimit;
+    break;
+  case "tds-on-cash-withdrawal-ecommerce-section-194n-194o":
+    BlogContent = TDSOnCashWithdrawalEcommerceSection194N194O;
+    break;
+  case "new-itr-forms-ay-2026-27-changes-explained":
+    BlogContent = NewITRFormsAY202627ChangesExplained;
+    break;
+  case "income-tax-slabs-new-vs-old-regime-fy-2026-27":
+    BlogContent = IncomeTaxSlabsNewVsOldRegimeFY202627;
+    break;
+  case "deductions-80c-to-80u-old-regime-guide":
+    BlogContent = Deductions80CTo80UOldRegimeGuide;
+    break;
+  case "one-person-company-opc-registration-guide":
+    BlogContent = OnePersonCompanyOPCRegistrationGuide;
+    break;
+  case "sole-proprietorship-registration-guide-india":
+    BlogContent = SoleProprietorshipRegistrationGuideIndia;
+    break;
+  case "roc-annual-compliance-calendar-pvt-ltd-llp":
+    BlogContent = ROCAnnualComplianceCalendarPvtLtdLLP;
+    break;
+  case "digital-signature-certificate-dsc-guide-business-registration":
+    BlogContent = DigitalSignatureCertificateDSCGuideBusinessRegistration;
+    break;
+  case "accrual-vs-cash-accounting-small-business":
+    BlogContent = AccrualVsCashAccountingSmallBusiness;
+    break;
+  case "financial-statements-checklist-bank-loan-cc-limit":
+    BlogContent = FinancialStatementsChecklistBankLoanCCLimit;
+    break;
+  case "nri-sale-of-inherited-property-tax-tds-guide":
+    BlogContent = NRISaleOfInheritedPropertyTaxTDSGuide;
+    break;
+  case "nri-itr-filing-which-form-dtaa-relief":
+    BlogContent = NRIITRFilingWhichFormDTAARelief;
+    break;
+  case "section-195-tds-on-nri-payments-overview":
+    BlogContent = Section195TDSOnNRIPaymentsOverview;
+    break;
 
     default:
       notFound();
