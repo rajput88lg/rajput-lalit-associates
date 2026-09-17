@@ -55,6 +55,17 @@ const servicePages = [
   "/salary-wage-converter",
   "/freelancer-rate-calculator",
   "/rule-of-72-calculator",
+  // Free tools — Converters & Everyday Math (Round 3, merged into /tools)
+  "/weight-converter",
+  "/area-converter",
+  "/volume-converter",
+  "/speed-converter",
+  "/world-time-zone-converter",
+  "/number-to-words-converter",
+  "/roman-numeral-converter",
+  "/gpa-calculator",
+  "/fraction-decimal-converter",
+  "/random-number-generator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

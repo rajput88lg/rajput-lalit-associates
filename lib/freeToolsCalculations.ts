@@ -578,6 +578,452 @@ export function calculateRequiredRateToDouble(years: number): { ratePct: number 
 }
 
 /* ---------------------------------------------------------------- */
+/* 21. Weight / Mass Converter                                        */
+/* ---------------------------------------------------------------- */
+
+export type WeightUnit = "mg" | "g" | "kg" | "tonne" | "oz" | "lb" | "stone";
+
+const WEIGHT_TO_GRAMS: Record<WeightUnit, number> = {
+  mg: 0.001,
+  g: 1,
+  kg: 1000,
+  tonne: 1_000_000,
+  oz: 28.349523125,
+  lb: 453.59237,
+  stone: 6350.29318,
+};
+
+export const WEIGHT_UNIT_LABELS: Record<WeightUnit, string> = {
+  mg: "Milligrams (mg)",
+  g: "Grams (g)",
+  kg: "Kilograms (kg)",
+  tonne: "Tonnes (t)",
+  oz: "Ounces (oz)",
+  lb: "Pounds (lb)",
+  stone: "Stone (st)",
+};
+
+export function convertWeight(value: number, from: WeightUnit, to: WeightUnit): number {
+  const grams = value * WEIGHT_TO_GRAMS[from];
+  return roundSmart(grams / WEIGHT_TO_GRAMS[to]);
+}
+
+/* ---------------------------------------------------------------- */
+/* 22. Area Converter                                                 */
+/* ---------------------------------------------------------------- */
+
+export type AreaUnit = "sqm" | "sqft" | "sqyd" | "acre" | "hectare" | "sqkm" | "sqmi";
+
+const AREA_TO_SQM: Record<AreaUnit, number> = {
+  sqm: 1,
+  sqft: 0.09290304,
+  sqyd: 0.83612736,
+  acre: 4046.8564224,
+  hectare: 10000,
+  sqkm: 1_000_000,
+  sqmi: 2_589_988.110336,
+};
+
+export const AREA_UNIT_LABELS: Record<AreaUnit, string> = {
+  sqm: "Square Metres (m²)",
+  sqft: "Square Feet (sq ft)",
+  sqyd: "Square Yards (sq yd)",
+  acre: "Acres",
+  hectare: "Hectares",
+  sqkm: "Square Kilometres (km²)",
+  sqmi: "Square Miles (sq mi)",
+};
+
+export function convertArea(value: number, from: AreaUnit, to: AreaUnit): number {
+  const sqm = value * AREA_TO_SQM[from];
+  return roundSmart(sqm / AREA_TO_SQM[to]);
+}
+
+/* ---------------------------------------------------------------- */
+/* 23. Volume Converter                                               */
+/* ---------------------------------------------------------------- */
+
+export type VolumeUnit = "ml" | "litre" | "usGallon" | "usCup" | "usFlOz" | "imperialGallon";
+
+const VOLUME_TO_ML: Record<VolumeUnit, number> = {
+  ml: 1,
+  litre: 1000,
+  usGallon: 3785.411784,
+  usCup: 236.5882365,
+  usFlOz: 29.5735295625,
+  imperialGallon: 4546.09,
+};
+
+export const VOLUME_UNIT_LABELS: Record<VolumeUnit, string> = {
+  ml: "Millilitres (ml)",
+  litre: "Litres (L)",
+  usGallon: "US Gallons (gal)",
+  usCup: "US Cups",
+  usFlOz: "US Fluid Ounces (fl oz)",
+  imperialGallon: "Imperial Gallons",
+};
+
+export function convertVolume(value: number, from: VolumeUnit, to: VolumeUnit): number {
+  const ml = value * VOLUME_TO_ML[from];
+  return roundSmart(ml / VOLUME_TO_ML[to]);
+}
+
+/* ---------------------------------------------------------------- */
+/* 24. Speed Converter                                                */
+/* ---------------------------------------------------------------- */
+
+export type SpeedUnit = "kmh" | "mph" | "ms" | "knot";
+
+const SPEED_TO_MS: Record<SpeedUnit, number> = {
+  kmh: 1 / 3.6,
+  mph: 0.44704,
+  ms: 1,
+  knot: 0.514444444,
+};
+
+export const SPEED_UNIT_LABELS: Record<SpeedUnit, string> = {
+  kmh: "Kilometres per hour (km/h)",
+  mph: "Miles per hour (mph)",
+  ms: "Metres per second (m/s)",
+  knot: "Knots",
+};
+
+export function convertSpeed(value: number, from: SpeedUnit, to: SpeedUnit): number {
+  const ms = value * SPEED_TO_MS[from];
+  return roundSmart(ms / SPEED_TO_MS[to]);
+}
+
+/* ---------------------------------------------------------------- */
+/* 25. World Time Zone Converter                                      */
+/* ---------------------------------------------------------------- */
+
+export type TimezoneConversionInput = {
+  /** "YYYY-MM-DD" */
+  date: string;
+  /** "HH:mm" 24-hour */
+  time: string;
+  fromTimeZone: string;
+  toTimeZone: string;
+};
+
+export type TimezoneConversionResult = {
+  resultDate: string;
+  resultTime: string;
+  resultLabel: string;
+  dayOffset: number;
+  fromOffsetLabel: string;
+  toOffsetLabel: string;
+};
+
+function getUtcOffsetMinutes(instantMs: number, timeZone: string): number {
+  const dtf = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  const parts = dtf.formatToParts(new Date(instantMs));
+  const map: Record<string, string> = {};
+  for (const p of parts) map[p.type] = p.value;
+  const asUtc = Date.UTC(
+    Number(map.year),
+    Number(map.month) - 1,
+    Number(map.day),
+    Number(map.hour),
+    Number(map.minute),
+    Number(map.second)
+  );
+  return (asUtc - instantMs) / 60000;
+}
+
+export function convertTimezone(input: TimezoneConversionInput): TimezoneConversionResult {
+  const { date, time, fromTimeZone, toTimeZone } = input;
+  const [y, mo, d] = date.split("-").map(Number);
+  const [h, mi] = time.split(":").map(Number);
+
+  // Step 1: treat the wall-clock input as a naive UTC instant
+  const naiveMs = Date.UTC(y, (mo || 1) - 1, d || 1, h || 0, mi || 0);
+
+  // Step 2: find that naive instant's offset in the SOURCE timezone, then
+  // correct to get the true UTC instant it represents.
+  const sourceOffsetMin = getUtcOffsetMinutes(naiveMs, fromTimeZone);
+  const trueUtcMs = naiveMs - sourceOffsetMin * 60000;
+
+  // Step 3: format the true UTC instant directly in the TARGET timezone.
+  const targetOffsetMin = getUtcOffsetMinutes(trueUtcMs, toTimeZone);
+
+  const outDtf = new Intl.DateTimeFormat("en-US", {
+    timeZone: toTimeZone,
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  const outParts = outDtf.formatToParts(new Date(trueUtcMs));
+  const outMap: Record<string, string> = {};
+  for (const p of outParts) outMap[p.type] = p.value;
+
+  const resultDate = `${outMap.year}-${outMap.month}-${outMap.day}`;
+  const resultTime = `${outMap.hour}:${outMap.minute}`;
+
+  const inDateOnly = Date.UTC(y, (mo || 1) - 1, d || 1);
+  const outDateOnly = Date.UTC(Number(outMap.year), Number(outMap.month) - 1, Number(outMap.day));
+  const dayOffset = Math.round((outDateOnly - inDateOnly) / 86400000);
+
+  const fmtOffset = (min: number) => {
+    const sign = min >= 0 ? "+" : "-";
+    const abs = Math.abs(min);
+    const hh = Math.floor(abs / 60);
+    const mm = abs % 60;
+    return `UTC${sign}${hh}${mm ? ":" + String(mm).padStart(2, "0") : ""}`;
+  };
+
+  const resultLabel =
+    dayOffset === 0
+      ? "Same day"
+      : dayOffset > 0
+      ? `Next day (+${dayOffset})`
+      : `Previous day (${dayOffset})`;
+
+  return {
+    resultDate,
+    resultTime,
+    resultLabel,
+    dayOffset,
+    fromOffsetLabel: fmtOffset(sourceOffsetMin),
+    toOffsetLabel: fmtOffset(targetOffsetMin),
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 26. Number to Words Converter                                      */
+/* ---------------------------------------------------------------- */
+
+const ONES = [
+  "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
+  "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
+  "Seventeen", "Eighteen", "Nineteen",
+];
+const TENS = [
+  "", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety",
+];
+const SCALES = ["", "Thousand", "Million", "Billion", "Trillion"];
+
+function threeDigitsToWords(n: number): string {
+  const parts: string[] = [];
+  const hundreds = Math.floor(n / 100);
+  const remainder = n % 100;
+  if (hundreds > 0) parts.push(`${ONES[hundreds]} Hundred`);
+  if (remainder > 0) {
+    if (remainder < 20) {
+      parts.push(ONES[remainder]);
+    } else {
+      const tensDigit = Math.floor(remainder / 10);
+      const onesDigit = remainder % 10;
+      parts.push(onesDigit > 0 ? `${TENS[tensDigit]}-${ONES[onesDigit]}` : TENS[tensDigit]);
+    }
+  }
+  return parts.join(" ");
+}
+
+/** International (thousand/million/billion) number-to-words. Integers only. */
+export function numberToWords(value: number): string {
+  const isNegative = value < 0;
+  let n = Math.floor(Math.abs(value));
+
+  if (n === 0) return "Zero";
+  if (n >= 1_000_000_000_000_000) return "Number too large to convert";
+
+  const groups: number[] = [];
+  while (n > 0) {
+    groups.push(n % 1000);
+    n = Math.floor(n / 1000);
+  }
+
+  const words: string[] = [];
+  for (let i = groups.length - 1; i >= 0; i--) {
+    if (groups[i] === 0) continue;
+    const groupWords = threeDigitsToWords(groups[i]);
+    words.push(SCALES[i] ? `${groupWords} ${SCALES[i]}` : groupWords);
+  }
+
+  return (isNegative ? "Negative " : "") + words.join(" ");
+}
+
+/* ---------------------------------------------------------------- */
+/* 27. Roman Numeral Converter                                        */
+/* ---------------------------------------------------------------- */
+
+const ROMAN_TABLE: [number, string][] = [
+  [1000, "M"], [900, "CM"], [500, "D"], [400, "CD"],
+  [100, "C"], [90, "XC"], [50, "L"], [40, "XL"],
+  [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"],
+];
+
+export function toRoman(value: number): string {
+  let n = Math.floor(value);
+  if (n <= 0 || n > 3999) return "Enter a number between 1 and 3999";
+  let result = "";
+  for (const [num, sym] of ROMAN_TABLE) {
+    while (n >= num) {
+      result += sym;
+      n -= num;
+    }
+  }
+  return result;
+}
+
+const ROMAN_VALUES: Record<string, number> = {
+  I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000,
+};
+
+export function fromRoman(input: string): number | null {
+  const s = input.trim().toUpperCase();
+  if (!s || !/^[IVXLCDM]+$/.test(s)) return null;
+
+  let total = 0;
+  for (let i = 0; i < s.length; i++) {
+    const current = ROMAN_VALUES[s[i]];
+    const next = ROMAN_VALUES[s[i + 1]];
+    if (next && current < next) {
+      total -= current;
+    } else {
+      total += current;
+    }
+  }
+  // Round-trip validation guards against invalid forms like "IIII" or "VV"
+  if (toRoman(total) !== s) return null;
+  return total;
+}
+
+/* ---------------------------------------------------------------- */
+/* 28. GPA / CGPA Calculator                                          */
+/* ---------------------------------------------------------------- */
+
+export type GpaCourse = {
+  credits: number;
+  gradePoints: number; // 0–4.0 scale
+};
+
+export type GpaResult = {
+  gpa: number;
+  totalCredits: number;
+  totalQualityPoints: number;
+};
+
+export const US_LETTER_GRADE_POINTS: Record<string, number> = {
+  "A+": 4.0, "A": 4.0, "A-": 3.7,
+  "B+": 3.3, "B": 3.0, "B-": 2.7,
+  "C+": 2.3, "C": 2.0, "C-": 1.7,
+  "D+": 1.3, "D": 1.0, "D-": 0.7,
+  "F": 0.0,
+};
+
+export function calculateGpa(courses: GpaCourse[]): GpaResult {
+  const totalCredits = courses.reduce((sum, c) => sum + Math.max(0, c.credits), 0);
+  const totalQualityPoints = courses.reduce(
+    (sum, c) => sum + Math.max(0, c.credits) * c.gradePoints,
+    0
+  );
+  return {
+    gpa: totalCredits > 0 ? round2(totalQualityPoints / totalCredits) : 0,
+    totalCredits: round2(totalCredits),
+    totalQualityPoints: round2(totalQualityPoints),
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 29. Fraction ⇔ Decimal Converter                              */
+/* ---------------------------------------------------------------- */
+
+export type FractionResult = {
+  numerator: number;
+  denominator: number;
+  simplified: string;
+};
+
+function gcd(a: number, b: number): number {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  while (b) {
+    [a, b] = [b, a % b];
+  }
+  return a || 1;
+}
+
+/** Converts a decimal (given as its literal string, to preserve precision) to a simplified fraction. */
+export function decimalToFraction(decimalStr: string): FractionResult {
+  const trimmed = decimalStr.trim();
+  const isNegative = trimmed.startsWith("-");
+  const clean = trimmed.replace(/^-/, "");
+  const [wholePart, fracPart = ""] = clean.split(".");
+  const whole = Number(wholePart || "0");
+
+  if (!fracPart) {
+    return { numerator: (isNegative ? -1 : 1) * whole, denominator: 1, simplified: `${whole}/1` };
+  }
+
+  const denominator = Math.pow(10, fracPart.length);
+  const numerator = whole * denominator + Number(fracPart);
+  const divisor = gcd(numerator, denominator);
+  const simpleNum = numerator / divisor;
+  const simpleDen = denominator / divisor;
+
+  return {
+    numerator: (isNegative ? -1 : 1) * simpleNum,
+    denominator: simpleDen,
+    simplified: `${isNegative ? "-" : ""}${simpleNum}/${simpleDen}`,
+  };
+}
+
+export function fractionToDecimal(numerator: number, denominator: number): number {
+  if (denominator === 0) return 0;
+  return roundSmart(numerator / denominator);
+}
+
+/* ---------------------------------------------------------------- */
+/* 30. Random Number Generator                                       */
+/* ---------------------------------------------------------------- */
+
+export type RandomNumberOptions = {
+  min: number;
+  max: number;
+  count: number;
+  unique: boolean;
+};
+
+export function generateRandomInts(options: RandomNumberOptions): number[] {
+  const min = Math.ceil(Math.min(options.min, options.max));
+  const max = Math.floor(Math.max(options.min, options.max));
+  const rangeSize = max - min + 1;
+  let count = Math.max(1, Math.floor(options.count));
+
+  if (options.unique) {
+    count = Math.min(count, rangeSize);
+    const pool: number[] = [];
+    for (let i = min; i <= max; i++) pool.push(i);
+    // Fisher-Yates partial shuffle
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    return pool.slice(0, count);
+  }
+
+  const results: number[] = [];
+  for (let i = 0; i < count; i++) {
+    results.push(Math.floor(Math.random() * rangeSize) + min);
+  }
+  return results;
+}
+
+/* ---------------------------------------------------------------- */
 /* shared helpers                                                     */
 /* ---------------------------------------------------------------- */
 

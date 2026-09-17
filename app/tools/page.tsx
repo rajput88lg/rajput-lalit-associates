@@ -36,6 +36,16 @@ import {
   Clock,
   Laptop,
   Repeat,
+  Weight,
+  LandPlot,
+  FlaskConical,
+  Gauge,
+  Globe,
+  Type,
+  ScrollText,
+  GraduationCap,
+  Divide,
+  Dice5,
 } from "lucide-react";
 
 const SLUG = "tools";
@@ -568,6 +578,149 @@ const businessFinanceTools = [
   },
 ];
 
+const convertersMathTools = [
+  {
+    href: "/weight-converter",
+    icon: Weight,
+    title: "Weight / Mass Converter",
+    answers: "How do I convert kg to lb, or grams to ounces?",
+    description:
+      "Convert between kilograms, grams, pounds, ounces, stone and tonnes instantly.",
+    points: [
+      "7 units — metric & imperial",
+      "All conversions shown at once",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/area-converter",
+    icon: LandPlot,
+    title: "Area Converter",
+    answers: "How do I convert sq ft to sq m, or acres to hectares?",
+    description:
+      "Convert between square feet, square metres, square yards, acres, hectares and more.",
+    points: [
+      "7 units — property & land measurement",
+      "Useful for registration & valuation",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/volume-converter",
+    icon: FlaskConical,
+    title: "Volume Converter",
+    answers: "How do I convert litres to gallons, or ml to cups?",
+    description:
+      "Convert between litres, millilitres, US gallons, cups, fluid ounces and imperial gallons.",
+    points: [
+      "6 units — metric & US/imperial",
+      "All conversions shown at once",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/speed-converter",
+    icon: Gauge,
+    title: "Speed Converter",
+    answers: "How do I convert km/h to mph, or m/s to knots?",
+    description:
+      "Convert between kilometres per hour, miles per hour, metres per second and knots.",
+    points: [
+      "4 units — road, sea & scientific",
+      "All conversions shown at once",
+      "Swap units with one click",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/world-time-zone-converter",
+    icon: Globe,
+    title: "World Time Zone Converter",
+    answers: "What time is it in another country right now?",
+    description:
+      "Convert any date and time between time zones worldwide — daylight saving handled automatically.",
+    points: [
+      "13 major world time zones",
+      "Daylight saving handled correctly",
+      "Shows day-change clearly",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/number-to-words-converter",
+    icon: Type,
+    title: "Number to Words Converter",
+    answers: "How do I write an amount in words for a cheque or invoice?",
+    description:
+      "Convert any number into English words — useful for cheques, invoices and legal documents.",
+    points: [
+      "Handles numbers up to trillions",
+      "Indian lakh/crore reference shown too",
+      "Instant, accurate results",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/roman-numeral-converter",
+    icon: ScrollText,
+    title: "Roman Numeral Converter",
+    answers: "How do I convert a number to Roman numerals, or back?",
+    description:
+      "Convert numbers to Roman numerals and back, in either direction.",
+    points: [
+      "Supports 1 to 3,999",
+      "Both directions in one tool",
+      "Validates invalid Roman numerals",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/gpa-calculator",
+    icon: GraduationCap,
+    title: "GPA / CGPA Calculator",
+    answers: "What's my weighted GPA across all my courses?",
+    description:
+      "Add your courses' credit hours and grades to calculate your weighted GPA on the US 4.0 scale.",
+    points: [
+      "Add unlimited courses",
+      "Standard US 4.0 letter-grade scale",
+      "Useful for education loan applications",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/fraction-decimal-converter",
+    icon: Divide,
+    title: "Fraction ⇄ Decimal Converter",
+    answers: "How do I convert a fraction to a decimal, or back?",
+    description:
+      "Convert decimals to simplified fractions, or fractions to decimals, instantly.",
+    points: [
+      "Both directions in one tool",
+      "Fractions always shown fully simplified",
+      "Instant, accurate results",
+      "Free — used worldwide",
+    ],
+  },
+  {
+    href: "/random-number-generator",
+    icon: Dice5,
+    title: "Random Number Generator",
+    answers: "How do I generate random numbers for a draw or sample?",
+    description:
+      "Generate one or many random numbers within any range — for draws, samples, games or passwords.",
+    points: [
+      "Any range, any count",
+      "Optional no-duplicates mode",
+      "Useful for lucky draws & audit sampling",
+      "Free — used worldwide",
+    ],
+  },
+];
+
 const allTools = [
   ...taxCalcTools,
   ...loanTools,
@@ -576,6 +729,7 @@ const allTools = [
   ...worldwideEverydayTools,
   ...worldwideConverterTools,
   ...businessFinanceTools,
+  ...convertersMathTools,
 ];
 
 const listSchema = {
@@ -1054,8 +1208,73 @@ export default function Page() {
           </div>
         </section>
 
-        {/* WHY TRUST */}
+        {/* CONVERTERS & EVERYDAY MATH (Round 3) */}
         <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c] text-center">
+              Converters &amp; Everyday Math
+            </h2>
+            <div data-reveal className="w-20 h-1 bg-[#d99a2b] mx-auto mt-5 rounded-full" />
+            <p data-reveal className="mt-5 text-center text-gray-600 max-w-2xl mx-auto">
+              Weight, area, volume, speed and time zone converters, plus handy
+              everyday math tools — used worldwide.
+            </p>
+
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {convertersMathTools.map((tool, i) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    data-reveal
+                    data-reveal-delay={Math.min(i + 1, 6)}
+                    className="group flex flex-col bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:border-[#d99a2b]/40 transition-all duration-300"
+                  >
+                    <div className="icon-pop w-14 h-14 rounded-2xl bg-[#002b5c] text-[#f0b84b] flex items-center justify-center shadow-lg group-hover:bg-[#d99a2b] group-hover:text-white transition duration-300">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="mt-5 text-xl font-extrabold text-[#002b5c] group-hover:text-[#d99a2b] transition-colors">
+                      {tool.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm font-semibold text-[#d99a2b] leading-6">
+                      {tool.answers}
+                    </p>
+
+                    <p className="mt-3 text-gray-600 leading-6 text-sm">
+                      {tool.description}
+                    </p>
+
+                    <ul className="mt-4 space-y-1.5 flex-1">
+                      {tool.points.map((p) => (
+                        <li
+                          key={p}
+                          className="flex items-start gap-2 text-xs text-gray-700"
+                        >
+                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#d99a2b] flex-shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#002b5c] group-hover:text-[#d99a2b] transition">
+                      Open this tool
+                      <ArrowRight
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* WHY TRUST */}
+        <section className="py-20 bg-[#f7f9fc]">
           <div className="max-w-4xl mx-auto px-6">
             <h2
               data-reveal
