@@ -61,6 +61,17 @@ import NRISaleOfInheritedPropertyTaxTDSGuide from "@/content/blogs/nri-sale-of-i
 import NRIITRFilingWhichFormDTAARelief from "@/content/blogs/nri-itr-filing-which-form-dtaa-relief";
 import Section195TDSOnNRIPaymentsOverview from "@/content/blogs/section-195-tds-on-nri-payments-overview";
 
+import MSME45DayPaymentRuleSection43BH from "@/content/blogs/msme-45-day-payment-rule-section-43b-h";
+import GST20Reforms2026SectorImpactGuide from "@/content/blogs/gst-2-0-reforms-2026-sector-impact-guide";
+import EInvoicingMandatory2026TurnoverLimitGuide from "@/content/blogs/e-invoicing-mandatory-2026-turnover-limit-guide";
+import GSTInvoiceManagementSystemIMSGuide from "@/content/blogs/gst-invoice-management-system-ims-guide";
+import NewLabourCodes2026EmployerGuide from "@/content/blogs/new-labour-codes-2026-employer-guide";
+import IncomeTaxReturnFilingServicesInAmbala from "@/content/blogs/income-tax-return-filing-services-in-ambala";
+import CompanyLLPRegistrationConsultantAmbala from "@/content/blogs/company-llp-registration-consultant-ambala";
+import GSTDRC01DemandNoticeReplyGuide from "@/content/blogs/gst-drc-01-demand-notice-reply-guide";
+import GSTAmnestySchemeSection128AExplained from "@/content/blogs/gst-amnesty-scheme-section-128a-explained";
+import FacelessAssessmentAndAppealSchemeExplained from "@/content/blogs/faceless-assessment-and-appeal-scheme-explained";
+
 import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
@@ -320,6 +331,37 @@ case "msme-registration-online-india":
     break;
   case "section-195-tds-on-nri-payments-overview":
     BlogContent = Section195TDSOnNRIPaymentsOverview;
+    break;
+
+  case "msme-45-day-payment-rule-section-43b-h":
+    BlogContent = MSME45DayPaymentRuleSection43BH;
+    break;
+  case "gst-2-0-reforms-2026-sector-impact-guide":
+    BlogContent = GST20Reforms2026SectorImpactGuide;
+    break;
+  case "e-invoicing-mandatory-2026-turnover-limit-guide":
+    BlogContent = EInvoicingMandatory2026TurnoverLimitGuide;
+    break;
+  case "gst-invoice-management-system-ims-guide":
+    BlogContent = GSTInvoiceManagementSystemIMSGuide;
+    break;
+  case "new-labour-codes-2026-employer-guide":
+    BlogContent = NewLabourCodes2026EmployerGuide;
+    break;
+  case "income-tax-return-filing-services-in-ambala":
+    BlogContent = IncomeTaxReturnFilingServicesInAmbala;
+    break;
+  case "company-llp-registration-consultant-ambala":
+    BlogContent = CompanyLLPRegistrationConsultantAmbala;
+    break;
+  case "gst-drc-01-demand-notice-reply-guide":
+    BlogContent = GSTDRC01DemandNoticeReplyGuide;
+    break;
+  case "gst-amnesty-scheme-section-128a-explained":
+    BlogContent = GSTAmnestySchemeSection128AExplained;
+    break;
+  case "faceless-assessment-and-appeal-scheme-explained":
+    BlogContent = FacelessAssessmentAndAppealSchemeExplained;
     break;
 
     default:
