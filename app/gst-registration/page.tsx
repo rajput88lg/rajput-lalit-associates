@@ -16,6 +16,7 @@ import WhyChooseGST from "@/components/WhyChooseGST";
 import GSTFAQ from "@/components/GSTFAQ";
 import GSTRegistrationTypes from "@/components/GSTRegistrationTypes";
 import GoogleReviews from "@/components/GoogleReviews";
+import Breadcrumb from "@/components/Breadcrumb";
 import ServiceSchema from "@/components/components/ServiceSchema";
 
 export const metadata: Metadata = {
@@ -71,6 +72,8 @@ export default function GSTRegistrationPage() {
           title="Online GST Registration Services in India"
           subtitle="Get your GST Registration completed online anywhere in India with complete documentation support, expert guidance and fast processing."
         />
+
+        <Breadcrumb current="GST Registration" />
 
         <GSTRegistrationContent />
 

@@ -1,0 +1,23 @@
+{
+  "name": "Rajput Lalit & Associates — GST, Income Tax & Accounting",
+  "short_name": "Rajput Lalit & Associates",
+  "description": "GST, Income Tax, Accounting, TDS, Business Registration and Tax Consultancy services in Ambala, Haryana, and across India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#002b5c",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1165,7 +1165,7 @@ export default function IncomeTaxReturnFilingIndia() {
           </a>
 
           <a
-            href="tel:9354953603"
+            href="tel:+919354953603"
             className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#002b5c] transition"
           >
             Call Now
@@ -1729,7 +1729,7 @@ export default function IncomeTaxReturnFilingIndia() {
           </a>
 
           <a
-            href="tel:9354953603"
+            href="tel:+919354953603"
             className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#002b5c] transition"
           >
             Call Now
@@ -1835,7 +1835,7 @@ export default function IncomeTaxReturnFilingIndia() {
           </a>
 
           <a
-            href="tel:9354953603"
+            href="tel:+919354953603"
             className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#002b5c] transition"
           >
             Call 9354953603

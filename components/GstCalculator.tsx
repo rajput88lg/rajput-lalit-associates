@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import { calculateGst, formatINR, type GstMode } from "@/lib/gstCalculator";
+import { trackCalculatorResult } from "@/lib/gaEvents";
 
 const RATE_OPTIONS = [5, 12, 18, 28];
 
@@ -67,6 +68,7 @@ Total amount: ${formatINR(result.totalAmount)}
         "aslDxgzgmR4GWDM2D"
       );
       setReportReady(true);
+      trackCalculatorResult("GST Calculator");
     } catch (err) {
       console.error("EmailJS error:", err);
       setReportReady(true);

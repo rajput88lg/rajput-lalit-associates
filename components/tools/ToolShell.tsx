@@ -9,6 +9,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { trackWhatsAppClick } from "@/lib/gaEvents";
 
 export function ToolInputCard({
   icon,
@@ -239,6 +240,7 @@ export function ToolConsultCta({ context }: { context: string }) {
           href="https://wa.me/919354953603"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick(`tool_cta_${context}`)}
           className="inline-flex items-center justify-center gap-2 border border-white/40 hover:bg-white hover:text-[#002b5c] px-7 py-3.5 rounded-xl font-bold transition"
         >
           Talk on WhatsApp

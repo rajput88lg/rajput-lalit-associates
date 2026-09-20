@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServiceFinderQuiz from "@/components/ServiceFinderQuiz";
 
 import {
   Calculator,
@@ -786,6 +787,13 @@ export default function Page() {
         </section>
 
         <Breadcrumb current="Free Tools" />
+
+        {/* SERVICE FINDER QUIZ */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <ServiceFinderQuiz />
+          </div>
+        </section>
 
         {/* TAX CALCULATORS */}
         <section className="py-20 bg-[#f7f9fc]">

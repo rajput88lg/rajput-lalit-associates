@@ -13,6 +13,7 @@ import {
   CheckCircle2,
   Send,
 } from "lucide-react";
+import { trackFormSubmit } from "@/lib/gaEvents";
 
 type AppointmentFormProps = {
   service: string;
@@ -81,6 +82,7 @@ Preferred Time: ${formData.time}
       );
 
       setStatus("success");
+      trackFormSubmit("appointment");
 
       setFormData({
         name: "",
@@ -140,7 +142,7 @@ Preferred Time: ${formData.time}
 
           /* SUCCESS SCREEN */
 
-          <div className="max-w-2xl mx-auto text-center py-6 md:py-10">
+          <div role="status" aria-live="polite" className="max-w-2xl mx-auto text-center py-6 md:py-10">
 
             <div className="mx-auto w-20 h-20 rounded-full bg-green-50 border border-green-200 text-green-600 flex items-center justify-center">
 
@@ -222,7 +224,7 @@ Preferred Time: ${formData.time}
 
             <div>
 
-              <label className="block text-sm font-bold text-[#002b5c] mb-2">
+              <label htmlFor="appt-name" className="block text-sm font-bold text-[#002b5c] mb-2">
                 Full Name
               </label>
 
@@ -234,9 +236,11 @@ Preferred Time: ${formData.time}
                 />
 
                 <input
+                  id="appt-name"
                   type="text"
                   name="name"
                   required
+                  autoComplete="name"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full border border-gray-300 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/20 focus:border-[#d99a2b]"
@@ -254,7 +258,7 @@ Preferred Time: ${formData.time}
 
               <div>
 
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="appt-mobile" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Mobile Number
                 </label>
 
@@ -266,9 +270,12 @@ Preferred Time: ${formData.time}
                   />
 
                   <input
+                    id="appt-mobile"
                     type="tel"
                     name="mobile"
                     required
+                    autoComplete="tel"
+                    inputMode="tel"
                     value={formData.mobile}
                     onChange={handleChange}
                     className="w-full border border-gray-300 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/20 focus:border-[#d99a2b]"
@@ -282,7 +289,7 @@ Preferred Time: ${formData.time}
 
               <div>
 
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="appt-email" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Email Address
                 </label>
 
@@ -294,9 +301,12 @@ Preferred Time: ${formData.time}
                   />
 
                   <input
+                    id="appt-email"
                     type="email"
                     name="email"
                     required
+                    autoComplete="email"
+                    inputMode="email"
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full border border-gray-300 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/20 focus:border-[#d99a2b]"
@@ -316,7 +326,7 @@ Preferred Time: ${formData.time}
 
               <div>
 
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="appt-date" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Preferred Date
                 </label>
 
@@ -328,6 +338,7 @@ Preferred Time: ${formData.time}
                   />
 
                   <input
+                    id="appt-date"
                     type="date"
                     name="date"
                     required
@@ -343,7 +354,7 @@ Preferred Time: ${formData.time}
 
               <div>
 
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="appt-time" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Preferred Time
                 </label>
 
@@ -355,6 +366,7 @@ Preferred Time: ${formData.time}
                   />
 
                   <input
+                    id="appt-time"
                     type="time"
                     name="time"
                     required
@@ -434,7 +446,11 @@ Preferred Time: ${formData.time}
 
 
             {status === "error" && (
-              <div className="bg-red-50 border border-red-200 text-red-700 rounded-xl p-4 text-center font-medium">
+              <div
+                role="alert"
+                aria-live="polite"
+                className="bg-red-50 border border-red-200 text-red-700 rounded-xl p-4 text-center font-medium"
+              >
                 Failed to submit appointment. Please try again.
               </div>
             )}

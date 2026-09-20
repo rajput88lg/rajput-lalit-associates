@@ -1,6 +1,51 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // SECURITY HEADERS (20 Sept 2026) — site-wide, koi page-level change nahi
+  // chahiye. In sabka koi negative SEO/UX impact nahi hai, sirf browser ko
+  // extra protection instructions milte hain.
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            // HTTPS enforce karta hai future visits ke liye bhi (agar
+            // koi galti se http:// link follow kare) — preload list ke
+            // liye eligible banata hai.
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          {
+            // Browser ko file ka declared Content-Type hi trust karne
+            // deta hai, MIME-sniffing attacks rokta hai.
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            // Site ko kisi doosri site ke iframe ke andar load hone se
+            // rokta hai (clickjacking protection).
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            // Dusri sites par jaate waqt poora URL nahi, sirf origin
+            // bhejta hai — privacy improvement, koi analytics break nahi
+            // hota.
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            // Camera/microphone/location jaisi browser permissions is
+            // site par kabhi use nahi hoti — explicitly disable kar do.
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+        ],
+      },
+    ];
+  },
+
   // Purane "/services/..." URLs (HTML sitemap aur ek purane blog mein
   // link the) ka koi page exist nahi karta tha — 404 aata tha. Ab ye
   // sahi service pages par redirect hote hain, taaki visitors aur Google

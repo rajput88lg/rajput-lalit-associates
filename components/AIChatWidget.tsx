@@ -163,7 +163,7 @@ export default function AIChatWidget() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close chat" : "Chat with our AI assistant"}
-        className="fixed bottom-5 right-5 z-[60] w-16 h-16 rounded-full bg-[#002b5c] hover:bg-[#06477f] text-white shadow-2xl flex items-center justify-center transition"
+        className="fixed bottom-20 right-5 sm:bottom-5 z-[60] w-16 h-16 rounded-full bg-[#002b5c] hover:bg-[#06477f] text-white shadow-2xl flex items-center justify-center transition"
       >
         {!open && (
           <span className="absolute inset-0 rounded-full bg-[#d99a2b]/40 animate-ping" />
@@ -190,6 +190,9 @@ export default function AIChatWidget() {
                 </p>
                 <p className="text-xs text-blue-100 truncate">
                   {FIRM.name}
+                </p>
+                <p className="text-[11px] text-[#f0b84b] font-semibold truncate">
+                  Typically replies within a few minutes
                 </p>
               </div>
             </div>

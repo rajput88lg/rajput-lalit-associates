@@ -12,6 +12,7 @@ import {
   FaPaperPlane,
   FaUser,
 } from "react-icons/fa";
+import { trackFormSubmit } from "@/lib/gaEvents";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -37,6 +38,7 @@ export default function Contact() {
 
       form.current.reset();
       setStatus("✅ Message Sent Successfully");
+      trackFormSubmit("contact");
     } catch (error) {
       console.error("Contact Email Error:", error);
       setStatus("❌ Failed to Send Message");
@@ -158,15 +160,17 @@ export default function Contact() {
               
               {/* NAME */}
               <div>
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="contact-name" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Your Name
                 </label>
                 <div className="relative">
                   <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d99a2b]" />
                   <input
+                    id="contact-name"
                     type="text"
                     name="name"
                     required
+                    autoComplete="name"
                     placeholder="Enter your name"
                     className="w-full border border-gray-300 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/20 focus:border-[#d99a2b]"
                   />
@@ -175,15 +179,18 @@ export default function Contact() {
 
               {/* EMAIL */}
               <div>
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="contact-email" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Email Address
                 </label>
                 <div className="relative">
                   <FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d99a2b]" />
                   <input
+                    id="contact-email"
                     type="email"
                     name="email"
                     required
+                    autoComplete="email"
+                    inputMode="email"
                     placeholder="Enter your email address"
                     className="w-full border border-gray-300 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[#d99a2b]/20 focus:border-[#d99a2b]"
                   />
@@ -192,15 +199,18 @@ export default function Contact() {
 
               {/* PHONE (With Indian Number Validation) */}
               <div>
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="contact-phone" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Mobile Number
                 </label>
                 <div className="relative">
                   <FaPhoneAlt className="absolute left-4 top-1/2 -translate-y-1/2 text-[#d99a2b]" />
                   <input
+                    id="contact-phone"
                     type="tel"
                     name="phone"
                     required
+                    autoComplete="tel"
+                    inputMode="tel"
                     maxLength={10}
                     pattern="[0-9]{10}"
                     title="Please enter a valid 10-digit mobile number"
@@ -212,10 +222,11 @@ export default function Contact() {
 
               {/* MESSAGE */}
               <div>
-                <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                <label htmlFor="contact-message" className="block text-sm font-bold text-[#002b5c] mb-2">
                   Your Message
                 </label>
                 <textarea
+                  id="contact-message"
                   rows={6}
                   name="message"
                   required
@@ -237,6 +248,8 @@ export default function Contact() {
               {/* STATUS MESSAGE */}
               {status && (
                 <div
+                  role={status.includes("✅") ? "status" : "alert"}
+                  aria-live="polite"
                   className={`text-center font-semibold p-4 rounded-xl border ${
                     status.includes("✅")
                       ? "bg-green-50 border-green-200 text-green-700"

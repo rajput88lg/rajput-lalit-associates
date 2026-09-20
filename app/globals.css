@@ -194,6 +194,28 @@ select:focus {
 }
 
 /* =========================
+   KEYBOARD FOCUS VISIBILITY
+   (20 Sept 2026 — accessibility fix)
+
+   Pehle sirf form fields ke paas koi focus style thi; links, buttons
+   aur other interactive elements par keyboard se Tab karne par kuch
+   dikhta nahi tha. `:focus-visible` sirf keyboard/assistive-tech
+   navigation par trigger hota hai — mouse click se koi ring nahi
+   aata, isliye visual design par koi asar nahi padta.
+========================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* =========================
    SELECTION
 ========================= */
 

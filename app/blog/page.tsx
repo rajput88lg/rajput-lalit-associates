@@ -100,7 +100,7 @@ export default function BlogPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 mt-10">
             <a
-              href="tel:9354953603"
+              href="tel:+919354953603"
               className="bg-white text-[#002B5C] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition shadow-md hover:shadow-lg flex items-center gap-2"
             >
               📞 Call Now

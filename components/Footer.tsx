@@ -138,6 +138,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/refer-a-friend" className="hover:text-[#f0b84b] transition">
+                  Refer a Friend
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <Link
                   href="/nri-property-tds-calculator"
                   className="hover:text-[#f0b84b] transition"
