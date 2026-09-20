@@ -41,6 +41,30 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+          {
+            // CONTENT SECURITY POLICY — REPORT-ONLY (20 Sept 2026).
+            //
+            // Isse abhi kuch bhi BLOCK nahi hota — koi script/style/embed
+            // (Google Analytics, EmailJS, Elfsight Google Reviews widget,
+            // Razorpay checkout jab live hoga) tootega nahi. Ye sirf
+            // browser console mein violations LOG karta hai, taaki
+            // future mein enforce karne se pehle safely test kiya ja
+            // sake. "-Report-Only" hata kar isे enforce banaya ja sakta
+            // hai, lekin tabhi jab har allowed source live test ho chuka
+            // ho — verify kiye bina enforce karna site tod sakta hai.
+            key: "Content-Security-Policy-Report-Only",
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://elfsightcdn.com https://static.elfsight.com https://checkout.razorpay.com",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: https:",
+              "font-src 'self' data:",
+              "connect-src 'self' https://www.google-analytics.com https://api.emailjs.com https://*.elfsight.com https://api.razorpay.com",
+              "frame-src https://elfsightcdn.com https://api.razorpay.com https://checkout.razorpay.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+            ].join("; "),
+          },
         ],
       },
     ];

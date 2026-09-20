@@ -14,6 +14,7 @@ import {
   Send,
 } from "lucide-react";
 import { trackFormSubmit } from "@/lib/gaEvents";
+import { tagUrgency } from "@/lib/leadTriage";
 
 type AppointmentFormProps = {
   service: string;
@@ -30,6 +31,7 @@ export default function AppointmentForm({
     email: "",
     date: "",
     time: "",
+    company_website: "", // honeypot — real visitors leave this empty
   });
 
   const [loading, setLoading] = useState(false);
@@ -49,8 +51,35 @@ export default function AppointmentForm({
   ) => {
     e.preventDefault();
 
+    // Honeypot spam-trap: a field real visitors never see or fill, but
+    // basic spam bots auto-fill every input they find. Act as if it
+    // succeeded — no error shown, no email actually sent.
+    if (formData.company_website.trim() !== "") {
+      setStatus("success");
+      setFormData({
+        name: "",
+        mobile: "",
+        email: "",
+        date: "",
+        time: "",
+        company_website: "",
+      });
+      return;
+    }
+
     setLoading(true);
     setStatus("");
+
+    const rawMessage = `
+New Appointment Enquiry (Free Consultation)
+
+Name: ${formData.name}
+Mobile: ${formData.mobile}
+Email: ${formData.email}
+Consultation: ${service}
+Preferred Date: ${formData.date}
+Preferred Time: ${formData.time}
+      `;
 
     const templateParams = {
       name: formData.name,
@@ -61,16 +90,13 @@ export default function AppointmentForm({
       service: service,
       payment_id: paymentId || "Free Consultation (No Payment)",
 
-      message: `
-New Appointment Enquiry (Free Consultation)
-
-Name: ${formData.name}
-Mobile: ${formData.mobile}
-Email: ${formData.email}
-Consultation: ${service}
-Preferred Date: ${formData.date}
-Preferred Time: ${formData.time}
-      `,
+      // GST Notice Reply bookings are always urgency-tagged automatically;
+      // other services still get keyword-checked (e.g. someone typing
+      // "urgent" in a field, or the service name itself matching).
+      message:
+        service.toLowerCase().includes("notice")
+          ? tagUrgency(`GST/Income Tax NOTICE-related booking.\n${rawMessage}`)
+          : tagUrgency(rawMessage),
     };
 
     try {
@@ -90,6 +116,7 @@ Preferred Time: ${formData.time}
         email: "",
         date: "",
         time: "",
+        company_website: "",
       });
     } catch (error) {
       console.error("EmailJS Error:", error);
@@ -202,6 +229,23 @@ Preferred Time: ${formData.time}
             onSubmit={handleSubmit}
             className="space-y-6"
           >
+
+            {/* HONEYPOT — spam bots ke liye, humans ko nahi dikhta */}
+            <div
+              className="absolute -left-[9999px] w-px h-px overflow-hidden"
+              aria-hidden="true"
+            >
+              <label htmlFor="appt-company-website">Leave this field empty</label>
+              <input
+                id="appt-company-website"
+                type="text"
+                name="company_website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={formData.company_website}
+                onChange={handleChange}
+              />
+            </div>
 
             <div>
 

@@ -13,6 +13,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { trackFormSubmit } from "@/lib/gaEvents";
+import { tagUrgency } from "@/lib/leadTriage";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -24,8 +25,30 @@ export default function Contact() {
 
     if (!form.current) return;
 
+    // Honeypot spam-trap: a field real visitors never see or fill, but
+    // most basic spam bots auto-fill every input they find. If it has a
+    // value, silently act as if the message was sent — no error shown to
+    // the bot, and no email actually goes out.
+    const honeypot = form.current.elements.namedItem(
+      "company_website"
+    ) as HTMLInputElement | null;
+    if (honeypot && honeypot.value.trim() !== "") {
+      form.current.reset();
+      setStatus("✅ Message Sent Successfully");
+      return;
+    }
+
     setLoading(true);
     setStatus("");
+
+    // Tag the message with a visible urgency flag (notice/penalty/deadline
+    // keywords) before it's sent — purely additive, never blocks sending.
+    const messageField = form.current.elements.namedItem(
+      "message"
+    ) as HTMLTextAreaElement | null;
+    if (messageField) {
+      messageField.value = tagUrgency(messageField.value);
+    }
 
     try {
       // API Keys ko Environment Variables se fetch karna best practice hai
@@ -157,7 +180,22 @@ export default function Contact() {
             </div>
 
             <form ref={form} onSubmit={sendEmail} className="mt-7 space-y-5">
-              
+
+              {/* HONEYPOT — spam bots ke liye, humans ko nahi dikhta */}
+              <div
+                className="absolute -left-[9999px] w-px h-px overflow-hidden"
+                aria-hidden="true"
+              >
+                <label htmlFor="contact-company-website">Leave this field empty</label>
+                <input
+                  id="contact-company-website"
+                  type="text"
+                  name="company_website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               {/* NAME */}
               <div>
                 <label htmlFor="contact-name" className="block text-sm font-bold text-[#002b5c] mb-2">

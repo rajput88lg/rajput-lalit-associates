@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 
 import { FIRM, MAX_MESSAGES_PER_CONVERSATION } from "@/lib/chatConfig";
+import { tagUrgency } from "@/lib/leadTriage";
 
 type ChatMessage = {
   role: "user" | "assistant";
@@ -142,7 +143,9 @@ export default function AIChatWidget() {
           email: leadEmail,
           service: "AI Chatbot Enquiry",
           payment_id: "AI Chat Lead (Free)",
-          message: `New lead from the website AI chatbot.\n\nName: ${leadName}\nMobile: ${leadMobile}\nEmail: ${leadEmail}\n\n--- Chat so far ---\n${transcript}`,
+          message: tagUrgency(
+            `New lead from the website AI chatbot.\n\nName: ${leadName}\nMobile: ${leadMobile}\nEmail: ${leadEmail}\n\n--- Chat so far ---\n${transcript}`
+          ),
         },
         "aslDxgzgmR4GWDM2D"
       );
