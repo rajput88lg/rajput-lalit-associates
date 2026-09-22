@@ -1478,4 +1478,17 @@ export const blogs: Blog[] = [
     seoDescription: "The complete 2026 GST guide for India — new GST 2.0 rate slabs, registration, composition scheme, ITC, e-way bill, GSTR-9/9C, e-invoicing and how to reply to a GST notice, all in one place.",
     keywords: ["GST guide 2026", "GST complete guide India", "GST rules 2026", "GST registration returns rates", "how GST works in India"],
   },
+  {
+    slug: "income-tax-complete-guide-india-2026",
+    title: "Income Tax Complete Guide India 2026 — Regime, ITR, Advance Tax, Notices",
+    description: "Ek jagah Income Tax ka poora journey — new vs old regime, slabs aur 87A rebate, ITR filing (kaunsa form, due date), advance tax, 26AS/AIS/TIS reconciliation, capital gains, 44ADA presumptive taxation aur notices — har topic ke deep-dive article ke link ke saath.",
+    category: "Income Tax",
+    author: "Rajput Lalit & Associates",
+    date: "22 September 2026",
+    image: "/blogs/income-tax-complete-guide-india-2026.png",
+    readTime: "13 min read",
+    seoTitle: "Income Tax Complete Guide India 2026 | Regime, ITR, Advance Tax, Notices",
+    seoDescription: "The complete 2026 Income Tax guide for India — new vs old regime, slabs, 87A rebate, ITR filing, advance tax, 26AS/AIS/TIS reconciliation, capital gains, 44ADA presumptive taxation and notices, all in one place.",
+    keywords: ["income tax guide 2026", "income tax complete guide India", "income tax rules 2026", "new vs old tax regime", "how income tax works in India"],
+  },
 ];

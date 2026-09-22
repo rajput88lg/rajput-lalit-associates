@@ -72,6 +72,7 @@ import GSTDRC01DemandNoticeReplyGuide from "@/content/blogs/gst-drc-01-demand-no
 import GSTAmnestySchemeSection128AExplained from "@/content/blogs/gst-amnesty-scheme-section-128a-explained";
 import FacelessAssessmentAndAppealSchemeExplained from "@/content/blogs/faceless-assessment-and-appeal-scheme-explained";
 import GSTCompleteGuideIndia2026 from "@/content/blogs/gst-complete-guide-india-2026";
+import IncomeTaxCompleteGuideIndia2026 from "@/content/blogs/income-tax-complete-guide-india-2026";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -366,6 +367,9 @@ case "msme-registration-online-india":
     break;
   case "gst-complete-guide-india-2026":
     BlogContent = GSTCompleteGuideIndia2026;
+    break;
+  case "income-tax-complete-guide-india-2026":
+    BlogContent = IncomeTaxCompleteGuideIndia2026;
     break;
 
     default:
