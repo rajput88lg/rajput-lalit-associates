@@ -1465,4 +1465,17 @@ export const blogs: Blog[] = [
     seoDescription: "Faceless Assessment aur Faceless Appeal kaise kaam karte hain, taxpayer ke rights, deadline, aur common challenges — 2026 ka updated guide.",
     keywords: ["faceless assessment income tax", "faceless appeal scheme", "NFAC income tax", "income tax e-proceedings", "faceless assessment notice reply"],
   },
+  {
+    slug: "gst-complete-guide-india-2026",
+    title: "GST Complete Guide India 2026 — Registration, Returns, Rates, Notices",
+    description: "Ek jagah GST ka poora journey — 2026 ke naye rate slabs, registration, composition scheme, ITC, e-way bill, returns (GSTR-1/3B/9/9C), e-invoicing aur notice-reply — har topic ke deep-dive article ke link ke saath.",
+    category: "GST",
+    author: "Rajput Lalit & Associates",
+    date: "20 September 2026",
+    image: "/blogs/gst-complete-guide-india-2026.png",
+    readTime: "12 min read",
+    seoTitle: "GST Complete Guide India 2026 | Registration, Rates, Returns, Notices",
+    seoDescription: "The complete 2026 GST guide for India — new GST 2.0 rate slabs, registration, composition scheme, ITC, e-way bill, GSTR-9/9C, e-invoicing and how to reply to a GST notice, all in one place.",
+    keywords: ["GST guide 2026", "GST complete guide India", "GST rules 2026", "GST registration returns rates", "how GST works in India"],
+  },
 ];

@@ -71,6 +71,7 @@ import CompanyLLPRegistrationConsultantAmbala from "@/content/blogs/company-llp-
 import GSTDRC01DemandNoticeReplyGuide from "@/content/blogs/gst-drc-01-demand-notice-reply-guide";
 import GSTAmnestySchemeSection128AExplained from "@/content/blogs/gst-amnesty-scheme-section-128a-explained";
 import FacelessAssessmentAndAppealSchemeExplained from "@/content/blogs/faceless-assessment-and-appeal-scheme-explained";
+import GSTCompleteGuideIndia2026 from "@/content/blogs/gst-complete-guide-india-2026";
 
 import BlogSchema from "@/components/BlogSchema";
 
@@ -363,6 +364,9 @@ case "msme-registration-online-india":
   case "faceless-assessment-and-appeal-scheme-explained":
     BlogContent = FacelessAssessmentAndAppealSchemeExplained;
     break;
+  case "gst-complete-guide-india-2026":
+    BlogContent = GSTCompleteGuideIndia2026;
+    break;
 
     default:
       notFound();
@@ -429,7 +433,7 @@ case "msme-registration-online-india":
             href="https://wa.me/919354953603"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#20bd5a] transition shadow-md hover:shadow-lg flex items-center gap-2"
+            className="bg-[#147438] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#0f5429] transition shadow-md hover:shadow-lg flex items-center gap-2"
           >
             💬 WhatsApp
           </a>
