@@ -31,7 +31,7 @@ export default function MobileStickyCTA() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsAppClick("mobile_sticky_bar")}
-        className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 font-bold text-sm active:bg-[#1ebe57] transition"
+        className="flex items-center justify-center gap-2 bg-[#147438] text-white py-3.5 font-bold text-sm active:bg-[#0f5429] transition"
       >
         <MessageCircle size={17} />
         WhatsApp

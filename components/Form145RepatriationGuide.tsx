@@ -119,7 +119,7 @@ export default function Form145RepatriationGuide() {
                     2
                   </span>
                   <div className="min-w-0 flex-1">
-                    <label className="block font-bold text-[#002b5c]">
+                    <label className="block font-bold text-[#002b5c]" htmlFor="form15ca-amount">
                       <span className="inline-flex items-center gap-2">
                         <IndianRupee size={16} className="text-[#d99a2b]" />
                         Total remittances of this kind so far this financial
@@ -131,6 +131,7 @@ export default function Form145RepatriationGuide() {
                       year, not this one transaction alone.
                     </p>
                     <input
+                      id="form15ca-amount"
                       type="number"
                       min={0}
                       value={amount}

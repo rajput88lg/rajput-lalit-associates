@@ -163,10 +163,11 @@ export default function BookAppointment() {
 
             {/* SERVICE SELECT */}
             <div className="mt-7">
-              <label className="block text-sm font-bold text-[#002b5c] mb-2">
+              <label className="block text-sm font-bold text-[#002b5c] mb-2" htmlFor="book-appt-service">
                 Consultation Service
               </label>
               <select
+                id="book-appt-service"
                 value={service}
                 onChange={(e) => {
                   setService(e.target.value);

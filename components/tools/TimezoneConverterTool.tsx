@@ -59,8 +59,9 @@ export default function TimezoneConverterTool() {
         >
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">Date</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="tz-date">Date</label>
               <input
+                id="tz-date"
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
@@ -68,8 +69,9 @@ export default function TimezoneConverterTool() {
               />
             </div>
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">Time (24-hour)</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="tz-time">Time (24-hour)</label>
               <input
+                id="tz-time"
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
@@ -80,8 +82,9 @@ export default function TimezoneConverterTool() {
 
           <div className="grid sm:grid-cols-[1fr_auto_1fr] gap-4 items-end">
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">From time zone</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="from-timezone">From time zone</label>
               <select
+                id="from-timezone"
                 value={fromZone}
                 onChange={(e) => setFromZone(e.target.value)}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"
@@ -102,8 +105,9 @@ export default function TimezoneConverterTool() {
             </button>
 
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">To time zone</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="to-timezone">To time zone</label>
               <select
+                id="to-timezone"
                 value={toZone}
                 onChange={(e) => setToZone(e.target.value)}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"

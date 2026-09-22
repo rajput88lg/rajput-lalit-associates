@@ -39,10 +39,11 @@ export default function NumberToWordsTool() {
           subtitle="Convert any number into English words — handy for cheques, invoices and legal documents."
         >
           <div>
-            <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+            <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor="num-to-words">
               <Hash size={16} className="text-[#d99a2b]" /> Enter a number
             </label>
             <input
+              id="num-to-words"
               type="number"
               value={Number.isNaN(value) ? "" : value}
               onChange={(e) => setValue(e.target.value === "" ? 0 : Number(e.target.value))}

@@ -83,8 +83,10 @@ export default function NriResidentialStatusChecker() {
               icon={<CalendarDays size={18} />}
               label="How many days were you in India during this tax year?"
               hint="Count the day you arrived and the day you left as full days in India."
+              inputId="nri-days-this-year"
             >
               <input
+                id="nri-days-this-year"
                 type="number"
                 min={0}
                 max={366}
@@ -100,8 +102,10 @@ export default function NriResidentialStatusChecker() {
               icon={<CalendarDays size={18} />}
               label="Total days in India across the previous 4 tax years?"
               hint="Add up all four years. If it comes to 365 or more, the second test can apply to you."
+              inputId="nri-days-prev-4-years"
             >
               <input
+                id="nri-days-prev-4-years"
                 type="number"
                 min={0}
                 value={daysPrev4Years}
@@ -195,10 +199,11 @@ export default function NriResidentialStatusChecker() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-[#002b5c] mb-2">
+                  <label className="block text-sm font-bold text-[#002b5c] mb-2" htmlFor="nri-days-prev-7-years">
                     Total days in India over the last 7 years
                   </label>
                   <input
+                    id="nri-days-prev-7-years"
                     type="number"
                     min={0}
                     value={daysPrev7Years}
@@ -319,12 +324,15 @@ function Q({
   label,
   hint,
   children,
+  inputId,
 }: {
   num: number;
   icon: React.ReactNode;
   label: string;
   hint: string;
   children: React.ReactNode;
+  /** Pass the id of a plain <input> child so this label is programmatically associated with it. */
+  inputId?: string;
 }) {
   return (
     <div>
@@ -333,7 +341,7 @@ function Q({
           {num}
         </span>
         <div className="min-w-0 flex-1">
-          <label className="block font-bold text-[#002b5c]">
+          <label className="block font-bold text-[#002b5c]" htmlFor={inputId}>
             <span className="inline-flex items-center gap-2">
               <span className="text-[#d99a2b]">{icon}</span>
               {label}

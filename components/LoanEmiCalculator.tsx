@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   Calculator,
@@ -263,7 +263,7 @@ Total payment (principal + interest) : ${formatINR(result.totalPayment)}
                   </tbody>
                 </table>
                 {result.yearlySchedule.length > 10 && (
-                  <p className="mt-2 text-xs text-gray-400 px-2">
+                  <p className="mt-2 text-xs text-gray-500 px-2">
                     Showing first 10 years of {result.yearlySchedule.length}.
                   </p>
                 )}
@@ -294,6 +294,7 @@ Total payment (principal + interest) : ${formatINR(result.totalPayment)}
                   <input
                     type="text"
                     required
+                    aria-label="Your name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Your name"
@@ -302,6 +303,7 @@ Total payment (principal + interest) : ${formatINR(result.totalPayment)}
                   <input
                     type="email"
                     required
+                    aria-label="Email address"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email address"
@@ -310,6 +312,7 @@ Total payment (principal + interest) : ${formatINR(result.totalPayment)}
                   <input
                     type="tel"
                     required
+                    aria-label="Phone number, with country code"
                     value={mobile}
                     onChange={(e) => setMobile(e.target.value)}
                     placeholder="Phone (with country code)"
@@ -410,10 +413,11 @@ function SliderField({
   step: number;
   display: string;
 }) {
+  const inputId = useId();
   return (
     <div>
       <div className="flex items-center justify-between gap-4 mb-2">
-        <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]">
+        <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]" htmlFor={inputId}>
           <span className="text-[#d99a2b]">{icon}</span>
           {label}
         </label>
@@ -422,6 +426,7 @@ function SliderField({
         </span>
       </div>
       <input
+        id={inputId}
         type="range"
         min={min}
         max={max}
@@ -430,7 +435,7 @@ function SliderField({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full accent-[#d99a2b]"
       />
-      <div className="flex justify-between mt-1 text-xs text-gray-400">
+      <div className="flex justify-between mt-1 text-xs text-gray-500">
         <span>{typeof min === "number" ? min.toLocaleString("en-IN") : min}</span>
         <span>{typeof max === "number" ? max.toLocaleString("en-IN") : max}</span>
       </div>

@@ -5,6 +5,9 @@ export interface Blog {
   category: string;
   author: string;
   date: string;
+  // Optional: jab purana blog refresh ho, yahan refresh ki date daalein.
+  // Page par "Updated" dikhta hai aur schema ka dateModified isse banta hai.
+  updated?: string;
   image: string;
   readTime: string;
 
@@ -61,22 +64,25 @@ export const blogs: Blog[] = [
 
     date: "14 July 2026",
 
+    updated: "22 September 2026",
+
     image: "/blogs/gst-registration-fees-india.png",
 
-    readTime: "6 min read",
+    readTime: "7 min read",
 
     seoTitle:
-      "GST Registration Fees in India (2026) | Government Fee & Professional Charges",
+      "GST Registration Fees 2026: ₹0 Govt Fee + Real Costs",
 
     seoDescription:
-      "Complete guide on GST Registration Fees in India including Government Fee, CA Charges, Professional Fees and FAQs.",
+      "GST registration government fee is ₹0. See the full 2026 cost breakdown — consultant fees by business type, DSC cost for companies/LLPs, hidden costs and the penalty for not registering.",
 
     keywords: [
       "GST Registration Fees",
       "GST Registration Cost",
-      "GST Government Fee",
+      "GST Registration Charges",
+      "GST Registration Fees by Government",
+      "GST Registration Fees Kitni Hai",
       "GST Professional Charges",
-      "GST Registration India",
     ],
   },
 
@@ -94,23 +100,25 @@ export const blogs: Blog[] = [
 
     date: "14 July 2026",
 
+    updated: "22 September 2026",
+
     image: "/blogs/gst-registration-documents-india.png",
 
     readTime: "8 min read",
 
     seoTitle:
-      "GST Registration Documents Required in India (2026) | Complete Checklist",
+      "Documents for GST Registration 2026 + Address Proof Rules",
 
     seoDescription:
-      "Check the complete GST Registration document checklist for Proprietorship, Partnership, LLP and Private Limited Company.",
+      "GST registration documents checklist for proprietorship, partnership, LLP and company — plus exactly which address proof works for own, rented or family premises, and why applications get stuck.",
 
     keywords: [
       "GST Registration Documents",
       "GST Documents",
       "GST Registration Checklist",
       "Documents Required for GST",
-      "GST Registration India",
-      
+      "Address Proof for GST Registration",
+      "GST Registration Address Proof",
     ],
   },
     {
@@ -387,7 +395,7 @@ export const blogs: Blog[] = [
     readTime: "9 min read",
 
     seoTitle:
-      "GST Registration in Ambala (2026): Process, Documents & Fees",
+      "GST Registration in Ambala 2026 — GSK, Documents, Fees",
 
     seoDescription:
       "Get GST registration in Ambala City & Ambala Cantt. Haryana turnover limits, documents required, biometric verification at GSK, timelines, fees and common mistakes explained.",
@@ -422,10 +430,10 @@ export const blogs: Blog[] = [
     readTime: "8 min read",
 
     seoTitle:
-      "TDS Return Filing Due Dates & Late Fee (FY 2026-27) — Full Guide",
+      "TDS Return Due Dates FY 2026-27 + Late Fee (Sec 427)",
 
     seoDescription:
-      "TDS return due dates for FY 2026-27, Form 24Q/26Q/27Q/27EQ, late fee under Section 427 (old 234E), penalty under Section 461 (old 271H), and interest on late TDS deposit.",
+      "TDS return due dates FY 2026-27: 31 Jul, 31 Oct, 31 Jan, 31 May. TDS deposit by the 7th (March: 30 April). Late fee ₹200/day under Sec 427 (old 234E), penalty and interest explained.",
 
     keywords: [
       "TDS Return Filing",
@@ -457,7 +465,7 @@ export const blogs: Blog[] = [
     readTime: "9 min read",
 
     seoTitle:
-      "Belated & Revised ITR for AY 2026-27 — Due Dates, Late Fee & ITR-U",
+      "Belated ITR Rules AY 2026-27: Last Date 31 Dec, Late Fee",
 
     seoDescription:
       "Belated return deadline 31 Dec 2026, revised return deadline 31 Mar 2027, Section 234F late fee, Section 234A interest, and Updated Return (ITR-U) rules for AY 2026-27 explained simply.",

@@ -149,9 +149,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
+  // Blog ki asli date (ya refresh ki "updated" date) — har build par
+  // new Date() dene se Google lastmod ko ignore karna seekh jaata hai.
+  const blogDate = (human: string): Date => {
+    const parsed = new Date(human);
+    if (isNaN(parsed.getTime())) return new Date();
+    return new Date(Date.UTC(parsed.getFullYear(), parsed.getMonth(), parsed.getDate()));
+  };
+
   const blogEntries: MetadataRoute.Sitemap = blogs.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: new Date(),
+    lastModified: blogDate(blog.updated ?? blog.date),
     changeFrequency: "monthly",
     priority: 0.8,
   }));

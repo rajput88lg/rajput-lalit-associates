@@ -42,8 +42,9 @@ export default function FractionDecimalConverterTool() {
 
           {mode === "toFraction" ? (
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">Enter a decimal</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="frac-decimal">Enter a decimal</label>
               <input
+                id="frac-decimal"
                 type="text"
                 inputMode="decimal"
                 value={decimalInput}
@@ -55,8 +56,9 @@ export default function FractionDecimalConverterTool() {
           ) : (
             <div className="grid grid-cols-2 gap-4 items-end">
               <div>
-                <label className="text-sm font-bold text-[#002b5c] mb-2 block">Numerator</label>
+                <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="frac-numerator">Numerator</label>
                 <input
+                  id="frac-numerator"
                   type="number"
                   value={Number.isNaN(numerator) ? "" : numerator}
                   onChange={(e) => setNumerator(e.target.value === "" ? 0 : Number(e.target.value))}
@@ -64,8 +66,9 @@ export default function FractionDecimalConverterTool() {
                 />
               </div>
               <div>
-                <label className="text-sm font-bold text-[#002b5c] mb-2 block">Denominator</label>
+                <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="frac-denominator">Denominator</label>
                 <input
+                  id="frac-denominator"
                   type="number"
                   value={Number.isNaN(denominator) ? "" : denominator}
                   onChange={(e) => setDenominator(e.target.value === "" ? 0 : Number(e.target.value))}

@@ -29,7 +29,7 @@ export default function WhatsAppReferralButton({ location, className = "" }: Pro
       rel="noopener noreferrer"
       onClick={() => trackEvent("referral_share_click", { location })}
       className={
-        "inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold px-6 py-3.5 rounded-xl transition shadow-lg " +
+        "inline-flex items-center gap-2 bg-[#147438] hover:bg-[#0f5429] text-white font-bold px-6 py-3.5 rounded-xl transition shadow-lg " +
         className
       }
     >

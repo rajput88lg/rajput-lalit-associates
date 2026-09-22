@@ -43,11 +43,12 @@ export default function DateDifferenceCalculatorTool() {
         >
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
-              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor="datediff-start">
                 <CalendarDays size={16} className="text-[#d99a2b]" />
                 Start Date
               </label>
               <input
+                id="datediff-start"
                 type="date"
                 value={startStr}
                 onChange={(e) => setStartStr(e.target.value)}
@@ -55,11 +56,12 @@ export default function DateDifferenceCalculatorTool() {
               />
             </div>
             <div>
-              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor="datediff-end">
                 <CalendarDays size={16} className="text-[#d99a2b]" />
                 End Date
               </label>
               <input
+                id="datediff-end"
                 type="date"
                 value={endStr}
                 onChange={(e) => setEndStr(e.target.value)}

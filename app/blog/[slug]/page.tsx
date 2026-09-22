@@ -95,7 +95,10 @@ export async function generateMetadata({
   }
 
   return {
-    title: blog.seoTitle,
+    // absolute: layout ka "| Rajput Lalit & Associates" template blog titles
+    // ko 90-100 characters tak le jaata tha, jo Google results mein cut ho
+    // jaate the. Blog ka seoTitle ab jaisa hai waisa hi use hota hai.
+    title: { absolute: blog.seoTitle },
     description: blog.seoDescription,
     keywords: blog.keywords,
     alternates: {
@@ -386,6 +389,7 @@ case "msme-registration-online-india":
         image={blog.image}
         slug={blog.slug}
         datePublished={blog.date}
+        dateModified={blog.updated}
         author={blog.author}
       />
 
@@ -411,6 +415,9 @@ case "msme-registration-online-india":
       <div className="flex flex-wrap items-center gap-6 text-gray-500 mt-6 text-sm border-b border-gray-200 pb-6 font-medium">
         <span className="flex items-center gap-2">👤 {blog.author}</span>
         <span className="flex items-center gap-2">📅 {blog.date}</span>
+        {blog.updated && (
+          <span className="flex items-center gap-2">🔄 Updated {blog.updated}</span>
+        )}
         <span className="flex items-center gap-2">⏱️ {blog.readTime}</span>
       </div>
 

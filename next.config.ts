@@ -92,6 +92,11 @@ const nextConfig: NextConfig = {
       // /free-tools ek alag hub page tha, ab /tools mein hi merge kar diya
       // gaya hai (sab calculators ek hi jagah) — permanent redirect.
       { source: "/free-tools", destination: "/tools", permanent: true },
+      // GSTR-9 blog ke purane URLs — Google Search Console mein abhi bhi
+      // position 1 par impressions aa rahe the, lekin page 404 deta tha.
+      // Ab ye current GSTR-9 guide par jaate hain, ranking bhi transfer hoti hai.
+      { source: "/blog/gstr-9-annual-return", destination: "/blog/gstr-9-annual-return-filing-guide-fy-2025-26", permanent: true },
+      { source: "/blog/gstr-9-annual-return-filing-guide-due-date-applicability-rules", destination: "/blog/gstr-9-annual-return-filing-guide-fy-2025-26", permanent: true },
     ];
   },
 };

@@ -61,6 +61,7 @@ export default function GpaCalculatorTool() {
                   {idx === 0 && <label className="text-xs font-bold text-gray-500 mb-1 block">Course name</label>}
                   <input
                     type="text"
+                    aria-label={`Course name, row ${idx + 1}`}
                     value={row.course}
                     onChange={(e) => updateRow(row.id, { course: e.target.value })}
                     className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"
@@ -72,6 +73,7 @@ export default function GpaCalculatorTool() {
                     type="number"
                     min={0}
                     step={0.5}
+                    aria-label={`Credits, row ${idx + 1}`}
                     value={Number.isNaN(row.credits) ? "" : row.credits}
                     onChange={(e) => updateRow(row.id, { credits: e.target.value === "" ? 0 : Number(e.target.value) })}
                     className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"
@@ -80,6 +82,7 @@ export default function GpaCalculatorTool() {
                 <div>
                   {idx === 0 && <label className="text-xs font-bold text-gray-500 mb-1 block">Grade</label>}
                   <select
+                    aria-label={`Grade, row ${idx + 1}`}
                     value={row.grade}
                     onChange={(e) => updateRow(row.id, { grade: e.target.value })}
                     className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"

@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Belated ya revised ITR file karne ki deadline kya hai?",
-    a: "Agar original due date miss ho gayi hai (belated) ya original return mein galti sudharni hai (revised), dono ke liye deadline generally relevant assessment year ke 31 December tak hoti hai — lekin late filing fee (Section 234F) belated return par lagta hai.",
+    a: "AY 2026-27 ke liye belated return (Section 139(4)) 31 December 2026 tak file ho sakta hai, late fee (Section 234F) ke saath. Revised return (Section 139(5)) ki deadline Budget 2026 ke baad 31 March 2027 hai. Dono mein, assessment complete hone se pehle file karna zaroori hai.",
   },
   {
     q: "Income tax notice mile to sabse pehle kya karein?",

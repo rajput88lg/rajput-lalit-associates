@@ -50,8 +50,9 @@ export default function WageConverterTool() {
           <div className="grid sm:grid-cols-2 gap-6">
             <ToolNumberField label="Amount" icon={<Coins size={16} />} value={amount} onChange={setAmount} min={0} />
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">Pay Period</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="pay-period">Pay Period</label>
               <select
+                id="pay-period"
                 value={period}
                 onChange={(e) => setPeriod(e.target.value as WagePeriod)}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"

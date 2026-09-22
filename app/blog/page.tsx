@@ -109,7 +109,7 @@ export default function BlogPage() {
               href="https://wa.me/919354953603"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#20bd5a] transition shadow-md hover:shadow-lg flex items-center gap-2"
+              className="bg-[#147438] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#0f5429] transition shadow-md hover:shadow-lg flex items-center gap-2"
             >
               💬 WhatsApp
             </a>

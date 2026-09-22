@@ -50,9 +50,9 @@ export default function VolumeConverterTool() {
 
           <div className="grid sm:grid-cols-[1fr_auto_1fr] gap-4 items-end">
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">From</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="from-volume">From</label>
               <select
-                value={fromUnit}
+                id="from-volume" value={fromUnit}
                 onChange={(e) => setFromUnit(e.target.value as VolumeUnit)}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"
               >
@@ -72,9 +72,9 @@ export default function VolumeConverterTool() {
             </button>
 
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">To</label>
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="to-volume">To</label>
               <select
-                value={toUnit}
+                id="to-volume" value={toUnit}
                 onChange={(e) => setToUnit(e.target.value as VolumeUnit)}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 font-semibold focus:outline-none focus:ring-2 focus:ring-[#d99a2b]"
               >

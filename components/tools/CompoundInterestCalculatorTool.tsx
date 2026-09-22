@@ -102,7 +102,7 @@ export default function CompoundInterestCalculatorTool() {
                   </tbody>
                 </table>
                 {result.yearlySchedule.length > 10 && (
-                  <p className="mt-2 text-xs text-gray-400 px-2">
+                  <p className="mt-2 text-xs text-gray-500 px-2">
                     Showing first 10 years of {result.yearlySchedule.length}.
                   </p>
                 )}

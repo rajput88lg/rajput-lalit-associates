@@ -45,11 +45,12 @@ export default function AgeCalculatorTool() {
         >
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
-              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor="age-dob">
                 <CalendarDays size={16} className="text-[#d99a2b]" />
                 Date of Birth
               </label>
               <input
+                id="age-dob"
                 type="date"
                 value={birthDateStr}
                 onChange={(e) => setBirthDateStr(e.target.value)}
@@ -58,11 +59,12 @@ export default function AgeCalculatorTool() {
               />
             </div>
             <div>
-              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+              <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor="age-as-of">
                 <CalendarDays size={16} className="text-[#d99a2b]" />
                 Calculate Age As Of
               </label>
               <input
+                id="age-as-of"
                 type="date"
                 value={asOfStr}
                 onChange={(e) => setAsOfStr(e.target.value)}

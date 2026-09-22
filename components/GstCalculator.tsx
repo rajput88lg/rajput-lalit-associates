@@ -132,7 +132,7 @@ Total amount: ${formatINR(result.totalAmount)}
 
             <div>
               <div className="flex items-center justify-between gap-4 mb-2">
-                <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]">
+                <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]" htmlFor="gst-amount">
                   <IndianRupee size={18} className="text-[#d99a2b]" />
                   {mode === "add" ? "Amount (excluding GST)" : "Amount (including GST)"}
                 </label>
@@ -141,6 +141,7 @@ Total amount: ${formatINR(result.totalAmount)}
                 </span>
               </div>
               <input
+                id="gst-amount"
                 type="range"
                 min={0}
                 max={1000000}
@@ -173,8 +174,9 @@ Total amount: ${formatINR(result.totalAmount)}
                 ))}
               </div>
               <div className="mt-3">
-                <label className="text-xs text-gray-500">Or enter a custom rate:</label>
+                <label className="text-xs text-gray-500" htmlFor="gst-custom-rate">Or enter a custom rate:</label>
                 <input
+                  id="gst-custom-rate"
                   type="number"
                   min={0}
                   max={100}
@@ -257,6 +259,7 @@ Total amount: ${formatINR(result.totalAmount)}
                   <input
                     type="text"
                     required
+                    aria-label="Your name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Your name"
@@ -265,6 +268,7 @@ Total amount: ${formatINR(result.totalAmount)}
                   <input
                     type="email"
                     required
+                    aria-label="Email address"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email address"
@@ -273,6 +277,7 @@ Total amount: ${formatINR(result.totalAmount)}
                   <input
                     type="tel"
                     required
+                    aria-label="Phone number, with country code"
                     value={mobile}
                     onChange={(e) => setMobile(e.target.value)}
                     placeholder="Phone (with country code)"

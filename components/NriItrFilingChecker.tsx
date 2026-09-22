@@ -65,7 +65,7 @@ export default function NriItrFilingChecker() {
 
           <div className="p-6 md:p-10 space-y-8">
             <div>
-              <label className="block font-bold text-[#002b5c]">
+              <label className="block font-bold text-[#002b5c]" htmlFor="nri-itr-income">
                 <span className="inline-flex items-center gap-2">
                   <IndianRupee size={16} className="text-[#d99a2b]" />
                   Your total Indian-source income this year
@@ -76,6 +76,7 @@ export default function NriItrFilingChecker() {
                 earned in India — before deductions.
               </p>
               <input
+                id="nri-itr-income"
                 type="number"
                 min={0}
                 value={income}

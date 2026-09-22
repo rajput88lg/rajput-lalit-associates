@@ -8,6 +8,7 @@
  */
 
 import Link from "next/link";
+import { useId } from "react";
 import type { ReactNode } from "react";
 import { trackWhatsAppClick } from "@/lib/gaEvents";
 
@@ -122,10 +123,11 @@ export function ToolSliderField({
   step: number;
   display: string;
 }) {
+  const inputId = useId();
   return (
     <div>
       <div className="flex items-center justify-between gap-4 mb-2">
-        <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]">
+        <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c]" htmlFor={inputId}>
           <span className="text-[#d99a2b]">{icon}</span>
           {label}
         </label>
@@ -134,6 +136,7 @@ export function ToolSliderField({
         </span>
       </div>
       <input
+        id={inputId}
         type="range"
         min={min}
         max={max}
@@ -142,7 +145,7 @@ export function ToolSliderField({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full accent-[#d99a2b]"
       />
-      <div className="flex justify-between mt-1 text-xs text-gray-400">
+      <div className="flex justify-between mt-1 text-xs text-gray-500">
         <span>{min.toLocaleString("en-US")}</span>
         <span>{max.toLocaleString("en-US")}</span>
       </div>
@@ -169,14 +172,16 @@ export function ToolNumberField({
   step?: number;
   suffix?: string;
 }) {
+  const inputId = useId();
   return (
     <div>
-      <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2">
+      <label className="flex items-center gap-2 text-sm font-bold text-[#002b5c] mb-2" htmlFor={inputId}>
         <span className="text-[#d99a2b]">{icon}</span>
         {label}
       </label>
       <div className="flex items-center gap-2">
         <input
+          id={inputId}
           type="number"
           value={Number.isNaN(value) ? "" : value}
           onChange={(e) => onChange(e.target.value === "" ? 0 : Number(e.target.value))}

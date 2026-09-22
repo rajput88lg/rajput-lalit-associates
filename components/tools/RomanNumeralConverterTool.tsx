@@ -41,10 +41,11 @@ export default function RomanNumeralConverterTool() {
 
           {mode === "toRoman" ? (
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="roman-number-input">
                 Enter a number (1–3999)
               </label>
               <input
+                id="roman-number-input"
                 type="number"
                 value={Number.isNaN(numberInput) ? "" : numberInput}
                 onChange={(e) => setNumberInput(e.target.value === "" ? 0 : Number(e.target.value))}
@@ -56,10 +57,11 @@ export default function RomanNumeralConverterTool() {
             </div>
           ) : (
             <div>
-              <label className="text-sm font-bold text-[#002b5c] mb-2 block">
+              <label className="text-sm font-bold text-[#002b5c] mb-2 block" htmlFor="roman-numeral-input">
                 Enter a Roman numeral
               </label>
               <input
+                id="roman-numeral-input"
                 type="text"
                 value={romanInput}
                 onChange={(e) => setRomanInput(e.target.value.toUpperCase())}

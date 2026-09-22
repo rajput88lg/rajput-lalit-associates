@@ -4,6 +4,7 @@ interface BlogSchemaProps {
   image: string;
   slug: string;
   datePublished: string;
+  dateModified?: string;
   author: string;
 }
 
@@ -20,9 +21,11 @@ function toISODateTime(humanDate: string): string {
     // fallback — original string hi bhej dein, page break nahi hoga.
     return humanDate;
   }
-  const yyyy = parsed.getUTCFullYear();
-  const mm = String(parsed.getUTCMonth() + 1).padStart(2, "0");
-  const dd = String(parsed.getUTCDate()).padStart(2, "0");
+  // Local getters: "22 September 2026" local midnight par parse hota hai,
+  // isliye local date hi sahi din hai — server ka timezone kuch bhi ho.
+  const yyyy = parsed.getFullYear();
+  const mm = String(parsed.getMonth() + 1).padStart(2, "0");
+  const dd = String(parsed.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}T00:00:00+05:30`;
 }
 
@@ -32,9 +35,13 @@ export default function BlogSchema({
   image,
   slug,
   datePublished,
+  dateModified,
   author,
 }: BlogSchemaProps) {
   const isoDate = toISODateTime(datePublished);
+  // Refresh hua blog ho to "updated" date dateModified mein jaati hai —
+  // Google ko freshness signal milta hai.
+  const isoModified = dateModified ? toISODateTime(dateModified) : isoDate;
 
   const schema = {
     "@context": "https://schema.org",
@@ -45,7 +52,7 @@ export default function BlogSchema({
     image: `https://www.rajputlalitassociates.in${image}`,
 
     datePublished: isoDate,
-    dateModified: isoDate,
+    dateModified: isoModified,
 
     author: {
       "@type": "Person",

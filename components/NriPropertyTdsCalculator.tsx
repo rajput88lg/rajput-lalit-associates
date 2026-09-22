@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   Calculator,
@@ -400,6 +400,7 @@ BLOCKED with dept. : ${formatINR(result.excessTds)}
                     <input
                       type="text"
                       required
+                      aria-label="Your name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Your name"
@@ -408,6 +409,7 @@ BLOCKED with dept. : ${formatINR(result.excessTds)}
                     <input
                       type="email"
                       required
+                      aria-label="Email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Email address"
@@ -416,6 +418,7 @@ BLOCKED with dept. : ${formatINR(result.excessTds)}
                     <input
                       type="tel"
                       required
+                      aria-label="Phone number, with country code"
                       value={mobile}
                       onChange={(e) => setMobile(e.target.value)}
                       placeholder="Phone (with country code)"
@@ -524,10 +527,11 @@ function Field({
 }) {
   const isNumber = type === "number";
   const inputMode: "numeric" | undefined = isNumber ? "numeric" : undefined;
+  const inputId = useId();
 
   return (
     <div>
-      <label className="block text-sm font-bold text-[#002b5c] mb-2">
+      <label className="block text-sm font-bold text-[#002b5c] mb-2" htmlFor={inputId}>
         {label}
       </label>
       <div className="relative">
@@ -535,6 +539,7 @@ function Field({
           {icon}
         </span>
         <input
+          id={inputId}
           type={type}
           inputMode={inputMode}
           min={isNumber ? 0 : undefined}
