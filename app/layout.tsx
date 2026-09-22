@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import AIChatWidget from "@/components/AIChatWidget";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
 import ConsultationBanner from "@/components/ConsultationBanner";
+import DeadlineBar from "@/components/DeadlineBar";
 // DHYAAN DEIN: Agar aapke paas Navbar aur Footer components hain, toh unhe yahan import karein
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
@@ -157,6 +158,13 @@ export default function RootLayout({
         <ScrollReveal />
         
         {/* <Navbar /> -- Yahan Navbar add karein taki wo har page par dikhe */}
+
+        {/*
+          DEADLINE BAR (23 Sept 2026): next tax/GST deadline + link to
+          /tax-deadlines. Dates live in lib/taxDeadlines.ts; the bar hides
+          itself once all listed dates have passed.
+        */}
+        <DeadlineBar />
 
         {/* flex-grow ensure karega ki chote pages par bhi footer niche rahe */}
         <main className="flex-grow w-full">
