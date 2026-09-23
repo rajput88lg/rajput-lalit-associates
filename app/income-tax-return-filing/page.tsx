@@ -11,6 +11,8 @@ import ServiceFAQ from "@/components/ServiceFAQ";
 import GoogleReviews from "@/components/GoogleReviews";
 import Breadcrumb from "@/components/Breadcrumb";
 import ServiceSchema from "@/components/components/ServiceSchema";
+import FeeCards from "@/components/FeeCards";
+import { ITR_FEES } from "@/lib/fees";
 import { servicePages } from "@/data/servicePages";
 
 const SLUG = "income-tax-return-filing";
@@ -67,6 +69,12 @@ export default function Page() {
         <Breadcrumb current={data.heroTitle} />
 
         <ServiceContentBlock {...data.content} />
+
+        <FeeCards
+          heading="ITR Filing Fees"
+          intro="Clear starting fees — pick the one that matches your income."
+          items={ITR_FEES.map(({ href, ...rest }) => ({ ...rest, href: undefined }))}
+        />
 
         <BookAppointment />
 

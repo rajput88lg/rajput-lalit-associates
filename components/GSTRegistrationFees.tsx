@@ -4,17 +4,17 @@ import { FaCheckCircle } from "react-icons/fa";
 const plans = [
   {
     title: "Proprietorship Firm",
-    price: "₹5,000",
+    price: "₹2,000",
     note: "Professional Fee",
   },
   {
     title: "Partnership Firm",
-    price: "₹10,000",
+    price: "₹5,000",
     note: "Professional Fee",
   },
   {
     title: "Private Limited Company",
-    price: "₹30,000",
+    price: "₹10,000",
     note: "Professional Fee",
   },
 ];

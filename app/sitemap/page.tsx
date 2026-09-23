@@ -14,7 +14,7 @@ const sections = [
       { name: "About Us", href: "/about" },
       { name: "Contact Us", href: "/contact" },
       { name: "Book Consultation", href: "/appointment" },
-      { name: "Packages", href: "/packages" },
+      { name: "Fees", href: "/fees" },
       { name: "Blog", href: "/blog" },
     ],
   },

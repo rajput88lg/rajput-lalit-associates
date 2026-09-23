@@ -238,12 +238,18 @@ export default function GSTRegistrationFeesIndia() {
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6">
         <p className="text-gray-700 leading-7">
-          Want a clear quote before you start? Our{" "}
+          Our own fee is fixed upfront: <strong>₹2,000</strong> for a proprietorship,{" "}
+          <strong>₹5,000</strong> for a partnership firm and <strong>₹10,000</strong> for a
+          private limited company. It includes document review, filing, handling the
+          officer&apos;s queries, and guidance through biometric authentication. See our{" "}
           <Link href="/gst-registration" className={linkClass}>
             GST Registration service
           </Link>{" "}
-          includes document review, filing, handling the officer&apos;s queries, and
-          guidance through biometric authentication — first consultation is free.
+          or all our{" "}
+          <Link href="/fees" className={linkClass}>
+            fees
+          </Link>
+          .
         </p>
       </div>
     </>

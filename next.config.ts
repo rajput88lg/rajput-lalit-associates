@@ -92,6 +92,9 @@ const nextConfig: NextConfig = {
       // /free-tools ek alag hub page tha, ab /tools mein hi merge kar diya
       // gaya hai (sab calculators ek hi jagah) — permanent redirect.
       { source: "/free-tools", destination: "/tools", permanent: true },
+      // Short, easy link for asking clients for a Google review — goes on
+      // visiting cards and WhatsApp messages: rajputlalitassociates.in/review
+      { source: "/review", destination: "https://share.google/Ss4gF3tVmHwbOUEKk", permanent: false },
       // GSTR-9 blog ke purane URLs — Google Search Console mein abhi bhi
       // position 1 par impressions aa rahe the, lekin page 404 deta tha.
       // Ab ye current GSTR-9 guide par jaate hain, ranking bhi transfer hoti hai.

@@ -144,6 +144,23 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/fees" className="hover:text-[#f0b84b] transition">
+                  Our Fees
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <a
+                  href="/review"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#f0b84b] transition"
+                >
+                  Google par review dein
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <Link href="/refer-a-friend" className="hover:text-[#f0b84b] transition">
                   Refer a Friend
                 </Link>
