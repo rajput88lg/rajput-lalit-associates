@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import LeadFallback from "@/components/LeadFallback";
 
 import {
   CalendarDays,
@@ -495,8 +496,22 @@ Preferred Time: ${formData.time}
                 aria-live="polite"
                 className="bg-red-50 border border-red-200 text-red-700 rounded-xl p-4 text-center font-medium"
               >
-                Failed to submit appointment. Please try again.
+                Booking email se nahi ja payi — neeche wale button se WhatsApp par bhej dijiye.
               </div>
+            )}
+
+            {status === "error" && (
+              <LeadFallback
+                form="appointment"
+                fields={{
+                  Naam: formData.name,
+                  Mobile: formData.mobile,
+                  Email: formData.email,
+                  Service: service,
+                  Date: formData.date,
+                  Time: formData.time,
+                }}
+              />
             )}
 
           </form>

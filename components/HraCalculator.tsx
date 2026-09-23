@@ -2,6 +2,7 @@
 
 import { useId, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
+import LeadFallback from "@/components/LeadFallback";
 import {
   Home,
   IndianRupee,
@@ -312,6 +313,7 @@ Taxable HRA: ${formatINR(result.taxableHra)}
                 </p>
 
                 {leadError && <p className="mt-4 text-sm text-[#f0b84b]">{leadError}</p>}
+                {leadError && <LeadFallback form="hra_calculator" fields={{ Naam: name, Mobile: mobile, Tool: "HRA Exemption Calculator" }} />}
 
                 <div className="mt-7 flex flex-col sm:flex-row justify-center gap-4">
                   <button

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import LeadFallback from "@/components/LeadFallback";
 import {
   MessageCircle,
   X,
@@ -357,6 +358,12 @@ export default function AIChatWidget() {
                       <p className="text-xs text-red-600 text-center">
                         {leadError}
                       </p>
+                    )}
+                    {leadError && (
+                      <LeadFallback
+                        form="ai_chat"
+                        fields={{ Naam: leadName, Mobile: leadMobile, Email: leadEmail }}
+                      />
                     )}
                   </form>
                 )}

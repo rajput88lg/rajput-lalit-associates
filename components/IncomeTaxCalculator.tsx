@@ -2,6 +2,7 @@
 
 import { useId, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
+import LeadFallback from "@/components/LeadFallback";
 import {
   Calculator,
   IndianRupee,
@@ -307,6 +308,7 @@ Savings: ${formatINR(result.savings)}
                 </p>
 
                 {leadError && <p className="mt-4 text-sm text-[#f0b84b]">{leadError}</p>}
+                {leadError && <LeadFallback form="income_tax_calculator" fields={{ Naam: name, Mobile: mobile, Tool: "Income Tax Calculator" }} />}
 
                 <div className="mt-7 flex flex-col sm:flex-row justify-center gap-4">
                   <button

@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import LeadFallback from "@/components/LeadFallback";
 
 import {
   FaPhoneAlt,
@@ -19,6 +20,8 @@ export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
+  // Filled only when sending fails, so LeadFallback can prefill WhatsApp.
+  const [failedFields, setFailedFields] = useState<Record<string, string> | null>(null);
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -64,7 +67,16 @@ export default function Contact() {
       trackFormSubmit("contact");
     } catch (error) {
       console.error("Contact Email Error:", error);
-      setStatus("❌ Failed to Send Message");
+      setStatus("❌ Message email se nahi ja paya — neeche wale button se WhatsApp par bhej dijiye.");
+      const el = form.current.elements;
+      const val = (n: string) =>
+        ((el.namedItem(n) as HTMLInputElement | HTMLTextAreaElement | null)?.value ?? "").trim();
+      setFailedFields({
+        Naam: val("name"),
+        Mobile: val("phone"),
+        Email: val("email"),
+        Message: val("message"),
+      });
     }
 
     setLoading(false);
@@ -296,6 +308,10 @@ export default function Contact() {
                 >
                   {status}
                 </div>
+              )}
+
+              {status.includes("❌") && failedFields && (
+                <LeadFallback form="contact" fields={failedFields} />
               )}
             </form>
           </div>
