@@ -21,6 +21,7 @@ export default function BookAppointment() {
     "Income Tax Consultation",
     "GST Notice & Reply Consultation",
     "Accounting & Business Consultation",
+    "NRI Tax Consultation",
   ];
 
   const handleRequestConsultation = () => {

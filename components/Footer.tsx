@@ -150,6 +150,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/nri-tax-services" className="hover:text-[#f0b84b] transition">
+                  NRI Tax Services
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <a
                   href="/review"
                   target="_blank"

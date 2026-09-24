@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import NriServicesCta from "@/components/NriServicesCta";
 import Breadcrumb from "@/components/Breadcrumb";
 import NriPropertyTdsCalculator from "@/components/NriPropertyTdsCalculator";
 
@@ -316,6 +317,7 @@ export default function Page() {
         </section>
 
         <div className="print:hidden">
+          <NriServicesCta />
           <Contact />
         </div>
       </main>

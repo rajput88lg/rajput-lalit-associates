@@ -73,7 +73,7 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden lg:flex items-center gap-4 ml-4">
             <Link
               href="/#home"
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
@@ -109,6 +109,14 @@ export default function Navbar() {
               className="nav-link relative text-[#d99a2b] font-bold hover:text-[#002b5c] transition"
             >
               Free Tools
+            </Link>
+
+            <Link
+              href="/nri-tax-services"
+              title="NRI Tax Services"
+              className="nav-link relative whitespace-nowrap text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+            >
+              NRI
             </Link>
 
             <Link
@@ -187,6 +195,14 @@ export default function Navbar() {
                 className="px-4 py-3 rounded-lg text-[#d99a2b] font-bold hover:bg-gray-50"
               >
                 Free Tools
+              </Link>
+
+              <Link
+                href="/nri-tax-services"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+              >
+                NRI Services
               </Link>
 
               <Link

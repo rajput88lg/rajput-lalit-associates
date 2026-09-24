@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Contact from "@/components/Contact";
 import FeeCards from "@/components/FeeCards";
 import { ITR_FEES, GST_REGISTRATION_FEES, QUOTE_SERVICES } from "@/lib/fees";
+import { NRI_FEES } from "@/lib/nriServices";
 
 const PAGE_URL = "https://www.rajputlalitassociates.in/fees";
 const TITLE = "Our Fees — ITR from ₹1,500, GST Registration from ₹2,000";
@@ -108,6 +109,12 @@ export default function FeesPage() {
           heading="GST Registration"
           intro="The government fee for GST registration is ₹0. This is our professional fee for the complete process."
           items={GST_REGISTRATION_FEES}
+        />
+
+        <FeeCards
+          heading="NRI Tax Services"
+          intro="For NRIs in the USA, UAE, UK, Canada and elsewhere — handled fully online."
+          items={NRI_FEES.map((f) => ({ ...f, href: "/nri-tax-services" }))}
         />
 
         <section className="py-16 bg-white">

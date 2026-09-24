@@ -13,7 +13,7 @@ import {
   FaPaperPlane,
   FaUser,
 } from "react-icons/fa";
-import { trackFormSubmit } from "@/lib/gaEvents";
+import { trackFormSubmit, trackCallClick, trackWhatsAppClick } from "@/lib/gaEvents";
 import { tagUrgency } from "@/lib/leadTriage";
 
 export default function Contact() {
@@ -128,8 +128,38 @@ export default function Contact() {
               </p>
 
               <div className="mt-8 space-y-4">
-                
-                             
+                {/* PHONE */}
+                <a
+                  href="tel:+919354953603"
+                  onClick={() => trackCallClick("contact_section")}
+                  className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition"
+                >
+                  <div className="w-11 h-11 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
+                    <FaPhoneAlt />
+                  </div>
+                  <div>
+                    <p className="font-bold">Call</p>
+                    <p className="text-blue-100 mt-1">+91 93549 53603</p>
+                  </div>
+                </a>
+
+                {/* WHATSAPP */}
+                <a
+                  href="https://wa.me/919354953603"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("contact_section")}
+                  className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition"
+                >
+                  <div className="w-11 h-11 rounded-lg bg-[#147438] flex items-center justify-center flex-shrink-0">
+                    <FaWhatsapp />
+                  </div>
+                  <div>
+                    <p className="font-bold">WhatsApp</p>
+                    <p className="text-blue-100 mt-1">Message us — send documents here too</p>
+                  </div>
+                </a>
+
                 {/* EMAIL */}
                 <a href="mailto:info@rajputlalitassociates.in" className="flex items-start gap-4 bg-white/[0.08] border border-white/10 rounded-xl p-4 hover:bg-white/[0.13] transition">
                   <div className="w-11 h-11 rounded-lg bg-[#d99a2b] flex items-center justify-center flex-shrink-0">
