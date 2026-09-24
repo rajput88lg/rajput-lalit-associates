@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { X, PhoneCall } from "lucide-react";
 import { trackEvent } from "@/lib/gaEvents";
 
@@ -106,13 +107,13 @@ export default function ConsultationBanner() {
             Book a no-obligation consultation for GST, Income Tax or
             Compliance questions.
           </p>
-          <a
-            href="/appointment"
+          <Link
+            href="/#appointment"
             onClick={() => trackEvent("consultation_banner_click")}
             className="inline-block mt-3 bg-[#d99a2b] hover:bg-[#c98a1e] text-white text-sm font-bold px-4 py-2 rounded-lg transition"
           >
             Book Free Consultation
-          </a>
+          </Link>
         </div>
       </div>
     </div>
