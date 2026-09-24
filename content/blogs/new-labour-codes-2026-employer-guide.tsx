@@ -147,7 +147,7 @@ export default function NewLabourCodes2026EmployerGuide() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        10-50 employees wali chhoti businesses ke liye sabse zaroori 2 cheezein hain: (1) har employee ko naye format mein appointment letter dena, aur (2) apne salary structure ko 50% wage-rule ke hisaab se check karna. Standing orders aur retrenchment approval jaise bade thresholds (300+) aam taur par chhoti firms par apply nahi hote — ye actually compliance burden kam karta hai. Hamari{" "}<Link href="/accounting" className={linkClass}>Payroll aur Accounting</Link>{" "}service aapke salary structure ko naye rules ke hisaab se review kar sakti hai.
+        10-50 employees wali chhoti businesses ke liye sabse zaroori 2 cheezein hain: (1) har employee ko naye format mein appointment letter dena, aur (2) apne salary structure ko 50% wage-rule ke hisaab se check karna. Standing orders aur retrenchment approval jaise bade thresholds (300+) aam taur par chhoti firms par apply nahi hote — ye actually compliance burden kam karta hai. Hamari{" "}<Link href="/accounting-bookkeeping-services" className={linkClass}>Payroll aur Accounting</Link>{" "}service aapke salary structure ko naye rules ke hisaab se review kar sakti hai.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

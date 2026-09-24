@@ -74,6 +74,28 @@ import FacelessAssessmentAndAppealSchemeExplained from "@/content/blogs/faceless
 import GSTCompleteGuideIndia2026 from "@/content/blogs/gst-complete-guide-india-2026";
 import IncomeTaxCompleteGuideIndia2026 from "@/content/blogs/income-tax-complete-guide-india-2026";
 
+// Round 4 — 24 September 2026
+import GstLateFeeInterestGstr3bGstr1GuideBlog from "@/content/blogs/gst-late-fee-interest-gstr-3b-gstr-1-guide";
+import GstOnRentCommercialResidentialPropertyRcmBlog from "@/content/blogs/gst-on-rent-commercial-residential-property-rcm";
+import GstOnRestaurantsHotelsRates2026Blog from "@/content/blogs/gst-on-restaurants-hotels-rates-2026";
+import GstTaxInvoiceFormatMandatoryFieldsBlog from "@/content/blogs/gst-tax-invoice-format-mandatory-fields";
+import HraExemptionRulesFy2026278MetroCitiesBlog from "@/content/blogs/hra-exemption-rules-fy-2026-27-8-metro-cities";
+import IncomeTaxOnRentalIncomeHousePropertyBlog from "@/content/blogs/income-tax-on-rental-income-house-property";
+import HomeLoanTaxBenefitsSection24b80cBlog from "@/content/blogs/home-loan-tax-benefits-section-24b-80c";
+import TaxOnGiftsReceivedRelatives50000RuleBlog from "@/content/blogs/tax-on-gifts-received-relatives-50000-rule";
+import IncomeTaxRefundStatusDelayReasonsBlog from "@/content/blogs/income-tax-refund-status-delay-reasons";
+import PanAadhaarLinkInoperativePanConsequencesBlog from "@/content/blogs/pan-aadhaar-link-inoperative-pan-consequences";
+import CryptoVdaTaxIndia30Percent1PercentTdsBlog from "@/content/blogs/crypto-vda-tax-india-30-percent-1-percent-tds";
+import YoutuberInfluencerIncomeTaxGstGuideBlog from "@/content/blogs/youtuber-influencer-income-tax-gst-guide";
+import SeniorCitizenIncomeTaxBenefitsFy202627Blog from "@/content/blogs/senior-citizen-income-tax-benefits-fy-2026-27";
+import CapitalGainsTaxOnPropertySaleSection54Blog from "@/content/blogs/capital-gains-tax-on-property-sale-section-54";
+import ItrUUpdatedReturn48MonthsGuideBlog from "@/content/blogs/itr-u-updated-return-48-months-guide";
+import TdsOnPropertyPurchaseForm14126qbBlog from "@/content/blogs/tds-on-property-purchase-form-141-26qb";
+import NriRentalIncomeIndiaTaxTdsGuideBlog from "@/content/blogs/nri-rental-income-india-tax-tds-guide";
+import RnorStatusReturningNriTaxGuideBlog from "@/content/blogs/rnor-status-returning-nri-tax-guide";
+import StartupIndiaDpiitRecognitionTaxBenefitsBlog from "@/content/blogs/startup-india-dpiit-recognition-tax-benefits";
+import StrikeOffPrivateLimitedCompanyStk2ClosureBlog from "@/content/blogs/strike-off-private-limited-company-stk-2-closure";
+
 import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
@@ -375,6 +397,66 @@ case "msme-registration-online-india":
     BlogContent = IncomeTaxCompleteGuideIndia2026;
     break;
 
+    case "gst-late-fee-interest-gstr-3b-gstr-1-guide":
+      BlogContent = GstLateFeeInterestGstr3bGstr1GuideBlog;
+      break;
+    case "gst-on-rent-commercial-residential-property-rcm":
+      BlogContent = GstOnRentCommercialResidentialPropertyRcmBlog;
+      break;
+    case "gst-on-restaurants-hotels-rates-2026":
+      BlogContent = GstOnRestaurantsHotelsRates2026Blog;
+      break;
+    case "gst-tax-invoice-format-mandatory-fields":
+      BlogContent = GstTaxInvoiceFormatMandatoryFieldsBlog;
+      break;
+    case "hra-exemption-rules-fy-2026-27-8-metro-cities":
+      BlogContent = HraExemptionRulesFy2026278MetroCitiesBlog;
+      break;
+    case "income-tax-on-rental-income-house-property":
+      BlogContent = IncomeTaxOnRentalIncomeHousePropertyBlog;
+      break;
+    case "home-loan-tax-benefits-section-24b-80c":
+      BlogContent = HomeLoanTaxBenefitsSection24b80cBlog;
+      break;
+    case "tax-on-gifts-received-relatives-50000-rule":
+      BlogContent = TaxOnGiftsReceivedRelatives50000RuleBlog;
+      break;
+    case "income-tax-refund-status-delay-reasons":
+      BlogContent = IncomeTaxRefundStatusDelayReasonsBlog;
+      break;
+    case "pan-aadhaar-link-inoperative-pan-consequences":
+      BlogContent = PanAadhaarLinkInoperativePanConsequencesBlog;
+      break;
+    case "crypto-vda-tax-india-30-percent-1-percent-tds":
+      BlogContent = CryptoVdaTaxIndia30Percent1PercentTdsBlog;
+      break;
+    case "youtuber-influencer-income-tax-gst-guide":
+      BlogContent = YoutuberInfluencerIncomeTaxGstGuideBlog;
+      break;
+    case "senior-citizen-income-tax-benefits-fy-2026-27":
+      BlogContent = SeniorCitizenIncomeTaxBenefitsFy202627Blog;
+      break;
+    case "capital-gains-tax-on-property-sale-section-54":
+      BlogContent = CapitalGainsTaxOnPropertySaleSection54Blog;
+      break;
+    case "itr-u-updated-return-48-months-guide":
+      BlogContent = ItrUUpdatedReturn48MonthsGuideBlog;
+      break;
+    case "tds-on-property-purchase-form-141-26qb":
+      BlogContent = TdsOnPropertyPurchaseForm14126qbBlog;
+      break;
+    case "nri-rental-income-india-tax-tds-guide":
+      BlogContent = NriRentalIncomeIndiaTaxTdsGuideBlog;
+      break;
+    case "rnor-status-returning-nri-tax-guide":
+      BlogContent = RnorStatusReturningNriTaxGuideBlog;
+      break;
+    case "startup-india-dpiit-recognition-tax-benefits":
+      BlogContent = StartupIndiaDpiitRecognitionTaxBenefitsBlog;
+      break;
+    case "strike-off-private-limited-company-stk-2-closure":
+      BlogContent = StrikeOffPrivateLimitedCompanyStk2ClosureBlog;
+      break;
     default:
       notFound();
       return null;

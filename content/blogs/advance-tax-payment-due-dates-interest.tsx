@@ -210,6 +210,16 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
+        Want to see your own instalment amounts and check for a shortfall?
+        Use our free{" "}
+        <Link href="/advance-tax-calculator" className={linkClass}>
+          Advance Tax Calculator
+        </Link>{" "}
+        — enter your estimated tax liability and it shows your exact
+        schedule and an estimate of interest on anything overdue.
+      </p>
+
+      <p className="text-gray-700 leading-8 mb-10">
         Rajput Lalit &amp; Associates helps individuals and businesses
         estimate advance tax accurately each quarter and avoid interest
         under Sections 424/425.{" "}

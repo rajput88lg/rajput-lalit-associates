@@ -228,6 +228,85 @@ export default function IncomeTaxCompleteGuideIndia2026() {
         zaroori hai.
       </p>
 
+      <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
+        Aur Detailed Guides — Salary, Property, NRI aur Special Cases
+      </h2>
+      <p className="text-gray-700 leading-8 mb-6">
+        Upar ke topics ke alawa, ye guides specific situations ko detail mein cover karti hain:
+      </p>
+      <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
+        <li>
+          <Link href="/blog/hra-exemption-rules-fy-2026-27-8-metro-cities" className={linkClass}>
+            HRA Exemption Rules FY 2026-27 — 8 Metro Cities
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/home-loan-tax-benefits-section-24b-80c" className={linkClass}>
+            Home Loan Tax Benefits — Section 24(b) aur 80C
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/income-tax-on-rental-income-house-property" className={linkClass}>
+            Rental Income Par Income Tax
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/capital-gains-tax-on-property-sale-section-54" className={linkClass}>
+            Property Bechne Par Capital Gains Tax aur Section 54
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/tax-on-gifts-received-relatives-50000-rule" className={linkClass}>
+            Gift Par Income Tax — ₹50,000 Rule
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/senior-citizen-income-tax-benefits-fy-2026-27" className={linkClass}>
+            Senior Citizens Ke Liye Tax Benefits
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/crypto-vda-tax-india-30-percent-1-percent-tds" className={linkClass}>
+            Crypto Tax — 30% Tax aur 1% TDS
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/youtuber-influencer-income-tax-gst-guide" className={linkClass}>
+            YouTuber aur Influencer Tax Guide
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/itr-u-updated-return-48-months-guide" className={linkClass}>
+            ITR-U Updated Return — 48 Mahine Ka Mauka
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/income-tax-refund-status-delay-reasons" className={linkClass}>
+            Income Tax Refund Late Kyun Hota Hai
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/pan-aadhaar-link-inoperative-pan-consequences" className={linkClass}>
+            PAN Inoperative — PAN-Aadhaar Link
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/tds-on-property-purchase-form-141-26qb" className={linkClass}>
+            Property Khareedne Par TDS — Form 141
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/nri-rental-income-india-tax-tds-guide" className={linkClass}>
+            NRI Ki India Mein Rental Income
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/rnor-status-returning-nri-tax-guide" className={linkClass}>
+            Returning NRI — RNOR Status Guide
+          </Link>
+        </li>
+      </ul>
+
       <div className="bg-[#fff9ed] border-l-4 border-[#d99a2b] rounded-xl p-6">
         <h3 className="text-xl font-bold text-[#002b5c] mb-2">Ek Baat Yaad Rakhein</h3>
         <p className="text-gray-700 leading-7">

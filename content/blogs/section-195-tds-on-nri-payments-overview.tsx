@@ -154,7 +154,7 @@ export default function Section195TDSOnNRIPaymentsOverview() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        If your business regularly pays a non-resident vendor, consultant, or licensor, getting the Section 195 rate and 15CB certification right protects you, not just the recipient. Rajput Lalit &amp; Associates handles Section 195 TDS compliance and 15CA/15CB certification. See our{" "}<Link href="/blog/nri-fund-repatriation-guide" className={linkClass}>NRI Fund Repatriation guide</Link>{" "}and{" "}<Link href="/blog/nri-lower-tds-certificate-checklist" className={linkClass}>NRI Lower TDS Certificate checklist</Link>, or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        If your business regularly pays a non-resident vendor, consultant, or licensor, getting the Section 195 rate and 15CB certification right protects you, not just the recipient. Rajput Lalit &amp; Associates handles Section 195 TDS compliance and 15CA/15CB certification. See our{" "}<Link href="/nri-fund-repatriation-guide" className={linkClass}>NRI Fund Repatriation guide</Link>{" "}and{" "}<Link href="/nri-lower-tds-certificate-checklist" className={linkClass}>NRI Lower TDS Certificate checklist</Link>, or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

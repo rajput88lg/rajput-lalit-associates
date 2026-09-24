@@ -5,27 +5,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
-import IncomeTaxCalculator from "@/components/IncomeTaxCalculator";
+import AdvanceTaxCalculator from "@/components/AdvanceTaxCalculator";
 
-const SLUG = "income-tax-calculator";
+const SLUG = "advance-tax-calculator";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
 const OG_IMAGE = `/og/${SLUG}.png`;
 
 const TITLE =
-  "Income Tax Calculator 2026 — Old vs New Regime | Rajput Lalit & Associates";
+  "Advance Tax Calculator FY 2026-27 — Due Dates & Interest | Rajput Lalit & Associates";
 const DESCRIPTION =
-  "Free Income Tax Calculator for FY 2025-26 (AY 2026-27) — compare Old Regime vs New Regime tax instantly, with Section 87A rebate, marginal relief and a full slab-by-slab breakdown. See which regime saves you more.";
+  "Free Advance Tax Calculator for FY 2026-27 — enter your estimated tax liability and see your exact 4-instalment schedule (or single instalment for 44AD/44ADA), due dates, and an estimate of Section 425 (old 234C) interest on any shortfall.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
-    "income tax calculator",
-    "income tax calculator 2026",
-    "old vs new tax regime calculator",
-    "income tax calculator FY 2025-26",
-    "new tax regime calculator India",
-    "87A rebate calculator",
+    "advance tax calculator",
+    "advance tax calculator FY 2026-27",
+    "advance tax due dates",
+    "advance tax interest calculator",
+    "234C interest calculator",
+    "advance tax 44AD 44ADA",
   ],
   alternates: { canonical: `/${SLUG}` },
   openGraph: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Rajput Lalit & Associates",
     locale: "en_IN",
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Income Tax Calculator — Rajput Lalit & Associates" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Advance Tax Calculator — Rajput Lalit & Associates" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -47,29 +47,29 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "Which tax year does this calculator use?",
+    question: "Who needs to pay advance tax?",
     answer:
-      "It uses FY 2025-26 (AY 2026-27) slabs — the return most people are actively filing right now. Budget 2026 made no changes to income tax slabs, standard deduction or the Section 87A rebate for FY 2026-27, so the same figures apply to next year's income as well.",
+      "Anyone — salaried, self-employed, freelancer, or business — whose estimated tax payable for the year, after subtracting TDS/TCS already deducted, is ₹10,000 or more. Salaried employees with only salary income usually don't need to, since their employer's TDS covers most of it — but if you have rental income, capital gains, freelance income or crypto gains on top of salary, you likely do.",
   },
   {
-    question: "What is the Section 87A rebate under the New Regime?",
+    question: "What are the advance tax due dates for FY 2026-27?",
     answer:
-      "If your taxable income (after the ₹75,000 standard deduction) is ₹12,00,000 or less, you get a rebate of up to ₹60,000 — which, combined with the standard deduction, makes salary income up to ₹12,75,000 effectively tax-free. Just above this limit, 'marginal relief' ensures your tax never jumps by more than the amount your income exceeds ₹12,00,000 by.",
+      "15 June 2026 (15% of the year's tax), 15 September 2026 (45% cumulative), 15 December 2026 (75% cumulative), and 15 March 2027 (100% cumulative). Each percentage is cumulative — so by 15 September you should have paid 45% of the total, not an extra 30% on top of the first instalment.",
   },
   {
-    question: "Can I claim HRA and 80C under the New Regime?",
+    question: "I file under Section 44AD or 44ADA (presumptive taxation) — do the same dates apply?",
     answer:
-      "No — HRA exemption, Section 80C, Section 80D and most other deductions are available only under the Old Regime. The New Regime offers lower slab rates and a higher standard deduction in exchange for giving up most deductions and exemptions.",
+      "No — if you've opted for presumptive taxation under Section 44AD (business) or 44ADA (profession), you can pay 100% of your advance tax in a single instalment by 15 March 2027, instead of the 4 quarterly instalments.",
   },
   {
-    question: "Does this calculator handle business income or capital gains?",
+    question: "What happens if I miss an instalment or pay less than required?",
     answer:
-      "No — this tool assumes salaried income only (so the standard deduction always applies) and does not model business income, capital gains taxed at special rates, or surcharge on very high incomes. For those situations, the comparison needs a proper computation — talk to us.",
+      "Interest applies under Section 425 of the Income-tax Act, 2025 (the renumbered version of the old Section 234C) — generally 1% per month for 3 months on the shortfall for the first three instalments, and 1% for 1 month on a shortfall at the final instalment. If your total advance tax paid by 31 March is less than 90% of your final assessed tax, Section 424 (old Section 234B) interest also applies from 1 April until you pay.",
   },
   {
-    question: "I'm not sure which regime is better for me — what should I do?",
+    question: "Is this calculator's interest figure exact?",
     answer:
-      "Run your numbers through both sides of this calculator with your actual expected deductions (80C, 80D, HRA, home loan interest) under the Old Regime column. If you have very few deductions to claim, the New Regime usually wins; if you have a home loan, HRA and full 80C investments, the Old Regime often works out better. When in doubt, book a free consultation and we'll run the exact numbers for you.",
+      "It's a close planning estimate, not the final figure. It assumes any amount you say you've 'already paid' was paid by the due date it's checked against, and it doesn't calculate Section 424 interest, surcharge, or handle re-estimation of income mid-year. For the exact interest and payment challan, talk to us — especially if a large capital gain or bonus came in during the year.",
   },
 ];
 
@@ -86,7 +86,7 @@ const faqSchema = {
 const appSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "Income Tax Calculator (Old vs New Regime)",
+  name: "Advance Tax Calculator (FY 2026-27)",
   url: PAGE_URL,
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
@@ -119,17 +119,18 @@ export default function Page() {
           <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-24 text-center">
             <p className="hero-in hero-in-1 inline-flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full text-sm font-semibold">
               <span className="soft-pulse w-2 h-2 bg-[#f0b84b] rounded-full" />
-              FY 2025-26 (AY 2026-27) • Free & Instant
+              FY 2026-27 • Free & Instant
             </p>
 
             <h1 className="hero-in hero-in-2 mt-7 text-4xl md:text-6xl font-extrabold leading-tight">
-              Income Tax Calculator
-              <span className="block text-[#f0b84b] mt-2">Old vs New Regime</span>
+              Advance Tax Calculator
+              <span className="block text-[#f0b84b] mt-2">Due Dates &amp; Interest</span>
             </h1>
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
-              Enter your income once, see both regimes side-by-side, and know
-              exactly which one saves you more this year.
+              Enter your estimated tax liability once and see your exact
+              instalment schedule, what&apos;s already due, and an estimate
+              of interest on any shortfall.
             </p>
 
             <div className="hero-in hero-in-4 mt-9">
@@ -137,7 +138,7 @@ export default function Page() {
                 href="#calculator"
                 className="btn-shine inline-flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1"
               >
-                Compare My Tax
+                Check My Schedule
               </a>
             </div>
           </div>
@@ -146,57 +147,52 @@ export default function Page() {
         </section>
 
         <div className="print:hidden">
-          <Breadcrumb current="Income Tax Calculator" />
+          <Breadcrumb current="Advance Tax Calculator" />
         </div>
 
-        <IncomeTaxCalculator />
+        <AdvanceTaxCalculator />
 
         <section className="py-20 bg-white print:hidden">
           <div className="max-w-4xl mx-auto px-6">
             <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c]">
-              The right regime depends on your deductions, not your income alone
+              Missing an instalment is more expensive than most people realise
             </h2>
             <div data-reveal className="w-20 h-1 bg-[#d99a2b] mt-5 rounded-full" />
 
             <div className="mt-8 space-y-5 text-gray-700 leading-8 text-lg">
               <p data-reveal data-reveal-delay="1">
-                The New Regime's lower rates and ₹75,000 standard deduction
-                make it the simpler, often better choice if you claim few
-                deductions. But if you have a home loan, pay rent and claim
-                HRA, and invest fully under Section 80C, the Old Regime can
-                still work out cheaper — this calculator is built to show you
-                exactly where that line falls for your numbers.
+                Advance tax isn&apos;t optional once you cross the ₹10,000
+                threshold — and the interest for paying late or paying short
+                adds up fast, especially on the first three instalments where
+                a shortfall is charged interest for a full 3 months, not just
+                the days you were late. Freelancers, business owners and
+                anyone with capital gains, rental income or a large bonus
+                mid-year are the most common ones caught out.
               </p>
               <p data-reveal data-reveal-delay="2">
-                Paying rent and claiming HRA? Use our{" "}
-                <Link href="/hra-exemption-calculator" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
-                  HRA Exemption Calculator
+                Not sure what your estimated tax liability should be? Start
+                with our{" "}
+                <Link href="/income-tax-calculator" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
+                  Income Tax Calculator
                 </Link>{" "}
-                to get the exact exemption amount to plug into the Old
-                Regime deductions field above.
+                to work out your full-year tax, then come back here to plan
+                your instalments.
               </p>
               <p data-reveal data-reveal-delay="3">
-                Once you know which regime suits you, our{" "}
+                For the exact figure — including Section 424 interest and
+                the right challan — our{" "}
                 <Link href="/income-tax-return-filing" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
-                  income tax return filing
+                  income tax filing
                 </Link>{" "}
-                team can help you file correctly and on time.
-              </p>
-              <p data-reveal data-reveal-delay="4">
-                Have business, freelance or capital gains income on top of
-                salary? Use our{" "}
-                <Link href="/advance-tax-calculator" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
-                  Advance Tax Calculator
-                </Link>{" "}
-                to see your quarterly instalment schedule for this year.
+                team can compute and pay it correctly for you every quarter.
               </p>
             </div>
 
             <div data-reveal className="mt-10 bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-2xl p-7 md:p-9">
-              <h3 className="text-2xl font-extrabold">Not sure which regime to pick?</h3>
+              <h3 className="text-2xl font-extrabold">Want us to handle your quarterly advance tax?</h3>
               <p className="mt-3 text-blue-100 leading-7">
-                We help individuals and businesses across India file the
-                right way, in the right regime. The first consultation is
+                We track the numbers, compute the right instalment amount and
+                remind you before every due date. The first consultation is
                 free.
               </p>
               <Link

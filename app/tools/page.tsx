@@ -24,6 +24,7 @@ import {
   Cake,
   HeartPulse,
   CalendarRange,
+  CalendarClock,
   Tag,
   Utensils,
   Ruler,
@@ -195,6 +196,20 @@ const taxCalcTools = [
       "Old vs New Regime, side-by-side",
       "Section 87A rebate + marginal relief",
       "Full slab-by-slab breakdown",
+      "Free detailed report by email",
+    ],
+  },
+  {
+    href: "/advance-tax-calculator",
+    icon: CalendarClock,
+    title: "Advance Tax Calculator",
+    answers: "How much advance tax do I owe, and by when?",
+    description:
+      "Enter your estimated tax liability for FY 2026-27 and get your exact instalment schedule (or single instalment for 44AD/44ADA), due dates, and an estimate of interest on any shortfall.",
+    points: [
+      "4-instalment schedule with exact due dates",
+      "Single-instalment mode for 44AD/44ADA",
+      "Estimates Section 425 (old 234C) interest",
       "Free detailed report by email",
     ],
   },

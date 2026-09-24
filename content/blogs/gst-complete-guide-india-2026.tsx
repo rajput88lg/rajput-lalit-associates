@@ -241,6 +241,35 @@ export default function GSTCompleteGuideIndia2026() {
         se turant baat karein — deadline ke andar reply zaroori hai.
       </p>
 
+      <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
+        Aur Detailed GST Guides
+      </h2>
+      <p className="text-gray-700 leading-8 mb-6">
+        Roz ke GST compliance ke kuch aur practical sawaalon ke liye ye guides dekhein:
+      </p>
+      <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
+        <li>
+          <Link href="/blog/gst-late-fee-interest-gstr-3b-gstr-1-guide" className={linkClass}>
+            GST Late Fee aur Interest — GSTR-3B, GSTR-1
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/gst-on-rent-commercial-residential-property-rcm" className={linkClass}>
+            GST on Rent — Commercial aur Residential RCM
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/gst-on-restaurants-hotels-rates-2026" className={linkClass}>
+            GST on Restaurant aur Hotel Room 2026
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/gst-tax-invoice-format-mandatory-fields" className={linkClass}>
+            GST Tax Invoice Format — Mandatory Fields
+          </Link>
+        </li>
+      </ul>
+
       <div className="bg-[#fff9ed] border-l-4 border-[#d99a2b] rounded-xl p-6">
         <h3 className="text-xl font-bold text-[#002b5c] mb-2">Ek Baat Yaad Rakhein</h3>
         <p className="text-gray-700 leading-7">
