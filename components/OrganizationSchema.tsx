@@ -1,3 +1,5 @@
+import { OPENING_HOURS_SCHEMA } from "@/lib/officeHours";
+
 export default function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -63,20 +65,7 @@ provider: {
           name: "Lalit Rajput",
         },
 
-        openingHoursSpecification: [
-  {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-    ],
-    opens: "09:00",
-    closes: "18:00",
-  },
-],
+        openingHoursSpecification: OPENING_HOURS_SCHEMA,
 
         sameAs: [
   "https://www.linkedin.com/in/lalit-rajput-b874a8157/",

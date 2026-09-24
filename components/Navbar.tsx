@@ -66,7 +66,7 @@ export default function Navbar() {
                 aur us tagline (~325px) ke liye jagah nahi bachti — measure
                 karke confirm kiya. Firm ka naam upar har jagah dikhta hai.
               */}
-              <p className="hidden sm:block lg:hidden text-[12px] md:text-[13px] text-[#d99a2b] font-semibold tracking-wide mt-1">
+              <p className="hidden sm:block lg:hidden text-[12px] md:text-[13px] text-[#9c680f] font-semibold tracking-wide mt-1">
                 GST • INCOME TAX • ACCOUNTING • WEBSITE DEVELOPMENT
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 visitors ko site par kheench kar laate hain */}
             <Link
               href="/tools"
-              className="nav-link relative text-[#d99a2b] font-bold hover:text-[#002b5c] transition"
+              className="nav-link relative text-[#9c680f] font-bold hover:text-[#002b5c] transition"
             >
               Free Tools
             </Link>
@@ -192,7 +192,7 @@ export default function Navbar() {
               <Link
                 href="/tools"
                 onClick={closeMenu}
-                className="px-4 py-3 rounded-lg text-[#d99a2b] font-bold hover:bg-gray-50"
+                className="px-4 py-3 rounded-lg text-[#9c680f] font-bold hover:bg-gray-50"
               >
                 Free Tools
               </Link>

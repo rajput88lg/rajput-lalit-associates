@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { OFFICE_DAYS_SHORT, OFFICE_TIME_SHORT, OFFICE_CLOSED_LABEL } from "@/lib/officeHours";
 import Link from "next/link";
 import {
   FaEnvelope,
@@ -266,9 +267,9 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-blue-200">Office Hours</p>
                   <p className="mt-1 text-sm leading-6">
-                    Mon – Fri: 10 AM – 6 PM
+                    {OFFICE_DAYS_SHORT}: {OFFICE_TIME_SHORT}
                     <br />
-                    Sat & Sun: Closed
+                    {OFFICE_CLOSED_LABEL}
                   </p>
                 </div>
               </div>

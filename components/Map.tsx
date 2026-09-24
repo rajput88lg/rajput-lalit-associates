@@ -1,3 +1,4 @@
+import { OFFICE_DAYS_LABEL, OFFICE_TIME_LABEL, OFFICE_CLOSED_LABEL } from "@/lib/officeHours";
 import {
   FaMapMarkerAlt,
   FaDirections,
@@ -89,11 +90,11 @@ export default function Map() {
                       </p>
 
                       <p className="mt-2 text-blue-100 text-sm leading-6">
-                        Monday – Friday
+                        {OFFICE_DAYS_LABEL}
                         <br />
-                        10:00 AM – 6:00 PM
+                        {OFFICE_TIME_LABEL}
                         <br />
-                        Saturday & Sunday: Closed
+                        {OFFICE_CLOSED_LABEL}
                       </p>
 
                     </div>

@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import LeadFallback from "@/components/LeadFallback";
+import { OFFICE_DAYS_LABEL, OFFICE_TIME_LABEL, OFFICE_CLOSED_LABEL, WHATSAPP_HOURS_NOTE } from "@/lib/officeHours";
 
 import {
   FaPhoneAlt,
@@ -193,8 +194,9 @@ export default function Contact() {
                   <div>
                     <p className="font-bold">Office Hours</p>
                     <p className="text-blue-100 mt-1 leading-6">
-                      Monday – Friday: 10:00 AM – 6:00 PM<br />
-                      Saturday & Sunday: Closed
+                      {OFFICE_DAYS_LABEL}: {OFFICE_TIME_LABEL}<br />
+                      {OFFICE_CLOSED_LABEL}<br />
+                      <span className="text-sm text-blue-200">{WHATSAPP_HOURS_NOTE}</span>
                     </p>
                   </div>
                 </div>

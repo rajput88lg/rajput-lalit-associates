@@ -52,9 +52,9 @@ const problems = [
 
 const steps = [
   { n: "1", title: "WhatsApp or book a call", text: "Tell us your country and what you need. We reply with the document list." },
-  { n: "2", title: "Share documents online", text: "Send PDFs on WhatsApp or email — no visit to India needed." },
-  { n: "3", title: "We prepare and check", text: "We work out the tax, show you the figures and fee before filing." },
-  { n: "4", title: "Filed and tracked", text: "We file, e-verify with you, and follow up until the refund or certificate comes through." },
+  { n: "2", title: "Documents + 50% advance", text: "Send PDFs on WhatsApp or email — no visit to India needed. Once you agree to the fee, pay 50% to start." },
+  { n: "3", title: "We prepare and check", text: "We work out the tax and show you the figures before anything is filed." },
+  { n: "4", title: "Balance, then filed", text: "Pay the balance, then we file, e-verify with you, and follow up until the refund or certificate comes through." },
 ];
 
 const tools = [
@@ -89,6 +89,10 @@ const faqs = [
   {
     q: "Who issues Form 146 (old 15CB)?",
     a: "Form 146 must be certified by a Chartered Accountant. We handle it through our partner Chartered Accountant as part of the ₹3,000 service.",
+  },
+  {
+    q: "When and how do I pay?",
+    a: "Once you agree to the fee, you pay 50% in advance and we start. We show you the figures — for a US CPA report, a summary marked DRAFT — and you pay the balance before we file or send the final report. The consultation fee is paid before the call. You can pay by bank transfer (from India or abroad) or UPI, and you get a receipt for every payment.",
   },
 ];
 

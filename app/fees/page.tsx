@@ -42,6 +42,10 @@ const faqs = [
     a: "Starting fees cover a standard case. If several years are pending, a notice is involved or there are many transactions, we tell you the exact fee before starting — never after the work is done.",
   },
   {
+    q: "When do I pay?",
+    a: "For ITR filing and GST registration, you pay once your return or application is ready, before we file or submit it. For NRI services, US CPA reports and larger work, 50% is paid in advance and the balance before filing or delivery. Pay by UPI or bank transfer — you get a receipt for every payment.",
+  },
+  {
     q: "Do you work with clients outside Ambala?",
     a: "Yes. Documents can be shared on WhatsApp or email and everything is filed online, so we work with clients across India and with NRIs.",
   },
