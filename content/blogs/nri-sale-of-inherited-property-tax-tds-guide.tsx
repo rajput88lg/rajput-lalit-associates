@@ -132,7 +132,7 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Getting the TDS certificate and cost-of-acquisition documentation right before the sale closes saves months of refund-waiting later. Rajput Lalit &amp; Associates handles capital gains computation, Form 13 lower-TDS applications, and Form 15CA/15CB filing for NRI property sales. See our{" "}<Link href="/blog/nri-lower-tds-certificate-checklist" className={linkClass}>NRI Lower TDS Certificate checklist</Link>{" "}and{" "}<Link href="/blog/nri-fund-repatriation-guide" className={linkClass}>NRI Fund Repatriation guide</Link>, or use our{" "}<Link href="/nri-property-tds-calculator" className={linkClass}>NRI Property TDS Calculator</Link>.
+        Getting the TDS certificate and cost-of-acquisition documentation right before the sale closes saves months of refund-waiting later. Rajput Lalit &amp; Associates handles capital gains computation, Form 13 lower-TDS applications, and Form 15CA/15CB filing for NRI property sales. See our{" "}<Link href="/nri-lower-tds-certificate-checklist" className={linkClass}>NRI Lower TDS Certificate checklist</Link>{" "}and{" "}<Link href="/nri-fund-repatriation-guide" className={linkClass}>NRI Fund Repatriation guide</Link>, or use our{" "}<Link href="/nri-property-tds-calculator" className={linkClass}>NRI Property TDS Calculator</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

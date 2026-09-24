@@ -132,7 +132,7 @@ export default function MSME45DayPaymentRuleSection43BH() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Bahut se businesses ye galti karte hain ki wo apne MSME vendors ki payment ko normal 'credit period' ki tarah treat karte hain — jabki tax law ke hisaab se 45 din (ya kam) ki hard deadline hai. Hum aapke vendor payment cycle ko review karke ye check karte hain ki kaunse payments is rule ke risk mein hain, aur{" "}<Link href="/blog/tax-audit-section-44ab-applicability-turnover-limit" className={linkClass}>Tax Audit</Link>{" "}ke saath isse sahi tarike se Form 3CD mein report karte hain. Agar aap khud MSME hain aur payment delay se jooj rahe hain, hamara{" "}<Link href="/accounting" className={linkClass}>Accounting aur Bookkeeping</Link>{" "}service aapke vendor ageing ko track karne mein madad karta hai.
+        Bahut se businesses ye galti karte hain ki wo apne MSME vendors ki payment ko normal 'credit period' ki tarah treat karte hain — jabki tax law ke hisaab se 45 din (ya kam) ki hard deadline hai. Hum aapke vendor payment cycle ko review karke ye check karte hain ki kaunse payments is rule ke risk mein hain, aur{" "}<Link href="/blog/tax-audit-section-44ab-applicability-turnover-limit" className={linkClass}>Tax Audit</Link>{" "}ke saath isse sahi tarike se Form 3CD mein report karte hain. Agar aap khud MSME hain aur payment delay se jooj rahe hain, hamara{" "}<Link href="/accounting-bookkeeping-services" className={linkClass}>Accounting aur Bookkeeping</Link>{" "}service aapke vendor ageing ko track karne mein madad karta hai.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

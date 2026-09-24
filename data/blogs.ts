@@ -1480,6 +1480,7 @@ export const blogs: Blog[] = [
     category: "GST",
     author: "Rajput Lalit & Associates",
     date: "20 September 2026",
+    updated: "24 September 2026",
     image: "/blogs/gst-complete-guide-india-2026.png",
     readTime: "12 min read",
     seoTitle: "GST Complete Guide India 2026 | Registration, Rates, Returns, Notices",
@@ -1493,10 +1494,691 @@ export const blogs: Blog[] = [
     category: "Income Tax",
     author: "Rajput Lalit & Associates",
     date: "22 September 2026",
+    updated: "24 September 2026",
     image: "/blogs/income-tax-complete-guide-india-2026.png",
     readTime: "13 min read",
     seoTitle: "Income Tax Complete Guide India 2026 | Regime, ITR, Advance Tax, Notices",
     seoDescription: "The complete 2026 Income Tax guide for India — new vs old regime, slabs, 87A rebate, ITR filing, advance tax, 26AS/AIS/TIS reconciliation, capital gains, 44ADA presumptive taxation and notices, all in one place.",
     keywords: ["income tax guide 2026", "income tax complete guide India", "income tax rules 2026", "new vs old tax regime", "how income tax works in India"],
+  },
+
+  {
+    slug: "gst-late-fee-interest-gstr-3b-gstr-1-guide",
+
+    title: "GST Late Fee aur Interest — GSTR-3B, GSTR-1 Late Filing ka Poora Hisaab",
+
+    description:
+      "GSTR-3B aur GSTR-1 late file karne par kitni late fee lagti hai, 18% interest kaise calculate hota hai, nil return ki late fee, turnover-wise maximum cap aur late fee se bachne ke practical tareeke.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/gst-late-fee-interest-gstr-3b-gstr-1-guide.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST Late Fee & Interest 2026 — GSTR-3B, GSTR-1 Guide",
+
+    seoDescription:
+      "GST late fee for GSTR-3B/GSTR-1: ₹50/day (₹20 nil), turnover-wise caps, 18% interest under Section 50 on cash liability, with examples and tips to avoid it.",
+
+    keywords: [
+      "GST late fee GSTR-3B",
+      "GSTR-1 late fee",
+      "GST interest 18% section 50",
+      "nil return late fee GST",
+      "GST late fee maximum cap",
+      "GST late fee calculation",
+    ],
+  },
+
+  {
+    slug: "gst-on-rent-commercial-residential-property-rcm",
+
+    title: "GST on Rent — Commercial aur Residential Property par GST aur RCM Rules",
+
+    description:
+      "Kiraye par GST kab lagta hai: commercial property par 18% GST, registered tenant ke liye residential rent par RCM, unregistered landlord se commercial property lene par tenant ki RCM liability aur ITC rules.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/gst-on-rent-commercial-residential-property-rcm.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST on Rent 2026 — Commercial & Residential RCM Rules",
+
+    seoDescription:
+      "GST on rent explained: 18% on commercial property, RCM for registered tenants on residential rent, RCM on commercial rent from unregistered landlords, and ITC rules.",
+
+    keywords: [
+      "GST on rent",
+      "GST on commercial rent",
+      "RCM on rent unregistered landlord",
+      "GST on residential rent registered person",
+      "GST on shop rent",
+      "RCM on commercial property rent",
+    ],
+  },
+
+  {
+    slug: "gst-on-restaurants-hotels-rates-2026",
+
+    title: "GST on Restaurant aur Hotel Room 2026 — Rates, ITC aur Rules",
+
+    description:
+      "GST 2.0 ke baad restaurant par 5% (bina ITC), hotel room ₹7,500 tak 5% aur usse upar 18% GST. Specified premises, food delivery apps, outdoor catering aur restaurant owners ke liye compliance tips.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/gst-on-restaurants-hotels-rates-2026.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "GST on Restaurants & Hotel Rooms 2026 — Rates and ITC",
+
+    seoDescription:
+      "GST on restaurants is 5% without ITC; hotel rooms up to ₹7,500 now 5% (no ITC) and 18% above. Specified premises, food delivery and catering rules explained.",
+
+    keywords: [
+      "GST on restaurant 2026",
+      "GST on hotel room 7500",
+      "restaurant GST rate 5% ITC",
+      "specified premises GST",
+      "GST on food delivery Zomato Swiggy",
+      "GST on hotel rooms 2026",
+    ],
+  },
+
+  {
+    slug: "gst-tax-invoice-format-mandatory-fields",
+
+    title: "GST Tax Invoice Format — Invoice Mein Kaunsi Details Zaroori Hain",
+
+    description:
+      "Valid GST tax invoice ke mandatory fields (Rule 46), invoice number rules, B2B vs B2C invoice, bill of supply, e-invoice kab zaroori hai aur invoice ki common galtiyan jo ITC rok deti hain.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/gst-tax-invoice-format-mandatory-fields.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "GST Invoice Format 2026 — Mandatory Fields Checklist",
+
+    seoDescription:
+      "Mandatory fields of a valid GST tax invoice under Rule 46, invoice numbering rules, bill of supply vs tax invoice, HSN rules, e-invoice and common mistakes.",
+
+    keywords: [
+      "GST invoice format",
+      "GST tax invoice mandatory fields",
+      "Rule 46 GST invoice",
+      "bill of supply vs tax invoice",
+      "GST invoice number rules",
+      "HSN code on invoice",
+    ],
+  },
+
+  {
+    slug: "hra-exemption-rules-fy-2026-27-8-metro-cities",
+
+    title: "HRA Exemption Rules FY 2026-27 — Ab 8 Metro Cities Mein 50% Exemption",
+
+    description:
+      "HRA exemption ke naye rules: Income-tax Rules 2026 mein Bengaluru, Hyderabad, Pune aur Ahmedabad ko 50% list mein joda gaya. Least of three formula, landlord PAN, Form 124 aur old vs new regime.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/hra-exemption-rules-fy-2026-27-8-metro-cities.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "HRA Exemption FY 2026-27 — 8 Metro Cities & New Rules",
+
+    seoDescription:
+      "HRA rules from FY 2026-27: 50% exemption now for 8 cities incl. Bengaluru, Pune, Hyderabad, Ahmedabad. Formula, landlord PAN rule, Form 124 and regime choice.",
+
+    keywords: [
+      "HRA exemption rules 2026",
+      "HRA 50% metro cities list",
+      "HRA exemption Bengaluru Pune Hyderabad",
+      "HRA calculation formula",
+      "Form 124 HRA declaration",
+      "HRA landlord PAN limit",
+    ],
+  },
+
+  {
+    slug: "income-tax-on-rental-income-house-property",
+
+    title: "Rental Income Par Income Tax — House Property Income Ka Poora Hisaab",
+
+    description:
+      "Kiraye ki income par tax kaise lagta hai: annual value, municipal tax, 30% standard deduction, home loan interest, do self-occupied ghar ka rule, loss set-off limit aur kaunsi ITR file karein.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/income-tax-on-rental-income-house-property.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Tax on Rental Income India 2026 — House Property Guide",
+
+    seoDescription:
+      "How rental income is taxed in India: annual value, municipal tax deduction, 30% standard deduction, home loan interest, loss set-off limit and ITR form to use.",
+
+    keywords: [
+      "tax on rental income India",
+      "income from house property",
+      "30% standard deduction rental income",
+      "rental income tax calculation",
+      "house property loss set off",
+      "ITR for rental income",
+    ],
+  },
+
+  {
+    slug: "home-loan-tax-benefits-section-24b-80c",
+
+    title: "Home Loan Tax Benefits — Interest aur Principal Par Kitni Tax Saving",
+
+    description:
+      "Home loan par tax benefit: Section 24(b) mein ₹2 lakh tak interest, 80C mein principal repayment, joint home loan ka double benefit, under-construction property ka pre-construction interest aur new regime mein kya milta hai.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/home-loan-tax-benefits-section-24b-80c.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Home Loan Tax Benefits 2026 — Section 24(b) & 80C Guide",
+
+    seoDescription:
+      "Home loan tax benefits: ₹2 lakh interest under Section 24(b), principal under 80C, joint loan double benefit, pre-construction interest and new regime rules.",
+
+    keywords: [
+      "home loan tax benefit",
+      "section 24b home loan interest",
+      "home loan principal 80C",
+      "joint home loan tax benefit",
+      "pre construction interest deduction",
+      "home loan tax benefit new regime",
+    ],
+  },
+
+  {
+    slug: "tax-on-gifts-received-relatives-50000-rule",
+
+    title: "Gift Par Income Tax — ₹50,000 Rule, Relatives ki List aur Exemptions",
+
+    description:
+      "Gift mein mila paisa, property ya jewellery kab taxable hai: ₹50,000 ki limit, 'relative' ki legal definition, shaadi aur wirasat (inheritance) ke gift, aur gift ko ITR mein kaise dikhayein.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/tax-on-gifts-received-relatives-50000-rule.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Tax on Gifts in India 2026 — ₹50,000 Rule & Relatives",
+
+    seoDescription:
+      "When are gifts taxable in India? The ₹50,000 limit, legal list of relatives, wedding and inheritance exemptions, gifts of property and how to report in ITR.",
+
+    keywords: [
+      "tax on gifts India",
+      "gift tax 50000 rule",
+      "gift from relatives tax exempt",
+      "gift received on marriage tax",
+      "gift of property tax",
+      "gift from friend taxable",
+    ],
+  },
+
+  {
+    slug: "income-tax-refund-status-delay-reasons",
+
+    title: "Income Tax Refund Status — Refund Late Kyun Hota Hai aur Kaise Nikalein",
+
+    description:
+      "ITR refund status kaise check karein, refund late hone ke 7 common kaaran (bank account validation, e-verification, PAN inoperative, mismatch), refund failed hone par reissue request aur refund par interest.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/income-tax-refund-status-delay-reasons.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Income Tax Refund Status 2026 — Delay Reasons & Fixes",
+
+    seoDescription:
+      "Check your income tax refund status, 7 common reasons refunds get delayed (bank validation, e-verification, inoperative PAN, mismatch) and how to fix each one.",
+
+    keywords: [
+      "income tax refund status",
+      "ITR refund delay reasons",
+      "refund failed income tax",
+      "refund reissue request",
+      "interest on income tax refund",
+      "refund not received after ITR",
+    ],
+  },
+
+  {
+    slug: "pan-aadhaar-link-inoperative-pan-consequences",
+
+    title: "PAN Inoperative Ho Gaya? PAN-Aadhaar Link Na Hone Ke Nuksaan aur Solution",
+
+    description:
+      "PAN-Aadhaar link na hone par PAN inoperative ho jaata hai: 20% TDS, refund block, bank aur investment mein dikkat. ₹1,000 fee ke saath link kaise karein aur PAN kab operative hota hai.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/pan-aadhaar-link-inoperative-pan-consequences.png",
+
+    readTime: "5 min read",
+
+    seoTitle:
+      "Inoperative PAN 2026 — PAN-Aadhaar Link Fee & Impact",
+
+    seoDescription:
+      "What happens when PAN becomes inoperative: 20% TDS, blocked refunds, no refund interest. How to link PAN with Aadhaar after paying ₹1,000 and reactivate it.",
+
+    keywords: [
+      "PAN inoperative",
+      "PAN Aadhaar link fee 1000",
+      "inoperative PAN consequences",
+      "PAN Aadhaar link status",
+      "higher TDS inoperative PAN",
+      "how to make PAN operative",
+    ],
+  },
+
+  {
+    slug: "crypto-vda-tax-india-30-percent-1-percent-tds",
+
+    title: "Crypto Tax in India 2026 — 30% Tax, 1% TDS aur ITR Mein Kaise Dikhayein",
+
+    description:
+      "Crypto aur VDA income par 30% flat tax, 1% TDS, loss set-off na hone ka rule, airdrop/staking income, naye reporting rules (FY 2026-27 se) aur ITR mein Schedule VDA kaise bharein.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/crypto-vda-tax-india-30-percent-1-percent-tds.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Crypto Tax India 2026 — 30% Tax, 1% TDS & ITR Guide",
+
+    seoDescription:
+      "Crypto/VDA tax in India for 2026: flat 30% tax, 1% TDS, no loss set-off, airdrop and staking income, new platform reporting from FY 2026-27, and Schedule VDA.",
+
+    keywords: [
+      "crypto tax India 2026",
+      "VDA tax 30 percent",
+      "1% TDS on crypto",
+      "crypto loss set off India",
+      "schedule VDA ITR",
+      "bitcoin tax India",
+    ],
+  },
+
+  {
+    slug: "youtuber-influencer-income-tax-gst-guide",
+
+    title: "YouTuber aur Influencer Ki Income Par Tax aur GST — Poori Guide",
+
+    description:
+      "YouTube AdSense, brand deals aur affiliate income par income tax kaise lagta hai: 44AD vs 44ADA, kaunsi ITR, free products par TDS (194R), GST registration kab zaroori aur AdSense export of services.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/youtuber-influencer-income-tax-gst-guide.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "YouTuber & Influencer Tax India 2026 — ITR, GST, TDS",
+
+    seoDescription:
+      "Tax guide for YouTubers and influencers: AdSense and brand deal income, 44AD vs 44ADA, ITR-3/ITR-4, TDS on free products, GST registration and AdSense exports.",
+
+    keywords: [
+      "YouTuber income tax India",
+      "influencer tax India",
+      "GST on YouTube income",
+      "AdSense income tax",
+      "194R TDS influencer free products",
+      "ITR for YouTubers",
+    ],
+  },
+
+  {
+    slug: "senior-citizen-income-tax-benefits-fy-2026-27",
+
+    title: "Senior Citizens Ke Liye Income Tax Benefits — FY 2026-27 Guide",
+
+    description:
+      "60+ aur 80+ umar walon ke liye tax benefits: old regime mein zyada exemption limit, 80TTB mein ₹50,000 interest deduction, bank TDS limit ₹1 lakh, advance tax se chhoot, 80D aur Form 15H.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/senior-citizen-income-tax-benefits-fy-2026-27.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Senior Citizen Tax Benefits FY 2026-27 — Complete Guide",
+
+    seoDescription:
+      "Tax benefits for senior citizens in FY 2026-27: higher old-regime exemption, ₹50,000 interest deduction, ₹1 lakh bank TDS threshold, advance tax relief and 80D.",
+
+    keywords: [
+      "senior citizen income tax benefits",
+      "80TTB deduction senior citizen",
+      "senior citizen tax slab 2026-27",
+      "TDS on FD interest senior citizen",
+      "senior citizen advance tax exemption",
+      "Form 15H senior citizen",
+    ],
+  },
+
+  {
+    slug: "capital-gains-tax-on-property-sale-section-54",
+
+    title: "Property Bechne Par Capital Gains Tax — 12.5% vs 20% aur Section 54 Exemption",
+
+    description:
+      "Ghar, plot ya dukaan bechne par capital gains tax: short term vs long term (24 mahine), 12.5% bina indexation vs 20% indexation ke saath ka option, Section 54/54EC/54F exemption aur ₹10 crore cap.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/capital-gains-tax-on-property-sale-section-54.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "Capital Gains Tax on Property Sale 2026 — Section 54 Guide",
+
+    seoDescription:
+      "Capital gains tax on selling property: 24-month rule, 12.5% without indexation vs 20% with indexation option, Section 54, 54EC and 54F exemptions and ₹10 crore cap.",
+
+    keywords: [
+      "capital gains tax on property sale",
+      "LTCG on property 12.5%",
+      "indexation option property 23 July 2024",
+      "section 54 exemption",
+      "section 54EC bonds",
+      "tax on sale of plot",
+    ],
+  },
+
+  {
+    slug: "itr-u-updated-return-48-months-guide",
+
+    title: "ITR-U (Updated Return) — 48 Mahine Tak Galti Sudhaarne Ka Mauka",
+
+    description:
+      "Updated Return (ITR-U) kya hai, kab file kar sakte hain, 48 mahine ki nayi time limit, 25% se 70% tak additional tax, kin cases mein ITR-U file nahi hoti aur step-by-step process.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/itr-u-updated-return-48-months-guide.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "ITR-U Updated Return 2026 — 48-Month Limit & Extra Tax",
+
+    seoDescription:
+      "Updated Return (ITR-U) explained: file within 48 months, additional tax of 25%, 50%, 60% or 70%, who cannot file it, and a step-by-step filing process.",
+
+    keywords: [
+      "ITR-U updated return",
+      "updated return 48 months",
+      "ITR-U additional tax 60% 70%",
+      "section 139(8A)",
+      "how to file ITR-U",
+      "missed ITR deadline what to do",
+    ],
+  },
+
+  {
+    slug: "tds-on-property-purchase-form-141-26qb",
+
+    title: "Property Khareedne Par TDS — 1% TDS, Form 141 (Pehle 26QB) aur Form 132",
+
+    description:
+      "₹50 lakh ya usse zyada ki property khareedne par 1% TDS: 1 April 2026 se Form 26QB ki jagah Form 141, TDS certificate Form 132, due dates, late fee, NRI seller ka rule aur common galtiyan.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/tds-on-property-purchase-form-141-26qb.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "TDS on Property Purchase 2026 — Form 141 Replaces 26QB",
+
+    seoDescription:
+      "1% TDS on buying property worth ₹50 lakh+: Form 141 replaces Form 26QB from 1 April 2026, Form 132 certificate, due dates, late fee and NRI seller rules.",
+
+    keywords: [
+      "TDS on property purchase",
+      "Form 141 TDS property",
+      "Form 26QB replaced",
+      "Form 132 TDS certificate",
+      "194IA TDS 1%",
+      "TDS on property above 50 lakh",
+    ],
+  },
+
+  {
+    slug: "nri-rental-income-india-tax-tds-guide",
+
+    title: "NRI Ki India Mein Rental Income — Tax, 31.2% TDS aur Refund Kaise Lein",
+
+    description:
+      "NRI ke India wale ghar ke kiraye par tax: tenant ka 30% + surcharge + cess TDS (Section 393(2), pehle 195), tenant ki TAN aur Form 27Q zimmedari, lower TDS certificate, DTAA aur refund ke liye ITR.",
+
+    category: "NRI Taxation",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/nri-rental-income-india-tax-tds-guide.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "NRI Rental Income Tax India 2026 — TDS & Refund Guide",
+
+    seoDescription:
+      "NRI rental income in India: 30% TDS plus surcharge and cess by tenant, TAN and Form 27Q, lower TDS certificate, NRO account rules, DTAA and claiming refund via ITR.",
+
+    keywords: [
+      "NRI rental income tax India",
+      "TDS on rent paid to NRI",
+      "NRI landlord TDS 31.2",
+      "tenant TAN NRI landlord",
+      "lower TDS certificate NRI rent",
+      "NRI rental income ITR",
+    ],
+  },
+
+  {
+    slug: "rnor-status-returning-nri-tax-guide",
+
+    title: "India Wapas Aa Rahe NRI — RNOR Status aur Tax Planning Guide",
+
+    description:
+      "Wapas India shift hone wale NRIs ke liye RNOR (Resident but Not Ordinarily Resident) status: kab milta hai, kitne saal, foreign income par tax, NRE/FCNR accounts ka kya karein aur foreign assets reporting.",
+
+    category: "NRI Taxation",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/rnor-status-returning-nri-tax-guide.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "RNOR Status for Returning NRIs 2026 — Tax Planning Guide",
+
+    seoDescription:
+      "Returning to India? How RNOR status works, conditions and duration, tax on foreign income, what to do with NRE/FCNR accounts, and foreign asset reporting rules.",
+
+    keywords: [
+      "RNOR status",
+      "returning NRI tax planning",
+      "resident but not ordinarily resident",
+      "RNOR conditions",
+      "tax on foreign income returning NRI",
+      "NRE account after return to India",
+    ],
+  },
+
+  {
+    slug: "startup-india-dpiit-recognition-tax-benefits",
+
+    title: "Startup India DPIIT Recognition 2026 — Eligibility, Benefits aur Tax Holiday",
+
+    description:
+      "DPIIT startup recognition ke naye rules (February 2026): turnover limit ₹200 crore, deep tech category, 80-IAC tax holiday (3 saal), angel tax khatam, self-certification aur apply karne ka process.",
+
+    category: "Business Registration",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/startup-india-dpiit-recognition-tax-benefits.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "DPIIT Startup Recognition 2026 — Eligibility & Benefits",
+
+    seoDescription:
+      "DPIIT startup recognition 2026: ₹200 crore turnover limit, new deep tech category, 80-IAC 3-year tax holiday, self-certification benefits and how to apply.",
+
+    keywords: [
+      "DPIIT startup recognition",
+      "Startup India registration 2026",
+      "80-IAC tax exemption startup",
+      "DPIIT turnover limit 200 crore",
+      "deep tech startup India",
+      "startup recognition benefits",
+    ],
+  },
+
+  {
+    slug: "strike-off-private-limited-company-stk-2-closure",
+
+    title: "Private Limited Company Band Kaise Karein — STK-2 Strike Off Process",
+
+    description:
+      "Inactive company ko band karne ka tareeka: STK-2 se strike off ki conditions, zaroori documents, C-PACE processing time, closure na karne par penalty aur director disqualification ka risk.",
+
+    category: "Business Registration",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "24 September 2026",
+
+    image: "/blogs/strike-off-private-limited-company-stk-2-closure.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Close a Private Limited Company 2026 — STK-2 Strike Off",
+
+    seoDescription:
+      "How to close an inactive private limited company via STK-2: eligibility, documents, C-PACE timeline, penalties for not closing and director disqualification.",
+
+    keywords: [
+      "how to close private limited company",
+      "STK-2 strike off",
+      "company strike off process",
+      "close inactive company India",
+      "C-PACE company closure",
+      "director disqualification ROC",
+    ],
   },
 ];
