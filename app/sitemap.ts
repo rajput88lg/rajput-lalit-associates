@@ -17,6 +17,7 @@ const servicePages = [
   "/gst-notice-reply",
   "/accounting-bookkeeping-services",
   "/tds-return-filing",
+  "/tax-consultation",
   // Free tools — NRI India-Tax Toolkit
   "/nri-property-tds-calculator",
   "/nri-residential-status-calculator",

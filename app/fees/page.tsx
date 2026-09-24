@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { PAID_SERVICES } from "@/lib/paidServices";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -120,6 +122,26 @@ export default function FeesPage() {
           intro="For NRIs in the USA, UAE, UK, Canada and elsewhere — handled fully online."
           items={NRI_FEES.map((f) => ({ ...f, href: "/nri-tax-services" }))}
         />
+
+        <section className="py-12 bg-[#f7f9fc]">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-2xl p-7 md:p-9 flex flex-col md:flex-row md:items-center gap-6 justify-between">
+              <div>
+                <h2 className="text-2xl font-extrabold">Just have one question?</h2>
+                <p className="mt-2 text-blue-100 leading-7">
+                  Book a 15-minute call with a tax expert for ₹{PAID_SERVICES["tax-call"].amount} — ITR,
+                  GST, TDS, notice or NRI tax.
+                </p>
+              </div>
+              <Link
+                href="/tax-consultation"
+                className="shrink-0 inline-flex items-center justify-center bg-[#d99a2b] hover:bg-[#f0b84b] text-white px-7 py-3.5 rounded-xl font-bold transition"
+              >
+                Book a ₹{PAID_SERVICES["tax-call"].amount} Call
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-6">

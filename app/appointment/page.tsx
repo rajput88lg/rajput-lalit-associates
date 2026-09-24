@@ -7,6 +7,7 @@ import {
   MessageSquareText,
   ShieldCheck,
 } from "lucide-react";
+import PaidBookingCheckout from "@/components/PaidBookingCheckout";
 
 export const metadata = {
   title: "Book Website Discussion | Rajput Lalit & Associates",
@@ -106,13 +107,9 @@ export default function AppointmentPage() {
             details and appointment confirmation.
           </div>
 
-          <button
-            type="button"
-            disabled
-            className="mt-8 flex w-full cursor-not-allowed items-center justify-center rounded-xl bg-[#d99a2b] px-6 py-4 font-bold text-white opacity-70"
-          >
-            Secure Payment Setup in Progress
-          </button>
+          <div className="mt-8">
+            <PaidBookingCheckout service="website-discussion" />
+          </div>
 
           <Link
             href="/"
