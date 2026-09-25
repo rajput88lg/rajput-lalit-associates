@@ -39,48 +39,39 @@ export default function Navbar() {
           }`}
         >
 
-          {/* LOGO AND FIRM NAME */}
+          {/* LOGO + FIRM NAME (brand lockup)
+              The round logo's curved text is unreadable at header size, so
+              the header uses only the bull mark (cropped from logo.png into
+              logo-mark.png) next to the firm name set in real text. */}
           <Link
             href="/"
-            className="flex items-center gap-3 min-w-0"
+            aria-label="Rajput Lalit & Associates — Home"
+            className="flex items-center gap-2.5 sm:gap-3 min-w-0"
             onClick={closeMenu}
           >
-            <div className="navbar-logo relative w-[62px] h-[62px] flex-shrink-0">
+            <span className="navbar-logo relative block w-[48px] h-[34px] sm:w-[60px] sm:h-[42px] flex-shrink-0">
               <Image
-                src="/logo.png"
-                alt="Rajput Lalit & Associates"
+                src="/logo-mark.png"
+                alt=""
                 fill
-                sizes="62px"
+                sizes="60px"
                 className="object-contain"
                 priority
               />
-            </div>
+            </span>
 
-            <div className="hidden sm:block">
-              <h1 className="text-[20px] md:text-[22px] font-extrabold text-[#002b5c] leading-tight">
-                Rajput Lalit & Associates
-              </h1>
-              {/*
-                Tagline sirf tab tak dikhti hai jab tak hamburger menu chalu
-                hai (sm se lg tak). lg se upar poora desktop menu khulta hai
-                aur us tagline (~325px) ke liye jagah nahi bachti — measure
-                karke confirm kiya. Firm ka naam upar har jagah dikhta hai.
-              */}
-              <p className="hidden sm:block lg:hidden text-[12px] md:text-[13px] text-[#9c680f] font-semibold tracking-wide mt-1">
-                GST • INCOME TAX • ACCOUNTING • WEBSITE DEVELOPMENT
-              </p>
-            </div>
+            <span className="flex flex-col min-w-0 border-l border-gray-200 pl-2.5 sm:pl-3">
+              <span className="whitespace-nowrap text-[16px] sm:text-[19px] xl:text-[20px] font-extrabold text-[#002b5c] leading-none tracking-tight">
+                Rajput Lalit &amp; Associates
+              </span>
+              <span className="whitespace-nowrap mt-1.5 text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-[0.16em] text-[#9c680f] leading-none">
+                Tax &amp; Compliance Consultants
+              </span>
+            </span>
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden lg:flex items-center gap-4 ml-4">
-            <Link
-              href="/#home"
-              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
-            >
-              Home
-            </Link>
-
+          <div className="hidden xl:flex items-center gap-6 ml-6 whitespace-nowrap text-[15px]">
             <Link
               href="/#about"
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
@@ -97,9 +88,10 @@ export default function Navbar() {
 
             <Link
               href="/website-development"
+              title="Website Development"
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
-              Website Development
+              Websites
             </Link>
 
             {/* Free tools — gold accent taaki dhyaan jaaye, kyunki yahi
@@ -114,7 +106,7 @@ export default function Navbar() {
             <Link
               href="/nri-tax-services"
               title="NRI Tax Services"
-              className="nav-link relative whitespace-nowrap text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
             >
               NRI
             </Link>
@@ -135,7 +127,7 @@ export default function Navbar() {
 
             <Link
               href="/#appointment"
-              className="btn-shine inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-3 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
+              className="btn-shine inline-flex items-center gap-2 bg-[#d99a2b] hover:bg-[#c88920] text-white px-5 py-2.5 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
             >
               <CalendarDays size={18} />
               Book Consultation
@@ -146,7 +138,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden w-11 h-11 flex items-center justify-center rounded-lg border border-gray-200 text-[#002b5c]"
+            className="xl:hidden flex-shrink-0 w-11 h-11 flex items-center justify-center rounded-lg border border-gray-200 text-[#002b5c]"
             aria-label="Open navigation menu"
           >
             {menuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -155,7 +147,7 @@ export default function Navbar() {
 
         {/* MOBILE MENU */}
         {menuOpen && (
-          <div className="menu-in lg:hidden border-t border-gray-100 py-5">
+          <div className="menu-in xl:hidden border-t border-gray-100 py-5">
             <div className="flex flex-col gap-2">
               <Link
                 href="/#home"
