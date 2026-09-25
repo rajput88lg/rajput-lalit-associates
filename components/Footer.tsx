@@ -157,6 +157,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/freelancer-tax-services" className="hover:text-[#f0b84b] transition">
+                  Freelancers &amp; Exporters
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <a
                   href="/review"
                   target="_blank"

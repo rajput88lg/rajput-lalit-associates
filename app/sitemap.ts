@@ -115,6 +115,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/freelancer-tax-services`,
+      lastModified: new Date("2026-09-25"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/tax-deadlines`,
       lastModified: new Date("2026-09-23"),
       changeFrequency: "weekly",

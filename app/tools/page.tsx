@@ -186,6 +186,20 @@ const tools = [
 
 const taxCalcTools = [
   {
+    href: "/freelancer-tax-services",
+    icon: Globe,
+    title: "Freelancer Tax Checker (GST, LUT, ITR)",
+    answers: "I earn from foreign clients — do I need GST, a LUT, and which ITR scheme?",
+    description:
+      "Enter your yearly receipts from abroad and India. See whether GST registration is compulsory, whether you need a LUT for 0% GST on exports, and whether the presumptive scheme (Section 58, old 44ADA) is open to you.",
+    points: [
+      "₹20 lakh GST registration check",
+      "LUT (Form RFD-11) — when and why",
+      "Presumptive scheme ₹50 lakh / ₹75 lakh limit",
+      "Personal checklist for the year",
+    ],
+  },
+  {
     href: "/income-tax-calculator",
     icon: Landmark,
     title: "Income Tax Calculator",

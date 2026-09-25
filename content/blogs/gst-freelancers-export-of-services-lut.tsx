@@ -257,6 +257,17 @@ export default function GSTFreelancersExportOfServicesLUT() {
         ))}
       </div>
 
+      <div className="mb-10 rounded-2xl border border-[#002b5c]/15 bg-[#f7f9fc] p-6">
+        <p className="font-bold text-[#002b5c] text-lg">Earning from foreign clients?</p>
+        <p className="mt-2 text-gray-700 leading-7">
+          Use our free checker to see whether you need GST registration, a LUT
+          and which ITR route fits — then let us file it for you.{" "}
+          <Link href="/freelancer-tax-services" className={linkClass}>
+            Freelancer tax services &amp; checker
+          </Link>
+        </p>
+      </div>
+
       <p className="text-sm text-gray-500 leading-6">
         Disclaimer: This article is for general information based on the
         IGST Act, 2017, CGST Rules and Notification No. 10/2017-Integrated

@@ -218,14 +218,24 @@ export default function TaxForFreelancersConsultantsSection44ADAPresumptiveTaxat
         ))}
       </div>
 
+      <div className="mb-10 rounded-2xl border border-[#002b5c]/15 bg-[#f7f9fc] p-6">
+        <p className="font-bold text-[#002b5c] text-lg">Earning from foreign clients?</p>
+        <p className="mt-2 text-gray-700 leading-7">
+          Use our free checker to see whether you need GST registration, a LUT
+          and which ITR route fits — then let us file it for you.{" "}
+          <Link href="/freelancer-tax-services" className={linkClass}>
+            Freelancer tax services &amp; checker
+          </Link>
+        </p>
+      </div>
+
       <p className="text-sm text-gray-500 leading-6">
         Disclaimer: This article is for general information based on
         Section 44ADA of the Income-tax Act, 1961 (as applicable for FY
-        2025-26/AY 2026-27) as of September 2026. Some sources describe
-        Section 44ADA as being consolidated with Sections 44AD/44AE into
-        Section 58 of the Income-tax Act, 2025 effective 1 April 2026, but
-        this specific mapping was not fully confirmed across sources at the
-        time of writing. Please verify the current position or consult a
+        2025-26/AY 2026-27) as of September 2026. From 1 April 2026 (tax year
+        2026-27 onwards) the presumptive schemes of Sections 44AD, 44ADA and
+        44AE are consolidated into Section 58 of the Income-tax Act, 2025.
+        Please verify the current position or consult a
         professional for your specific situation before relying on it.
       </p>
     </>

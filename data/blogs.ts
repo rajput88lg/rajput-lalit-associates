@@ -997,6 +997,7 @@ export const blogs: Blog[] = [
     category: "Income Tax",
     author: "Rajput Lalit & Associates",
     date: "15 September 2026",
+    updated: "25 September 2026",
     image: "/blogs/tax-for-freelancers-consultants-section-44ada-presumptive-taxation.png",
     readTime: "6 min read",
     seoTitle: "Section 44ADA for Freelancers 2026 — Presumptive Tax Guide",
