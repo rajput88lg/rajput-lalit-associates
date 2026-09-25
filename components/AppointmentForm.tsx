@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendLead } from "@/lib/sendLead";
 import LeadFallback from "@/components/LeadFallback";
 
 import {
@@ -101,11 +101,9 @@ Preferred Time: ${formData.time}
     };
 
     try {
-      await emailjs.send(
-        "service_omi5m0r",
-        "template_ni2x60v",
-        templateParams,
-        "aslDxgzgmR4GWDM2D"
+      await sendLead(
+        "appointment",
+        templateParams
       );
 
       setStatus("success");
@@ -120,7 +118,7 @@ Preferred Time: ${formData.time}
         company_website: "",
       });
     } catch (error) {
-      console.error("EmailJS Error:", error);
+      console.error("Lead email error:", error);
 
       setStatus("error");
     } finally {

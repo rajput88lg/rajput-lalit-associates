@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendLead, formToParams } from "@/lib/sendLead";
 import LeadFallback from "@/components/LeadFallback";
 import { OFFICE_DAYS_LABEL, OFFICE_TIME_LABEL, OFFICE_CLOSED_LABEL, WHATSAPP_HOURS_NOTE } from "@/lib/officeHours";
 
@@ -55,13 +55,7 @@ export default function Contact() {
     }
 
     try {
-      // API Keys ko Environment Variables se fetch karna best practice hai
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_omi5m0r",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_ni2x60v",
-        form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "aslDxgzgmR4GWDM2D"
-      );
+      await sendLead("contact", formToParams(form.current));
 
       form.current.reset();
       setStatus("✅ Message Sent Successfully");

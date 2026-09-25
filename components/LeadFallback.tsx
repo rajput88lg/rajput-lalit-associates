@@ -6,7 +6,7 @@ import { trackEvent } from "@/lib/gaEvents";
 const WHATSAPP = "919354953603";
 
 /**
- * Shown ONLY when a form's email (EmailJS) send fails.
+ * Shown ONLY when a form's lead email (/api/lead) fails.
  *
  * 1. Gives the visitor a one-tap WhatsApp button with everything they
  *    typed already filled in — so the enquiry still reaches the firm.

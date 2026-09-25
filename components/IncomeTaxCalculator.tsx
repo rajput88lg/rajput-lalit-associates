@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useMemo, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendLead } from "@/lib/sendLead";
 import LeadFallback from "@/components/LeadFallback";
 import {
   Calculator,
@@ -58,9 +58,8 @@ Savings: ${formatINR(result.savings)}
 `.trim();
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_omi5m0r",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_ni2x60v",
+      await sendLead(
+        "income-tax-calculator",
         {
           name,
           email,
@@ -68,12 +67,11 @@ Savings: ${formatINR(result.savings)}
           service: "Income Tax Calculator (Old vs New Regime)",
           payment_id: "Free Tool Lead",
           message: summary,
-        },
-        "aslDxgzgmR4GWDM2D"
+        }
       );
       setReportReady(true);
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Lead email error:", err);
       setReportReady(true);
       setLeadError(
         "Report taiyaar hai. (Humein aapki details bhejne mein dikkat aayi — zaroorat ho to seedha call kar lein.)"

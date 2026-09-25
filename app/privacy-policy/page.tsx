@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
             </h2>
 
             <p>
-              We may use trusted third-party services such as EmailJS,
+              We may use trusted third-party services such as Hostinger (business email),
               Razorpay, Google Analytics, and Google Maps to provide and improve
               our services.
             </p>
@@ -162,7 +162,7 @@ export default function PrivacyPolicyPage() {
                 Google Account permissions page
               </a>
               . To request deletion of any data associated with this
-              integration, please contact us at rajput88lg@gmail.com.
+              integration, please contact us at info@rajputlalitassociates.in.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
 
             <p>📞 +91 93549 53603</p>
 
-            <p>✉ gst3603@gmail.com</p>
+            <p>✉ info@rajputlalitassociates.in</p>
           </div>
 
         </section>

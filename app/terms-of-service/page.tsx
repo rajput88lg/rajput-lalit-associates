@@ -147,7 +147,7 @@ export default function TermsOfServicePage() {
 
             <p>📞 +91 93549 53603</p>
 
-            <p>✉ gst3603@gmail.com</p>
+            <p>✉ info@rajputlalitassociates.in</p>
           </div>
 
         </section>

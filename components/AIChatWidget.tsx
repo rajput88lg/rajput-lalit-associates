@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendLead } from "@/lib/sendLead";
 import LeadFallback from "@/components/LeadFallback";
 import {
   MessageCircle,
@@ -135,9 +135,8 @@ export default function AIChatWidget() {
       .join("\n");
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_omi5m0r",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_ni2x60v",
+      await sendLead(
+        "ai-chat",
         {
           name: leadName,
           mobile: leadMobile,
@@ -147,12 +146,11 @@ export default function AIChatWidget() {
           message: tagUrgency(
             `New lead from the website AI chatbot.\n\nName: ${leadName}\nMobile: ${leadMobile}\nEmail: ${leadEmail}\n\n--- Chat so far ---\n${transcript}`
           ),
-        },
-        "aslDxgzgmR4GWDM2D"
+        }
       );
       setLeadSent(true);
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Lead email error:", err);
       setLeadError(
         "Aapki details save nahi ho payi — kripya seedha call karein: " + FIRM.phone
       );

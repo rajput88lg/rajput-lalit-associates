@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useMemo, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendLead } from "@/lib/sendLead";
 import LeadFallback from "@/components/LeadFallback";
 import {
   Calculator,
@@ -98,9 +98,8 @@ BLOCKED with dept. : ${formatINR(result.excessTds)}
 `.trim();
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_omi5m0r",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_ni2x60v",
+      await sendLead(
+        "nri-property-tds-calculator",
         {
           name,
           email,
@@ -108,12 +107,11 @@ BLOCKED with dept. : ${formatINR(result.excessTds)}
           service: "NRI Property TDS Calculator",
           payment_id: "Free Tool Lead",
           message: summary,
-        },
-        "aslDxgzgmR4GWDM2D"
+        }
       );
       setReportReady(true);
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Lead email error:", err);
       // Report abhi bhi de do — lead na jaane par user ko rokna theek nahi
       setReportReady(true);
       setLeadError(
