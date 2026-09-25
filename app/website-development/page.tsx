@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 import WebsiteHero from "@/components/website/WebsiteHero";
 import WebsiteStats from "@/components/website/WebsiteStats";
@@ -14,6 +12,8 @@ import WebsiteCTA from "@/components/WebsiteCTA";
 import WebsiteProcess from "@/components/website/WebsiteProcess";
 import Technologies from "@/components/website/Technologies";
 import Pricing from "@/components/website/Pricing";
+import QuickWebsiteJobs from "@/components/website/QuickWebsiteJobs";
+import PortfolioGallery from "@/components/PortfolioGallery";
 
 // NOTE (13 Sept 2026): Testimonials aur WebsitePortfolio components yahan se
 // hata diye gaye hain — dono mein fabricated/placeholder content tha (fake
@@ -131,52 +131,15 @@ export default function WebsiteDevelopmentPage() {
 
       <Technologies />
 
+      <QuickWebsiteJobs />
+
       <Pricing />
 
-      {/* REAL PROOF — replaces the earlier fabricated testimonials/portfolio
-          section with something 100% genuine and verifiable: the very site
-          the visitor is browsing right now, including its free NRI tax
-          tools, was designed and built in-house. */}
-      <section className="py-20 bg-[#f7f9fc]">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <span className="inline-block px-5 py-2 rounded-full bg-blue-100 text-[#002b5c] font-semibold text-sm">
-            See It For Yourself
-          </span>
-          <h2 className="mt-5 text-3xl md:text-4xl font-bold text-[#002b5c]">
-            The Website You're On Right Now Is Our Work
-          </h2>
-          <p className="mt-5 text-lg text-gray-600 leading-8 max-w-3xl mx-auto">
-            No mockups, no stock templates — rajputlalitassociates.in was
-            designed and built in-house, including the free NRI tax
-            calculators and checklists you'll find under Tools. It's fast,
-            mobile-responsive, and built with the same SEO and schema
-            practices we bring to every client project.
-          </p>
-
-          <div className="mt-8 grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-left">
-            <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-start gap-2.5">
-              <CheckCircle2 size={19} className="mt-0.5 shrink-0 text-[#d99a2b]" />
-              <span className="text-sm text-gray-700">Built on Next.js — fast by design</span>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-start gap-2.5">
-              <CheckCircle2 size={19} className="mt-0.5 shrink-0 text-[#d99a2b]" />
-              <span className="text-sm text-gray-700">Schema markup on every page</span>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-start gap-2.5">
-              <CheckCircle2 size={19} className="mt-0.5 shrink-0 text-[#d99a2b]" />
-              <span className="text-sm text-gray-700">Free interactive tools, not just static pages</span>
-            </div>
-          </div>
-
-          <Link
-            href="/tools"
-            className="mt-9 inline-flex items-center gap-2 rounded-xl bg-[#002b5c] hover:bg-[#06477f] text-white px-7 py-3.5 font-bold transition-all duration-300"
-          >
-            See the Free Tools We Built
-            <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section>
+      {/* REAL PROOF — real screenshots of this site (built in-house). */}
+      <PortfolioGallery
+        heading="The Website You're On Right Now Is Our Work"
+        intro="No mockups, no stock templates. This site — its blog, booking and free calculators — was designed and built in-house on Next.js, with schema markup on every page."
+      />
 
       {/* Free Consultation */}
       <WebsiteConsultation />
