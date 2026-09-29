@@ -9,7 +9,7 @@ import type { FeeItem } from "@/lib/fees";
 export const NRI_FEES: FeeItem[] = [
   {
     service: "NRI Income Tax Return",
-    price: "₹5,000",
+    price: "₹9,999",
     forWhom: "Rent, FD / NRO interest, dividends or salary from India",
     includes: [
       "Residential status check",

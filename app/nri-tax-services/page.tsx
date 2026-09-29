@@ -14,7 +14,7 @@ const PAGE_URL = "https://www.rajputlalitassociates.in/nri-tax-services";
 const OG_IMAGE = "/og/nri-tax-services.png";
 const TITLE = "NRI Tax Services India — ITR, Property Sale TDS, Form 128";
 const DESCRIPTION =
-  "India tax help for NRIs in the USA, UAE, UK, Canada and Australia: NRI ITR from ₹5,000, property sale ITR and TDS refund, Form 128 lower TDS certificate, Form 145/146, and India income reports for your US CPA. Fully online.";
+  "India tax help for NRIs in the USA, UAE, UK, Canada and Australia: NRI ITR from ₹9,999, property sale ITR and TDS refund, Form 128 lower TDS certificate, Form 145/146, and India income reports for your US CPA. Fully online.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "How much does NRI ITR filing cost?",
-    a: "₹5,000 for a standard NRI return (rent, interest, dividends). ₹10,000 if you sold property in India during the year. Form 128 lower TDS certificate is ₹18,000 and Form 145/146 is ₹3,000.",
+    a: "₹9,999 for a standard NRI return (rent, interest, dividends). ₹10,000 if you sold property in India during the year. Form 128 lower TDS certificate is ₹18,000 and Form 145/146 is ₹3,000.",
   },
   {
     q: "The buyer deducted a lot of TDS on my property sale. Can I get it back?",

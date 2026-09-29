@@ -8,7 +8,7 @@ export default function NriServicesCta() {
         <div className="bg-[#002b5c] text-white rounded-2xl p-8 md:p-10 text-center shadow-xl">
           <h2 className="text-2xl md:text-3xl font-extrabold">Want us to handle this for you?</h2>
           <p className="mt-4 text-blue-100 leading-7">
-            NRI income tax returns from ₹5,000, property-sale TDS refunds, Form 128 lower TDS
+            NRI income tax returns from ₹9,999, property-sale TDS refunds, Form 128 lower TDS
             certificates and money transfers abroad — fully online, with fees shown upfront.
           </p>
           <Link
