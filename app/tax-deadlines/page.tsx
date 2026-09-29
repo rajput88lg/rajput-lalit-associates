@@ -103,6 +103,14 @@ export default function TaxDeadlinesPage() {
           <div className="max-w-5xl mx-auto px-6">
             <NextDeadlineCard />
 
+            <p className="mt-6 rounded-xl border border-[#d99a2b] bg-amber-50 p-4 text-sm text-gray-800">
+              <strong className="text-[#002b5c]">Don&apos;t want to keep checking this page?</strong> Get an email 7 days and 2 days
+              before every due date that applies to you.{" "}
+              <Link href="/compliance-reminders" className="font-bold text-[#06477f] underline">
+                Start reminders
+              </Link>
+            </p>
+
             <p className="mt-6 text-sm text-gray-600 leading-6">
               Dates checked on 23 September 2026. The government sometimes extends a due
               date close to the deadline — we update this page when that happens. For

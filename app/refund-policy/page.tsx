@@ -49,6 +49,24 @@ export default function RefundPolicyPage() {
 
           <section>
             <h2 className="text-2xl font-semibold text-[#002B5C] mb-3">
+              2A. Digital Products, Reports &amp; Reminder Service
+            </h2>
+
+            <p>
+              The Personal Tax Saving Report, downloadable templates and kits,
+              and the Compliance Reminder Service are delivered instantly after
+              payment, so they are not refundable. If a report does not open, a
+              file does not download or reminder emails are not reaching you,
+              contact us with your payment ID and we will fix it or deliver it
+              again. The Compliance Reminder Service runs for 12 months from the
+              date of payment and does not renew automatically. Reports and
+              templates are general guidance and working aids, not a substitute
+              for professional advice on your specific case.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#002B5C] mb-3">
               3. Appointment Rescheduling
             </h2>
 

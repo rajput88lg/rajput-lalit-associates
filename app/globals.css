@@ -609,3 +609,28 @@ html.reveal-ready [data-reveal-delay="8"] { transition-delay: 0.56s; }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gold);
 }
+/* Paid Tax Saving Report — "Print / Save as PDF" prints only the report,
+   not the navbar, deadline bar, chat widget or mobile sticky bar. Scoped
+   with :has() so printing any other page is unaffected. */
+@media print {
+  body:has(.report-print) * {
+    visibility: hidden;
+  }
+  body:has(.report-print) .report-print,
+  body:has(.report-print) .report-print * {
+    visibility: visible;
+  }
+  body:has(.report-print) .report-print {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+  }
+  .report-print section,
+  .report-print li {
+    break-inside: avoid;
+  }
+  .report-print header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
