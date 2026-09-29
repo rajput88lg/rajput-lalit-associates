@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Paid Excel/Word kits — /private-downloads public nahi hai, sirf
+  // /api/download (signed link) se milte hain. Ye line Vercel ko batati hai
+  // ki ye files us route ke saath deploy karni hain.
+  outputFileTracingIncludes: {
+    "/api/download": ["./private-downloads/**/*"],
+  },
+
   // SECURITY HEADERS (20 Sept 2026) — site-wide, koi page-level change nahi
   // chahiye. In sabka koi negative SEO/UX impact nahi hai, sirf browser ko
   // extra protection instructions milte hain.

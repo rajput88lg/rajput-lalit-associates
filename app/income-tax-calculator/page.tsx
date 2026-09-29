@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
+import PaidProductCta from "@/components/PaidProductCta";
 import IncomeTaxCalculator from "@/components/IncomeTaxCalculator";
 
 const SLUG = "income-tax-calculator";
@@ -150,6 +151,13 @@ export default function Page() {
         </div>
 
         <IncomeTaxCalculator />
+
+        <PaidProductCta
+          title="Want to know exactly how to pay less tax?"
+          text="Get a personal tax saving report: unused 80C/80D/NPS limits, employer NPS saving and a step-by-step action plan. Free check first."
+          href="/tax-saving-report"
+          cta="Check my savings"
+        />
 
         <section className="py-20 bg-white print:hidden">
           <div className="max-w-4xl mx-auto px-6">

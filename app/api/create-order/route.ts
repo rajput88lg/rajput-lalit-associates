@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
 import { getPaidService } from "@/lib/paidServices";
+import { encodeTaxInput, sanitizeTaxInput } from "@/lib/taxReport";
+import { parseCategories } from "@/lib/reminderSchedule";
 
 // Customer details go into the Razorpay order "notes", so every booking is
 // visible in the Razorpay dashboard even if the confirmation email fails.
@@ -45,6 +47,36 @@ export async function POST(request: Request) {
       );
     }
 
+    const email = note(body?.email, 100);
+    const extraNotes: Record<string, string> = {};
+
+    // Reports, downloads and reminders are delivered by email — email is a must.
+    if (service.kind !== "booking") {
+      if (!/^[^\s@<>"]+@[^\s@<>"]+\.[^\s@<>"]+$/.test(email)) {
+        return NextResponse.json(
+          { success: false, message: "A valid email is required." },
+          { status: 400 }
+        );
+      }
+    }
+
+    // Tax report: the inputs ride along in the order notes, so the report
+    // can be rebuilt on the server after payment (and again from the link).
+    if (service.kind === "report") {
+      const input = sanitizeTaxInput(body?.inputs);
+      if (!input) {
+        return NextResponse.json(
+          { success: false, message: "Please enter your salary details." },
+          { status: 400 }
+        );
+      }
+      extraNotes.inputs = encodeTaxInput(input);
+    }
+
+    if (service.kind === "subscription") {
+      extraNotes.categories = parseCategories(body?.categories).join("|");
+    }
+
     // Razorpay Instance
     const razorpay = new Razorpay({
       key_id: process.env.RAZORPAY_KEY_ID,
@@ -60,10 +92,12 @@ export async function POST(request: Request) {
         purpose: service.name,
         name,
         mobile,
-        email: note(body?.email, 100),
+        email,
+        service: service.key,
         topic: note(body?.topic, 100),
         preferred_slot: note(body?.slot, 100),
         query: note(body?.query, 250),
+        ...extraNotes,
       },
     });
 

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
+import PaidProductCta from "@/components/PaidProductCta";
 import HraCalculator from "@/components/HraCalculator";
 
 const SLUG = "hra-exemption-calculator";
@@ -150,6 +151,13 @@ export default function Page() {
         </div>
 
         <HraCalculator />
+
+        <PaidProductCta
+          title="Need rent receipts for HRA?"
+          text="Fill your details once and get 12 print-ready monthly rent receipts plus an HRA check — Excel kit."
+          href="/business-templates#rent-receipt-kit"
+          cta="Get the rent receipt kit"
+        />
 
         <section className="py-20 bg-white print:hidden">
           <div className="max-w-4xl mx-auto px-6">

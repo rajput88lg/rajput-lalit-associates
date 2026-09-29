@@ -145,6 +145,24 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/tax-saving-report" className="hover:text-[#f0b84b] transition">
+                  Tax Saving Report
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/business-templates" className="hover:text-[#f0b84b] transition">
+                  GST &amp; Accounts Templates
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/compliance-reminders" className="hover:text-[#f0b84b] transition">
+                  Due Date Reminders
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <Link href="/fees" className="hover:text-[#f0b84b] transition">
                   Our Fees
                 </Link>

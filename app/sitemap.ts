@@ -18,6 +18,10 @@ const servicePages = [
   "/accounting-bookkeeping-services",
   "/tds-return-filing",
   "/tax-consultation",
+  // Paid self-serve products (Sept 2026)
+  "/tax-saving-report",
+  "/business-templates",
+  "/compliance-reminders",
   // Free tools — NRI India-Tax Toolkit
   "/nri-property-tds-calculator",
   "/nri-residential-status-calculator",

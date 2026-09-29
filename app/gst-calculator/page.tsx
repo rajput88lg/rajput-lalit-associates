@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Breadcrumb from "@/components/Breadcrumb";
+import PaidProductCta from "@/components/PaidProductCta";
 import GstCalculator from "@/components/GstCalculator";
 
 const SLUG = "gst-calculator";
@@ -145,6 +146,13 @@ export default function Page() {
         </div>
 
         <GstCalculator />
+
+        <PaidProductCta
+          title="Make GST invoices in Excel"
+          text="Invoice with automatic CGST/SGST or IGST, sales register and monthly GSTR-1/3B summary — ready to use."
+          href="/business-templates#gst-invoice-kit"
+          cta="See the GST invoice kit"
+        />
 
         <section className="py-20 bg-white print:hidden">
           <div className="max-w-4xl mx-auto px-6">
