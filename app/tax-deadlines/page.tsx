@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "What is the ITR due date for tax audit cases for AY 2026-27?",
-    a: "31 October 2026, with the tax audit report due by 30 September 2026. No CBDT extension had been announced as of 19 September 2026.",
+    a: "21 November 2026, with the tax audit report due by 21 October 2026. CBDT extended both dates (from 31 October and 30 September) by a press release dated 28 September 2026.",
   },
   {
     q: "What is the GSTR-9 due date for FY 2025-26?",

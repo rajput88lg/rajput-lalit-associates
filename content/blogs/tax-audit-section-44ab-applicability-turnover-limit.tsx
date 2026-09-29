@@ -57,7 +57,7 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Businesses: audit required above ₹1 crore turnover (₹10 crore if 95%+ transactions are digital)</li>
           <li>Professionals: audit required above ₹50 lakh gross receipts — no separate digital threshold</li>
-          <li>Tax audit report due 30 September 2026; ITR for audit cases due 31 October 2026</li>
+          <li>Tax audit report due 21 October 2026; ITR for audit cases due 21 November 2026 (extended by CBDT on 28 September 2026 from 30 September / 31 October)</li>
         </ul>
       </div>
 
@@ -113,9 +113,9 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
       </h2>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
-          <li>Tax audit completion: 30 September 2026</li>
-          <li>Tax audit report filing (Form 3CA/3CB-3CD): 30 September 2026</li>
-          <li>ITR filing for audit-applicable taxpayers: 31 October 2026</li>
+          <li>Tax audit completion: 21 October 2026 (extended from 30 September)</li>
+          <li>Tax audit report filing (Form 3CA/3CB-3CD): 21 October 2026 (extended from 30 September)</li>
+          <li>ITR filing for audit-applicable taxpayers: 21 November 2026 (extended from 31 October)</li>
       </ul>
 
 
