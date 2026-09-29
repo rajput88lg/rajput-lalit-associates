@@ -53,3 +53,33 @@ Har sale ki copy `info@rajputlalitassociates.in` par "New sale: ..." subject se 
 - Aapka GST registration hai to in digital sales par GST lagega — price GST-inclusive maana gaya hai.
   Apne turnover ke hisaab se confirm kar lein.
 - Refund policy page par digital products ka section add kar diya gaya hai.
+
+---
+
+# Round 2 — NRI & International (USD)
+
+| Product / Page | Price | Kya hai |
+|---|---|---|
+| NRI India Tax Health Check — `/nri-tax-health-check` | US$59 | Free check + paid report (status, ITR, TDS refund, country pointers, action plan) |
+| NRI ITR filing — `/nri-in-usa#services` | US$119 | Booking (aap manually file karte hain) |
+| NRI ITR after property sale — `/nri-in-usa#services` | US$229 | Booking |
+| NRI in the USA guide — `/nri-in-usa` | — | Traffic page: India + US points, free check, USD plans |
+| Free calculators — `/us-income-tax-calculator`, `/canada-income-tax-calculator`, `/australia-income-tax-calculator` | Free | Videsh se traffic; har result ke neeche NRI check ka link |
+
+## Zaroori (iske bina USD payment nahi chalega)
+
+1. **Razorpay → International Payments enable karwaiye** (Razorpay support ko request). Tab tak USD
+   checkout par "payment couldn't start" + WhatsApp button dikhega — site tootegi nahi.
+2. **GST LUT (Form RFD-11)** file karne ke baare mein apne CA view se decide kariye — foreign currency
+   mein export of service zero-rated ho sakti hai.
+
+## Har saal update karna hai
+
+- US / Canada / Australia rates: `lib/globalTaxCalculators.ts` (upar comment mein sab figures aur saal likhe hain).
+  US: har November (IRS naye brackets), Canada: har January, Australia: har July.
+- NRI report ke India rules: `lib/nriHealthCheck.ts` + existing `lib/nriResidentialStatus.ts`.
+- USD prices: `lib/paidServices.ts` (`currency: "USD"` wale items).
+
+## Note
+`/nri-tax-services` page par INR fees (NRI ITR ₹5,000 etc.) abhi bhi purani hain. USD plans usse mehenge hain —
+chahein to INR fees bhi badha lein ya dono ko same rakhein.

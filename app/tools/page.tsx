@@ -113,6 +113,20 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    href: "/nri-tax-health-check",
+    icon: UserCheck,
+    title: "NRI India Tax Health Check",
+    answers: "Am I an NRI, must I file an Indian return, and how much TDS can I get back?",
+    description:
+      "For NRIs in the USA, Canada, Australia, UK and UAE: residential status, ITR requirement and a TDS refund estimate on NRO interest and rent — free check, detailed report optional.",
+    points: [
+      "Residential status + ITR check",
+      "TDS refund estimate",
+      "Country-specific pointers",
+      "Free check in 3 minutes",
+    ],
+  },
+  {
     href: "/nri-property-tds-calculator",
     icon: Calculator,
     title: "NRI Property Sale TDS Calculator",
@@ -317,6 +331,33 @@ const loanTools = [
 ];
 
 const worldwideFinanceTools = [
+  {
+    href: "/us-income-tax-calculator",
+    icon: Calculator,
+    title: "US Income Tax Calculator 2026",
+    answers: "How much of my US salary do I actually take home?",
+    description:
+      "2026 federal income tax with the new standard deduction, Social Security, Medicare, 401(k) and your state rate — take-home pay per month and per paycheck.",
+    points: ["2026 IRS brackets", "FICA included", "401(k) and state tax", "Free — for the USA"],
+  },
+  {
+    href: "/canada-income-tax-calculator",
+    icon: Calculator,
+    title: "Canada Income Tax Calculator 2026",
+    answers: "What is my take-home pay in Canada after tax, CPP and EI?",
+    description:
+      "2026 federal tax at the new 14% rate, Ontario tax with surtax and health premium, CPP/CPP2 and EI — see your net pay instantly.",
+    points: ["2026 CRA figures", "Ontario tax included", "CPP, CPP2 and EI", "Free — for Canada"],
+  },
+  {
+    href: "/australia-income-tax-calculator",
+    icon: Calculator,
+    title: "Australia Income Tax Calculator 2026-27",
+    answers: "How much will I take home in Australia after the July 2026 tax cut?",
+    description:
+      "2026-27 resident tax rates with the new 15% rate, the low income tax offset and Medicare levy — take-home pay per month and fortnight.",
+    points: ["New 15% rate from July 2026", "LITO and Medicare levy", "Monthly and fortnightly pay", "Free — for Australia"],
+  },
   {
     href: "/compound-interest-calculator",
     icon: TrendingUp,

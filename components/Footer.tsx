@@ -163,6 +163,18 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/nri-tax-health-check" className="hover:text-[#f0b84b] transition">
+                  NRI Tax Health Check
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
+                <Link href="/nri-in-usa" className="hover:text-[#f0b84b] transition">
+                  NRI in the USA
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaArrowRight className="text-[#d99a2b] text-xs" />
                 <Link href="/fees" className="hover:text-[#f0b84b] transition">
                   Our Fees
                 </Link>

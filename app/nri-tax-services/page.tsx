@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import PaidProductCta from "@/components/PaidProductCta";
 import Contact from "@/components/Contact";
 import FeeCards from "@/components/FeeCards";
 import NriWhatsAppPicker from "@/components/NriWhatsAppPicker";
@@ -161,6 +162,13 @@ export default function NriTaxServicesPage() {
         </section>
 
         <Breadcrumb current="NRI Tax Services" />
+
+        <PaidProductCta
+          title="Not sure where you stand? Take the free NRI tax check"
+          text="3 minutes: your residential status, whether you must file an Indian return, and how much TDS you may get back."
+          href="/nri-tax-health-check"
+          cta="Start free check"
+        />
 
         {/* PROBLEMS */}
         <section className="py-16 bg-white">

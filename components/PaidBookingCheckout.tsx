@@ -8,7 +8,7 @@ import { Loader2, LockKeyhole, ShieldCheck } from "lucide-react";
 import LeadFallback from "@/components/LeadFallback";
 import { trackEvent, trackFormSubmit } from "@/lib/gaEvents";
 import { tagUrgency } from "@/lib/leadTriage";
-import { PAID_SERVICES, type PaidServiceKey } from "@/lib/paidServices";
+import { formatPrice, PAID_SERVICES, type PaidServiceKey } from "@/lib/paidServices";
 
 type RazorpayResponse = {
   razorpay_order_id: string;
@@ -55,6 +55,7 @@ export default function PaidBookingCheckout({
 }) {
   const router = useRouter();
   const item = PAID_SERVICES[service];
+  const intl = item.currency === "USD";
 
   const [form, setForm] = useState({
     name: "",
@@ -76,7 +77,7 @@ export default function PaidBookingCheckout({
   const sendBookingEmail = async (paymentId: string) => {
     const message = tagUrgency(
       `
-PAID BOOKING — ${item.name} (₹${item.amount})
+PAID BOOKING — ${item.name} (${formatPrice(item)})
 
 Name: ${form.name}
 Mobile: ${form.mobile}
@@ -165,7 +166,7 @@ Razorpay payment ID: ${paymentId}
 
           await sendBookingEmail(payment.razorpay_payment_id);
           trackFormSubmit(`paid_${service}`);
-          trackEvent("purchase", { value: item.amount, currency: "INR", service });
+          trackEvent("purchase", { value: item.amount, currency: item.currency ?? "INR", service });
           router.push("/appointment/success");
         },
       });
@@ -185,7 +186,7 @@ Razorpay payment ID: ${paymentId}
     <form onSubmit={handlePay} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <input className={inputClass} required placeholder="Your name" aria-label="Your name" value={form.name} onChange={set("name")} />
-        <input className={inputClass} required type="tel" pattern="[0-9+ ]{10,15}" placeholder="Mobile (WhatsApp)" aria-label="Mobile number" value={form.mobile} onChange={set("mobile")} />
+        <input className={inputClass} required type="tel" pattern={intl ? "[0-9+\\(\\)\\- ]{7,20}" : "[0-9+ ]{10,15}"} placeholder={intl ? "Phone / WhatsApp (with country code)" : "Mobile (WhatsApp)"} aria-label="Mobile number" value={form.mobile} onChange={set("mobile")} />
       </div>
       <input className={inputClass} type="email" placeholder="Email (optional)" aria-label="Email" value={form.email} onChange={set("email")} />
 
@@ -197,7 +198,7 @@ Razorpay payment ID: ${paymentId}
         </select>
       )}
 
-      <input className={inputClass} placeholder="Preferred day & time (e.g. Mon 4 PM)" aria-label="Preferred slot" value={form.slot} onChange={set("slot")} />
+      <input className={inputClass} placeholder={intl ? "Best time to call, with your time zone (e.g. Sat 9 AM EST)" : "Preferred day & time (e.g. Mon 4 PM)"} aria-label="Preferred slot" value={form.slot} onChange={set("slot")} />
       <textarea className={inputClass} rows={3} maxLength={250} placeholder="Your question in short (optional)" aria-label="Your question" value={form.query} onChange={set("query")} />
 
       {/* Honeypot — hidden from real visitors */}
@@ -214,13 +215,14 @@ Razorpay payment ID: ${paymentId}
           </>
         ) : (
           <>
-            <LockKeyhole size={18} /> Pay ₹{item.amount} &amp; Book
+            <LockKeyhole size={18} /> Pay {formatPrice(item)} &amp; Book
           </>
         )}
       </button>
 
       <p className="flex items-center justify-center gap-2 text-xs text-gray-500">
-        <ShieldCheck size={14} /> Secure payment via Razorpay — UPI, cards, net banking
+        <ShieldCheck size={14} />{" "}
+        {intl ? "Secure payment via Razorpay — international cards and PayPal" : "Secure payment via Razorpay — UPI, cards, net banking"}
       </p>
 
       {error && (

@@ -53,7 +53,7 @@ export type IncomeTaxResult = {
 
 const CESS_RATE = 0.04;
 
-function slabTax(taxableIncome: number, slabs: { upto: number; rate: number }[]): number {
+export function slabTax(taxableIncome: number, slabs: { upto: number; rate: number }[]): number {
   let tax = 0;
   let lastLimit = 0;
   for (const slab of slabs) {
@@ -68,7 +68,7 @@ function slabTax(taxableIncome: number, slabs: { upto: number; rate: number }[])
   return tax;
 }
 
-const NEW_REGIME_SLABS = [
+export const NEW_REGIME_SLABS = [
   { upto: 400000, rate: 0 },
   { upto: 800000, rate: 0.05 },
   { upto: 1200000, rate: 0.1 },
