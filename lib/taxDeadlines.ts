@@ -3,7 +3,7 @@
  *   - /tax-deadlines page (full calendar)
  *   - DeadlineBar (site-wide strip showing the next deadline)
  *
- * Dates verified 23 September 2026; April 2027 – March 2028 dates added and
+ * Dates verified 23 September 2026 (audit-case extensions of 28 Sept 2026 applied); April 2027 – March 2028 dates added and
  * checked 29 September 2026 (statutory dates — extensions come later). Government extensions are announced
  * from time to time — when one comes, just edit the date here and every
  * place on the site updates together.
@@ -30,12 +30,12 @@ export type TaxDeadline = {
 export const TAX_DEADLINES: TaxDeadline[] = [
   {
     id: "tax-audit-report",
-    date: "2026-09-30",
+    date: "2026-10-21",
     title: "Tax Audit Report (Form 3CA/3CB + 3CD) — FY 2025-26",
     short: "Tax audit report (FY 2025-26)",
     who: "Businesses and professionals covered by tax audit under Section 44AB",
     ifMissed: "Penalty of 0.5% of turnover, up to ₹1.5 lakh (Section 271B)",
-    note: "No CBDT extension had been announced as of 19 September 2026.",
+    note: "Extended from 30 September to 21 October 2026 by CBDT press release dated 28 September 2026 (formal order to follow).",
     link: { href: "/blog/tax-audit-section-44ab-applicability-turnover-limit", label: "Tax audit — who needs it" },
     category: "Income Tax",
   },
@@ -71,11 +71,12 @@ export const TAX_DEADLINES: TaxDeadline[] = [
   },
   {
     id: "itr-audit-cases",
-    date: "2026-10-31",
+    date: "2026-11-21",
     title: "ITR for Tax Audit Cases — AY 2026-27",
     short: "ITR for audit cases",
     who: "Businesses and professionals whose accounts are audited under Section 44AB",
     ifMissed: "Late fee, interest on unpaid tax, and loss of the right to carry forward most losses",
+    note: "Extended from 31 October to 21 November 2026 by CBDT press release dated 28 September 2026.",
     link: { href: "/income-tax-return-filing", label: "ITR filing service" },
     category: "Income Tax",
   },
