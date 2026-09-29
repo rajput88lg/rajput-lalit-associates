@@ -11,6 +11,7 @@
  * kind:
  *   booking      — a call we schedule manually (old flow, /appointment/success)
  *   report       — Personal Tax Saving Report, built automatically after payment
+ *   nri-report   — NRI India Tax Health Check (USD), built automatically after payment
  *   download     — Excel / Word kits, delivered as secure download links
  *   subscription — 12-month compliance reminder emails (no auto-renewal)
  */
@@ -24,17 +25,29 @@ export type PaidServiceKey =
   | "notice-reply-kit"
   | "rent-receipt-kit"
   | "business-kit-bundle"
-  | "compliance-reminders";
+  | "compliance-reminders"
+  | "nri-health-check"
+  | "nri-itr-usd"
+  | "nri-property-itr-usd";
 
-export type PaidServiceKind = "booking" | "report" | "download" | "subscription";
+export type PaidServiceKind = "booking" | "report" | "nri-report" | "download" | "subscription";
+
+/**
+ * USD products need "International Payments" enabled on the Razorpay account
+ * (raise it with Razorpay support). Until then their checkout shows the
+ * WhatsApp fallback instead of the payment popup.
+ */
+export type Currency = "INR" | "USD";
 
 export type PaidService = {
   key: PaidServiceKey;
   kind: PaidServiceKind;
   /** Shown on the Razorpay checkout and in the booking email. */
   name: string;
-  /** Price in rupees (GST, if applicable, is included in this amount). */
+  /** Price in rupees — or in US dollars when currency is "USD" (GST, if applicable, included). */
   amount: number;
+  /** Defaults to INR. */
+  currency?: Currency;
   /** Short line for the Razorpay checkout popup. */
   checkoutDescription: string;
   /** Download kits only — ids from DIGITAL_FILES below. */
@@ -136,6 +149,30 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
     checkoutDescription: "All 4 Excel & Word kits",
     files: ["gst-invoice-kit", "bookkeeping-kit", "notice-reply-kit", "rent-receipt-kit"],
   },
+  "nri-health-check": {
+    key: "nri-health-check",
+    kind: "nri-report",
+    name: "NRI India Tax Health Check",
+    amount: 59,
+    currency: "USD",
+    checkoutDescription: "Your personalised India tax report as an NRI",
+  },
+  "nri-itr-usd": {
+    key: "nri-itr-usd",
+    kind: "booking",
+    name: "NRI India Income Tax Return (filing)",
+    amount: 119,
+    currency: "USD",
+    checkoutDescription: "India ITR filing for NRIs — rent, interest, dividends",
+  },
+  "nri-property-itr-usd": {
+    key: "nri-property-itr-usd",
+    kind: "booking",
+    name: "NRI ITR after selling property in India",
+    amount: 229,
+    currency: "USD",
+    checkoutDescription: "Capital gains ITR and TDS refund after a property sale",
+  },
   "compliance-reminders": {
     key: "compliance-reminders",
     kind: "subscription",
@@ -159,4 +196,11 @@ export function getPaidService(key: unknown): PaidService | null {
   return Object.prototype.hasOwnProperty.call(PAID_SERVICES, key)
     ? PAID_SERVICES[key as PaidServiceKey]
     : null;
+}
+
+/** "₹249" or "US$59" — use everywhere a price is shown. */
+export function formatPrice(item: Pick<PaidService, "amount" | "currency">): string {
+  return item.currency === "USD"
+    ? `US$${item.amount.toLocaleString("en-US")}`
+    : `₹${item.amount.toLocaleString("en-IN")}`;
 }

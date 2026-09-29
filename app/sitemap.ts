@@ -22,6 +22,12 @@ const servicePages = [
   "/tax-saving-report",
   "/business-templates",
   "/compliance-reminders",
+  // NRI & international (Sept 2026)
+  "/nri-tax-health-check",
+  "/nri-in-usa",
+  "/us-income-tax-calculator",
+  "/canada-income-tax-calculator",
+  "/australia-income-tax-calculator",
   // Free tools — NRI India-Tax Toolkit
   "/nri-property-tds-calculator",
   "/nri-residential-status-calculator",

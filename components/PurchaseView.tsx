@@ -7,12 +7,15 @@ import { BellRing, CheckCircle2, Download, Loader2, Printer } from "lucide-react
 import { FaWhatsapp } from "react-icons/fa";
 
 import TaxReportView from "@/components/TaxReportView";
+import NriReportView from "@/components/NriReportView";
 import type { TaxReport } from "@/lib/taxReport";
+import type { NriReport } from "@/lib/nriHealthCheck";
 import { REMINDER_CATEGORIES, type ReminderItem } from "@/lib/reminderSchedule";
 import { formatDeadlineDate } from "@/lib/taxDeadlines";
 
 type Result =
   | ({ kind: "report"; report: TaxReport } & Common)
+  | ({ kind: "nri-report"; report: NriReport } & Common)
   | ({ kind: "download"; files: { id: string; label: string; url: string }[] } & Common)
   | ({ kind: "subscription"; categories: string[]; validTill: string; upcoming: ReminderItem[] } & Common);
 
@@ -69,7 +72,7 @@ export default function PurchaseView() {
         <p className="flex items-center gap-2 font-semibold text-green-800">
           <CheckCircle2 size={20} /> Payment received — {data.product.name}. A copy of this link is in your email.
         </p>
-        {data.kind === "report" && (
+        {(data.kind === "report" || data.kind === "nri-report") && (
           <button
             type="button"
             onClick={() => window.print()}
@@ -88,6 +91,18 @@ export default function PurchaseView() {
             text="We prepare and file your return, match Form 16/AIS and make sure every deduction in this report is claimed."
             href="/income-tax-return-filing"
             cta="See ITR filing service"
+          />
+        </>
+      )}
+
+      {data.kind === "nri-report" && (
+        <>
+          <NriReportView report={data.report} name={data.customer.name} />
+          <Upsell
+            title="Want us to file your Indian return?"
+            text="We file NRI returns every week — claim your TDS refund, report rent and interest correctly and handle property sales."
+            href="/nri-in-usa#services"
+            cta="See NRI filing plans"
           />
         </>
       )}

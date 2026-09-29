@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
 
-import { DIGITAL_FILES, getPaidService, type PaidService } from "@/lib/paidServices";
+import { DIGITAL_FILES, formatPrice, getPaidService, type PaidService } from "@/lib/paidServices";
 import { buildTaxReport, decodeTaxInput } from "@/lib/taxReport";
+import { buildNriReport, decodeNriInput } from "@/lib/nriHealthCheck";
 import {
   accessToken,
   checkAccessToken,
@@ -81,6 +82,10 @@ export async function POST(request: Request) {
     const input = decodeTaxInput(notes.inputs);
     if (!input) return bad("Report details missing in the order — please WhatsApp us.", 500);
     payload = { kind: "report", report: buildTaxReport(input), input };
+  } else if (service.kind === "nri-report") {
+    const input = decodeNriInput(notes.inputs);
+    if (!input) return bad("Report details missing in the order — please WhatsApp us.", 500);
+    payload = { kind: "nri-report", report: buildNriReport(input) };
   } else if (service.kind === "download") {
     payload = {
       kind: "download",
@@ -114,7 +119,7 @@ export async function POST(request: Request) {
     success: true,
     orderId,
     token,
-    product: { key: service.key, name: service.name, amount: service.amount },
+    product: { key: service.key, name: service.name, amount: service.amount, currency: service.currency ?? "INR" },
     customer: { name: customer.name },
     ...payload,
   });
@@ -128,11 +133,14 @@ async function sendEmails(
   payload: Record<string, unknown>
 ) {
   const link = purchaseUrl(orderId);
-  const hi = `<p>Namaste ${escapeHtml(customer.name || "")},</p><p>Thank you for your purchase of <strong>${escapeHtml(service.name)}</strong> (₹${service.amount}).</p>`;
+  const hi = `<p>Namaste ${escapeHtml(customer.name || "")},</p><p>Thank you for your purchase of <strong>${escapeHtml(service.name)}</strong> (${formatPrice(service)}).</p>`;
   let body = "";
   let text = "";
 
-  if (payload.kind === "report") {
+  if (payload.kind === "nri-report") {
+    body = `${hi}<p>Your NRI India Tax Health Check is ready. Open it any time from the link below — you can print it or save it as PDF.</p>${button(link, "Open my NRI tax report")}<p>Want us to file your Indian return or handle a property sale? Just reply to this email.</p>`;
+    text = `Your NRI India Tax Health Check: ${link}`;
+  } else if (payload.kind === "report") {
     body = `${hi}<p>Your personalised tax saving report is ready. Open it any time from the link below — you can print it or save it as PDF.</p>${button(link, "Open my tax report")}`;
     text = `Your tax saving report: ${link}`;
   } else if (payload.kind === "download") {
@@ -157,9 +165,9 @@ async function sendEmails(
   }
 
   const jobs: Promise<void>[] = [
-    notifyFirm(`New sale: ${service.name} — ₹${service.amount}`, [
+    notifyFirm(`New sale: ${service.name} — ${formatPrice(service)}`, [
       ["Product", service.name],
-      ["Amount", `₹${service.amount}`],
+      ["Amount", formatPrice(service)],
       ["Name", customer.name],
       ["Mobile", customer.mobile],
       ["Email", customer.email],

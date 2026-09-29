@@ -6,7 +6,7 @@ import { Loader2, LockKeyhole, ShieldCheck } from "lucide-react";
 
 import LeadFallback from "@/components/LeadFallback";
 import { trackEvent } from "@/lib/gaEvents";
-import { PAID_SERVICES, type PaidServiceKey } from "@/lib/paidServices";
+import { formatPrice, PAID_SERVICES, type PaidServiceKey } from "@/lib/paidServices";
 
 /**
  * Checkout for self-serve products (tax report, download kits, reminders).
@@ -61,6 +61,7 @@ export default function ProductCheckout({
 }) {
   const router = useRouter();
   const item = PAID_SERVICES[service];
+  const intl = item.currency === "USD";
   const [form, setForm] = useState({ name: "", mobile: "", email: "", company_website: "" });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -80,7 +81,7 @@ export default function ProductCheckout({
 
     setBusy(true);
     setError("");
-    trackEvent("begin_checkout", { value: item.amount, currency: "INR", service });
+    trackEvent("begin_checkout", { value: item.amount, currency: item.currency ?? "INR", service });
 
     try {
       const res = await fetch("/api/create-order", {
@@ -134,14 +135,16 @@ export default function ProductCheckout({
           if (!result?.success) {
             setBusy(false);
             setError(
-              `Payment mil gaya hai lekin product abhi load nahi ho paya. Is Payment ID ke saath WhatsApp karein, hum turant bhej denge: ${payment.razorpay_payment_id}`
+              intl
+                ? `Payment received, but your report couldn't load. WhatsApp us with this payment ID and we'll send it right away: ${payment.razorpay_payment_id}`
+                : `Payment mil gaya hai lekin product abhi load nahi ho paya. Is Payment ID ke saath WhatsApp karein, hum turant bhej denge: ${payment.razorpay_payment_id}`
             );
             return;
           }
 
           trackEvent("purchase", {
             value: item.amount,
-            currency: "INR",
+            currency: item.currency ?? "INR",
             service,
             transaction_id: payment.razorpay_payment_id,
           });
@@ -150,13 +153,17 @@ export default function ProductCheckout({
       });
       rzp.on("payment.failed", (resp) => {
         setBusy(false);
-        setError(resp?.error?.description || "Payment fail ho gaya. Dobara try karein.");
+        setError(resp?.error?.description || (intl ? "Payment failed. Please try again." : "Payment fail ho gaya. Dobara try karein."));
       });
       rzp.open();
     } catch (err) {
       console.error(err);
       setBusy(false);
-      setError("Online payment abhi shuru nahi ho paya. Thodi der baad try karein ya WhatsApp karein.");
+      setError(
+        intl
+          ? "Online payment couldn't start right now. Please try again shortly, or WhatsApp us below and we'll send you a payment link."
+          : "Online payment abhi shuru nahi ho paya. Thodi der baad try karein ya WhatsApp karein."
+      );
     }
   };
 
@@ -164,9 +171,9 @@ export default function ProductCheckout({
     <form onSubmit={handlePay} className="space-y-3">
       <div className={compact ? "space-y-3" : "grid sm:grid-cols-2 gap-3"}>
         <input className={inputClass} required placeholder="Your name" aria-label="Your name" autoComplete="name" value={form.name} onChange={set("name")} />
-        <input className={inputClass} required type="tel" pattern="[0-9+ ]{10,15}" placeholder="Mobile (WhatsApp)" aria-label="Mobile number" autoComplete="tel" value={form.mobile} onChange={set("mobile")} />
+        <input className={inputClass} required type="tel" pattern={intl ? "[0-9+\\(\\)\\- ]{7,20}" : "[0-9+ ]{10,15}"} placeholder={intl ? "Phone / WhatsApp (with country code)" : "Mobile (WhatsApp)"} aria-label="Mobile number" autoComplete="tel" value={form.mobile} onChange={set("mobile")} />
       </div>
-      <input className={inputClass} required type="email" placeholder="Email (product is sent here)" aria-label="Email" autoComplete="email" value={form.email} onChange={set("email")} />
+      <input className={inputClass} required type="email" placeholder={intl ? "Email (your report is sent here)" : "Email (product is sent here)"} aria-label="Email" autoComplete="email" value={form.email} onChange={set("email")} />
 
       <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" value={form.company_website} onChange={set("company_website")} />
 
@@ -181,13 +188,14 @@ export default function ProductCheckout({
           </>
         ) : (
           <>
-            <LockKeyhole size={18} /> {buttonLabel || `Pay ₹${item.amount}`}
+            <LockKeyhole size={18} /> {buttonLabel || `Pay ${formatPrice(item)}`}
           </>
         )}
       </button>
 
       <p className="flex items-center justify-center gap-2 text-xs text-gray-500">
-        <ShieldCheck size={14} /> Secure payment via Razorpay — UPI, cards, net banking
+        <ShieldCheck size={14} />{" "}
+        {intl ? "Secure payment via Razorpay — international cards and PayPal" : "Secure payment via Razorpay — UPI, cards, net banking"}
       </p>
 
       {error && (

@@ -3,6 +3,7 @@ import Razorpay from "razorpay";
 import { getPaidService } from "@/lib/paidServices";
 import { encodeTaxInput, sanitizeTaxInput } from "@/lib/taxReport";
 import { parseCategories } from "@/lib/reminderSchedule";
+import { encodeNriInput, sanitizeNriInput } from "@/lib/nriHealthCheck";
 
 // Customer details go into the Razorpay order "notes", so every booking is
 // visible in the Razorpay dashboard even if the confirmation email fails.
@@ -73,6 +74,17 @@ export async function POST(request: Request) {
       extraNotes.inputs = encodeTaxInput(input);
     }
 
+    if (service.kind === "nri-report") {
+      const input = sanitizeNriInput(body?.inputs);
+      if (!input) {
+        return NextResponse.json(
+          { success: false, message: "Please fill in your India stay and income details." },
+          { status: 400 }
+        );
+      }
+      extraNotes.inputs = encodeNriInput(input);
+    }
+
     if (service.kind === "subscription") {
       extraNotes.categories = parseCategories(body?.categories).join("|");
     }
@@ -85,8 +97,8 @@ export async function POST(request: Request) {
 
     // Create Order
     const order = await razorpay.orders.create({
-      amount: service.amount * 100, // paise
-      currency: "INR",
+      amount: service.amount * 100, // paise (or cents for USD)
+      currency: service.currency ?? "INR",
       receipt: `${service.key}_${Date.now()}`,
       notes: {
         purpose: service.name,
