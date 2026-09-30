@@ -80,7 +80,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
           <li><strong>Minimum requirement:</strong> 2 directors, 2 shareholders, no minimum capital</li>
           <li><strong>Government cost (₹1L authorized capital):</strong> roughly ₹3,000–₹6,000, mostly stamp duty which varies by state</li>
           <li><strong>Timeline:</strong> 10–20 working days typically, 7 days in the best case</li>
-          <li><strong>Don't forget:</strong> Form INC-20A within 180 days, or face a ₹50,000+ penalty</li>
+          <li><strong>Don&apos;t forget:</strong> Form INC-20A within 180 days, or face a ₹50,000+ penalty</li>
         </ul>
       </div>
 
@@ -165,7 +165,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
 
       <div className="bg-green-50 border-l-4 border-green-600 rounded-xl p-6 mb-12">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          Myth: "You need at least ₹1 lakh capital to register a company"
+          Myth: &quot;You need at least ₹1 lakh capital to register a company&quot;
         </h3>
         <p className="text-gray-700 leading-8">
           Not since the Companies Amendment Act, 2015. There is no minimum
@@ -261,7 +261,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
 
       <p className="text-gray-700 leading-8 mb-6">
         For a typical small company registering with ₹1 lakh authorized
-        capital, here's where the government costs actually come from:
+        capital, here&apos;s where the government costs actually come from:
       </p>
 
       <div className="overflow-x-auto mb-10">
@@ -302,7 +302,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
         the state where your registered office is located and your
         authorized capital amount, so two companies incorporating on the
         same day with the same capital can pay very different totals. This
-        table doesn't include professional fees for documentation, drafting
+        table doesn&apos;t include professional fees for documentation, drafting
         and filing support, which are separate.
       </p>
 
@@ -447,7 +447,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
       </div>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Post-Incorporation Compliance — Don't Miss Form INC-20A
+        Post-Incorporation Compliance — Don&apos;t Miss Form INC-20A
       </h2>
 
       <p className="text-gray-700 leading-8 mb-6">
@@ -531,7 +531,7 @@ export default function PrivateLimitedCompanyRegistrationIndia() {
         <Link href="/msme-registration" className={linkClass}>
           MSME (Udyam) Registration service
         </Link>{" "}
-        if you're registering as a proprietorship or partnership instead.
+        if you&apos;re registering as a proprietorship or partnership instead.
       </p>
 
       <div className="grid md:grid-cols-2 gap-5 mb-12">

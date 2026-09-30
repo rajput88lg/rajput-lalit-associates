@@ -47,7 +47,7 @@ export default function MSME45DayPaymentRuleSection43BH() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Agar aap kisi Micro ya Small enterprise se saamaan ya service kharidte hain, to unko time par payment karna sirf ek 'achhi practice' nahi raha — ab ye seedha aapke income tax deduction se juda hua hai. Section 43B(h) (jo ab naye Income-tax Act, 2025 mein Section 37(2)(g) ban gaya hai) kehta hai ki agar aapne MSME supplier ko time par payment nahi ki, to wo poora expense us saal ke liye deduct nahi hoga jis saal aapne kharida tha — deduction milega sirf usi saal jab aap actual mein payment karte hain, chahe wo saalon baad ho.
+        Agar aap kisi Micro ya Small enterprise se saamaan ya service kharidte hain, to unko time par payment karna sirf ek &apos;achhi practice&apos; nahi raha — ab ye seedha aapke income tax deduction se juda hua hai. Section 43B(h) (jo ab naye Income-tax Act, 2025 mein Section 37(2)(g) ban gaya hai) kehta hai ki agar aapne MSME supplier ko time par payment nahi ki, to wo poora expense us saal ke liye deduct nahi hoga jis saal aapne kharida tha — deduction milega sirf usi saal jab aap actual mein payment karte hain, chahe wo saalon baad ho.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -70,7 +70,7 @@ export default function MSME45DayPaymentRuleSection43BH() {
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Ek zaroori aur aksar miss hone wali baat: wholesale aur retail traders — chahe wo Udyam-registered hi kyun na ho — is 45-din protection ke daayre mein aam taur par nahi aate, kyunki MSMED Act ke tahat 'delayed payment' protection sirf manufacturing/service enterprises ko milta hai, traders ko nahi. Aur supplier ko us tareekh tak Udyam-registered hona chahiye jab supply hui thi — baad mein register karwaane se pichle transactions cover nahi honge.
+        Ek zaroori aur aksar miss hone wali baat: wholesale aur retail traders — chahe wo Udyam-registered hi kyun na ho — is 45-din protection ke daayre mein aam taur par nahi aate, kyunki MSMED Act ke tahat &apos;delayed payment&apos; protection sirf manufacturing/service enterprises ko milta hai, traders ko nahi. Aur supplier ko us tareekh tak Udyam-registered hona chahiye jab supply hui thi — baad mein register karwaane se pichle transactions cover nahi honge.
       </p>
 
 
@@ -132,7 +132,7 @@ export default function MSME45DayPaymentRuleSection43BH() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Bahut se businesses ye galti karte hain ki wo apne MSME vendors ki payment ko normal 'credit period' ki tarah treat karte hain — jabki tax law ke hisaab se 45 din (ya kam) ki hard deadline hai. Hum aapke vendor payment cycle ko review karke ye check karte hain ki kaunse payments is rule ke risk mein hain, aur{" "}<Link href="/blog/tax-audit-section-44ab-applicability-turnover-limit" className={linkClass}>Tax Audit</Link>{" "}ke saath isse sahi tarike se Form 3CD mein report karte hain. Agar aap khud MSME hain aur payment delay se jooj rahe hain, hamara{" "}<Link href="/accounting-bookkeeping-services" className={linkClass}>Accounting aur Bookkeeping</Link>{" "}service aapke vendor ageing ko track karne mein madad karta hai.
+        Bahut se businesses ye galti karte hain ki wo apne MSME vendors ki payment ko normal &apos;credit period&apos; ki tarah treat karte hain — jabki tax law ke hisaab se 45 din (ya kam) ki hard deadline hai. Hum aapke vendor payment cycle ko review karke ye check karte hain ki kaunse payments is rule ke risk mein hain, aur{" "}<Link href="/blog/tax-audit-section-44ab-applicability-turnover-limit" className={linkClass}>Tax Audit</Link>{" "}ke saath isse sahi tarike se Form 3CD mein report karte hain. Agar aap khud MSME hain aur payment delay se jooj rahe hain, hamara{" "}<Link href="/accounting-bookkeeping-services" className={linkClass}>Accounting aur Bookkeeping</Link>{" "}service aapke vendor ageing ko track karne mein madad karta hai.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

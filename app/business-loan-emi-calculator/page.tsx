@@ -176,12 +176,12 @@ export default function Page() {
               <p data-reveal data-reveal-delay="1">
                 Lenders assess a business loan application on your GST
                 filing history, ITR and financial statements, and existing
-                liabilities — not just the amount you're asking for. Clean,
+                liabilities — not just the amount you&apos;re asking for. Clean,
                 consistent, on-time compliance directly improves both your
-                approval chances and the rate you're offered.
+                approval chances and the rate you&apos;re offered.
               </p>
               <p data-reveal data-reveal-delay="2">
-                If your GST returns, books of accounts or ITR filings aren't
+                If your GST returns, books of accounts or ITR filings aren&apos;t
                 fully up to date, sorting that out before you apply is usually
                 more valuable than shopping for a slightly lower rate. Our{" "}
                 <Link href="/accounting-bookkeeping-services" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">

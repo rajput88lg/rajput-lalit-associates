@@ -56,7 +56,7 @@ export default function GSTInvoiceManagementSystemIMSGuide() {
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>IMS ek GST portal feature hai jahan recipient har inward invoice ko Accept, Reject, ya Pending kar sakta hai — 1 October 2024 se live hai</li>
-          <li>Koi action na loon to invoice 'deemed accepted' ho jaata hai jab GSTR-2B generate hoti hai — ITC automatically flow ho jaata hai</li>
+          <li>Koi action na loon to invoice &apos;deemed accepted&apos; ho jaata hai jab GSTR-2B generate hoti hai — ITC automatically flow ho jaata hai</li>
           <li>October 2025 se credit notes ke liye bhi Pending option, aur reject/pending par mandatory remarks zaroori hain</li>
         </ul>
       </div>
@@ -80,9 +80,9 @@ export default function GSTInvoiceManagementSystemIMSGuide() {
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>GST portal login karein → Dashboard → Services → Returns → Invoice Management System (IMS)</li>
-          <li>'Inward Supplies' view kholkar har invoice/credit note/debit note review karein</li>
+          <li>&apos;Inward Supplies&apos; view kholkar har invoice/credit note/debit note review karein</li>
           <li>Har record par: Accept (ITC mein include karna hai), Reject (dispute hai, ITC mein nahi chahiye), ya Pending (decision baad mein) chunein</li>
-          <li>Koi action nahi liya to GSTR-2B generate hote time record 'deemed accepted' ho jaata hai</li>
+          <li>Koi action nahi liya to GSTR-2B generate hote time record &apos;deemed accepted&apos; ho jaata hai</li>
           <li>Draft GSTR-2B (~14 tareekh ko available) review karke confirm karein ki actions sahi se reflect ho rahe hain</li>
           <li>GSTR-3B file karein, jo IMS actions/GSTR-2B ke basis par auto-populate hoti hai</li>
       </ul>
@@ -93,11 +93,11 @@ export default function GSTInvoiceManagementSystemIMSGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Ab GSTR-2B directly IMS actions se banti hai — sirf Accepted aur deemed-accepted invoices 'ITC Available' table mein jaate hain; Rejected invoices ek separate 'ITC Rejected' section mein rehte hain aur kabhi ITC-eligible figures mein nahi aate.
+        Ab GSTR-2B directly IMS actions se banti hai — sirf Accepted aur deemed-accepted invoices &apos;ITC Available&apos; table mein jaate hain; Rejected invoices ek separate &apos;ITC Rejected&apos; section mein rehte hain aur kabhi ITC-eligible figures mein nahi aate.
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Section 16(4), CGST Act ka statutory time limit ITC claim karne ke liye alag se apply hota rehta hai — IMS mein 'Pending' status sirf portal-level deferral hai, ye statutory deadline ko extend nahi karta.
+        Section 16(4), CGST Act ka statutory time limit ITC claim karne ke liye alag se apply hota rehta hai — IMS mein &apos;Pending&apos; status sirf portal-level deferral hai, ye statutory deadline ko extend nahi karta.
       </p>
 
 
@@ -110,7 +110,7 @@ export default function GSTInvoiceManagementSystemIMSGuide() {
           Naye features jo aapko pata hone chahiye
         </h3>
         <p className="text-gray-700 leading-8">
-          October 2025 tax period se, credit notes aur kuch amendments ke liye bhi 'Pending' option mil gaya hai (limited window ke saath), recipients ab exact/partial ITC reversal amount declare kar sakte hain (poora automatic reversal nahi), aur Reject ya Pending mark karte waqt ab mandatory remarks dena zaroori hai — isse audit trail banta hai aur arbitrary rejections kam hote hain.
+          October 2025 tax period se, credit notes aur kuch amendments ke liye bhi &apos;Pending&apos; option mil gaya hai (limited window ke saath), recipients ab exact/partial ITC reversal amount declare kar sakte hain (poora automatic reversal nahi), aur Reject ya Pending mark karte waqt ab mandatory remarks dena zaroori hai — isse audit trail banta hai aur arbitrary rejections kam hote hain.
         </p>
       </div>
 

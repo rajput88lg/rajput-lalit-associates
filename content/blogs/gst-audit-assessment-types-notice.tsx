@@ -51,10 +51,10 @@ export default function GSTAuditAssessmentTypesNotice() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        "GST audit" and "GST assessment" get used loosely, but they're
+        &quot;GST audit&quot; and &quot;GST assessment&quot; get used loosely, but they&apos;re
         legally distinct processes with different triggers, timelines and
-        consequences — and knowing which one you're facing changes how you
-        should respond. Here's a plain-language map of scrutiny, audit and
+        consequences — and knowing which one you&apos;re facing changes how you
+        should respond. Here&apos;s a plain-language map of scrutiny, audit and
         the four types of assessment under the CGST Act.
       </p>
 
@@ -69,7 +69,7 @@ export default function GSTAuditAssessmentTypesNotice() {
           </li>
           <li>
             <strong>Non-filer assessment (Sec 62):</strong> best judgment
-            order if you don't file after being reminded — withdrawn if you
+            order if you don&apos;t file after being reminded — withdrawn if you
             file within 30 days
           </li>
           <li>
@@ -87,7 +87,7 @@ export default function GSTAuditAssessmentTypesNotice() {
           </li>
           <li>
             <strong>Special audit (Sec 66):</strong> department-appointed
-            CA/CMA examines complex cases, at department's cost
+            CA/CMA examines complex cases, at department&apos;s cost
           </li>
         </ul>
       </div>
@@ -97,7 +97,7 @@ export default function GSTAuditAssessmentTypesNotice() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-6">
-        This is usually the first sign something's flagged in your filings
+        This is usually the first sign something&apos;s flagged in your filings
         — a routine, desk-based check comparing your returns for
         inconsistencies, not a full audit.
       </p>
@@ -152,12 +152,12 @@ export default function GSTAuditAssessmentTypesNotice() {
           <tbody>
             <tr>
               <td className="border px-4 py-3">62 — Best judgment (non-filers)</td>
-              <td className="border px-4 py-3">Registered persons who don't file despite a Section 46 reminder</td>
+              <td className="border px-4 py-3">Registered persons who don&apos;t file despite a Section 46 reminder</td>
               <td className="border px-4 py-3">Order (ASMT-13) deemed withdrawn if valid return filed within 30 days</td>
             </tr>
             <tr>
               <td className="border px-4 py-3">63 — Unregistered persons</td>
-              <td className="border px-4 py-3">Those liable to register but didn't, or operating after cancellation</td>
+              <td className="border px-4 py-3">Those liable to register but didn&apos;t, or operating after cancellation</td>
               <td className="border px-4 py-3">Notice ASMT-14, order ASMT-15; can involve heavy demand + penalty</td>
             </tr>
             <tr>
@@ -195,7 +195,7 @@ export default function GSTAuditAssessmentTypesNotice() {
             </tr>
             <tr>
               <td className="border px-4 py-3 font-semibold">Notice</td>
-              <td className="border px-4 py-3">Form ADT-01, 15 working days' advance notice</td>
+              <td className="border px-4 py-3">Form ADT-01, 15 working days&apos; advance notice</td>
               <td className="border px-4 py-3">Form ADT-03 order</td>
             </tr>
             <tr>

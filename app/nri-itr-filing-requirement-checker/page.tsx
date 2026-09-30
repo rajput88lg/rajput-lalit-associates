@@ -149,7 +149,7 @@ export default function Page() {
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
               Income below the exemption limit doesn&apos;t always mean you
               can skip filing — and TDS deducted on your Indian income is
-              often money you're leaving on the table. Answer a few
+              often money you&apos;re leaving on the table. Answer a few
               questions to find out where you stand.
             </p>
 
@@ -174,7 +174,7 @@ export default function Page() {
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
             <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c]">
-              "My income is small, so I don't need to file" — usually wrong
+              &quot;My income is small, so I don&apos;t need to file&quot; — usually wrong
             </h2>
             <div data-reveal className="w-20 h-1 bg-[#d99a2b] mt-5 rounded-full" />
 

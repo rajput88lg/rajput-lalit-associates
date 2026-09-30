@@ -81,7 +81,7 @@ export default function GPSPhotoRequirement() {
             </div>
 
             <p className="mt-6 leading-8 text-blue-100">
-              Don't worry if you don't know how to capture a GPS Tagged Photo.
+              Don&apos;t worry if you don&apos;t know how to capture a GPS Tagged Photo.
               Our team will guide you step-by-step and help you prepare the
               correct photo required for GST Registration.
             </p>

@@ -99,7 +99,7 @@ export default function Page() {
             </h1>
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
-              Add your courses' credit hours and grades to calculate your weighted GPA on the US 4.0 scale.
+              Add your courses&apos; credit hours and grades to calculate your weighted GPA on the US 4.0 scale.
             </p>
 
             <div className="hero-in hero-in-4 mt-9">

@@ -85,7 +85,7 @@ export default function Pricing() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-gray-600">
-            Whether you're starting a new business or expanding an existing one,
+            Whether you&apos;re starting a new business or expanding an existing one,
             we offer premium website development packages tailored to your
             business goals.
           </p>

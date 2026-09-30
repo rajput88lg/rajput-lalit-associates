@@ -121,17 +121,17 @@ export default function Section195TDSOnNRIPaymentsOverview() {
           ₹5 Lakh Aggregate Threshold
         </h3>
         <p className="text-gray-700 leading-8">
-          Whenever aggregate remittances to a single non-resident in a financial year exceed ₹5 lakh, a Chartered Accountant's certificate (Form 15CB) is required before you file Form 15CA (Part C) — the CA verifies the nature of payment, correct TDS rate applied, and DTAA position if relied upon. Below that threshold, a simpler self-declaration (Form 15CA Part A) generally suffices without needing a CA certificate.
+          Whenever aggregate remittances to a single non-resident in a financial year exceed ₹5 lakh, a Chartered Accountant&apos;s certificate (Form 15CB) is required before you file Form 15CA (Part C) — the CA verifies the nature of payment, correct TDS rate applied, and DTAA position if relied upon. Below that threshold, a simpler self-declaration (Form 15CA Part A) generally suffices without needing a CA certificate.
         </p>
       </div>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Why the Payer's Responsibility Matters Here
+        Why the Payer&apos;s Responsibility Matters Here
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Under Section 195, it's the person making the payment (not the NRI receiving it) who is responsible for deducting the correct TDS and depositing it — get the rate wrong, and the payer faces interest, potential disallowance of the expense, and penalty exposure, not just the recipient. This is why businesses making any payment abroad — royalty, technical service fees, professional fees, or even a property purchase from an NRI — need to get the Section 195 classification right before releasing payment, not after.
+        Under Section 195, it&apos;s the person making the payment (not the NRI receiving it) who is responsible for deducting the correct TDS and depositing it — get the rate wrong, and the payer faces interest, potential disallowance of the expense, and penalty exposure, not just the recipient. This is why businesses making any payment abroad — royalty, technical service fees, professional fees, or even a property purchase from an NRI — need to get the Section 195 classification right before releasing payment, not after.
       </p>
 
 

@@ -100,7 +100,7 @@ Taxable HRA: ${formatINR(result.taxableHra)}
                   Calculate Your HRA Exemption
                 </h2>
                 <p className="mt-1 text-blue-100 text-sm">
-                  Available only if you're on the Old Tax Regime.
+                  Available only if you&apos;re on the Old Tax Regime.
                 </p>
               </div>
             </div>

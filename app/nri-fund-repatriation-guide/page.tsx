@@ -148,7 +148,7 @@ export default function Page() {
 
             <p className="hero-in hero-in-3 mt-6 text-lg md:text-xl text-blue-100 leading-8 max-w-3xl mx-auto">
               Find out which Part of Form 145 applies to your remittance, and
-              whether you need a Chartered Accountant's certificate (Form
+              whether you need a Chartered Accountant&apos;s certificate (Form
               146) before your bank will process it.
             </p>
 
@@ -173,7 +173,7 @@ export default function Page() {
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
             <h2 data-reveal className="text-3xl md:text-4xl font-extrabold text-[#002b5c]">
-              Why your bank won't just wire the money
+              Why your bank won&apos;t just wire the money
             </h2>
             <div data-reveal className="w-20 h-1 bg-[#d99a2b] mt-5 rounded-full" />
 
@@ -183,8 +183,8 @@ export default function Page() {
                 proceeds, rent, NRO deposits — passes through an authorised
                 dealer (usually your bank), and banks are required to
                 confirm the tax position before they release funds abroad.
-                That confirmation is Form 145 (the remitter's declaration),
-                sometimes backed by Form 146 (a Chartered Accountant's
+                That confirmation is Form 145 (the remitter&apos;s declaration),
+                sometimes backed by Form 146 (a Chartered Accountant&apos;s
                 certificate).
               </p>
               <p data-reveal data-reveal-delay="2">
@@ -212,7 +212,7 @@ export default function Page() {
               </h3>
               <ul className="mt-5 space-y-3 text-gray-700 leading-7">
                 <li>• Issuing Form 146 (CA certificate) for property sale, rent and other remittances</li>
-                <li>• Filing Form 145 on your behalf and coordinating with your bank's authorised dealer desk</li>
+                <li>• Filing Form 145 on your behalf and coordinating with your bank&apos;s authorised dealer desk</li>
                 <li>• Advising whether a Form 128 Lower/Nil TDS Certificate is worth applying for first</li>
                 <li>• DTAA and Tax Residency Certificate guidance where treaty relief applies</li>
                 <li>• End-to-end support from property sale to funds credited in your foreign account</li>

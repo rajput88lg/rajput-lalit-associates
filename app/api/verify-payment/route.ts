@@ -63,6 +63,7 @@ export async function POST(request: Request) {
       paymentId: razorpay_payment_id,
       orderId: razorpay_order_id,
     });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Payment Verification Error:", error);
 

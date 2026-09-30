@@ -2182,4 +2182,686 @@ export const blogs: Blog[] = [
       "director disqualification ROC",
     ],
   },
+
+  // Round 5 — 30 September 2026
+
+  {
+    slug: "gstr-2b-vs-gstr-3b-itc-mismatch-reconciliation",
+
+    title: "GSTR-2B vs GSTR-3B: ITC Mismatch Kaise Theek Karein",
+
+    description:
+      "GSTR-2B aur GSTR-3B me ITC ka fark kyun aata hai, kaise reconcile karein aur excess ITC claim par interest aur notice se kaise bachein.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/gstr-2b-vs-gstr-3b-itc-mismatch-reconciliation.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GSTR-2B vs GSTR-3B ITC Mismatch — Reconciliation Guide",
+
+    seoDescription:
+      "GSTR-2B vs GSTR-3B ITC mismatch ke reasons, reconciliation ka step-by-step tareeka, excess ITC ka risk aur notice se bachne ke practical tips.",
+
+    keywords: [
+      "GSTR-2B vs GSTR-3B",
+      "ITC mismatch",
+      "GST ITC reconciliation",
+      "GSTR-2B reconciliation",
+      "excess ITC claim notice",
+      "Section 16(2)(aa)",
+    ],
+  },
+
+  {
+    slug: "qrmp-scheme-quarterly-gst-return-iff-guide",
+
+    title: "QRMP Scheme: Quarterly GST Return Aur IFF Ka Poora Process",
+
+    description:
+      "Chhote taxpayers ke liye QRMP scheme: kaun eligible hai, quarterly return kaise bharein, monthly tax payment aur IFF ka tareeka.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/qrmp-scheme-quarterly-gst-return-iff-guide.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "QRMP Scheme Kya Hai? Quarterly GST Return & IFF Guide",
+
+    seoDescription:
+      "QRMP scheme ki eligibility, quarterly GSTR-1 aur 3B due dates, PMT-06 monthly payment, IFF aur fixed sum vs self-assessment method ki simple guide.",
+
+    keywords: [
+      "QRMP scheme",
+      "quarterly GST return",
+      "IFF invoice furnishing facility",
+      "PMT-06",
+      "GSTR-3B quarterly",
+      "QRMP eligibility 5 crore",
+    ],
+  },
+
+  {
+    slug: "gst-mixed-supply-composite-supply-tax-rate",
+
+    title: "Mixed Supply vs Composite Supply: GST Rate Kaise Lagta Hai",
+
+    description:
+      "Jab ek invoice me do ya zyada items hon, to GST rate kaise decide hota hai? Mixed aur composite supply ka fark examples ke saath.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/gst-mixed-supply-composite-supply-tax-rate.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Mixed Supply vs Composite Supply GST — Rate & Examples",
+
+    seoDescription:
+      "GST me mixed supply aur composite supply ka fark, principal supply ka concept, kis par kaunsa rate lagta hai, examples ke saath simple guide.",
+
+    keywords: [
+      "mixed supply GST",
+      "composite supply GST",
+      "principal supply",
+      "Section 8 CGST Act",
+      "bundled supply GST rate",
+      "naturally bundled",
+    ],
+  },
+
+  {
+    slug: "gst-place-of-supply-igst-vs-cgst-sgst-rules",
+
+    title: "GST Place of Supply: IGST Ya CGST-SGST Kab Lagta Hai",
+
+    description:
+      "Place of supply se tay hota hai ki aapko IGST lagana hai ya CGST plus SGST. Goods aur services ke rules examples ke saath.",
+
+    category: "GST",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/gst-place-of-supply-igst-vs-cgst-sgst-rules.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "GST Place of Supply Rules — IGST vs CGST/SGST Guide",
+
+    seoDescription:
+      "GST place of supply rules goods aur services ke liye: IGST ya CGST-SGST kab lagta hai, B2B aur B2C ka fark, bill-to ship-to aur common galtiyan.",
+
+    keywords: [
+      "place of supply GST",
+      "IGST vs CGST SGST",
+      "place of supply of services",
+      "bill to ship to GST",
+      "inter-state supply GST",
+      "IGST Act section 10 12 13",
+    ],
+  },
+
+  {
+    slug: "section-80d-health-insurance-deduction-limit-guide",
+
+    title: "Section 80D: Health Insurance Par Tax Deduction Ki Poori Guide",
+
+    description:
+      "Health insurance premium par tax bachane ka tareeka: 80D ki limits, parents ka extra deduction, preventive health check-up aur kaun claim kar sakta hai.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/section-80d-health-insurance-deduction-limit-guide.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Section 80D Health Insurance Deduction — Limit & Rules",
+
+    seoDescription:
+      "Section 80D me health insurance premium par ₹25,000 se ₹1 lakh tak deduction: self, parents aur senior citizens ki limits, preventive health check-up aur payment rules.",
+
+    keywords: [
+      "Section 80D",
+      "health insurance tax deduction",
+      "80D limit senior citizen",
+      "preventive health checkup 5000",
+      "80D parents deduction",
+      "medical insurance tax saving",
+    ],
+  },
+
+  {
+    slug: "nps-tax-benefits-80ccd-1b-employer-contribution",
+
+    title: "NPS Tax Benefits: 80CCD(1), 80CCD(1B) Aur Employer Contribution",
+
+    description:
+      "National Pension System me invest karne par kitna tax bachta hai, employer contribution ka fayda aur old-new regime me NPS ka treatment.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/nps-tax-benefits-80ccd-1b-employer-contribution.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "NPS Tax Benefits 2026 — 80CCD(1B) & Employer Contribution",
+
+    seoDescription:
+      "NPS me tax kaise bachta hai: 80CCD(1), extra ₹50,000 under 80CCD(1B), employer contribution 80CCD(2), old vs new regime aur withdrawal ke tax rules.",
+
+    keywords: [
+      "NPS tax benefit",
+      "80CCD(1B)",
+      "80CCD(2) employer NPS",
+      "NPS old vs new regime",
+      "NPS withdrawal tax",
+      "National Pension System",
+    ],
+  },
+
+  {
+    slug: "salary-structure-tax-saving-allowances-perquisites",
+
+    title: "Salary Structure Se Tax Kaise Bachayein: Allowances Aur Perquisites",
+
+    description:
+      "Salary ke components, exempt allowances, perquisites aur smart salary structuring se legally tax kam karne ka tareeka.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/salary-structure-tax-saving-allowances-perquisites.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Salary Structure Se Tax Saving — Allowances & Perquisites",
+
+    seoDescription:
+      "Salary ko kaise structure karein ki tax kam lage: HRA, LTA, NPS, standard deduction, children education allowance, EPF ki limits aur old vs new regime ka fark.",
+
+    keywords: [
+      "salary structure tax saving",
+      "salary allowances exemption",
+      "LTA exemption",
+      "perquisites taxable",
+      "standard deduction salary",
+      "CTC restructuring tax",
+    ],
+  },
+
+  {
+    slug: "fd-interest-tax-tds-form-15g-15h-guide",
+
+    title: "FD Interest Par Tax Aur TDS: Form 15G/15H Kab Dein",
+
+    description:
+      "FD interest par kitna tax lagta hai, bank kab TDS kaatta hai aur Form 15G/15H se TDS kaise rokein.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/fd-interest-tax-tds-form-15g-15h-guide.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "FD Interest Tax & TDS — Form 15G/15H Kaise Bharein",
+
+    seoDescription:
+      "Fixed deposit ke interest par tax, bank TDS ki limit (₹50,000/₹1 lakh), Form 15G aur 15H ki eligibility, 80TTA/80TTB aur TDS refund ka tareeka.",
+
+    keywords: [
+      "FD interest tax",
+      "TDS on FD interest 194A",
+      "Form 15G",
+      "Form 15H",
+      "80TTA 80TTB",
+      "fixed deposit TDS limit",
+    ],
+  },
+
+  {
+    slug: "agricultural-income-tax-rules-india-exemption",
+
+    title: "Agricultural Income Par Tax: Kab Exempt Aur Kab Taxable",
+
+    description:
+      "Kheti ki income tax-free kab hoti hai, non-agricultural income ke saath kaise jodi jaati hai aur ITR me kya dikhana hota hai.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/agricultural-income-tax-rules-india-exemption.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Agricultural Income Tax Rules India — Exemption & ITR",
+
+    seoDescription:
+      "Agricultural income par tax: exemption kab milti hai, partial integration method ka example, ITR me kaise dikhayein aur rural agricultural land ke capital gains ke rules.",
+
+    keywords: [
+      "agricultural income tax",
+      "agricultural income exemption",
+      "partial integration agricultural income",
+      "agricultural land capital gains",
+      "ITR agricultural income",
+      "kheti ki income tax",
+    ],
+  },
+
+  {
+    slug: "loss-set-off-carry-forward-income-tax-itr",
+
+    title: "Loss Set-Off Aur Carry Forward: ITR Me Loss Kaise Adjust Karein",
+
+    description:
+      "Business, capital gains aur house property ke loss ko income se kaise adjust karein aur kitne saal tak aage le ja sakte hain.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/loss-set-off-carry-forward-income-tax-itr.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Loss Set-Off & Carry Forward Income Tax — Rules Guide",
+
+    seoDescription:
+      "Income tax me loss set-off aur carry forward ke rules: business loss, capital loss, house property loss, kitne saal carry forward aur ITR time par kyun bharni zaroori hai.",
+
+    keywords: [
+      "loss set off income tax",
+      "carry forward of loss",
+      "capital loss carry forward",
+      "business loss carry forward",
+      "house property loss set off 2 lakh",
+      "speculative loss",
+    ],
+  },
+
+  {
+    slug: "esop-rsu-tax-employees-india-perquisite-capital-gains",
+
+    title: "ESOP Aur RSU Par Tax: Employees Ke Liye Poori Guide",
+
+    description:
+      "Employee stock options aur RSU par do baar tax lagta hai: exercise par salary ke roop me aur bechne par capital gains. Poora process examples ke saath.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/esop-rsu-tax-employees-india-perquisite-capital-gains.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "ESOP & RSU Tax in India — Perquisite & Capital Gains",
+
+    seoDescription:
+      "ESOP aur RSU par tax kab aur kaise lagta hai: exercise par perquisite, sale par capital gains, foreign RSU, Form 67 aur Schedule FA ki zaroori baatein.",
+
+    keywords: [
+      "ESOP tax India",
+      "RSU tax India",
+      "perquisite ESOP",
+      "foreign RSU Schedule FA",
+      "Form 67 foreign tax credit",
+      "ESOP capital gains",
+    ],
+  },
+
+  {
+    slug: "fo-intraday-trading-income-tax-itr-3-guide",
+
+    title: "F&O Aur Intraday Trading Par Income Tax: ITR-3 Aur Audit Rules",
+
+    description:
+      "Share market me F&O ya intraday karte hain to tax kaise lagta hai, kaun si ITR bharni hai aur audit kab zaroori hota hai.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/fo-intraday-trading-income-tax-itr-3-guide.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "F&O & Intraday Trading Income Tax — ITR-3 & Audit Guide",
+
+    seoDescription:
+      "F&O aur intraday trading par tax: speculative vs non-speculative income, ITR-3, turnover calculation, tax audit, loss carry forward aur advance tax ki guide.",
+
+    keywords: [
+      "F&O income tax",
+      "intraday trading tax",
+      "speculative income",
+      "non-speculative business income",
+      "ITR-3 F&O",
+      "F&O turnover tax audit",
+    ],
+  },
+
+  {
+    slug: "gold-tax-india-physical-gold-etf-sovereign-gold-bond",
+
+    title: "Gold Par Tax: Physical Gold, Gold ETF Aur Sovereign Gold Bond",
+
+    description:
+      "Sona bechne par kitna tax lagta hai? Physical gold, gold ETF, digital gold aur SGB ke alag alag tax rules.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/gold-tax-india-physical-gold-etf-sovereign-gold-bond.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Gold Tax in India — Physical Gold, ETF & SGB Rules",
+
+    seoDescription:
+      "Gold bechne par capital gains tax: physical gold ka 24 mahine ka rule, gold ETF, sovereign gold bond maturity exemption, digital gold aur ghar me gold rakhne ki limits.",
+
+    keywords: [
+      "gold capital gains tax",
+      "sovereign gold bond tax",
+      "gold ETF tax",
+      "physical gold LTCG 24 months",
+      "digital gold tax",
+      "gold jewellery sale tax",
+    ],
+  },
+
+  {
+    slug: "tds-on-contractor-payments-section-194c-rates-due-dates",
+
+    title: "TDS On Contractor Payments (Section 194C): Rates Aur Rules",
+
+    description:
+      "Contractor, sub-contractor aur advertising payments par TDS: rate, threshold limit, exemptions aur galti par penalty.",
+
+    category: "TDS",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/tds-on-contractor-payments-section-194c-rates-due-dates.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "TDS on Contractor Payments Section 194C — Rates & Limits",
+
+    seoDescription:
+      "Section 194C TDS on contractor aur sub-contractor payments: 1%/2% rate, ₹30,000/₹1 lakh limit, transporter exemption, deposit due date, penalty aur 26Q filing.",
+
+    keywords: [
+      "Section 194C",
+      "TDS on contractor",
+      "194C rate 1% 2%",
+      "TDS transporter declaration",
+      "194C threshold 30000 1 lakh",
+      "26Q TDS return",
+    ],
+  },
+
+  {
+    slug: "business-expenses-allowed-disallowed-40a-3-cash-limit",
+
+    title: "Business Expenses: Kya Allowed Hai Aur Kya Disallow Hota Hai",
+
+    description:
+      "Business ke kharche jo profit se ghataye ja sakte hain, aur jo disallow ho jaate hain. Cash payment limit aur common galtiyan.",
+
+    category: "Income Tax",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/business-expenses-allowed-disallowed-40a-3-cash-limit.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "Business Expenses Allowed & Disallowed — 40A(3) Cash Limit",
+
+    seoDescription:
+      "Business me kaun se expenses tax-deductible hain aur kaun se disallow: 40A(3) cash payment ₹10,000 limit, TDS default, MSME 43B(h), personal expenses aur penalty.",
+
+    keywords: [
+      "business expenses allowed",
+      "40A(3) cash payment limit",
+      "disallowed expenses income tax",
+      "business expense deduction",
+      "cash payment 10000 limit",
+      "Section 37(1)",
+    ],
+  },
+
+  {
+    slug: "fssai-registration-vs-license-food-business-guide",
+
+    title: "FSSAI Registration Vs License: Food Business Ke Liye Kaun Sa Lein",
+
+    description:
+      "Restaurant, dhaba, bakery ya food delivery shuru karne se pehle kaunsa FSSAI registration ya license chahiye, aur kaise milega.",
+
+    category: "Business Registration",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/fssai-registration-vs-license-food-business-guide.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "FSSAI Registration vs License — Food Business Guide",
+
+    seoDescription:
+      "FSSAI basic registration, state license aur central license ka fark, turnover limits, documents, online process aur bina license food business karne par penalty.",
+
+    keywords: [
+      "FSSAI registration",
+      "FSSAI license",
+      "FSSAI basic registration",
+      "FSSAI state license",
+      "FSSAI central license",
+      "food business license India",
+    ],
+  },
+
+  {
+    slug: "section-8-company-ngo-registration-12a-80g-guide",
+
+    title: "NGO Registration: Section 8 Company, Trust, 12A Aur 80G Ki Guide",
+
+    description:
+      "Charitable sanstha shuru karni hai? Trust, society ya Section 8 company ka fark, registration steps aur 12A/80G ke fayde.",
+
+    category: "Business Registration",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/section-8-company-ngo-registration-12a-80g-guide.png",
+
+    readTime: "8 min read",
+
+    seoTitle:
+      "NGO Registration — Section 8 Company, 12A & 80G Guide",
+
+    seoDescription:
+      "NGO kaise register karein: Section 8 company, trust aur society ka fark, registration process, 12A aur 80G approval, compliance aur donors ko tax benefit.",
+
+    keywords: [
+      "NGO registration India",
+      "Section 8 company",
+      "12A 80G registration",
+      "trust vs society vs Section 8",
+      "NGO compliance",
+      "80G donation deduction",
+    ],
+  },
+
+  {
+    slug: "import-export-code-iec-registration-guide-dgft",
+
+    title: "Import Export Code (IEC) Kaise Banwayein: Documents, Fees Aur Process",
+
+    description:
+      "Import ya export business shuru karne ke liye IEC zaroori hai. Documents, fees, process aur IEC ke baad ke steps.",
+
+    category: "Business Registration",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/import-export-code-iec-registration-guide-dgft.png",
+
+    readTime: "6 min read",
+
+    seoTitle:
+      "Import Export Code (IEC) Registration — Process & Documents",
+
+    seoDescription:
+      "IEC registration DGFT par online: fees, required documents, kaun exempt hai, annual update ki deadline aur IEC ke baad zaroori registrations (AD code, RCMC, LUT).",
+
+    keywords: [
+      "IEC registration",
+      "import export code",
+      "IEC documents",
+      "DGFT IEC online",
+      "IEC annual update",
+      "export business India",
+    ],
+  },
+
+  {
+    slug: "epf-esi-registration-compliance-small-business-employer-guide",
+
+    title: "EPF Aur ESI Registration: Chhote Employers Ke Liye Poori Guide",
+
+    description:
+      "Employees rakhne par EPF aur ESI kab lena padta hai, kitna contribution hota hai aur compliance me kya karna hai.",
+
+    category: "Payroll & Compliance",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/epf-esi-registration-compliance-small-business-employer-guide.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "EPF & ESI Registration — Employer Compliance Guide",
+
+    seoDescription:
+      "EPF aur ESI kab applicable hote hain, contribution rates, wage ceiling, registration ka process, due dates aur late payment par interest aur damages.",
+
+    keywords: [
+      "EPF registration",
+      "ESI registration",
+      "EPF ESI applicability",
+      "EPF contribution rate",
+      "ESI contribution 0.75 3.25",
+      "employer compliance India",
+    ],
+  },
+
+  {
+    slug: "nri-lower-tds-certificate-section-197-property-sale-form-13",
+
+    title: "NRI Property Sale: Lower TDS Certificate Kaise Milta Hai (Form 13)",
+
+    description:
+      "NRI ne property becha to buyer puri sale value par TDS kaat sakta hai. Lower/nil TDS certificate se ye kaise kam karwayein.",
+
+    category: "NRI Taxation",
+
+    author: "Rajput Lalit & Associates",
+
+    date: "30 September 2026",
+
+    image: "/blogs/nri-lower-tds-certificate-section-197-property-sale-form-13.png",
+
+    readTime: "7 min read",
+
+    seoTitle:
+      "NRI Lower TDS Certificate on Property Sale — Form 13 Guide",
+
+    seoDescription:
+      "NRI ke property sale par buyer kaatne wale TDS ko kam ya nil karwane ke liye lower deduction certificate: Form 13, documents, process, timeline aur TAN ki requirement.",
+
+    keywords: [
+      "NRI lower TDS certificate",
+      "Form 13 NRI property",
+      "NRI property sale TDS",
+      "Section 197 lower deduction",
+      "NRI capital gains TDS",
+      "buyer TAN NRI property",
+    ],
+  },
 ];

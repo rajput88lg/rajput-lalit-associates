@@ -47,7 +47,7 @@ export default function ROCAnnualComplianceCalendarPvtLtdLLP() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Missing an ROC filing deadline isn't like missing a tax deadline with just a late fee — persistent default can attach personal liability to directors and, eventually, risk the company being struck off the register. Since AGM dates (and therefore several ROC due dates) shift slightly year to year, it helps to know the underlying rule, not just last year's calendar dates.
+        Missing an ROC filing deadline isn&apos;t like missing a tax deadline with just a late fee — persistent default can attach personal liability to directors and, eventually, risk the company being struck off the register. Since AGM dates (and therefore several ROC due dates) shift slightly year to year, it helps to know the underlying rule, not just last year&apos;s calendar dates.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -98,7 +98,7 @@ export default function ROCAnnualComplianceCalendarPvtLtdLLP() {
               <tr>
                 <td className="border px-4 py-3">DIR-3 KYC</td>
                 <td className="border px-4 py-3">By 30 September every year</td>
-                <td className="border px-4 py-3">KYC for every DIN holder, even if the director isn't currently active</td>
+                <td className="border px-4 py-3">KYC for every DIN holder, even if the director isn&apos;t currently active</td>
               </tr>
           </tbody>
         </table>
@@ -135,7 +135,7 @@ export default function ROCAnnualComplianceCalendarPvtLtdLLP() {
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Why the Dates 'Move' Each Year
+        Why the Dates &apos;Move&apos; Each Year
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
@@ -152,7 +152,7 @@ export default function ROCAnnualComplianceCalendarPvtLtdLLP() {
           Additional Fee Compounds by Delay Period
         </h3>
         <p className="text-gray-700 leading-8">
-          ROC filings attract an additional fee that increases the longer the delay continues (structured in multiples of the normal fee based on the period of default), separate from any prosecution risk for persistent non-filing. Beyond the direct fee, a poor ROC filing track record shows up in due diligence during fundraising, loan applications, or a future sale of the business — it's one of the first things a lender or investor's lawyer checks.
+          ROC filings attract an additional fee that increases the longer the delay continues (structured in multiples of the normal fee based on the period of default), separate from any prosecution risk for persistent non-filing. Beyond the direct fee, a poor ROC filing track record shows up in due diligence during fundraising, loan applications, or a future sale of the business — it&apos;s one of the first things a lender or investor&apos;s lawyer checks.
         </p>
       </div>
 
@@ -175,7 +175,7 @@ export default function ROCAnnualComplianceCalendarPvtLtdLLP() {
       </div>
 
       <p className="text-sm text-gray-500 leading-6">
-        ROC due dates are governed by the Companies Act, 2013, the LLP Act, 2008, and MCA rules, and can be modified by government notification/extension in a given year. This article explains the standard recurring rule as of September 2026 — please confirm your specific company's AGM-linked dates and any notified extensions with a professional.
+        ROC due dates are governed by the Companies Act, 2013, the LLP Act, 2008, and MCA rules, and can be modified by government notification/extension in a given year. This article explains the standard recurring rule as of September 2026 — please confirm your specific company&apos;s AGM-linked dates and any notified extensions with a professional.
       </p>
     </>
   );

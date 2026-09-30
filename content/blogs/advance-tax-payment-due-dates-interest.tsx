@@ -54,9 +54,9 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
         If your tax liability for the year — after whatever gets deducted
         as TDS — crosses ₹10,000, the law expects you to pay tax in
         instalments through the year, not in one lump sum when you file
-        your return. Miss an instalment and it isn't just late; it's
+        your return. Miss an instalment and it isn&apos;t just late; it&apos;s
         interest that starts accumulating quietly and adds up by the time
-        you file. Here's who's covered, the exact dates, and how the
+        you file. Here&apos;s who&apos;s covered, the exact dates, and how the
         interest actually gets calculated.
       </p>
 
@@ -84,7 +84,7 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
           </li>
           <li>
             <strong>Interest per missed instalment:</strong> Section 425
-            (old 234C) — 1% per month on each instalment's shortfall,
+            (old 234C) — 1% per month on each instalment&apos;s shortfall,
             independently
           </li>
         </ul>
@@ -146,8 +146,8 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Note these are <strong>cumulative</strong> figures — by 15
-        September you should have paid 45% of the full year's estimated
-        tax in total (not an additional 45% on top of June's 15%).
+        September you should have paid 45% of the full year&apos;s estimated
+        tax in total (not an additional 45% on top of June&apos;s 15%).
       </p>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -155,13 +155,13 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
           Freelancers &amp; Small Businesses — the Single-Instalment Option
         </h3>
         <p className="text-gray-700 leading-8">
-          If you've opted for presumptive taxation under Section 44AD
+          If you&apos;ve opted for presumptive taxation under Section 44AD
           (business) or 44ADA (professionals — doctors, consultants,
-          freelancers, designers etc.), you're not required to follow the
-          quarterly schedule. You can pay your entire year's advance tax
+          freelancers, designers etc.), you&apos;re not required to follow the
+          quarterly schedule. You can pay your entire year&apos;s advance tax
           in one instalment by 15 March, which simplifies things
           considerably if your income is hard to predict quarter by
-          quarter. This relief doesn't apply to Section 44AE (goods
+          quarter. This relief doesn&apos;t apply to Section 44AE (goods
           transport operators), who follow the regular quarterly schedule.
         </p>
       </div>
@@ -188,7 +188,7 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
             <tr>
               <td className="border px-4 py-3">Section 425 (old 234C)</td>
               <td className="border px-4 py-3">Any individual instalment falls short of its cumulative %</td>
-              <td className="border px-4 py-3">1% per month on that instalment's shortfall (3 months for June/Sept/Dec shortfalls, 1 month for March)</td>
+              <td className="border px-4 py-3">1% per month on that instalment&apos;s shortfall (3 months for June/Sept/Dec shortfalls, 1 month for March)</td>
             </tr>
           </tbody>
         </table>
@@ -196,7 +196,7 @@ export default function AdvanceTaxPaymentDueDatesInterest() {
 
       <p className="text-gray-700 leading-8 mb-10">
         These stack independently — you can owe Section 425 interest for
-        missing the June instalment even if you're fully paid up by
+        missing the June instalment even if you&apos;re fully paid up by
         year-end, and separately owe Section 424 interest if your
         year-end total still falls short of 90%. The one relief: tax on
         capital gains or other genuinely unpredictable income (lottery

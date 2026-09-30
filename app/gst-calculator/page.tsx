@@ -170,7 +170,7 @@ export default function Page() {
                 composition scheme rules.
               </p>
               <p data-reveal data-reveal-delay="2">
-                If you're registered under GST, getting your actual{" "}
+                If you&apos;re registered under GST, getting your actual{" "}
                 <Link href="/gst-return-filing" className="text-[#002b5c] font-bold underline decoration-[#d99a2b] decoration-2 underline-offset-4 hover:text-[#d99a2b] transition">
                   GST returns
                 </Link>{" "}

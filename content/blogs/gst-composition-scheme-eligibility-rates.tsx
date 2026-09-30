@@ -57,11 +57,11 @@ export default function GSTCompositionSchemeEligibilityRates() {
       <p className="text-gray-700 leading-8 mb-6">
         If you run a small trading, manufacturing or restaurant business and
         find monthly GST returns and input tax credit reconciliation more
-        trouble than they're worth, the composition scheme is built for you.
+        trouble than they&apos;re worth, the composition scheme is built for you.
         You pay a small flat percentage of your turnover instead of the
         regular GST rate, and file only once a quarter (plus one annual
         return) instead of every month. The trade-off: no input tax credit,
-        and some real restrictions on how you can sell. Here's exactly who
+        and some real restrictions on how you can sell. Here&apos;s exactly who
         qualifies, what it costs, and where it falls short.
       </p>
 
@@ -197,7 +197,7 @@ export default function GSTCompositionSchemeEligibilityRates() {
           not on stock purchased, raw materials, rent, or business expenses.
           For a business with high purchase costs and thin margins (say, a
           trader buying and reselling GST-heavy goods), this can sometimes
-          cost more than simply paying regular GST and claiming ITC. It's
+          cost more than simply paying regular GST and claiming ITC. It&apos;s
           worth running the actual numbers before opting in, not just
           assuming a 1% rate is automatically cheaper.
         </p>
@@ -220,8 +220,8 @@ export default function GSTCompositionSchemeEligibilityRates() {
       </ul>
 
       <p className="text-gray-700 leading-8 mb-10">
-        And once you're in, a few more restrictions apply: you can't issue a
-        tax invoice or charge GST separately, you can't make inter-state
+        And once you&apos;re in, a few more restrictions apply: you can&apos;t issue a
+        tax invoice or charge GST separately, you can&apos;t make inter-state
         sales, and reverse charge still applies when you buy from an
         unregistered supplier.
       </p>
@@ -283,11 +283,11 @@ export default function GSTCompositionSchemeEligibilityRates() {
       <p className="text-gray-700 leading-8 mb-10">
         It tends to work well for small, local retailers, small manufacturers
         and neighbourhood restaurants with modest turnover, low purchase-side
-        GST (so ITC loss doesn't sting much), and no need to sell inter-state
+        GST (so ITC loss doesn&apos;t sting much), and no need to sell inter-state
         or online. It tends to work poorly for businesses with high input
         costs, anyone planning to sell on marketplaces, and anyone whose
         B2B customers specifically want a GST tax invoice to claim their own
-        ITC — composition dealers can't offer that.
+        ITC — composition dealers can&apos;t offer that.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

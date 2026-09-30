@@ -57,7 +57,7 @@ export default function GSTRates2026SlabListItemWise() {
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>GST 2.0 reduced the structure to 4 slabs: 0%, 5%, 18%, 40%</li>
           <li>Effective from 22 September 2025 — the old 12% and 28% slabs were removed</li>
-          <li>40% is now reserved for luxury and 'sin' goods (tobacco, aerated drinks, high-end vehicles)</li>
+          <li>40% is now reserved for luxury and &apos;sin&apos; goods (tobacco, aerated drinks, high-end vehicles)</li>
         </ul>
       </div>
 
@@ -84,7 +84,7 @@ export default function GSTRates2026SlabListItemWise() {
               </tr>
               <tr>
                 <td className="border px-4 py-3">18% (Standard)</td>
-                <td className="border px-4 py-3">Automobiles (most categories), electronic appliances, ACs, TVs above 32", apparel priced above ₹2,500</td>
+                <td className="border px-4 py-3">Automobiles (most categories), electronic appliances, ACs, TVs above 32&quot;, apparel priced above ₹2,500</td>
               </tr>
               <tr>
                 <td className="border px-4 py-3">40% (Luxury/Sin)</td>
@@ -109,7 +109,7 @@ export default function GSTRates2026SlabListItemWise() {
       </h2>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
-          <li>Update your billing/invoicing software's rate master — an invoice raised at an old, incorrect rate is a compliance problem, not just a pricing one</li>
+          <li>Update your billing/invoicing software&apos;s rate master — an invoice raised at an old, incorrect rate is a compliance problem, not just a pricing one</li>
           <li>Re-check your HSN/SAC code to rate mapping — reclassification can mean the same HSN code now attracts a different rate</li>
           <li>Review pending contracts/quotations that assumed the old rate structure</li>
           <li>If you deal in goods that moved from 28% to 18%, check whether accumulated ITC needs any adjustment</li>
@@ -125,13 +125,13 @@ export default function GSTRates2026SlabListItemWise() {
           Rates Get Revised — Verify Before You Price/Invoice
         </h3>
         <p className="text-gray-700 leading-8">
-          GST rate notifications are amended periodically, and specific product classifications are sometimes clarified or corrected after the initial rollout. Before finalising pricing on a new product line or a large invoice, it's worth a quick verification against the current CBIC notification rather than relying on last year's rate card.
+          GST rate notifications are amended periodically, and specific product classifications are sometimes clarified or corrected after the initial rollout. Before finalising pricing on a new product line or a large invoice, it&apos;s worth a quick verification against the current CBIC notification rather than relying on last year&apos;s rate card.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Getting your rate master wrong isn't a small mistake — it flows into every GSTR-1 and GSTR-3B you file afterward. Rajput Lalit &amp; Associates helps businesses re-map their rate structure after GST 2.0 and handles ongoing{" "}<Link href="/gst-return-filing" className={linkClass}>GST Return Filing</Link>.{" "}<Link href="/#appointment" className={linkClass}>Book a free consultation</Link>{" "}if you're unsure whether your current rates are correct.
+        Getting your rate master wrong isn&apos;t a small mistake — it flows into every GSTR-1 and GSTR-3B you file afterward. Rajput Lalit &amp; Associates helps businesses re-map their rate structure after GST 2.0 and handles ongoing{" "}<Link href="/gst-return-filing" className={linkClass}>GST Return Filing</Link>.{" "}<Link href="/#appointment" className={linkClass}>Book a free consultation</Link>{" "}if you&apos;re unsure whether your current rates are correct.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

@@ -47,7 +47,7 @@ export default function SoleProprietorshipRegistrationGuideIndia() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        This is one of the most common misunderstandings we see from first-time entrepreneurs — there's no separate government body issuing a "proprietorship registration certificate." A proprietorship is simply you, doing business under a trade name; what actually gets registered are the licenses and registrations that let you operate and open a current account.
+        This is one of the most common misunderstandings we see from first-time entrepreneurs — there&apos;s no separate government body issuing a &quot;proprietorship registration certificate.&quot; A proprietorship is simply you, doing business under a trade name; what actually gets registered are the licenses and registrations that let you operate and open a current account.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -55,9 +55,9 @@ export default function SoleProprietorshipRegistrationGuideIndia() {
           Quick Summary
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
-          <li>There's no single 'proprietorship registration' certificate — it's established through GST/Shop Act/Udyam registration</li>
+          <li>There&apos;s no single &apos;proprietorship registration&apos; certificate — it&apos;s established through GST/Shop Act/Udyam registration</li>
           <li>Simplest and cheapest business structure to start — but with unlimited personal liability</li>
-          <li>Business income is reported in the proprietor's own personal ITR (ITR-3 or ITR-4)</li>
+          <li>Business income is reported in the proprietor&apos;s own personal ITR (ITR-3 or ITR-4)</li>
         </ul>
       </div>
 
@@ -69,16 +69,16 @@ export default function SoleProprietorshipRegistrationGuideIndia() {
           <li>GST Registration — mandatory once turnover crosses the threshold (₹40 lakh goods/₹20 lakh services in most states), or if you want to sell inter-state/online regardless of turnover</li>
           <li>Shop &amp; Establishment Act registration/license — required in most states for any commercial establishment, including home-based and online businesses in several states</li>
           <li>MSME Udyam Registration — optional but highly recommended (covered in our separate MSME guide) — unlocks priority-sector loans, delayed-payment protection, and various government scheme benefits</li>
-          <li>A current account in the business's trade name — banks typically ask for GST certificate or Shop Act license as proof of business existence to open this</li>
+          <li>A current account in the business&apos;s trade name — banks typically ask for GST certificate or Shop Act license as proof of business existence to open this</li>
       </ul>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Documents You'll Need
+        Documents You&apos;ll Need
       </h2>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
-          <li>Proprietor's PAN and Aadhaar</li>
+          <li>Proprietor&apos;s PAN and Aadhaar</li>
           <li>Business address proof (rent agreement + electricity bill, or ownership documents)</li>
           <li>Passport-size photograph</li>
           <li>Bank account details (or a cancelled cheque once the current account is open)</li>
@@ -94,7 +94,7 @@ export default function SoleProprietorshipRegistrationGuideIndia() {
           No Legal Separation Between You and the Business
         </h3>
         <p className="text-gray-700 leading-8">
-          This is the single biggest trade-off of a proprietorship: there's no legal distinction between you and your business. If the business runs into debt or a legal claim, your personal assets — savings, property — are on the line, not just what's invested in the business. This is precisely why businesses with meaningful risk, external investors, or growth ambitions usually move to an LLP or Private Limited structure once they outgrow the simplicity phase.
+          This is the single biggest trade-off of a proprietorship: there&apos;s no legal distinction between you and your business. If the business runs into debt or a legal claim, your personal assets — savings, property — are on the line, not just what&apos;s invested in the business. This is precisely why businesses with meaningful risk, external investors, or growth ambitions usually move to an LLP or Private Limited structure once they outgrow the simplicity phase.
         </p>
       </div>
 
@@ -104,12 +104,12 @@ export default function SoleProprietorshipRegistrationGuideIndia() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        There's no separate entity-level tax return — your business income is simply reported as "Profits and Gains from Business or Profession" in your own personal income tax return (ITR-3 if you maintain full books, or ITR-4 if you opt for presumptive taxation under Section 44AD/44ADA). Business income is taxed at your individual slab rate, not a flat corporate rate.
+        There&apos;s no separate entity-level tax return — your business income is simply reported as &quot;Profits and Gains from Business or Profession&quot; in your own personal income tax return (ITR-3 if you maintain full books, or ITR-4 if you opt for presumptive taxation under Section 44AD/44ADA). Business income is taxed at your individual slab rate, not a flat corporate rate.
       </p>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        A proprietorship is genuinely the right starting point for many small, low-risk businesses — the key is knowing when it's time to move to a structure with liability protection. Rajput Lalit &amp; Associates helps set up proprietorships, LLPs, and companies, and advises on when it's time to change structure. See our{" "}<Link href="/gst-registration" className={linkClass}>GST Registration service</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        A proprietorship is genuinely the right starting point for many small, low-risk businesses — the key is knowing when it&apos;s time to move to a structure with liability protection. Rajput Lalit &amp; Associates helps set up proprietorships, LLPs, and companies, and advises on when it&apos;s time to change structure. See our{" "}<Link href="/gst-registration" className={linkClass}>GST Registration service</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

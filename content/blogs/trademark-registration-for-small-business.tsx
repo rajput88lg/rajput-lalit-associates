@@ -56,8 +56,8 @@ export default function TrademarkRegistrationForSmallBusiness() {
         that happens, undoing it is far harder (and costlier) than
         registering early would have been. Trademark registration is one
         of the most under-used protections available to small businesses
-        in India, largely because the process and cost aren't well
-        understood. Here's exactly what's involved.
+        in India, largely because the process and cost aren&apos;t well
+        understood. Here&apos;s exactly what&apos;s involved.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -148,8 +148,8 @@ export default function TrademarkRegistrationForSmallBusiness() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        An unregistered brand isn't completely without recourse — you can
-        still pursue a common-law "passing off" claim — but this requires
+        An unregistered brand isn&apos;t completely without recourse — you can
+        still pursue a common-law &quot;passing off&quot; claim — but this requires
         proving your brand has built genuine market reputation and that a
         competitor is actively deceiving customers, which is a slower and
         costlier fight than simply presenting a registration certificate. A

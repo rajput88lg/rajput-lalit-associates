@@ -220,7 +220,7 @@ export default function Page() {
               <ul className="mt-5 space-y-3 text-gray-700 leading-7">
                 <li>• Preparing the capital gains computation the application relies on</li>
                 <li>• Filing Form 128 on TRACES and handling Assessing Officer queries</li>
-                <li>• Coordinating with the buyer's side so registration isn't delayed</li>
+                <li>• Coordinating with the buyer&apos;s side so registration isn&apos;t delayed</li>
                 <li>• Filing the eventual Indian tax return once the sale completes</li>
                 <li>
                   •{" "}

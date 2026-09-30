@@ -56,8 +56,8 @@ export default function InputTaxCreditGSTRulesReversal() {
         purchases against the GST you collect from customers. Get it right
         and your working capital improves; get it wrong (claim something
         blocked, miss the deadline, or forget to pay a supplier on time) and
-        you can face reversal with interest, or a notice. Here's how ITC
-        actually works, what's blocked, and the deadlines that trip people
+        you can face reversal with interest, or a notice. Here&apos;s how ITC
+        actually works, what&apos;s blocked, and the deadlines that trip people
         up most.
       </p>
 
@@ -68,11 +68,11 @@ export default function InputTaxCreditGSTRulesReversal() {
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>
             <strong>To claim ITC:</strong> valid invoice, goods/services
-            received, supplier's tax reflected in your GSTR-2B, your GSTR-3B
+            received, supplier&apos;s tax reflected in your GSTR-2B, your GSTR-3B
             filed, supplier paid within 180 days
           </li>
           <li>
-            <strong>Deadline for a financial year's ITC:</strong> 30
+            <strong>Deadline for a financial year&apos;s ITC:</strong> 30
             November of the following year, or your GSTR-9 filing date —
             whichever comes first
           </li>
@@ -94,7 +94,7 @@ export default function InputTaxCreditGSTRulesReversal() {
 
       <p className="text-gray-700 leading-8 mb-6">
         All five of these need to be true — missing even one means the
-        credit isn't valid yet, or gets reversed later:
+        credit isn&apos;t valid yet, or gets reversed later:
       </p>
 
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
@@ -107,7 +107,7 @@ export default function InputTaxCreditGSTRulesReversal() {
           claimed on an invoice for something not yet delivered
         </li>
         <li>
-          <strong>Supplier's return reflects the tax</strong> — the supplier
+          <strong>Supplier&apos;s return reflects the tax</strong> — the supplier
           must have filed their GSTR-1/IFF and the invoice must appear in
           your GSTR-2B; this is why reconciling with your supplier matters
           as much as your own filing
@@ -127,17 +127,17 @@ export default function InputTaxCreditGSTRulesReversal() {
           The Condition Most Businesses Get Wrong
         </h3>
         <p className="text-gray-700 leading-8">
-          It's not enough that you have a valid invoice — your supplier
+          It&apos;s not enough that you have a valid invoice — your supplier
           actually has to file their return and pay the tax for the credit
           to legitimately show up in your GSTR-2B. This is why chasing a
-          supplier who's slow to file, or stopped filing altogether, matters:
+          supplier who&apos;s slow to file, or stopped filing altogether, matters:
           their non-compliance can block your ITC even though you did
           everything right on your end.
         </p>
       </div>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        What's Blocked Under Section 17(5) — Common Cases
+        What&apos;s Blocked Under Section 17(5) — Common Cases
       </h2>
 
       <div className="overflow-x-auto mb-10">
@@ -187,7 +187,7 @@ export default function InputTaxCreditGSTRulesReversal() {
       <p className="text-gray-700 leading-8 mb-10">
         This is a simplified view of the more detailed Section 17(5) list —
         the exact wording and exceptions matter a lot in borderline cases,
-        so when a purchase is large or unusual, it's worth checking before
+        so when a purchase is large or unusual, it&apos;s worth checking before
         assuming ITC either way.
       </p>
 
@@ -203,7 +203,7 @@ export default function InputTaxCreditGSTRulesReversal() {
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
         <li>You claim ITC on an invoice as usual when you receive it</li>
         <li>
-          If you haven't paid the supplier (invoice value + GST) within 180
+          If you haven&apos;t paid the supplier (invoice value + GST) within 180
           days of the invoice date, that ITC is added back to your output
           tax liability, with interest, in the return for the period after
           the 180 days lapse
@@ -237,7 +237,7 @@ export default function InputTaxCreditGSTRulesReversal() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Miss this window on an invoice and that credit is generally lost for
-        good — it's one of the most common, and most avoidable, ways
+        good — it&apos;s one of the most common, and most avoidable, ways
         businesses leave money on the table. Reconciling GSTR-2B against
         your purchase books every month (not just once a year) is the
         practical way to avoid this.

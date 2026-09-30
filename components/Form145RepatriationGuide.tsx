@@ -282,7 +282,7 @@ export default function Form145RepatriationGuide() {
               consider DTAA tie-breaker provisions, TRC requirements, or
               unusual fact patterns (part-taxable remittances, multiple
               sources combined in one transfer, and similar). Have your
-              bank's specific requirements and the final Form 145/146
+              bank&apos;s specific requirements and the final Form 145/146
               confirmed by a professional before you remit.
             </p>
           </div>

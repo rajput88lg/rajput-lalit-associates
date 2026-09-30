@@ -1369,7 +1369,7 @@ export default function IncomeTaxReturnFilingIndia() {
         <p className="text-gray-700 leading-8 mb-10">
           Below are some of the most commonly asked questions about Income Tax
           Return filing in India. These answers provide general guidance. The
-          applicable provisions may vary depending on the taxpayer's individual
+          applicable provisions may vary depending on the taxpayer&apos;s individual
           circumstances.
         </p>
 

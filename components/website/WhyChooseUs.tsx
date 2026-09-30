@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
           </h2>
 
           <p className="mt-5 text-lg text-gray-600 leading-8">
-            We don't just create beautiful websites. We build fast,
+            We don&apos;t just create beautiful websites. We build fast,
             secure and conversion-focused websites that help businesses
             attract more customers and grow online.
           </p>

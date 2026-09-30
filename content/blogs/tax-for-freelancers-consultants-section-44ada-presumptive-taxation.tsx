@@ -56,7 +56,7 @@ export default function TaxForFreelancersConsultantsSection44ADAPresumptiveTaxat
         when a much simpler route exists. Section 44ADA lets eligible
         professionals declare a flat 50% of their receipts as taxable
         income — no books, no audit — as long as they stay within the
-        limits. Here's exactly who qualifies and how it works.
+        limits. Here&apos;s exactly who qualifies and how it works.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -97,7 +97,7 @@ export default function TaxForFreelancersConsultantsSection44ADAPresumptiveTaxat
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Section 44ADA is limited to "specified professionals" notified under
+        Section 44ADA is limited to &quot;specified professionals&quot; notified under
         Section 44AA — legal, medical, engineering, architectural,
         accountancy, technical consultancy, and interior decoration
         professionals, along with company secretaries, film artists,
@@ -139,9 +139,9 @@ export default function TaxForFreelancersConsultantsSection44ADAPresumptiveTaxat
         Within these limits, you simply declare <strong>50% of your gross
         professional receipts</strong> as taxable income. This 50% is
         deemed to cover all your business expenses — internet, software
-        subscriptions, travel, office rent, and so on — so you can't claim
-        any of these separately once you're under presumptive taxation.
-        You're free to declare a higher percentage than 50% voluntarily if
+        subscriptions, travel, office rent, and so on — so you can&apos;t claim
+        any of these separately once you&apos;re under presumptive taxation.
+        You&apos;re free to declare a higher percentage than 50% voluntarily if
         your actual profit margin is better.
       </p>
 
@@ -151,7 +151,7 @@ export default function TaxForFreelancersConsultantsSection44ADAPresumptiveTaxat
         </h3>
         <p className="text-gray-700 leading-8">
           If your genuine profit margin is below 50% and you declare that
-          lower figure instead, you lose the "no books, no audit" benefit
+          lower figure instead, you lose the &quot;no books, no audit&quot; benefit
           for that year: you must maintain proper books of account under
           Section 44AA, and if your total income exceeds the basic
           exemption limit, a tax audit under Section 44AB also becomes

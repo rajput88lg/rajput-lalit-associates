@@ -47,7 +47,7 @@ export default function NewITRFormsAY202627ChangesExplained() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Picking the right ITR form matters more than people give it credit for — filing on the wrong form can make an otherwise valid return "defective," triggering a notice under Section 139(9). Here's what actually changed for AY 2026-27, and how it affects which form fits you.
+        Picking the right ITR form matters more than people give it credit for — filing on the wrong form can make an otherwise valid return &quot;defective,&quot; triggering a notice under Section 139(9). Here&apos;s what actually changed for AY 2026-27, and how it affects which form fits you.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -79,7 +79,7 @@ export default function NewITRFormsAY202627ChangesExplained() {
           <thead className="bg-[#002b5c] text-white">
             <tr>
               <th className="border px-4 py-3 text-left">Form</th>
-              <th className="border px-4 py-3 text-left">Who It's For</th>
+              <th className="border px-4 py-3 text-left">Who It&apos;s For</th>
             </tr>
           </thead>
           <tbody>
@@ -109,7 +109,7 @@ export default function NewITRFormsAY202627ChangesExplained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        The old 15% short-term capital gains and 10% long-term capital gains fields have been dropped from the forms entirely, since those specific rates no longer apply under the current capital gains structure (STCG on listed equity is now 20%, LTCG above the exemption threshold is 12.5% — see our capital gains guide below). The Section 89A relief field (for income from foreign retirement accounts) has also been narrowed — it's now only available in ITR-2 and ITR-3, not ITR-1/ITR-4.
+        The old 15% short-term capital gains and 10% long-term capital gains fields have been dropped from the forms entirely, since those specific rates no longer apply under the current capital gains structure (STCG on listed equity is now 20%, LTCG above the exemption threshold is 12.5% — see our capital gains guide below). The Section 89A relief field (for income from foreign retirement accounts) has also been narrowed — it&apos;s now only available in ITR-2 and ITR-3, not ITR-1/ITR-4.
       </p>
 
 
@@ -119,9 +119,9 @@ export default function NewITRFormsAY202627ChangesExplained() {
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>Unrealised rent — now captured in ITR-1 and ITR-4, not just the more complex forms</li>
-          <li>Representative assessee indicator — added across all ITR forms, relevant when a return is filed on behalf of another person (a minor, a deceased person's estate, etc.)</li>
-          <li>Section 80G donation disclosures now require the transaction reference number and the donee's bank IFSC code</li>
-          <li>Section 80GGC (political party donations) now requires the political party's name and PAN</li>
+          <li>Representative assessee indicator — added across all ITR forms, relevant when a return is filed on behalf of another person (a minor, a deceased person&apos;s estate, etc.)</li>
+          <li>Section 80G donation disclosures now require the transaction reference number and the donee&apos;s bank IFSC code</li>
+          <li>Section 80GGC (political party donations) now requires the political party&apos;s name and PAN</li>
           <li>A late-fee disclosure field for revised returns filed after 31 December</li>
       </ul>
 
@@ -135,13 +135,13 @@ export default function NewITRFormsAY202627ChangesExplained() {
           Aimed at Fake Donation Claims
         </h3>
         <p className="text-gray-700 leading-8">
-          The additional transaction-level detail required for 80G and 80GGC deductions is a direct response to widespread fake/inflated donation-receipt claims seen in recent assessment years. If you're claiming these deductions, make sure the receipt actually has the transaction reference and bank details ready to enter — a vague or unverifiable claim is now much easier for the department to flag.
+          The additional transaction-level detail required for 80G and 80GGC deductions is a direct response to widespread fake/inflated donation-receipt claims seen in recent assessment years. If you&apos;re claiming these deductions, make sure the receipt actually has the transaction reference and bank details ready to enter — a vague or unverifiable claim is now much easier for the department to flag.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Filing on the correct form the first time avoids a defective-return notice and the 15-day scramble to refile that follows. Rajput Lalit &amp; Associates handles{" "}<Link href="/income-tax-return-filing" className={linkClass}>Income Tax Return Filing</Link>{" "}for salaried individuals, business owners, and NRIs. See our{" "}<Link href="/blog/income-tax-notice-types-143-1-148-139-9-explained" className={linkClass}>Income Tax Notice Types guide</Link>{" "}if you've already received a defective-return notice.
+        Filing on the correct form the first time avoids a defective-return notice and the 15-day scramble to refile that follows. Rajput Lalit &amp; Associates handles{" "}<Link href="/income-tax-return-filing" className={linkClass}>Income Tax Return Filing</Link>{" "}for salaried individuals, business owners, and NRIs. See our{" "}<Link href="/blog/income-tax-notice-types-143-1-148-139-9-explained" className={linkClass}>Income Tax Notice Types guide</Link>{" "}if you&apos;ve already received a defective-return notice.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

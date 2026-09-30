@@ -47,7 +47,7 @@ export default function FacelessAssessmentAndAppealSchemeExplained() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Agar aapko income tax department se ek faceless assessment notice mila hai, to sabse pehli baat samajhne wali ye hai ki 'faceless' ka matlab 'no accountability' nahi hai — ye ek structured, portal-based process hai jisme aapke rights bhi hain, jaisे video-conferencing hearing ka option. Ye guide poora process, aapke rights, aur common galtiyan samjhata hai.
+        Agar aapko income tax department se ek faceless assessment notice mila hai, to sabse pehli baat samajhne wali ye hai ki &apos;faceless&apos; ka matlab &apos;no accountability&apos; nahi hai — ye ek structured, portal-based process hai jisme aapke rights bhi hain, jaisे video-conferencing hearing ka option. Ye guide poora process, aapke rights, aur common galtiyan samjhata hai.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -70,7 +70,7 @@ export default function FacelessAssessmentAndAppealSchemeExplained() {
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Process flow: risk-analytics ke through case select hota hai → notice issue hoti hai e-filing portal ke through → aap 'e-Proceedings' ke through electronically respond karte hain, documents ke saath → zaroorat padne par Verification Units (field checks) aur Technical Units (legal/valuation expertise) bhi involve ho sakte hain → Assessment Unit draft proposal banata hai → Review Unit quality-check karta hai → final order electronically serve hota hai.
+        Process flow: risk-analytics ke through case select hota hai → notice issue hoti hai e-filing portal ke through → aap &apos;e-Proceedings&apos; ke through electronically respond karte hain, documents ke saath → zaroorat padne par Verification Units (field checks) aur Technical Units (legal/valuation expertise) bhi involve ho sakte hain → Assessment Unit draft proposal banata hai → Review Unit quality-check karta hai → final order electronically serve hota hai.
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
@@ -84,7 +84,7 @@ export default function FacelessAssessmentAndAppealSchemeExplained() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          'Faceless' ka matlab 'no hearing' nahi hai
+          &apos;Faceless&apos; ka matlab &apos;no hearing&apos; nahi hai
         </h3>
         <p className="text-gray-700 leading-8">
           Aap video-conferencing ke through personal hearing request kar sakte hain — khaas kar jab income addition propose ho rahi ho. Department ko ye technologically feasible hone tak facilitate karna zaroori hai. Aap Chartered Accountant ya authorised representative ke through bhi represent ho sakte hain.

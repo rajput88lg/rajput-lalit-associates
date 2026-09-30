@@ -65,7 +65,7 @@ export default function CompoundInterestCalculatorTool() {
             description={
               <>
                 Your <strong>{formatUSD(result.principal)}</strong> grows to{" "}
-                <strong>{formatUSD(result.maturityAmount)}</strong> in {years} years — that's{" "}
+                <strong>{formatUSD(result.maturityAmount)}</strong> in {years} years — that&apos;s{" "}
                 <strong>{formatUSD(result.totalInterest)}</strong> in interest earned.
               </>
             }

@@ -521,7 +521,7 @@ export default function GSTReturnFilingIndia() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-6">
-        GSTR-9 is the Annual GST Return that summarizes the financial year's
+        GSTR-9 is the Annual GST Return that summarizes the financial year&apos;s
         outward supplies, inward supplies, Input Tax Credit (ITC), tax paid,
         refunds, demands and other GST-related information. It helps reconcile
         the information already furnished in periodic GST returns.
@@ -845,7 +845,7 @@ export default function GSTReturnFilingIndia() {
           </h3>
           <p className="text-gray-700 leading-8">
             The filing frequency depends on the type of return and the
-            taxpayer's applicable GST scheme.
+            taxpayer&apos;s applicable GST scheme.
           </p>
         </div>
 

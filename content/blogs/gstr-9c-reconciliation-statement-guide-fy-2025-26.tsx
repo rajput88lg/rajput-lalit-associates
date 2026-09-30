@@ -100,11 +100,11 @@ export default function GSTR9CReconciliationStatementGuideFY202526() {
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        What Changed: It's Now Self-Certified
+        What Changed: It&apos;s Now Self-Certified
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        This is the single biggest practical change from the early GST years — the CA/CMA certification requirement was removed starting FY 2020-21. Today, you (the taxpayer) reconcile and certify GSTR-9C yourself, digitally signed, without a separate chartered accountant's audit sign-off. That doesn't mean the numbers matter less — the reconciliation itself still has to genuinely tie out, since it's filed on your own responsibility now, not shielded behind an external certifier.
+        This is the single biggest practical change from the early GST years — the CA/CMA certification requirement was removed starting FY 2020-21. Today, you (the taxpayer) reconcile and certify GSTR-9C yourself, digitally signed, without a separate chartered accountant&apos;s audit sign-off. That doesn&apos;t mean the numbers matter less — the reconciliation itself still has to genuinely tie out, since it&apos;s filed on your own responsibility now, not shielded behind an external certifier.
       </p>
 
 
@@ -131,13 +131,13 @@ export default function GSTR9CReconciliationStatementGuideFY202526() {
           Common Reconciliation Gaps
         </h3>
         <p className="text-gray-700 leading-8">
-          Most mismatches trace back to timing differences, not real errors: a credit note issued in April for a March sale, ITC claimed a month later than the purchase invoice date, or an RCM liability on an import of service that never got booked. The fix isn't complicated — a monthly (not annual) reconciliation habit through the year means GSTR-9C in December is a formality, not a scramble.
+          Most mismatches trace back to timing differences, not real errors: a credit note issued in April for a March sale, ITC claimed a month later than the purchase invoice date, or an RCM liability on an import of service that never got booked. The fix isn&apos;t complicated — a monthly (not annual) reconciliation habit through the year means GSTR-9C in December is a formality, not a scramble.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        If your turnover has crossed ₹5 crore this year, GSTR-9C is not optional — and because it's self-certified now, the responsibility for a clean reconciliation sits entirely with you. Rajput Lalit &amp; Associates handles GSTR-9 and GSTR-9C reconciliation end-to-end, along with the monthly bookkeeping that makes year-end reconciliation painless. See our{" "}<Link href="/blog/gstr-9-annual-return-filing-guide-fy-2025-26" className={linkClass}>GSTR-9 Annual Return guide</Link>{" "}for the base return, or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        If your turnover has crossed ₹5 crore this year, GSTR-9C is not optional — and because it&apos;s self-certified now, the responsibility for a clean reconciliation sits entirely with you. Rajput Lalit &amp; Associates handles GSTR-9 and GSTR-9C reconciliation end-to-end, along with the monthly bookkeeping that makes year-end reconciliation painless. See our{" "}<Link href="/blog/gstr-9-annual-return-filing-guide-fy-2025-26" className={linkClass}>GSTR-9 Annual Return guide</Link>{" "}for the base return, or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

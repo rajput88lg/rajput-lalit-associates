@@ -24,6 +24,7 @@ export default function DeadlineBar() {
   useEffect(() => {
     const upcoming = upcomingDeadlines();
     if (upcoming.length > 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setNext(upcoming[0]);
       setDays(daysUntil(upcoming[0].date));
     }

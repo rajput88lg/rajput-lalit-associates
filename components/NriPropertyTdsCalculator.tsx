@@ -57,7 +57,6 @@ export default function NriPropertyTdsCalculator() {
       improvementCost: num(form.improvementCost),
       transferExpenses: num(form.transferExpenses),
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [form, ready]);
 
   const set = (key: keyof typeof form) => (

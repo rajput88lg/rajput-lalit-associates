@@ -47,7 +47,7 @@ export default function GSTReverseChargeMechanismRCMExplained() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Normally, the supplier collects GST from you and deposits it with the government. Reverse Charge Mechanism flips that — for a specific, notified list of goods and services, you (the recipient) are the one legally responsible for paying GST directly, even though you're the buyer, not the seller.
+        Normally, the supplier collects GST from you and deposits it with the government. Reverse Charge Mechanism flips that — for a specific, notified list of goods and services, you (the recipient) are the one legally responsible for paying GST directly, even though you&apos;re the buyer, not the seller.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -56,7 +56,7 @@ export default function GSTReverseChargeMechanismRCMExplained() {
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Under RCM, the recipient pays GST directly to the government instead of the supplier</li>
-          <li>Common categories: GTA freight, legal services from advocates, director's fees, imported services</li>
+          <li>Common categories: GTA freight, legal services from advocates, director&apos;s fees, imported services</li>
           <li>ITC on RCM tax paid is generally available in the same period, subject to normal conditions</li>
         </ul>
       </div>
@@ -66,9 +66,9 @@ export default function GSTReverseChargeMechanismRCMExplained() {
       </h2>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
-          <li>Goods Transport Agency (GTA) services — road freight, where the GTA hasn't charged GST itself (GTAs can choose 5% without ITC or 12% with ITC; if they opt for 5%, RCM applies and the recipient pays)</li>
+          <li>Goods Transport Agency (GTA) services — road freight, where the GTA hasn&apos;t charged GST itself (GTAs can choose 5% without ITC or 12% with ITC; if they opt for 5%, RCM applies and the recipient pays)</li>
           <li>Legal services from an individual advocate, senior advocate, or a firm of advocates, to a business</li>
-          <li>Services rendered by a company's directors in their personal/professional capacity to that company</li>
+          <li>Services rendered by a company&apos;s directors in their personal/professional capacity to that company</li>
           <li>Insurance agent services provided to an insurance company</li>
           <li>Recovery agent services provided to banks, NBFCs, or financial institutions</li>
           <li>Import of services from a supplier located outside India</li>
@@ -81,7 +81,7 @@ export default function GSTReverseChargeMechanismRCMExplained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        The recipient of the service self-invoices (since the supplier, being unregistered or specifically exempted, doesn't issue a GST invoice), calculates GST at the applicable rate, and pays it directly through the electronic cash ledger — this can't be paid using existing input tax credit; RCM liability must be discharged in cash.
+        The recipient of the service self-invoices (since the supplier, being unregistered or specifically exempted, doesn&apos;t issue a GST invoice), calculates GST at the applicable rate, and pays it directly through the electronic cash ledger — this can&apos;t be paid using existing input tax credit; RCM liability must be discharged in cash.
       </p>
 
 
@@ -90,7 +90,7 @@ export default function GSTReverseChargeMechanismRCMExplained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        This is the part people often miss: tax paid under RCM is reported in Table 3.1(d) of GSTR-3B, and once paid, it's generally available as input tax credit in the same period — subject to the same eligibility conditions as any other ITC (the service must be used for business purposes, not blocked under Section 17(5), etc.). So for most businesses, RCM is largely a cash-flow timing issue, not a real additional cost, as long as the credit is actually usable.
+        This is the part people often miss: tax paid under RCM is reported in Table 3.1(d) of GSTR-3B, and once paid, it&apos;s generally available as input tax credit in the same period — subject to the same eligibility conditions as any other ITC (the service must be used for business purposes, not blocked under Section 17(5), etc.). So for most businesses, RCM is largely a cash-flow timing issue, not a real additional cost, as long as the credit is actually usable.
       </p>
 
 
@@ -100,16 +100,16 @@ export default function GSTReverseChargeMechanismRCMExplained() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          RCM Doesn't Appear on a Supplier Invoice — That's the Point
+          RCM Doesn&apos;t Appear on a Supplier Invoice — That&apos;s the Point
         </h3>
         <p className="text-gray-700 leading-8">
-          Because the supplier (e.g., an advocate or an unregistered GTA) doesn't charge GST on their invoice, businesses sometimes simply skip GST entirely on that expense. That's the mistake — RCM liability exists independently of what the supplier billed, and it's the recipient's own compliance obligation to self-invoice and pay it.
+          Because the supplier (e.g., an advocate or an unregistered GTA) doesn&apos;t charge GST on their invoice, businesses sometimes simply skip GST entirely on that expense. That&apos;s the mistake — RCM liability exists independently of what the supplier billed, and it&apos;s the recipient&apos;s own compliance obligation to self-invoice and pay it.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        RCM is easy to miss precisely because there's no supplier invoice pointing to it. Rajput Lalit &amp; Associates reviews expense heads during monthly GST filing specifically to catch RCM liability before it becomes a notice. See our{" "}<Link href="/blog/gst-audit-assessment-types-notice" className={linkClass}>GST Audit &amp; Assessment guide</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        RCM is easy to miss precisely because there&apos;s no supplier invoice pointing to it. Rajput Lalit &amp; Associates reviews expense heads during monthly GST filing specifically to catch RCM liability before it becomes a notice. See our{" "}<Link href="/blog/gst-audit-assessment-types-notice" className={linkClass}>GST Audit &amp; Assessment guide</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

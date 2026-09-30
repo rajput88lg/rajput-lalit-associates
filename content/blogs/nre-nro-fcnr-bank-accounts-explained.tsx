@@ -52,10 +52,10 @@ export default function NREandNROandFCNRBankAccountsExplained() {
 
       <p className="text-gray-700 leading-8 mb-6">
         NRIs routinely mix up NRE, NRO, and FCNR accounts — and getting it
-        wrong isn't just inconvenient, it can mean losing tax-free status
+        wrong isn&apos;t just inconvenient, it can mean losing tax-free status
         on interest you earned, or running into repatriation limits you
-        didn't expect. The difference comes down to one question: where did
-        the money come from? Here's exactly which account holds what, and
+        didn&apos;t expect. The difference comes down to one question: where did
+        the money come from? Here&apos;s exactly which account holds what, and
         why it matters.
       </p>
 
@@ -144,12 +144,12 @@ export default function NREandNROandFCNRBankAccountsExplained() {
           The One Question That Decides Which Account You Need
         </h3>
         <p className="text-gray-700 leading-8">
-          Ask: "Did this money originate outside India, or inside India?"
+          Ask: &quot;Did this money originate outside India, or inside India?&quot;
           Salary from a foreign employer, business income earned abroad,
           or foreign investment proceeds → NRE or FCNR. Rent from an
           Indian property, dividends from Indian shares, a pension paid in
           India, or proceeds from selling Indian property → NRO. Mixing
-          these up isn't just a paperwork issue — depositing Indian-sourced
+          these up isn&apos;t just a paperwork issue — depositing Indian-sourced
           income into an NRE account can jeopardise its tax-free status and
           create compliance problems when the source is questioned.
         </p>

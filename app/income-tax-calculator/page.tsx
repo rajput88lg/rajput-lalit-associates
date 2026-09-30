@@ -168,7 +168,7 @@ export default function Page() {
 
             <div className="mt-8 space-y-5 text-gray-700 leading-8 text-lg">
               <p data-reveal data-reveal-delay="1">
-                The New Regime's lower rates and ₹75,000 standard deduction
+                The New Regime&apos;s lower rates and ₹75,000 standard deduction
                 make it the simpler, often better choice if you claim few
                 deductions. But if you have a home loan, pay rent and claim
                 HRA, and invest fully under Section 80C, the Old Regime can

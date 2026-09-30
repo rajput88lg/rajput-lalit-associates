@@ -102,12 +102,14 @@ export async function POST(req: Request) {
     // Sanitise + cap each message, then keep only the most recent N for context.
     const messages: ChatMessage[] = incoming
       .filter(
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (m: any) =>
           m &&
           (m.role === "user" || m.role === "assistant") &&
           typeof m.content === "string" &&
           m.content.trim().length > 0
       )
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .map((m: any) => ({
         role: m.role,
         content: String(m.content).slice(0, MAX_MESSAGE_LENGTH),
@@ -152,7 +154,9 @@ export async function POST(req: Request) {
     const data = await anthropicRes.json();
     const reply: string =
       data?.content
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ?.filter((block: any) => block.type === "text")
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ?.map((block: any) => block.text)
         ?.join("\n")
         ?.trim() ||

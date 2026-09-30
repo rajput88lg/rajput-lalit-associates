@@ -96,6 +96,28 @@ import RnorStatusReturningNriTaxGuideBlog from "@/content/blogs/rnor-status-retu
 import StartupIndiaDpiitRecognitionTaxBenefitsBlog from "@/content/blogs/startup-india-dpiit-recognition-tax-benefits";
 import StrikeOffPrivateLimitedCompanyStk2ClosureBlog from "@/content/blogs/strike-off-private-limited-company-stk-2-closure";
 
+// Round 5 — 30 September 2026
+import Gstr2bVsGstr3bItcMismatchReconciliationBlog from "@/content/blogs/gstr-2b-vs-gstr-3b-itc-mismatch-reconciliation";
+import QrmpSchemeQuarterlyGstReturnIffGuideBlog from "@/content/blogs/qrmp-scheme-quarterly-gst-return-iff-guide";
+import GstMixedSupplyCompositeSupplyTaxRateBlog from "@/content/blogs/gst-mixed-supply-composite-supply-tax-rate";
+import GstPlaceOfSupplyIgstVsCgstSgstRulesBlog from "@/content/blogs/gst-place-of-supply-igst-vs-cgst-sgst-rules";
+import Section80dHealthInsuranceDeductionLimitGuideBlog from "@/content/blogs/section-80d-health-insurance-deduction-limit-guide";
+import NpsTaxBenefits80ccd1bEmployerContributionBlog from "@/content/blogs/nps-tax-benefits-80ccd-1b-employer-contribution";
+import SalaryStructureTaxSavingAllowancesPerquisitesBlog from "@/content/blogs/salary-structure-tax-saving-allowances-perquisites";
+import FdInterestTaxTdsForm15g15hGuideBlog from "@/content/blogs/fd-interest-tax-tds-form-15g-15h-guide";
+import AgriculturalIncomeTaxRulesIndiaExemptionBlog from "@/content/blogs/agricultural-income-tax-rules-india-exemption";
+import LossSetOffCarryForwardIncomeTaxItrBlog from "@/content/blogs/loss-set-off-carry-forward-income-tax-itr";
+import EsopRsuTaxEmployeesIndiaPerquisiteCapitalGainsBlog from "@/content/blogs/esop-rsu-tax-employees-india-perquisite-capital-gains";
+import FoIntradayTradingIncomeTaxItr3GuideBlog from "@/content/blogs/fo-intraday-trading-income-tax-itr-3-guide";
+import GoldTaxIndiaPhysicalGoldEtfSovereignGoldBondBlog from "@/content/blogs/gold-tax-india-physical-gold-etf-sovereign-gold-bond";
+import TdsOnContractorPaymentsSection194cRatesDueDatesBlog from "@/content/blogs/tds-on-contractor-payments-section-194c-rates-due-dates";
+import BusinessExpensesAllowedDisallowed40a3CashLimitBlog from "@/content/blogs/business-expenses-allowed-disallowed-40a-3-cash-limit";
+import FssaiRegistrationVsLicenseFoodBusinessGuideBlog from "@/content/blogs/fssai-registration-vs-license-food-business-guide";
+import Section8CompanyNgoRegistration12a80gGuideBlog from "@/content/blogs/section-8-company-ngo-registration-12a-80g-guide";
+import ImportExportCodeIecRegistrationGuideDgftBlog from "@/content/blogs/import-export-code-iec-registration-guide-dgft";
+import EpfEsiRegistrationComplianceSmallBusinessEmployerGuideBlog from "@/content/blogs/epf-esi-registration-compliance-small-business-employer-guide";
+import NriLowerTdsCertificateSection197PropertySaleForm13Blog from "@/content/blogs/nri-lower-tds-certificate-section-197-property-sale-form-13";
+
 import BlogSchema from "@/components/BlogSchema";
 
 interface PageProps {
@@ -456,6 +478,66 @@ case "msme-registration-online-india":
       break;
     case "strike-off-private-limited-company-stk-2-closure":
       BlogContent = StrikeOffPrivateLimitedCompanyStk2ClosureBlog;
+      break;
+    case "gstr-2b-vs-gstr-3b-itc-mismatch-reconciliation":
+      BlogContent = Gstr2bVsGstr3bItcMismatchReconciliationBlog;
+      break;
+    case "qrmp-scheme-quarterly-gst-return-iff-guide":
+      BlogContent = QrmpSchemeQuarterlyGstReturnIffGuideBlog;
+      break;
+    case "gst-mixed-supply-composite-supply-tax-rate":
+      BlogContent = GstMixedSupplyCompositeSupplyTaxRateBlog;
+      break;
+    case "gst-place-of-supply-igst-vs-cgst-sgst-rules":
+      BlogContent = GstPlaceOfSupplyIgstVsCgstSgstRulesBlog;
+      break;
+    case "section-80d-health-insurance-deduction-limit-guide":
+      BlogContent = Section80dHealthInsuranceDeductionLimitGuideBlog;
+      break;
+    case "nps-tax-benefits-80ccd-1b-employer-contribution":
+      BlogContent = NpsTaxBenefits80ccd1bEmployerContributionBlog;
+      break;
+    case "salary-structure-tax-saving-allowances-perquisites":
+      BlogContent = SalaryStructureTaxSavingAllowancesPerquisitesBlog;
+      break;
+    case "fd-interest-tax-tds-form-15g-15h-guide":
+      BlogContent = FdInterestTaxTdsForm15g15hGuideBlog;
+      break;
+    case "agricultural-income-tax-rules-india-exemption":
+      BlogContent = AgriculturalIncomeTaxRulesIndiaExemptionBlog;
+      break;
+    case "loss-set-off-carry-forward-income-tax-itr":
+      BlogContent = LossSetOffCarryForwardIncomeTaxItrBlog;
+      break;
+    case "esop-rsu-tax-employees-india-perquisite-capital-gains":
+      BlogContent = EsopRsuTaxEmployeesIndiaPerquisiteCapitalGainsBlog;
+      break;
+    case "fo-intraday-trading-income-tax-itr-3-guide":
+      BlogContent = FoIntradayTradingIncomeTaxItr3GuideBlog;
+      break;
+    case "gold-tax-india-physical-gold-etf-sovereign-gold-bond":
+      BlogContent = GoldTaxIndiaPhysicalGoldEtfSovereignGoldBondBlog;
+      break;
+    case "tds-on-contractor-payments-section-194c-rates-due-dates":
+      BlogContent = TdsOnContractorPaymentsSection194cRatesDueDatesBlog;
+      break;
+    case "business-expenses-allowed-disallowed-40a-3-cash-limit":
+      BlogContent = BusinessExpensesAllowedDisallowed40a3CashLimitBlog;
+      break;
+    case "fssai-registration-vs-license-food-business-guide":
+      BlogContent = FssaiRegistrationVsLicenseFoodBusinessGuideBlog;
+      break;
+    case "section-8-company-ngo-registration-12a-80g-guide":
+      BlogContent = Section8CompanyNgoRegistration12a80gGuideBlog;
+      break;
+    case "import-export-code-iec-registration-guide-dgft":
+      BlogContent = ImportExportCodeIecRegistrationGuideDgftBlog;
+      break;
+    case "epf-esi-registration-compliance-small-business-employer-guide":
+      BlogContent = EpfEsiRegistrationComplianceSmallBusinessEmployerGuideBlog;
+      break;
+    case "nri-lower-tds-certificate-section-197-property-sale-form-13":
+      BlogContent = NriLowerTdsCertificateSection197PropertySaleForm13Blog;
       break;
     default:
       notFound();

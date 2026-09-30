@@ -47,7 +47,7 @@ export default function Deductions80CTo80UOldRegimeGuide() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        If you're planning to stick with the old tax regime specifically because of your deductions, it's worth knowing exactly what qualifies and what the limits actually are — a surprising number of people either under-claim what they're entitled to, or assume a deduction still applies after switching to the new regime, where most of these simply don't work anymore.
+        If you&apos;re planning to stick with the old tax regime specifically because of your deductions, it&apos;s worth knowing exactly what qualifies and what the limits actually are — a surprising number of people either under-claim what they&apos;re entitled to, or assume a deduction still applies after switching to the new regime, where most of these simply don&apos;t work anymore.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -66,7 +66,7 @@ export default function Deductions80CTo80UOldRegimeGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        This is the big one. Life insurance premiums, PPF, EPF contributions, ELSS mutual funds, NSC, Sukanya Samriddhi Yojana, 5-year tax-saving fixed deposits, Senior Citizen Savings Scheme, home loan principal repayment, and children's tuition fees (up to 2 children) all draw from this single ₹1.5 lakh combined limit.
+        This is the big one. Life insurance premiums, PPF, EPF contributions, ELSS mutual funds, NSC, Sukanya Samriddhi Yojana, 5-year tax-saving fixed deposits, Senior Citizen Savings Scheme, home loan principal repayment, and children&apos;s tuition fees (up to 2 children) all draw from this single ₹1.5 lakh combined limit.
       </p>
 
 
@@ -137,7 +137,7 @@ export default function Deductions80CTo80UOldRegimeGuide() {
           New Regime Blocks Most Chapter VI-A Deductions
         </h3>
         <p className="text-gray-700 leading-8">
-          The new tax regime disallows the large majority of these deductions — 80C, 80D, 80E, 80G, 80TTA/TTB, and 80U among them. A short list of exceptions survives, most notably the standard deduction for salaried individuals and the employer's contribution to NPS under Section 80CCD(2). If you're claiming a meaningful amount across 80C, 80D and a home loan, that's usually the strongest case for staying with the old regime.
+          The new tax regime disallows the large majority of these deductions — 80C, 80D, 80E, 80G, 80TTA/TTB, and 80U among them. A short list of exceptions survives, most notably the standard deduction for salaried individuals and the employer&apos;s contribution to NPS under Section 80CCD(2). If you&apos;re claiming a meaningful amount across 80C, 80D and a home loan, that&apos;s usually the strongest case for staying with the old regime.
         </p>
       </div>
 

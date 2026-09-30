@@ -47,7 +47,7 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Accumulated input tax credit that can't be used up is dead cash sitting in your GST ledger — and for exporters and inverted-duty businesses, it happens structurally, not by mistake. GST law provides a formal refund route for exactly this situation. Here's how it actually works.
+        Accumulated input tax credit that can&apos;t be used up is dead cash sitting in your GST ledger — and for exporters and inverted-duty businesses, it happens structurally, not by mistake. GST law provides a formal refund route for exactly this situation. Here&apos;s how it actually works.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -57,7 +57,7 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Two refund routes for exporters: under LUT (no IGST paid) or pay IGST and claim it back</li>
           <li>90% provisional refund released within 7 days of acknowledgment; remaining 10% after verification</li>
-          <li>Time limit to claim any GST refund: 2 years from the 'relevant date'</li>
+          <li>Time limit to claim any GST refund: 2 years from the &apos;relevant date&apos;</li>
         </ul>
       </div>
 
@@ -71,7 +71,7 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>Export under Letter of Undertaking (LUT), without paying IGST — then claim a refund of the accumulated, unutilised input tax credit relating to that export</li>
-          <li>Pay IGST on the export and claim a refund of that IGST paid — usually processed faster since it's linked directly to the shipping bill (treated as the refund application itself for this route)</li>
+          <li>Pay IGST on the export and claim a refund of that IGST paid — usually processed faster since it&apos;s linked directly to the shipping bill (treated as the refund application itself for this route)</li>
       </ul>
 
 
@@ -80,7 +80,7 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        An inverted duty structure exists when the GST rate on your inputs is higher than the GST rate on your output supply — common in certain textile, footwear, and fertiliser-adjacent segments. Since you're paying more tax on what you buy than you collect on what you sell, credit piles up with no way to use it against output liability. Section 54(3) allows a refund of this accumulated credit, computed under a formula (Rule 89(5)) based on turnover of the inverted-rated supply, net ITC, and adjusted total turnover — best left to your GST consultant to compute precisely, since a wrong formula application is one of the most common reasons refund applications get rejected or delayed.
+        An inverted duty structure exists when the GST rate on your inputs is higher than the GST rate on your output supply — common in certain textile, footwear, and fertiliser-adjacent segments. Since you&apos;re paying more tax on what you buy than you collect on what you sell, credit piles up with no way to use it against output liability. Section 54(3) allows a refund of this accumulated credit, computed under a formula (Rule 89(5)) based on turnover of the inverted-rated supply, net ITC, and adjusted total turnover — best left to your GST consultant to compute precisely, since a wrong formula application is one of the most common reasons refund applications get rejected or delayed.
       </p>
 
 
@@ -91,13 +91,13 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>File Form RFD-01 online on the GST portal with supporting statements (statement 3/3A for exports, statement 1/1A for inverted duty)</li>
           <li>Acknowledgment issued in RFD-02 (or a deficiency memo in RFD-03 if documents are incomplete — this restarts your filing)</li>
-          <li>90% provisional refund credited within 7 days of acknowledgment for zero-rated (export) claims — this is meant to protect exporters' working capital</li>
-          <li>Balance 10% released after the officer's verification, typically within 60 days of the original application</li>
+          <li>90% provisional refund credited within 7 days of acknowledgment for zero-rated (export) claims — this is meant to protect exporters&apos; working capital</li>
+          <li>Balance 10% released after the officer&apos;s verification, typically within 60 days of the original application</li>
       </ul>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Time Limit — Don't Miss This
+        Time Limit — Don&apos;t Miss This
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -105,7 +105,7 @@ export default function GSTRefundProcessExportersInvertedDutyStructure() {
           2 Years From the Relevant Date
         </h3>
         <p className="text-gray-700 leading-8">
-          Every GST refund claim must be filed within 2 years of the 'relevant date' — for exports, this is generally the date goods leave India (or the date of receipt of payment, for services); for inverted duty refunds, it's the due date of filing the return for the relevant period. Miss this window and the refund is simply gone — there's no discretionary extension.
+          Every GST refund claim must be filed within 2 years of the &apos;relevant date&apos; — for exports, this is generally the date goods leave India (or the date of receipt of payment, for services); for inverted duty refunds, it&apos;s the due date of filing the return for the relevant period. Miss this window and the refund is simply gone — there&apos;s no discretionary extension.
         </p>
       </div>
 

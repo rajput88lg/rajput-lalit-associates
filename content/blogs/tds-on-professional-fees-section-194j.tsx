@@ -52,10 +52,10 @@ export default function TDSOnProfessionalFeesSection194J() {
 
       <p className="text-gray-700 leading-8 mb-6">
         Pay a CA, lawyer, consultant, doctor, or IT support vendor above a
-        certain amount, and you're on the hook to deduct TDS before you
-        pay them — get it wrong and it's not just interest, a full 30% of
+        certain amount, and you&apos;re on the hook to deduct TDS before you
+        pay them — get it wrong and it&apos;s not just interest, a full 30% of
         that expense can get disallowed from your own taxable income.
-        Here's how the current rules work, including the threshold that
+        Here&apos;s how the current rules work, including the threshold that
         changed in 2025.
       </p>
 
@@ -148,7 +148,7 @@ export default function TDSOnProfessionalFeesSection194J() {
           preceding financial year
         </li>
         <li>
-          Individuals/HUFs below these limits generally don't need to
+          Individuals/HUFs below these limits generally don&apos;t need to
           deduct TDS on professional payments they make personally
         </li>
       </ul>
@@ -170,10 +170,10 @@ export default function TDSOnProfessionalFeesSection194J() {
       <p className="text-gray-700 leading-8 mb-10">
         If you fail to deduct TDS on a professional or technical payment
         that required it, 30% of that expense gets disallowed when
-        computing your own business's taxable income — often a far bigger
+        computing your own business&apos;s taxable income — often a far bigger
         hit than the TDS amount itself, on top of 1% monthly interest for
         non-deduction and the possibility of penalty proceedings. This is
-        why it's worth tracking cumulative payments to each vendor across
+        why it&apos;s worth tracking cumulative payments to each vendor across
         the year, not just checking each invoice in isolation.
       </p>
 

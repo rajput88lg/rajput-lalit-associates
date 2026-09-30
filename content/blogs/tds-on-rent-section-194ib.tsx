@@ -51,11 +51,11 @@ export default function TDSOnRentSection194IB() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        If you're an individual paying more than ₹50,000 a month in rent —
+        If you&apos;re an individual paying more than ₹50,000 a month in rent —
         for your home or an office — you likely have a TDS obligation most
-        tenants don't realise applies to them. This isn't a business-only
+        tenants don&apos;t realise applies to them. This isn&apos;t a business-only
         rule; it catches ordinary salaried people renting a flat just as
-        much as it catches companies. Here's exactly when it applies and
+        much as it catches companies. Here&apos;s exactly when it applies and
         how to comply without a TAN.
       </p>
 
@@ -97,8 +97,8 @@ export default function TDSOnRentSection194IB() {
         receipts under ₹50 lakh in the previous financial year). It covers
         rent for any kind of property — a residential flat, an office, a
         shop, or even plant/machinery/furniture — as long as the monthly
-        rent exceeds ₹50,000. It's very commonly missed because most
-        people associate "TDS" purely with businesses and employers, not
+        rent exceeds ₹50,000. It&apos;s very commonly missed because most
+        people associate &quot;TDS&quot; purely with businesses and employers, not
         with themselves as a tenant.
       </p>
 
@@ -107,10 +107,10 @@ export default function TDSOnRentSection194IB() {
           The PAN Rule That Costs Tenants the Most
         </h3>
         <p className="text-gray-700 leading-8">
-          If your landlord doesn't or won't give you their PAN, the TDS
-          rate isn't just higher — it jumps all the way to 20%, ten times
-          the normal 2% rate. Since this comes out of the rent you'd
-          otherwise pay in full, it's worth collecting the landlord's PAN
+          If your landlord doesn&apos;t or won&apos;t give you their PAN, the TDS
+          rate isn&apos;t just higher — it jumps all the way to 20%, ten times
+          the normal 2% rate. Since this comes out of the rent you&apos;d
+          otherwise pay in full, it&apos;s worth collecting the landlord&apos;s PAN
           at the start of the tenancy, not scrambling for it near the
           annual deduction deadline.
         </p>
@@ -122,7 +122,7 @@ export default function TDSOnRentSection194IB() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Unlike regular business TDS, individual/HUF tenants under this
-        provision deduct the full year's TDS just once — in March (the
+        provision deduct the full year&apos;s TDS just once — in March (the
         last month of the financial year), or in the month the tenancy
         ends if you vacate earlier. You compute 2% on the total rent paid
         during the year (or the relevant period), deduct that amount from
@@ -134,7 +134,7 @@ export default function TDSOnRentSection194IB() {
       </h2>
 
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
-        <li>No TAN required — you use your own PAN and the landlord's PAN</li>
+        <li>No TAN required — you use your own PAN and the landlord&apos;s PAN</li>
         <li>File <strong>Form 26QC</strong> (renumbered <strong>Form 141</strong> under the Income-tax Act, 2025 and Income-tax Rules, 2026) online, within 30 days from the end of the month in which TDS was deducted</li>
         <li>Pay the deducted amount through net banking or an authorised bank branch as part of the same filing</li>
         <li>Download <strong>Form 16C</strong> from TRACES after filing, and hand it to your landlord — this is their proof to claim TDS credit</li>
@@ -147,8 +147,8 @@ export default function TDSOnRentSection194IB() {
       <p className="text-gray-700 leading-8 mb-10">
         Missing or delaying this deduction attracts interest under Section
         201(1A), and a penalty under Section 271C equal to the TDS amount
-        that should have been deducted can be levied at the officer's
-        discretion. There's also a practical risk: if you're claiming HRA
+        that should have been deducted can be levied at the officer&apos;s
+        discretion. There&apos;s also a practical risk: if you&apos;re claiming HRA
         exemption on this same rent, an unreported or mismatched rent TDS
         entry can draw scrutiny during cross-verification of your ITR.
       </p>

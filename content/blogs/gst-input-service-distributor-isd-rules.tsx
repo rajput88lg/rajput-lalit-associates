@@ -47,7 +47,7 @@ export default function GSTInputServiceDistributorISDRules() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        If your business has branches or units registered under separate GSTINs but the same PAN — say, a head office in Ambala paying for a pan-India software subscription or a legal retainer used by every branch — you now have a compliance obligation you may not have had before. ISD registration used to be optional. It isn't anymore.
+        If your business has branches or units registered under separate GSTINs but the same PAN — say, a head office in Ambala paying for a pan-India software subscription or a legal retainer used by every branch — you now have a compliance obligation you may not have had before. ISD registration used to be optional. It isn&apos;t anymore.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -66,7 +66,7 @@ export default function GSTInputServiceDistributorISDRules() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        An ISD is a GST-registered office of your business (typically the head office) that receives invoices for input services used across multiple branches/units, and formally distributes the input tax credit on those services to the relevant branches — proportionate to their turnover or actual usage. It's a credit-distribution mechanism, not a separate taxable supply.
+        An ISD is a GST-registered office of your business (typically the head office) that receives invoices for input services used across multiple branches/units, and formally distributes the input tax credit on those services to the relevant branches — proportionate to their turnover or actual usage. It&apos;s a credit-distribution mechanism, not a separate taxable supply.
       </p>
 
 
@@ -75,12 +75,12 @@ export default function GSTInputServiceDistributorISDRules() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Until 1 April 2025, businesses often just "cross-charged" between branches informally, or distributed common credit loosely without a dedicated ISD registration. That's no longer an option: if you have multiple GSTINs under one PAN and any common input service is billed centrally, ISD registration is now compulsory for distributing that credit correctly.
+        Until 1 April 2025, businesses often just &quot;cross-charged&quot; between branches informally, or distributed common credit loosely without a dedicated ISD registration. That&apos;s no longer an option: if you have multiple GSTINs under one PAN and any common input service is billed centrally, ISD registration is now compulsory for distributing that credit correctly.
       </p>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        ISD vs Cross-Charge — Don't Mix These Up
+        ISD vs Cross-Charge — Don&apos;t Mix These Up
       </h2>
 
       <div className="overflow-x-auto mb-10">
@@ -120,7 +120,7 @@ export default function GSTInputServiceDistributorISDRules() {
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>File GSTR-6 every month by the 13th, listing ITC received and distributed</li>
           <li>Distribution must be proportionate — generally based on the turnover of each recipient unit in the preceding financial year</li>
-          <li>Credit can only be distributed to units that are eligible to use it — an ISD cannot distribute credit to an exempt unit's ineligible portion</li>
+          <li>Credit can only be distributed to units that are eligible to use it — an ISD cannot distribute credit to an exempt unit&apos;s ineligible portion</li>
       </ul>
 
 

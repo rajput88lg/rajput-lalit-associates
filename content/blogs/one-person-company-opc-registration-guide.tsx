@@ -47,7 +47,7 @@ export default function OnePersonCompanyOPCRegistrationGuide() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        If you're a solo founder who wants limited liability and a separate legal entity, but doesn't want (or need) co-founders or shareholders, an OPC is worth understanding properly — it's one of the least-explained company structures despite being genuinely well-suited to exactly this situation.
+        If you&apos;re a solo founder who wants limited liability and a separate legal entity, but doesn&apos;t want (or need) co-founders or shareholders, an OPC is worth understanding properly — it&apos;s one of the least-explained company structures despite being genuinely well-suited to exactly this situation.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -108,7 +108,7 @@ export default function OnePersonCompanyOPCRegistrationGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Only a natural person who is an Indian citizen and a resident of India (having stayed in India for at least 120 days in the preceding financial year — this residency threshold was reduced from 182 days in 2021) can be a member or nominee of an OPC. Every OPC must name a nominee at the time of incorporation — someone who would become the member in case of the original member's death or incapacity. This is a legal requirement, not optional paperwork.
+        Only a natural person who is an Indian citizen and a resident of India (having stayed in India for at least 120 days in the preceding financial year — this residency threshold was reduced from 182 days in 2021) can be a member or nominee of an OPC. Every OPC must name a nominee at the time of incorporation — someone who would become the member in case of the original member&apos;s death or incapacity. This is a legal requirement, not optional paperwork.
       </p>
 
 
@@ -121,7 +121,7 @@ export default function OnePersonCompanyOPCRegistrationGuide() {
           Conversion to Pvt Ltd Is Now Voluntary
         </h3>
         <p className="text-gray-700 leading-8">
-          Earlier rules required an OPC to compulsorily convert to a private or public company once paid-up capital or average turnover crossed a specified limit. That mandatory trigger was removed by the Companies (Incorporation) Second Amendment Rules, 2021. Today, conversion to a Pvt Ltd company is entirely your choice, whenever it makes sense for your business — not something forced on you by a turnover threshold. The 2021 amendment also opened OPC formation to NRIs, which wasn't previously allowed.
+          Earlier rules required an OPC to compulsorily convert to a private or public company once paid-up capital or average turnover crossed a specified limit. That mandatory trigger was removed by the Companies (Incorporation) Second Amendment Rules, 2021. Today, conversion to a Pvt Ltd company is entirely your choice, whenever it makes sense for your business — not something forced on you by a turnover threshold. The 2021 amendment also opened OPC formation to NRIs, which wasn&apos;t previously allowed.
         </p>
       </div>
 
@@ -137,7 +137,7 @@ export default function OnePersonCompanyOPCRegistrationGuide() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        An OPC is a genuinely useful structure for a solo founder who wants limited liability without the complexity of multiple shareholders — but it's worth thinking through your 2-3 year plan before choosing it over a Pvt Ltd. Rajput Lalit &amp; Associates helps founders pick the right structure and handles registration end-to-end. See our{" "}<Link href="/company-registration" className={linkClass}>Company Registration service</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        An OPC is a genuinely useful structure for a solo founder who wants limited liability without the complexity of multiple shareholders — but it&apos;s worth thinking through your 2-3 year plan before choosing it over a Pvt Ltd. Rajput Lalit &amp; Associates helps founders pick the right structure and handles registration end-to-end. See our{" "}<Link href="/company-registration" className={linkClass}>Company Registration service</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

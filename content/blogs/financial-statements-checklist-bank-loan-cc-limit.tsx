@@ -47,7 +47,7 @@ export default function FinancialStatementsChecklistBankLoanCCLimit() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        A loan or CC limit application gets rejected or delayed far more often over documentation mismatches than over the business itself being unbankable. Here's what banks are actually checking, and how to have it ready before you apply rather than scrambling once a relationship manager asks.
+        A loan or CC limit application gets rejected or delayed far more often over documentation mismatches than over the business itself being unbankable. Here&apos;s what banks are actually checking, and how to have it ready before you apply rather than scrambling once a relationship manager asks.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -56,7 +56,7 @@ export default function FinancialStatementsChecklistBankLoanCCLimit() {
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Banks typically want 2-3 years of financial statements — audited/CA-certified where applicable</li>
-          <li>GST returns and ITR must match the turnover you're claiming in your loan application</li>
+          <li>GST returns and ITR must match the turnover you&apos;re claiming in your loan application</li>
           <li>CC limit renewal needs ongoing stock and debtor/creditor statements, not just annual financials</li>
         </ul>
       </div>
@@ -93,14 +93,14 @@ export default function FinancialStatementsChecklistBankLoanCCLimit() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        A CC limit isn't a one-time sanction you forget about — it needs periodic renewal (typically annual) and ongoing monthly/quarterly reporting:
+        A CC limit isn&apos;t a one-time sanction you forget about — it needs periodic renewal (typically annual) and ongoing monthly/quarterly reporting:
       </p>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>CMA (Credit Monitoring Arrangement) data — a standardised projected and actual financial format banks use specifically for working capital assessment, covering the past year, current year, and 2 future projected years</li>
           <li>Monthly or quarterly stock statements — value of raw material, work-in-progress, and finished goods stock</li>
-          <li>Debtor and creditor ageing statements — showing how much is owed to you and by when it's overdue, and vice versa</li>
-          <li>Renewal of the limit typically requires the latest year's audited/CA-certified financials, similar to the original sanction</li>
+          <li>Debtor and creditor ageing statements — showing how much is owed to you and by when it&apos;s overdue, and vice versa</li>
+          <li>Renewal of the limit typically requires the latest year&apos;s audited/CA-certified financials, similar to the original sanction</li>
       </ul>
 
 
@@ -109,7 +109,7 @@ export default function FinancialStatementsChecklistBankLoanCCLimit() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        The businesses that get loan/CC sanctions fastest are the ones whose books were already clean and current when the relationship manager asked — not the ones scrambling to reconstruct a year's worth of transactions in two weeks. This is the practical payoff of the monthly bookkeeping discipline we cover in a separate guide.
+        The businesses that get loan/CC sanctions fastest are the ones whose books were already clean and current when the relationship manager asked — not the ones scrambling to reconstruct a year&apos;s worth of transactions in two weeks. This is the practical payoff of the monthly bookkeeping discipline we cover in a separate guide.
       </p>
 
 
