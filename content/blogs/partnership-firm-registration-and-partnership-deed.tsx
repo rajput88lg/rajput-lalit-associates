@@ -53,9 +53,9 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
       <p className="text-gray-700 leading-8 mb-6">
         A partnership firm is still one of the simplest, cheapest ways for
         two or more people to run a business together in India — but
-        "simple" doesn't mean you should skip the paperwork. A weak or
+        &quot;simple&quot; doesn&apos;t mean you should skip the paperwork. A weak or
         missing partnership deed, or the decision to stay unregistered,
-        both create real legal risk down the line. Here's what the deed
+        both create real legal risk down the line. Here&apos;s what the deed
         needs, what registration actually gets you, and how the firm is
         taxed.
       </p>
@@ -70,7 +70,7 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
             Act, but strongly recommended
           </li>
           <li>
-            <strong>Unregistered firm's biggest risk:</strong> can't sue
+            <strong>Unregistered firm&apos;s biggest risk:</strong> can&apos;t sue
             third parties or partners to enforce contract rights (Sec 69)
           </li>
           <li>
@@ -83,7 +83,7 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
           </li>
           <li>
             <strong>Firm tax rate:</strong> flat 30% + surcharge + cess; a
-            partner's profit share is then tax-free in their hands
+            partner&apos;s profit share is then tax-free in their hands
           </li>
         </ul>
       </div>
@@ -94,9 +94,9 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
 
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
         <li>Draft the partnership deed covering capital, profit ratio, authority, and exit rules</li>
-        <li>Execute it on stamp paper as per your state's stamp duty rules (stamp duty varies by state and by capital contribution amount)</li>
+        <li>Execute it on stamp paper as per your state&apos;s stamp duty rules (stamp duty varies by state and by capital contribution amount)</li>
         <li>File with the state Registrar of Firms — optional, but recommended</li>
-        <li>Apply for the firm's PAN, and GST registration if applicable</li>
+        <li>Apply for the firm&apos;s PAN, and GST registration if applicable</li>
       </ul>
 
       <p className="text-gray-700 leading-8 mb-10">
@@ -120,7 +120,7 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          Staying Unregistered Doesn't Protect You — It Only Weakens You
+          Staying Unregistered Doesn&apos;t Protect You — It Only Weakens You
         </h3>
         <p className="text-gray-700 leading-8">
           Under Section 69 of the Indian Partnership Act, 1932, an
@@ -129,8 +129,8 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
           outside party or against a fellow partner. This is a one-way
           restriction: third parties are completely free to sue an
           unregistered firm whenever they want. So skipping registration
-          doesn't shield the firm from legal risk; it only takes away the
-          firm's own ability to enforce its rights when something goes
+          doesn&apos;t shield the firm from legal risk; it only takes away the
+          firm&apos;s own ability to enforce its rights when something goes
           wrong with a customer, vendor, or partner.
         </p>
       </div>
@@ -149,7 +149,7 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
           </thead>
           <tbody>
             <tr>
-              <td className="border px-4 py-3">Interest on partners' capital</td>
+              <td className="border px-4 py-3">Interest on partners&apos; capital</td>
               <td className="border px-4 py-3">12% per annum</td>
             </tr>
             <tr>
@@ -180,9 +180,9 @@ export default function PartnershipFirmRegistrationAndPartnershipDeed() {
       <p className="text-gray-700 leading-8 mb-10">
         A partnership firm pays a <strong>flat 30% tax</strong> on its
         profits (plus 12% surcharge if income exceeds ₹1 crore, and 4%
-        health &amp; education cess) — there's no slab-rate benefit the way
+        health &amp; education cess) — there&apos;s no slab-rate benefit the way
         an individual gets. Once this tax is paid at the firm level, each
-        partner's share of the profit is <strong>fully exempt</strong> in
+        partner&apos;s share of the profit is <strong>fully exempt</strong> in
         their personal return. However, any remuneration or interest a
         partner receives from the firm is taxable in their hands as
         business income, separate from their tax-free profit share.

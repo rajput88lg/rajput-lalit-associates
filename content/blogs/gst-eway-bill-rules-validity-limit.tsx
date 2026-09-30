@@ -53,9 +53,9 @@ export default function GSTEwayBillRulesValidityLimit() {
       <p className="text-gray-700 leading-8 mb-6">
         If your business moves goods worth more than ₹50,000 — by truck,
         rail, air or courier — an e-way bill is usually required before the
-        vehicle leaves. Get it wrong and the consequence isn't a warning
-        letter later; it's your goods stopped and seized on the highway,
-        right now. Here's exactly when it's required, how long it stays
+        vehicle leaves. Get it wrong and the consequence isn&apos;t a warning
+        letter later; it&apos;s your goods stopped and seized on the highway,
+        right now. Here&apos;s exactly when it&apos;s required, how long it stays
         valid, and the state-specific limits that catch businesses off
         guard.
       </p>
@@ -110,7 +110,7 @@ export default function GSTEwayBillRulesValidityLimit() {
       </ul>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Where there's no tax invoice yet (job work, branch transfer, goods
+        Where there&apos;s no tax invoice yet (job work, branch transfer, goods
         on approval), the e-way bill is generated against a delivery
         challan instead.
       </p>
@@ -150,8 +150,8 @@ export default function GSTEwayBillRulesValidityLimit() {
 
       <p className="text-gray-700 leading-8 mb-10">
         State-level intra-state limits change from time to time, so if
-        you're moving goods only within a state (not crossing a state
-        border), it's worth confirming the current limit for that state
+        you&apos;re moving goods only within a state (not crossing a state
+        border), it&apos;s worth confirming the current limit for that state
         rather than assuming ₹50,000 applies everywhere. For any movement
         that crosses a state border, ₹50,000 is the number to work with,
         no exceptions.
@@ -165,7 +165,7 @@ export default function GSTEwayBillRulesValidityLimit() {
           Since Haryana applies the standard ₹50,000 threshold for
           movement within the state as well, most local businesses end up
           needing an e-way bill for nearly every meaningful shipment — not
-          just for goods leaving the state. It's worth building e-way bill
+          just for goods leaving the state. It&apos;s worth building e-way bill
           generation into your regular billing process rather than treating
           it as a separate, easily-forgotten step.
         </p>
@@ -207,9 +207,9 @@ export default function GSTEwayBillRulesValidityLimit() {
       <p className="text-gray-700 leading-8 mb-10">
         Validity is counted from the time Part B (vehicle number) is
         entered, not from when Part A was created. If a shipment genuinely
-        can't reach its destination in time (breakdown, traffic, natural
+        can&apos;t reach its destination in time (breakdown, traffic, natural
         causes), the validity can be extended on the portal before it
-        lapses — extending after expiry isn't possible, so this needs to be
+        lapses — extending after expiry isn&apos;t possible, so this needs to be
         done proactively.
       </p>
 
@@ -230,7 +230,7 @@ export default function GSTEwayBillRulesValidityLimit() {
       </ul>
 
       <p className="text-gray-700 leading-8 mb-10">
-        An e-way bill isn't complete — and isn't valid for movement — until
+        An e-way bill isn&apos;t complete — and isn&apos;t valid for movement — until
         both parts are filled. A common mistake is generating Part A well
         in advance and forgetting to add Part B before the truck actually
         leaves.
@@ -250,7 +250,7 @@ export default function GSTEwayBillRulesValidityLimit() {
         <li>
           Movement within a state up to a distance the state itself
           exempts (some states waive Part B for very short local
-          movements — check your state's specific notification)
+          movements — check your state&apos;s specific notification)
         </li>
       </ul>
 
@@ -261,7 +261,7 @@ export default function GSTEwayBillRulesValidityLimit() {
       <p className="text-gray-700 leading-8 mb-10">
         Rajput Lalit &amp; Associates helps businesses in Ambala and across
         India set up correct e-way bill and e-invoicing processes alongside
-        regular GST return filing, so shipments don't get held up over
+        regular GST return filing, so shipments don&apos;t get held up over
         paperwork.{" "}
         <Link href="/#appointment" className={linkClass}>
           Book a free consultation

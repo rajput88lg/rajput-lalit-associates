@@ -70,7 +70,7 @@ export default function CompanyLLPRegistrationConsultantAmbala() {
           Ab RoC Delhi nahi, RoC Haryana
         </h3>
         <p className="text-gray-700 leading-8">
-          MCA Notification (23 October 2025) ke through purani combined 'RoC Delhi &amp; Haryana' ko alag kar diya gaya — ab Haryana ki apni dedicated Registrar of Companies hai, jo Chandigarh mein based hai, 15/16 February 2026 se operational. Isi ke saath ek naya Regional Directorate (NR-II, Chandigarh) bhi bana hai jo Haryana, Himachal Pradesh, Punjab, Uttarakhand aur kuch UTs cover karta hai. Matlab ab Ambala ki koi bhi company/LLP registration Haryana-specific RoC ke through hoti hai, Delhi ke through nahi.
+          MCA Notification (23 October 2025) ke through purani combined &apos;RoC Delhi &amp; Haryana&apos; ko alag kar diya gaya — ab Haryana ki apni dedicated Registrar of Companies hai, jo Chandigarh mein based hai, 15/16 February 2026 se operational. Isi ke saath ek naya Regional Directorate (NR-II, Chandigarh) bhi bana hai jo Haryana, Himachal Pradesh, Punjab, Uttarakhand aur kuch UTs cover karta hai. Matlab ab Ambala ki koi bhi company/LLP registration Haryana-specific RoC ke through hoti hai, Delhi ke through nahi.
         </p>
       </div>
 
@@ -102,7 +102,7 @@ export default function CompanyLLPRegistrationConsultantAmbala() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Haryana government ne 'Haryana Progressive MSME &amp; Export Promotion Policy 2026' notify ki hai, jo state mein MSME investment aur exports ko promote karti hai. Iske exact eligibility criteria aur incentive amounts official notification (msme.haryana.gov.in) se hi confirm karne chahiye — hum apne clients ko ye check karne mein madad karte hain ki unki naye registered company/LLP is policy ke tahat kya benefits claim kar sakti hai.
+        Haryana government ne &apos;Haryana Progressive MSME &amp; Export Promotion Policy 2026&apos; notify ki hai, jo state mein MSME investment aur exports ko promote karti hai. Iske exact eligibility criteria aur incentive amounts official notification (msme.haryana.gov.in) se hi confirm karne chahiye — hum apne clients ko ye check karne mein madad karte hain ki unki naye registered company/LLP is policy ke tahat kya benefits claim kar sakti hai.
       </p>
 
 

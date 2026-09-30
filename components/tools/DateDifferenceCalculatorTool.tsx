@@ -80,7 +80,7 @@ export default function DateDifferenceCalculatorTool() {
                 value={`${result.years}y ${result.months}m ${result.days}d`}
                 description={
                   <>
-                    That's a total of{" "}
+                    That&apos;s a total of{" "}
                     <strong>{result.totalDays.toLocaleString("en-US")} days</strong> (
                     {result.totalWeeks.toLocaleString("en-US")} weeks).
                   </>

@@ -47,7 +47,7 @@ export default function DigitalSignatureCertificateDSCGuideBusinessRegistration(
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Almost every registration or filing we've covered elsewhere on this blog — company incorporation, LLP registration, trademark filing, ROC annual returns — eventually asks for a Digital Signature Certificate. It's easy to leave getting one until the last moment, which then holds up the entire filing.
+        Almost every registration or filing we&apos;ve covered elsewhere on this blog — company incorporation, LLP registration, trademark filing, ROC annual returns — eventually asks for a Digital Signature Certificate. It&apos;s easy to leave getting one until the last moment, which then holds up the entire filing.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -66,7 +66,7 @@ export default function DigitalSignatureCertificateDSCGuideBusinessRegistration(
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        A DSC is the digital equivalent of a physical signature — a small file (usually stored on a USB token) that cryptographically proves a document was signed by a specific, verified individual, and hasn't been altered since. Government portals require it instead of a scanned signature because it's tamper-evident and legally recognised under the Information Technology Act, 2000.
+        A DSC is the digital equivalent of a physical signature — a small file (usually stored on a USB token) that cryptographically proves a document was signed by a specific, verified individual, and hasn&apos;t been altered since. Government portals require it instead of a scanned signature because it&apos;s tamper-evident and legally recognised under the Information Technology Act, 2000.
       </p>
 
 
@@ -105,7 +105,7 @@ export default function DigitalSignatureCertificateDSCGuideBusinessRegistration(
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Don't Wait Until Filing Day
+        Don&apos;t Wait Until Filing Day
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -113,7 +113,7 @@ export default function DigitalSignatureCertificateDSCGuideBusinessRegistration(
           Verification Can Take a Day or Two
         </h3>
         <p className="text-gray-700 leading-8">
-          Even with video/Aadhaar verification, issuance isn't always instant — occasional delays happen due to document mismatches or verification queue times. If you're incorporating a company or filing an ROC annual return against a fixed deadline, get the DSC sorted at least a few days ahead rather than assuming same-day issuance.
+          Even with video/Aadhaar verification, issuance isn&apos;t always instant — occasional delays happen due to document mismatches or verification queue times. If you&apos;re incorporating a company or filing an ROC annual return against a fixed deadline, get the DSC sorted at least a few days ahead rather than assuming same-day issuance.
         </p>
       </div>
 

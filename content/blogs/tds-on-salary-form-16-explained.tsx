@@ -55,7 +55,7 @@ export default function TDSOnSalaryForm16Explained() {
         their salary — but most people never learn exactly how their
         employer arrives at that monthly number, or what the certificate
         they get each June (Form 16, now officially Form 130) actually
-        represents. Here's how salary TDS is calculated and what to check
+        represents. Here&apos;s how salary TDS is calculated and what to check
         on your certificate.
       </p>
 
@@ -91,14 +91,14 @@ export default function TDSOnSalaryForm16Explained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Employers use the "average rate" method: at the start of the
+        Employers use the &quot;average rate&quot; method: at the start of the
         financial year (or whenever your salary structure or tax-saving
         declarations change), they estimate your total taxable income and
         tax liability for the entire year, then divide the remaining tax
         by the number of months left. This is why your take-home can shift
         mid-year — a bonus, a salary revision, or updated investment
         proof all cause the employer to re-estimate and adjust the
-        remaining months' deduction.
+        remaining months&apos; deduction.
       </p>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -112,8 +112,8 @@ export default function TDSOnSalaryForm16Explained() {
           deductions — you must actively declare this to your employer via{" "}
           <strong>Form 122</strong>, which now combines what used to be
           two separate forms (12B and 12BAA). Skipping this means your
-          eligible deductions simply won't be factored into your monthly
-          TDS, even if you're entitled to claim them.
+          eligible deductions simply won&apos;t be factored into your monthly
+          TDS, even if you&apos;re entitled to claim them.
         </p>
       </div>
 
@@ -157,7 +157,7 @@ export default function TDSOnSalaryForm16Explained() {
       <p className="text-gray-700 leading-8 mb-10">
         Under the Income-tax Act, 2025 and Income-tax Rules, 2026
         renumbering, Form 16 is officially Form 130 (most people will keep
-        calling it "Form 16" informally for a while). Your employer must
+        calling it &quot;Form 16&quot; informally for a while). Your employer must
         issue it by <strong>15 June</strong> following the end of the
         financial year, covering the TDS deducted and deposited on your
         salary for that year. Late issuance can attract a penalty of ₹100
@@ -170,12 +170,12 @@ export default function TDSOnSalaryForm16Explained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Report your previous employer's salary and TDS to your current
+        Report your previous employer&apos;s salary and TDS to your current
         employer (captured in the same Form 122 declaration) so TDS gets
         computed on your combined income across both employers, not just
         what your current one paid you. Without this, both employers
         separately apply the full basic exemption and slab benefits to
-        "their" portion of your income — which understates your true tax
+        &quot;their&quot; portion of your income — which understates your true tax
         liability and often leaves you with a larger-than-expected amount
         due when you file your return.
       </p>

@@ -47,7 +47,7 @@ export default function GST20Reforms2026SectorImpactGuide() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        September 2025 mein GST Council ne dashकों purani 5/12/18/28% slab structure ko simplify karke 0%, 5%, 18% aur 40% (sirf demerit/luxury items ke liye) mein badal diya — jise 'GST 2.0' kaha ja raha hai. Ek saal ho chuka hai is reform ko, aur 2026 mein iska real impact har sector mein clearly dikh raha hai. Ye article batata hai ki insurance, auto aur daily-use goods par exactly kya badla, aur 2026 mein aage kya hua.
+        September 2025 mein GST Council ne dashकों purani 5/12/18/28% slab structure ko simplify karke 0%, 5%, 18% aur 40% (sirf demerit/luxury items ke liye) mein badal diya — jise &apos;GST 2.0&apos; kaha ja raha hai. Ek saal ho chuka hai is reform ko, aur 2026 mein iska real impact har sector mein clearly dikh raha hai. Ye article batata hai ki insurance, auto aur daily-use goods par exactly kya badla, aur 2026 mein aage kya hua.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -70,7 +70,7 @@ export default function GST20Reforms2026SectorImpactGuide() {
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Lekin ye galatfahmi mat rakhiye ki 'sab insurance GST-free ho gaya' — group/employer-sponsored policies (group health, group term life) abhi bhi 18% GST par hi taxable hain. Agar aap apne employees ko group health cover dete hain, us par GST abhi bhi lagta hai.
+        Lekin ye galatfahmi mat rakhiye ki &apos;sab insurance GST-free ho gaya&apos; — group/employer-sponsored policies (group health, group term life) abhi bhi 18% GST par hi taxable hain. Agar aap apne employees ko group health cover dete hain, us par GST abhi bhi lagta hai.
       </p>
 
 
@@ -155,7 +155,7 @@ export default function GST20Reforms2026SectorImpactGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        57th GST Council meeting jo 12 September 2026 ko hone wali thi, BRICS Leaders' Summit ke saath clash hone ki wajah se 7 October 2026 tak postpone kar di gayi hai. Is document likhne tak (17 September 2026) ye meeting hui nahi hai — isliye koi bhi 'expected agenda' ko final fact mat maaniye, jab tak official announcement na aaye.
+        57th GST Council meeting jo 12 September 2026 ko hone wali thi, BRICS Leaders&apos; Summit ke saath clash hone ki wajah se 7 October 2026 tak postpone kar di gayi hai. Is document likhne tak (17 September 2026) ye meeting hui nahi hai — isliye koi bhi &apos;expected agenda&apos; ko final fact mat maaniye, jab tak official announcement na aaye.
       </p>
 
 

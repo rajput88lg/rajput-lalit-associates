@@ -57,7 +57,7 @@ export default function WebsiteCTA() {
         </div>
 
         <div className="mt-12 flex justify-center items-center gap-2 text-[#d99a2b] font-semibold">
-          Let's Build Something Amazing Together
+          Let&apos;s Build Something Amazing Together
           <ArrowRight size={20} />
         </div>
 

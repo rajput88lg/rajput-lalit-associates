@@ -47,7 +47,7 @@ export default function TDSOnCashWithdrawalEcommerceSection194N194O() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        These two TDS sections don't get anywhere near as much attention as TDS on salary or rent, but they quietly affect two very different groups — anyone who withdraws large amounts of cash, and every seller who does business through an online marketplace.
+        These two TDS sections don&apos;t get anywhere near as much attention as TDS on salary or rent, but they quietly affect two very different groups — anyone who withdraws large amounts of cash, and every seller who does business through an online marketplace.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -66,12 +66,12 @@ export default function TDSOnCashWithdrawalEcommerceSection194N194O() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If your aggregate cash withdrawal from one bank, co-operative bank, or post office account crosses ₹1 crore in a financial year, the bank deducts 2% TDS on the amount above ₹1 crore. This isn't an additional tax — it's simply withheld and can be claimed as a credit when you file your ITR.
+        If your aggregate cash withdrawal from one bank, co-operative bank, or post office account crosses ₹1 crore in a financial year, the bank deducts 2% TDS on the amount above ₹1 crore. This isn&apos;t an additional tax — it&apos;s simply withheld and can be claimed as a credit when you file your ITR.
       </p>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>General case: 2% TDS on cash withdrawal above ₹1 crore/year</li>
-          <li>Stricter thresholds for anyone who hasn't filed ITR for the preceding relevant years: TDS can start from a lower threshold and at a higher rate — banks apply this automatically based on your PAN's filing history flag</li>
+          <li>Stricter thresholds for anyone who hasn&apos;t filed ITR for the preceding relevant years: TDS can start from a lower threshold and at a higher rate — banks apply this automatically based on your PAN&apos;s filing history flag</li>
           <li>This is deducted per account per bank — if you hold accounts across multiple banks, each bank applies the ₹1 crore threshold independently</li>
       </ul>
 
@@ -115,7 +115,7 @@ export default function TDSOnCashWithdrawalEcommerceSection194N194O() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If you sell through Amazon, Flipkart, or any e-commerce platform, the operator deducts this TDS at source on the gross amount paid to you (including the commission/platform fee they later deduct) — so your bank credit and your actual gross sales figure won't match exactly, and that TDS shows up in your Form 26AS/AIS to be claimed while filing your ITR.
+        If you sell through Amazon, Flipkart, or any e-commerce platform, the operator deducts this TDS at source on the gross amount paid to you (including the commission/platform fee they later deduct) — so your bank credit and your actual gross sales figure won&apos;t match exactly, and that TDS shows up in your Form 26AS/AIS to be claimed while filing your ITR.
       </p>
 
 

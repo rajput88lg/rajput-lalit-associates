@@ -56,21 +56,21 @@ export default function NewLabourCodes2026EmployerGuide() {
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>4 Labour Codes 21 November 2025 se effective ho chuke hain, aur Central Rules May 2026 mein notify ho gaye</li>
-          <li>'Wages' ki nayi definition mein basic+DA kam se kam total remuneration ka ~50% hona chahiye — isse PF aur gratuity calculation par asar padta hai</li>
+          <li>&apos;Wages&apos; ki nayi definition mein basic+DA kam se kam total remuneration ka ~50% hona chahiye — isse PF aur gratuity calculation par asar padta hai</li>
           <li>Fixed-Term Employees ko ab sirf 1 saal service ke baad hi gratuity milegi (pehle 5 saal tha)</li>
         </ul>
       </div>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Wages Ki Nayi Definition — '50% Rule'
+        Wages Ki Nayi Definition — &apos;50% Rule&apos;
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Code on Wages ke Section 2(y) ke tahat 'wages' ab = basic pay + dearness allowance + retaining allowance. HRA, conveyance, overtime allowance, employer PF/pension contribution, commission, gratuity, retrenchment compensation, bonus jaise items ispe se exclude hote hain.
+        Code on Wages ke Section 2(y) ke tahat &apos;wages&apos; ab = basic pay + dearness allowance + retaining allowance. HRA, conveyance, overtime allowance, employer PF/pension contribution, commission, gratuity, retrenchment compensation, bonus jaise items ispe se exclude hote hain.
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Lekin ek important proviso hai: agar exclude kiye gaye components ka total, remuneration ke 50% se zyada ho jaaye, to wo extra amount wapas 'wages' mein add ho jaata hai. Practical asar: jo businesses basic salary ko CTC ke 30-40% par rakhte the (jo bahut common practice hai), unhe ab restructure karna padega, kyunki basic+DA ab 50% se kam nahi ho sakta.
+        Lekin ek important proviso hai: agar exclude kiye gaye components ka total, remuneration ke 50% se zyada ho jaaye, to wo extra amount wapas &apos;wages&apos; mein add ho jaata hai. Practical asar: jo businesses basic salary ko CTC ke 30-40% par rakhte the (jo bahut common practice hai), unhe ab restructure karna padega, kyunki basic+DA ab 50% se kam nahi ho sakta.
       </p>
 
       <p className="text-gray-700 leading-8 mb-10">

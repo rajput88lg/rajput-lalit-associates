@@ -55,7 +55,7 @@ export default function GSTTCSEcommerceSellersRules() {
         with GST rules that catch many first-time sellers off guard — GST
         registration is compulsory the moment you sell through a platform,
         regardless of how small your turnover is, and every sale has tax
-        collected at source before you even receive the payment. Here's
+        collected at source before you even receive the payment. Here&apos;s
         exactly how it works and what you need to track.
       </p>
 
@@ -128,7 +128,7 @@ export default function GSTTCSEcommerceSellersRules() {
             </tr>
             <tr>
               <td className="border px-4 py-3">4. TCS reflects in your GSTR-2B</td>
-              <td className="border px-4 py-3">Auto-populated from the platform's GSTR-8</td>
+              <td className="border px-4 py-3">Auto-populated from the platform&apos;s GSTR-8</td>
             </tr>
             <tr>
               <td className="border px-4 py-3">5. You claim the credit</td>
@@ -143,8 +143,8 @@ export default function GSTTCSEcommerceSellersRules() {
           TCS Is Not an Extra Cost — If You Track It
         </h3>
         <p className="text-gray-700 leading-8">
-          The 0.5% deducted by the platform isn't a fee you're paying to
-          the government on top of your GST — it's collected in advance
+          The 0.5% deducted by the platform isn&apos;t a fee you&apos;re paying to
+          the government on top of your GST — it&apos;s collected in advance
           and credited straight back to you against your actual tax bill.
           The only way it becomes a real cost is if you forget to
           reconcile and claim it — which happens more often than sellers
@@ -159,9 +159,9 @@ export default function GSTTCSEcommerceSellersRules() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Section 10(2)(d) specifically excludes anyone supplying goods
-        through an e-commerce operator that's required to collect TCS from
+        through an e-commerce operator that&apos;s required to collect TCS from
         the composition scheme. If your business is currently under
-        composition and you want to start selling on a marketplace, you'll
+        composition and you want to start selling on a marketplace, you&apos;ll
         need to formally opt out and move to regular GST first — you
         cannot do both at once.{" "}
         <Link href="/blog/gst-composition-scheme-eligibility-rates" className={linkClass}>
@@ -178,7 +178,7 @@ export default function GSTTCSEcommerceSellersRules() {
         <li>Match your platform settlement reports against your own sales records</li>
         <li>Check that TCS shown in GSTR-2B matches what the platform actually deducted</li>
         <li>Claim the full eligible TCS credit in GSTR-3B every month, not occasionally</li>
-        <li>Flag and follow up on mismatches with the platform's seller support promptly, before they compound across months</li>
+        <li>Flag and follow up on mismatches with the platform&apos;s seller support promptly, before they compound across months</li>
       </ul>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

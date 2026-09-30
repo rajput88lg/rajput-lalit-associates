@@ -190,7 +190,7 @@ export default function LowerTdsCertificateChecklist() {
         {/* CROSS-LINK to tool #1 */}
         <div className="mt-10 bg-gradient-to-br from-[#001d40] via-[#002b5c] to-[#06477f] text-white rounded-3xl p-7 md:p-10 shadow-2xl print:hidden">
           <h3 className="text-2xl md:text-3xl font-extrabold">
-            Not sure it's worth applying?
+            Not sure it&apos;s worth applying?
           </h3>
           <p className="mt-3 text-blue-100 leading-7">
             Form 128 is worth the effort when the gap between standard TDS

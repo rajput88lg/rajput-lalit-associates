@@ -53,11 +53,11 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
       <p className="text-gray-700 leading-8 mb-6">
         Most small business owners treat bookkeeping as something you do
         once a year, right before filing returns. The problem is that
-        India's compliance system — GST returns, TDS deposits, advance
+        India&apos;s compliance system — GST returns, TDS deposits, advance
         tax — runs on a monthly clock, not an annual one. By the time
         year-end accounting reveals a problem, the window to fix it has
-        usually already closed. Here's why monthly bookkeeping isn't
-        just tidier, it's genuinely necessary.
+        usually already closed. Here&apos;s why monthly bookkeeping isn&apos;t
+        just tidier, it&apos;s genuinely necessary.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -75,15 +75,15 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
           </li>
           <li>
             <strong>Cash flow:</strong> monthly visibility catches problems
-            while there's time to act
+            while there&apos;s time to act
           </li>
           <li>
             <strong>Loan readiness:</strong> lenders want consistent
             monthly records, not year-end reconstruction
           </li>
           <li>
-            <strong>Biggest risk of skipping it:</strong> the "shoebox of
-            receipts in March" problem — missed ITC, notices, surprises
+            <strong>Biggest risk of skipping it:</strong> the &quot;shoebox of
+            receipts in March&quot; problem — missed ITC, notices, surprises
           </li>
         </ul>
       </div>
@@ -97,8 +97,8 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
         specific point in time — reconciling your purchase register
         against GSTR-2B to correctly claim Input Tax Credit, matching
         sales against GSTR-1, and catching supplier mismatches before they
-        become a notice. ITC has strict claim deadlines that can't be
-        fixed after the fact. Trying to reconstruct an entire year's
+        become a notice. ITC has strict claim deadlines that can&apos;t be
+        fixed after the fact. Trying to reconstruct an entire year&apos;s
         transactions at year-end makes accurate, on-time GST compliance
         practically impossible — errors compound instead of getting caught
         early.
@@ -106,7 +106,7 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          It's Also a Legal Requirement — Section 44AA
+          It&apos;s Also a Legal Requirement — Section 44AA
         </h3>
         <p className="text-gray-700 leading-8">
           Specified professionals (legal, medical, engineering,
@@ -118,7 +118,7 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
           years; for non-individual entities like partnership firms, the
           thresholds are lower — income above ₹1,20,000 or turnover above
           ₹10 lakh. Many small businesses cross these thresholds without
-          realising it, making "I'll sort it out at year-end" a compliance
+          realising it, making &quot;I&apos;ll sort it out at year-end&quot; a compliance
           risk, not just an inefficiency.
         </p>
       </div>
@@ -130,12 +130,12 @@ export default function WhySmallBusinessesNeedMonthlyBookkeeping() {
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
         <li><strong>Cash flow visibility:</strong> knowing whether you can cover upcoming payments, before it becomes urgent</li>
         <li><strong>Loan/funding readiness:</strong> banks and NBFCs want consistent, recent financial records — not a rushed reconstruction right before a loan application</li>
-        <li><strong>Informed decisions:</strong> a monthly P&L shows whether you're actually profitable and where costs are drifting, in time to correct course mid-year</li>
+        <li><strong>Informed decisions:</strong> a monthly P&L shows whether you&apos;re actually profitable and where costs are drifting, in time to correct course mid-year</li>
         <li><strong>Fewer notices:</strong> catching GST/TDS mismatches monthly means they get fixed before they trigger department scrutiny</li>
       </ul>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        The "Shoebox in March" Problem
+        The &quot;Shoebox in March&quot; Problem
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">

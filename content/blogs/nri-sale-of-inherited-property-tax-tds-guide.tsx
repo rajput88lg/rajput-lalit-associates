@@ -47,7 +47,7 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Selling a property you've inherited in India comes with a layer of complexity that selling a self-purchased property doesn't — the cost of acquisition isn't what you paid (you likely paid nothing), and as an NRI, the buyer's TDS obligation and your own repatriation limits both need separate attention.
+        Selling a property you&apos;ve inherited in India comes with a layer of complexity that selling a self-purchased property doesn&apos;t — the cost of acquisition isn&apos;t what you paid (you likely paid nothing), and as an NRI, the buyer&apos;s TDS obligation and your own repatriation limits both need separate attention.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -56,7 +56,7 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
         </h3>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Buyer must deduct TDS: 12.5% (plus surcharge/cess) on LTCG, or 30% (plus surcharge/cess) on STCG</li>
-          <li>Cost of acquisition = what the original owner paid (or FMV as on 1 April 2001, if acquired before that) — the previous owner's holding period counts toward yours</li>
+          <li>Cost of acquisition = what the original owner paid (or FMV as on 1 April 2001, if acquired before that) — the previous owner&apos;s holding period counts toward yours</li>
           <li>Apply for a Form 13 lower/nil TDS certificate before the sale to avoid excess deduction</li>
         </ul>
       </div>
@@ -95,7 +95,7 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Since inheritance itself isn't treated as a 'transfer' for capital gains purposes, two special rules apply, and both work in your favour: your holding period includes the time the property was held by the previous owner (so a property bought by your father in 1995 and inherited by you in 2020 is almost certainly long-term, regardless of how recently you inherited it), and your cost of acquisition is what the original owner actually paid for it — or, if it was acquired before 1 April 2001, you can use the property's fair market value as on 1 April 2001 instead, whichever benefits you.
+        Since inheritance itself isn&apos;t treated as a &apos;transfer&apos; for capital gains purposes, two special rules apply, and both work in your favour: your holding period includes the time the property was held by the previous owner (so a property bought by your father in 1995 and inherited by you in 2020 is almost certainly long-term, regardless of how recently you inherited it), and your cost of acquisition is what the original owner actually paid for it — or, if it was acquired before 1 April 2001, you can use the property&apos;s fair market value as on 1 April 2001 instead, whichever benefits you.
       </p>
 
 
@@ -104,7 +104,7 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Section 54 (reinvestment in another residential property) can be available, subject to the standard conditions applicable to any long-term residential property sale — this isn't lost simply because the property was inherited. Additionally, Section 54EC allows exemption by investing the long-term capital gain in specified bonds (NHAI/REC) within 6 months of the sale, capped at ₹50 lakh per financial year, with a 5-year lock-in.
+        Section 54 (reinvestment in another residential property) can be available, subject to the standard conditions applicable to any long-term residential property sale — this isn&apos;t lost simply because the property was inherited. Additionally, Section 54EC allows exemption by investing the long-term capital gain in specified bonds (NHAI/REC) within 6 months of the sale, capped at ₹50 lakh per financial year, with a 5-year lock-in.
       </p>
 
 
@@ -114,10 +114,10 @@ export default function NRISaleOfInheritedPropertyTaxTDSGuide() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          Don't Wait to Claim a Refund Later
+          Don&apos;t Wait to Claim a Refund Later
         </h3>
         <p className="text-gray-700 leading-8">
-          The 12.5%/30% TDS rates apply on the full sale value in many practical scenarios unless a lower/nil deduction certificate is obtained in advance — not just on your actual gain. If your genuine tax liability (after cost of acquisition and any exemption) is meaningfully lower than what straight TDS would deduct, apply for a Form 13 lower/nil TDS certificate from the Assessing Officer before the sale closes. Without it, you'd otherwise have to wait until you file your ITR to claim the excess back as a refund — tying up your money for months.
+          The 12.5%/30% TDS rates apply on the full sale value in many practical scenarios unless a lower/nil deduction certificate is obtained in advance — not just on your actual gain. If your genuine tax liability (after cost of acquisition and any exemption) is meaningfully lower than what straight TDS would deduct, apply for a Form 13 lower/nil TDS certificate from the Assessing Officer before the sale closes. Without it, you&apos;d otherwise have to wait until you file your ITR to claim the excess back as a refund — tying up your money for months.
         </p>
       </div>
 

@@ -314,7 +314,7 @@ export default function GSTRegistrationCancellationIndia() {
 
       <p className="text-gray-700 leading-8 mb-12">
         Timely submission of an appropriate reply along with supporting
-        documents is important to safeguard the taxpayer's rights and ensure
+        documents is important to safeguard the taxpayer&apos;s rights and ensure
         proper consideration of the facts of the case.
       </p>
 

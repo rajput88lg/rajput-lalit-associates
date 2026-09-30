@@ -73,6 +73,7 @@ export default function Page() {
         <FeeCards
           heading="ITR Filing Fees"
           intro="Clear starting fees — pick the one that matches your income."
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           items={ITR_FEES.map(({ href, ...rest }) => ({ ...rest, href: undefined }))}
         />
 

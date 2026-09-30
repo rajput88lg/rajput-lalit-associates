@@ -47,7 +47,7 @@ export default function AccrualVsCashAccountingSmallBusiness() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        This sounds like a technical bookkeeping choice, but it actually changes how accurate your profit figure is at any given moment — which matters the moment you're trying to get a loan, bring in an investor, or simply understand whether your business is actually making money.
+        This sounds like a technical bookkeeping choice, but it actually changes how accurate your profit figure is at any given moment — which matters the moment you&apos;re trying to get a loan, bring in an investor, or simply understand whether your business is actually making money.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -66,7 +66,7 @@ export default function AccrualVsCashAccountingSmallBusiness() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Under cash accounting, you record a sale only when payment is received, and an expense only when it's actually paid. It's simple and matches your bank balance closely — but it can paint a misleading picture. A business that delivered ₹10 lakh of work in March but gets paid in May shows zero revenue for that work in March's books, even though the business genuinely earned it that month.
+        Under cash accounting, you record a sale only when payment is received, and an expense only when it&apos;s actually paid. It&apos;s simple and matches your bank balance closely — but it can paint a misleading picture. A business that delivered ₹10 lakh of work in March but gets paid in May shows zero revenue for that work in March&apos;s books, even though the business genuinely earned it that month.
       </p>
 
 
@@ -80,15 +80,15 @@ export default function AccrualVsCashAccountingSmallBusiness() {
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Why This Isn't Fully Your Choice for GST
+        Why This Isn&apos;t Fully Your Choice for GST
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          GST Follows 'Time of Supply', Not Your Bank Account
+          GST Follows &apos;Time of Supply&apos;, Not Your Bank Account
         </h3>
         <p className="text-gray-700 leading-8">
-          Regardless of which accounting method your internal books use, your GST liability is triggered by the 'time of supply' rules — broadly, the invoice date (or the earliest of invoice/payment/completion of service, depending on the transaction type) — not by when you actually receive payment. A business that keeps cash-basis books but doesn't separately track invoice dates for GST purposes is one of the most common sources of GST-vs-books mismatches we see at reconciliation time.
+          Regardless of which accounting method your internal books use, your GST liability is triggered by the &apos;time of supply&apos; rules — broadly, the invoice date (or the earliest of invoice/payment/completion of service, depending on the transaction type) — not by when you actually receive payment. A business that keeps cash-basis books but doesn&apos;t separately track invoice dates for GST purposes is one of the most common sources of GST-vs-books mismatches we see at reconciliation time.
         </p>
       </div>
 
@@ -98,7 +98,7 @@ export default function AccrualVsCashAccountingSmallBusiness() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Section 145 of the Income-tax Act allows either the cash or mercantile (accrual) system, as long as it's followed consistently year to year — you can't switch back and forth to manage your tax outcome. Most businesses beyond a very small scale use accrual accounting paired with double-entry bookkeeping, since it's also what's expected for financial statements shown to banks and investors.
+        Section 145 of the Income-tax Act allows either the cash or mercantile (accrual) system, as long as it&apos;s followed consistently year to year — you can&apos;t switch back and forth to manage your tax outcome. Most businesses beyond a very small scale use accrual accounting paired with double-entry bookkeeping, since it&apos;s also what&apos;s expected for financial statements shown to banks and investors.
       </p>
 
 
@@ -107,7 +107,7 @@ export default function AccrualVsCashAccountingSmallBusiness() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If you're still on cash-basis, informal bookkeeping and you're planning to apply for a loan, bring in a partner, or simply want to know your real monthly profitability, moving to accrual-based, proper double-entry bookkeeping is one of the highest-value changes you can make — well before you're forced into it by a bank's documentation requirements.
+        If you&apos;re still on cash-basis, informal bookkeeping and you&apos;re planning to apply for a loan, bring in a partner, or simply want to know your real monthly profitability, moving to accrual-based, proper double-entry bookkeeping is one of the highest-value changes you can make — well before you&apos;re forced into it by a bank&apos;s documentation requirements.
       </p>
 
 

@@ -57,7 +57,7 @@ export default function GSTOnRealEstateUnderConstructionProperty() {
         <ul className="list-disc pl-6 text-gray-700 leading-8">
           <li>Affordable housing (under construction): 1% GST, no ITC to builder</li>
           <li>Other residential flats (under construction): 5% GST, no ITC to builder</li>
-          <li>Ready-to-move-in property with Occupancy Certificate: 0% GST — it isn't treated as a 'supply' at all</li>
+          <li>Ready-to-move-in property with Occupancy Certificate: 0% GST — it isn&apos;t treated as a &apos;supply&apos; at all</li>
         </ul>
       </div>
 
@@ -101,7 +101,7 @@ export default function GSTOnRealEstateUnderConstructionProperty() {
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        What Qualifies as 'Affordable Housing'
+        What Qualifies as &apos;Affordable Housing&apos;
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
@@ -114,12 +114,12 @@ export default function GSTOnRealEstateUnderConstructionProperty() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        This surprises a lot of buyers: it's not a discount or exemption — a completed property with an Occupancy Certificate isn't legally treated as a 'supply of construction service' at all under GST. You're buying an already-existing immovable asset, which sits outside GST's scope entirely (stamp duty and registration charges still apply separately, under state law, regardless of construction status).
+        This surprises a lot of buyers: it&apos;s not a discount or exemption — a completed property with an Occupancy Certificate isn&apos;t legally treated as a &apos;supply of construction service&apos; at all under GST. You&apos;re buying an already-existing immovable asset, which sits outside GST&apos;s scope entirely (stamp duty and registration charges still apply separately, under state law, regardless of construction status).
       </p>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Why Builders Can't Claim ITC on Residential Projects
+        Why Builders Can&apos;t Claim ITC on Residential Projects
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -133,7 +133,7 @@ export default function GSTOnRealEstateUnderConstructionProperty() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        If you're a builder, developer, or buyer trying to work out the exact GST implication on a specific property or project structure, this is worth a proper review rather than assuming a standard rate applies. Rajput Lalit &amp; Associates advises on GST treatment for real estate transactions.{" "}<Link href="/#appointment" className={linkClass}>Book a free consultation</Link>.
+        If you&apos;re a builder, developer, or buyer trying to work out the exact GST implication on a specific property or project structure, this is worth a proper review rather than assuming a standard rate applies. Rajput Lalit &amp; Associates advises on GST treatment for real estate transactions.{" "}<Link href="/#appointment" className={linkClass}>Book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

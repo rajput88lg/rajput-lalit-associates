@@ -83,7 +83,7 @@ export default function AgeCalculatorTool() {
                 value={`${result.years}y ${result.months}m ${result.days}d`}
                 description={
                   <>
-                    That's <strong>{result.totalDays.toLocaleString("en-US")} days</strong> old —
+                    That&apos;s <strong>{result.totalDays.toLocaleString("en-US")} days</strong> old —
                     your next birthday is in{" "}
                     <strong>{result.nextBirthdayInDays} day{result.nextBirthdayInDays === 1 ? "" : "s"}</strong>.
                   </>

@@ -54,7 +54,7 @@ export default function CapitalGainsTaxSharesMutualFundsSTCGLTCG() {
         Selling shares or mutual fund units triggers capital gains tax, and
         the rate you pay depends heavily on how long you held the
         investment and what kind of fund it was — mix these up and you
-        either overpay or under-report without realising it. Here's how
+        either overpay or under-report without realising it. Here&apos;s how
         STCG and LTCG actually work for equity and mutual funds, in plain
         terms.
       </p>
@@ -149,10 +149,10 @@ export default function CapitalGainsTaxSharesMutualFundsSTCGLTCG() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Debt mutual funds don't get the concessional STCG/LTCG treatment at
+        Debt mutual funds don&apos;t get the concessional STCG/LTCG treatment at
         all. For units purchased on or after 1 April 2023, gains — no
         matter how long you held the units — are added to your total
-        income and taxed at your regular slab rate. There's no separate
+        income and taxed at your regular slab rate. There&apos;s no separate
         long-term rate and no indexation benefit for these units, which
         makes debt funds a meaningfully different tax proposition from
         equity funds.

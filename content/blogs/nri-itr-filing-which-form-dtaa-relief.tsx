@@ -47,7 +47,7 @@ export default function NRIITRFilingWhichFormDTAARelief() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        A lot of NRIs assume they don't need to file an Indian ITR at all if they have no Indian income, or assume the opposite — that any Indian income at all triggers mandatory filing. Neither assumption is quite right; it depends on specific thresholds and trigger conditions.
+        A lot of NRIs assume they don&apos;t need to file an Indian ITR at all if they have no Indian income, or assume the opposite — that any Indian income at all triggers mandatory filing. Neither assumption is quite right; it depends on specific thresholds and trigger conditions.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -96,13 +96,13 @@ export default function NRIITRFilingWhichFormDTAARelief() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If you're taxed on the same income both in India and your country of residence, India's Double Taxation Avoidance Agreements (DTAA) with most countries let you claim relief — either through the exemption method or the credit (tax offset) method, depending on the specific treaty and income type. To actually claim this relief in your ITR:
+        If you&apos;re taxed on the same income both in India and your country of residence, India&apos;s Double Taxation Avoidance Agreements (DTAA) with most countries let you claim relief — either through the exemption method or the credit (tax offset) method, depending on the specific treaty and income type. To actually claim this relief in your ITR:
       </p>
 
       <ul className="list-disc pl-6 text-gray-700 leading-8 mb-10">
           <li>Obtain a Tax Residency Certificate (TRC) from the tax authority of your country of residence, confirming your resident status there</li>
-          <li>File Form 10F online (linking your foreign TIN/tax identification details) if the TRC doesn't already contain all the details Indian tax authorities require</li>
-          <li>Report the specific treaty article being relied upon in your ITR's schedule for tax relief</li>
+          <li>File Form 10F online (linking your foreign TIN/tax identification details) if the TRC doesn&apos;t already contain all the details Indian tax authorities require</li>
+          <li>Report the specific treaty article being relied upon in your ITR&apos;s schedule for tax relief</li>
       </ul>
 
 
@@ -115,13 +115,13 @@ export default function NRIITRFilingWhichFormDTAARelief() {
           DTAA Relief Only Matters Once Status Is Settled
         </h3>
         <p className="text-gray-700 leading-8">
-          All of this assumes you've correctly determined your residential status for the year — resident, non-resident, or RNOR (Resident but Not Ordinarily Resident) — since your Indian tax liability and DTAA eligibility both hinge on this. If you're unsure, use our residential status calculator before assuming NRI treatment automatically applies.
+          All of this assumes you&apos;ve correctly determined your residential status for the year — resident, non-resident, or RNOR (Resident but Not Ordinarily Resident) — since your Indian tax liability and DTAA eligibility both hinge on this. If you&apos;re unsure, use our residential status calculator before assuming NRI treatment automatically applies.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        NRI tax filing has more moving parts than a resident's return — the wrong ITR form alone can trigger a defective-return notice. Rajput Lalit &amp; Associates files ITRs for NRIs across the US, UK, Gulf countries, and elsewhere. Check your status with our{" "}<Link href="/nri-residential-status-calculator" className={linkClass}>NRI Residential Status Calculator</Link>, or see our{" "}<Link href="/nri-itr-filing-requirement-checker" className={linkClass}>NRI ITR Filing Requirement Checker</Link>.
+        NRI tax filing has more moving parts than a resident&apos;s return — the wrong ITR form alone can trigger a defective-return notice. Rajput Lalit &amp; Associates files ITRs for NRIs across the US, UK, Gulf countries, and elsewhere. Check your status with our{" "}<Link href="/nri-residential-status-calculator" className={linkClass}>NRI Residential Status Calculator</Link>, or see our{" "}<Link href="/nri-itr-filing-requirement-checker" className={linkClass}>NRI ITR Filing Requirement Checker</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

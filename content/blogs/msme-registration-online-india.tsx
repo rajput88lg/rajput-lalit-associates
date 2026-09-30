@@ -434,7 +434,7 @@ export default function MSMERegistrationOnlineIndia() {
         Many banks and financial institutions recognize Udyam Registration as
         an important business document while evaluating loan applications.
         Registration may improve business credibility and facilitate access to
-        various loan schemes, subject to the lender's eligibility criteria and
+        various loan schemes, subject to the lender&apos;s eligibility criteria and
         approval process.
       </p>
 
@@ -737,7 +737,7 @@ export default function MSMERegistrationOnlineIndia() {
 
           <p className="text-gray-700 leading-8">
             Processing time depends on successful verification of the submitted
-            information and the government portal's processing timeline.
+            information and the government portal&apos;s processing timeline.
           </p>
         </div>
 

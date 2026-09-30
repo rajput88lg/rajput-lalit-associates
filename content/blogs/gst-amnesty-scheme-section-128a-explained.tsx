@@ -136,7 +136,7 @@ export default function GSTAmnestySchemeSection128AExplained() {
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Section 128A jaisi amnesty schemes samay-samay par aati rehti hain — isliye purane GST demands ko 'kabhi na kabhi waiver mil jaayega' soch kar ignore karna sahi strategy nahi hai. Hamari{" "}<Link href="/gst-notice-reply" className={linkClass}>GST Notice Reply</Link>{" "}service aapke pending demands ko review karke best available option batati hai, chahe wo koi current relief scheme ho ya normal DRC-06 reply.{" "}<Link href="/blog/gst-drc-01-demand-notice-reply-guide" className={linkClass}>GST DRC-01 Notice Reply</Link>{" "}guide bhi zaroor padhein.
+        Section 128A jaisi amnesty schemes samay-samay par aati rehti hain — isliye purane GST demands ko &apos;kabhi na kabhi waiver mil jaayega&apos; soch kar ignore karna sahi strategy nahi hai. Hamari{" "}<Link href="/gst-notice-reply" className={linkClass}>GST Notice Reply</Link>{" "}service aapke pending demands ko review karke best available option batati hai, chahe wo koi current relief scheme ho ya normal DRC-06 reply.{" "}<Link href="/blog/gst-drc-01-demand-notice-reply-guide" className={linkClass}>GST DRC-01 Notice Reply</Link>{" "}guide bhi zaroor padhein.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

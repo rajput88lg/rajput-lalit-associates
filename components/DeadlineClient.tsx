@@ -13,6 +13,7 @@ import { trackWhatsAppClick } from "@/lib/gaEvents";
 /** "12 din baaki" / "Aaj" / "Beet gaya" — computed in the browser. */
 export function DaysLeftBadge({ date }: { date: string }) {
   const [days, setDays] = useState<number | null>(null);
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setDays(daysUntil(date)), [date]);
   if (days === null) return null;
 
@@ -57,6 +58,7 @@ export function NextDeadlineCard() {
   useEffect(() => {
     const upcoming = upcomingDeadlines();
     if (upcoming.length > 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setNext(upcoming[0]);
       setDays(daysUntil(upcoming[0].date));
     }

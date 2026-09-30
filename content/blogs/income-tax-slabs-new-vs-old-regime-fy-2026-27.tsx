@@ -47,7 +47,7 @@ export default function IncomeTaxSlabsNewVsOldRegimeFY202627() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Since the new tax regime became the default, a lot of taxpayers assume it's automatically the better deal simply because it's the default. That's not always true — it depends heavily on how many deductions you actually claim.
+        Since the new tax regime became the default, a lot of taxpayers assume it&apos;s automatically the better deal simply because it&apos;s the default. That&apos;s not always true — it depends heavily on how many deductions you actually claim.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -146,7 +146,7 @@ export default function IncomeTaxSlabsNewVsOldRegimeFY202627() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        New regime: rebate of ₹60,000, effectively making income up to ₹12 lakh tax-free (note — this is a rebate on tax payable, not a slab change; income just above ₹12 lakh loses the rebate and gets taxed from the applicable slab, so there's a steep step at that threshold). Old regime: rebate of ₹12,500, making income up to ₹5 lakh tax-free. Add the 4% health and education cess on top of the computed tax in both regimes.
+        New regime: rebate of ₹60,000, effectively making income up to ₹12 lakh tax-free (note — this is a rebate on tax payable, not a slab change; income just above ₹12 lakh loses the rebate and gets taxed from the applicable slab, so there&apos;s a steep step at that threshold). Old regime: rebate of ₹12,500, making income up to ₹5 lakh tax-free. Add the 4% health and education cess on top of the computed tax in both regimes.
       </p>
 
 
@@ -155,12 +155,12 @@ export default function IncomeTaxSlabsNewVsOldRegimeFY202627() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        The new regime disallows almost all deductions and exemptions — no Section 80C, no HRA exemption, no home loan interest deduction on a self-occupied property, and so on (a short list of exceptions remains, like the standard deduction and employer's NPS contribution under 80CCD(2)). The old regime keeps all of those available, at the cost of higher slab rates. As a rough rule of thumb: if your total genuine deductions (80C, 80D, HRA, home loan interest, etc.) add up to a large figure relative to your income, the old regime often still wins. If you claim few or no deductions, the new regime's lower rates and bigger rebate usually come out ahead.
+        The new regime disallows almost all deductions and exemptions — no Section 80C, no HRA exemption, no home loan interest deduction on a self-occupied property, and so on (a short list of exceptions remains, like the standard deduction and employer&apos;s NPS contribution under 80CCD(2)). The old regime keeps all of those available, at the cost of higher slab rates. As a rough rule of thumb: if your total genuine deductions (80C, 80D, HRA, home loan interest, etc.) add up to a large figure relative to your income, the old regime often still wins. If you claim few or no deductions, the new regime&apos;s lower rates and bigger rebate usually come out ahead.
       </p>
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Don't Guess — Run the Actual Numbers
+        Don&apos;t Guess — Run the Actual Numbers
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -168,13 +168,13 @@ export default function IncomeTaxSlabsNewVsOldRegimeFY202627() {
           A ₹2-3 Lakh Deduction Claimant Should Compute Both
         </h3>
         <p className="text-gray-700 leading-8">
-          This isn't a decision to make on a rule of thumb alone if your deductions are in the ₹2-3 lakh range — that's exactly the zone where the answer can flip either way depending on your precise income level. Compute your actual tax liability under both regimes before deciding, or have your CA do it once at the start of the year rather than after TDS has already been deducted under the wrong assumption.
+          This isn&apos;t a decision to make on a rule of thumb alone if your deductions are in the ₹2-3 lakh range — that&apos;s exactly the zone where the answer can flip either way depending on your precise income level. Compute your actual tax liability under both regimes before deciding, or have your CA do it once at the start of the year rather than after TDS has already been deducted under the wrong assumption.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Choosing the wrong regime doesn't just cost you money — under the new default rule, salaried employees now need to actively communicate their regime choice to their employer for TDS purposes, or the new regime applies automatically. Rajput Lalit &amp; Associates helps clients compute the actual comparison and file under the regime that genuinely saves the most. See our{" "}<Link href="/blog/deductions-80c-to-80u-old-regime-guide" className={linkClass}>80C to 80U deductions guide</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
+        Choosing the wrong regime doesn&apos;t just cost you money — under the new default rule, salaried employees now need to actively communicate their regime choice to their employer for TDS purposes, or the new regime applies automatically. Rajput Lalit &amp; Associates helps clients compute the actual comparison and file under the regime that genuinely saves the most. See our{" "}<Link href="/blog/deductions-80c-to-80u-old-regime-guide" className={linkClass}>80C to 80U deductions guide</Link>{" "}or{" "}<Link href="/#appointment" className={linkClass}>book a free consultation</Link>.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

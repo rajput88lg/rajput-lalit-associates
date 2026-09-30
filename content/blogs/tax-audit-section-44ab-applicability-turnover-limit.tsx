@@ -47,7 +47,7 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        Not every business or professional needs a tax audit — and the threshold isn't a single flat number the way many people assume. It depends on whether you're running a business or a profession, and, for businesses, on how much of your turnover moves through digital/banking channels rather than cash.
+        Not every business or professional needs a tax audit — and the threshold isn&apos;t a single flat number the way many people assume. It depends on whether you&apos;re running a business or a profession, and, for businesses, on how much of your turnover moves through digital/banking channels rather than cash.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6 mb-10">
@@ -95,7 +95,7 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If your business's cash receipts and cash payments each stay within 5% of the total (i.e., 95%+ of transactions happen through banking channels — cheque, bank transfer, UPI, etc.), the audit threshold jumps from ₹1 crore to ₹10 crore. This was designed to reward genuinely digital, low-cash businesses with a much higher audit-free turnover ceiling.
+        If your business&apos;s cash receipts and cash payments each stay within 5% of the total (i.e., 95%+ of transactions happen through banking channels — cheque, bank transfer, UPI, etc.), the audit threshold jumps from ₹1 crore to ₹10 crore. This was designed to reward genuinely digital, low-cash businesses with a much higher audit-free turnover ceiling.
       </p>
 
 
@@ -104,7 +104,7 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        If you're declaring income under presumptive taxation (Section 44AD for eligible businesses, or Section 44ADA for specified professionals) at or above the prescribed percentage of turnover/receipts, tax audit generally doesn't apply even if turnover exceeds the limits above — audit is typically triggered when you declare income below the presumptive rate and your total income exceeds the basic exemption limit.
+        If you&apos;re declaring income under presumptive taxation (Section 44AD for eligible businesses, or Section 44ADA for specified professionals) at or above the prescribed percentage of turnover/receipts, tax audit generally doesn&apos;t apply even if turnover exceeds the limits above — audit is typically triggered when you declare income below the presumptive rate and your total income exceeds the basic exemption limit.
       </p>
 
 
@@ -120,7 +120,7 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
 
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        Penalty for Non-Compliance — Now a 'Fee', Not a Penalty
+        Penalty for Non-Compliance — Now a &apos;Fee&apos;, Not a Penalty
       </h2>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -128,13 +128,13 @@ export default function TaxAuditSection44ABApplicabilityTurnoverLimit() {
           Lower of 0.5% of Turnover or ₹1,50,000
         </h3>
         <p className="text-gray-700 leading-8">
-          Budget 2026 reframed this as a fee rather than a penalty, specifically to reduce litigation around it — but the exposure is real: the lower of 0.5% of total sales/turnover/gross receipts, or ₹1,50,000. It can be waived where reasonable cause for the delay is shown, but that's a discretionary relief, not an automatic one — don't treat the deadline casually on the assumption it'll be waived.
+          Budget 2026 reframed this as a fee rather than a penalty, specifically to reduce litigation around it — but the exposure is real: the lower of 0.5% of total sales/turnover/gross receipts, or ₹1,50,000. It can be waived where reasonable cause for the delay is shown, but that&apos;s a discretionary relief, not an automatic one — don&apos;t treat the deadline casually on the assumption it&apos;ll be waived.
         </p>
       </div>
 
 
       <p className="text-gray-700 leading-8 mb-10">
-        Tax audit isn't just a compliance checkbox — the reconciliation work it forces (matching books, GST returns, and TDS records) is exactly what prevents notices later. Rajput Lalit &amp; Associates handles tax audit end-to-end alongside{" "}<Link href="/income-tax-return-filing" className={linkClass}>Income Tax Return Filing</Link>. See also our{" "}<Link href="/blog/tax-for-freelancers-consultants-section-44ada-presumptive-taxation" className={linkClass}>44ADA presumptive taxation guide</Link>{" "}if you're deciding between presumptive taxation and full books.
+        Tax audit isn&apos;t just a compliance checkbox — the reconciliation work it forces (matching books, GST returns, and TDS records) is exactly what prevents notices later. Rajput Lalit &amp; Associates handles tax audit end-to-end alongside{" "}<Link href="/income-tax-return-filing" className={linkClass}>Income Tax Return Filing</Link>. See also our{" "}<Link href="/blog/tax-for-freelancers-consultants-section-44ada-presumptive-taxation" className={linkClass}>44ADA presumptive taxation guide</Link>{" "}if you&apos;re deciding between presumptive taxation and full books.
       </p>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

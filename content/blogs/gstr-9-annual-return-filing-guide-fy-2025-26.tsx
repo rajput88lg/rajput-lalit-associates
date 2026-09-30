@@ -137,7 +137,7 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
       </div>
 
       <p className="text-gray-700 leading-8 mb-10">
-        "Aggregate turnover" here is your PAN-level turnover across all GST
+        &quot;Aggregate turnover&quot; here is your PAN-level turnover across all GST
         registrations, all-India — not just the turnover under one GSTIN. A
         business with a smaller Ambala registration but a bigger combined
         PAN-level turnover across states can still cross these thresholds.
@@ -148,7 +148,7 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-6">
-        A few categories of registered persons don't file GSTR-9 at all, no
+        A few categories of registered persons don&apos;t file GSTR-9 at all, no
         matter how large their turnover is — because their compliance track
         runs through a different return entirely:
       </p>
@@ -181,7 +181,7 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          Myth: "GSTR-9C needs a CA's certificate"
+          Myth: &quot;GSTR-9C needs a CA&apos;s certificate&quot;
         </h3>
         <p className="text-gray-700 leading-8">
           Not since FY 2020-21. GSTR-9C is now <strong>self-certified by
@@ -214,7 +214,7 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">Example</h3>
         <p className="text-gray-700 leading-8">
           If your GSTR-9 (due 31 December 2026) is actually filed on 20
-          January 2027, that's 20 days of delay. Late fee = 20 × ₹200 =
+          January 2027, that&apos;s 20 days of delay. Late fee = 20 × ₹200 =
           ₹4,000, subject to the 0.25%-of-turnover cap on each side (CGST and
           SGST).
         </p>
@@ -239,7 +239,7 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
         shuts. If you (or a business you advise) still has an unfiled GSTR-9
         from FY 2022-23, this is genuinely the last opportunity to file it,
         on the very same date the new FY 2025-26 return falls due. If this
-        applies to you, treat it as more urgent than the current year's
+        applies to you, treat it as more urgent than the current year&apos;s
         filing and get it done first.
       </p>
 
@@ -248,12 +248,12 @@ export default function GSTR9AnnualReturnFilingGuideFY202526() {
       </h2>
 
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
-        <li>Match your books' turnover against the total of all GSTR-1s and GSTR-3Bs filed for the year</li>
+        <li>Match your books&apos; turnover against the total of all GSTR-1s and GSTR-3Bs filed for the year</li>
         <li>Reconcile input tax credit claimed in GSTR-3B against GSTR-2B / IMS-accepted invoices</li>
-        <li>Capture any amendments made between April and November 2026 relating to FY 2025-26 supplies in the annual return's amendment tables</li>
+        <li>Capture any amendments made between April and November 2026 relating to FY 2025-26 supplies in the annual return&apos;s amendment tables</li>
         <li>Check HSN-wise summary requirements apply correctly at your turnover level</li>
         <li>If turnover crossed ₹5 crore, start the GSTR-9C reconciliation early — it takes longer than most people expect</li>
-        <li>Don't wait for late December — a rushed filing close to the deadline is where most reconciliation errors happen</li>
+        <li>Don&apos;t wait for late December — a rushed filing close to the deadline is where most reconciliation errors happen</li>
       </ul>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">

@@ -27,7 +27,7 @@ export default function BlogPage() {
             GST, Tax &<br /> Business Guides
           </h1>
           <p className="text-xl text-blue-100 mt-8 max-w-3xl mx-auto leading-9">
-            India's trusted knowledge hub for GST Registration, Income Tax,
+            India&apos;s trusted knowledge hub for GST Registration, Income Tax,
             Accounting, MSME Registration, Company Registration and Business
             Compliance.
           </p>

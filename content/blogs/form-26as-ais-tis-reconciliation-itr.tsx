@@ -53,9 +53,9 @@ export default function Form26ASAISTISReconciliationITR() {
       <p className="text-gray-700 leading-8 mb-6">
         Before you file your ITR, the income tax department already has
         three separate views of your financial year — and if your return
-        doesn't line up with what they can see, that's exactly what draws
+        doesn&apos;t line up with what they can see, that&apos;s exactly what draws
         a mismatch notice later. Reconciling Form 26AS, AIS and TIS before
-        filing isn't optional paperwork; it's the single most effective
+        filing isn&apos;t optional paperwork; it&apos;s the single most effective
         thing you can do to avoid a notice after the fact.
       </p>
 
@@ -78,7 +78,7 @@ export default function Form26ASAISTISReconciliationITR() {
           </li>
           <li>
             <strong>Disagree with an entry?</strong> submit feedback on
-            the portal — it doesn't delete the record, but records your
+            the portal — it doesn&apos;t delete the record, but records your
             position
           </li>
           <li>
@@ -105,7 +105,7 @@ export default function Form26ASAISTISReconciliationITR() {
             <tr>
               <td className="border px-4 py-3 font-semibold">Form 26AS</td>
               <td className="border px-4 py-3">TDS, TCS, advance tax, self-assessment tax paid, refunds</td>
-              <td className="border px-4 py-3">Verifying tax credit claims match what's actually deposited against your PAN</td>
+              <td className="border px-4 py-3">Verifying tax credit claims match what&apos;s actually deposited against your PAN</td>
             </tr>
             <tr>
               <td className="border px-4 py-3 font-semibold">AIS</td>
@@ -142,7 +142,7 @@ export default function Form26ASAISTISReconciliationITR() {
         </li>
         <li>
           For anything correct but not yet reported in your income
-          computation, add it to your return — don't rely on TIS pre-fill
+          computation, add it to your return — don&apos;t rely on TIS pre-fill
           alone to catch everything
         </li>
         <li>Re-check TIS after submitting feedback to confirm it updated before you file</li>
@@ -150,16 +150,16 @@ export default function Form26ASAISTISReconciliationITR() {
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
         <h3 className="text-xl font-bold text-[#002b5c] mb-3">
-          Feedback Doesn't Erase the Record — It Just Records Your Position
+          Feedback Doesn&apos;t Erase the Record — It Just Records Your Position
         </h3>
         <p className="text-gray-700 leading-8">
           A common misunderstanding: submitting AIS feedback disputing an
-          entry doesn't delete it from the department's data — the
-          reporting entity's original submission stays on file. What
+          entry doesn&apos;t delete it from the department&apos;s data — the
+          reporting entity&apos;s original submission stays on file. What
           feedback does is put your explanation on record, which matters
           if the entry is ever questioned later. Keep the underlying proof
           (bank statements, broker contract notes, sale deeds) for
-          anything you dispute, in case it's asked for.
+          anything you dispute, in case it&apos;s asked for.
         </p>
       </div>
 
@@ -169,7 +169,7 @@ export default function Form26ASAISTISReconciliationITR() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Rajput Lalit &amp; Associates reconciles Form 26AS, AIS and TIS
-        against actual income before filing every client's return, to
+        against actual income before filing every client&apos;s return, to
         catch mismatches before the department does.{" "}
         <Link href="/#appointment" className={linkClass}>
           Book a free consultation
@@ -196,7 +196,7 @@ export default function Form26ASAISTISReconciliationITR() {
 
       <p className="text-sm text-gray-500 leading-6">
         Disclaimer: This article is for general information based on the
-        income tax e-filing portal's current AIS/TIS functionality and
+        income tax e-filing portal&apos;s current AIS/TIS functionality and
         Form 26AS as of September 2026. Portal features and data
         categories are updated periodically — please verify the current
         functionality on the portal or consult a professional before

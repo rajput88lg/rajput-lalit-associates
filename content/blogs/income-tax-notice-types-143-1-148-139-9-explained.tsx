@@ -51,11 +51,11 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
       />
 
       <p className="text-gray-700 leading-8 mb-6">
-        An income tax notice can sound alarming, but most of them aren't —
+        An income tax notice can sound alarming, but most of them aren&apos;t —
         many are routine, automated communications rather than signs of
-        wrongdoing. The trouble is that people often don't know which
-        notice they've received, how urgently they need to act, or what
-        the consequences of ignoring it actually are. Here's a plain-language
+        wrongdoing. The trouble is that people often don&apos;t know which
+        notice they&apos;ve received, how urgently they need to act, or what
+        the consequences of ignoring it actually are. Here&apos;s a plain-language
         breakdown of the three notices that reach the most taxpayers —
         143(1), 139(9), and 148 — plus a quick-reference table for the
         others you might come across.
@@ -83,7 +83,7 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
             normally, 5 yrs 3 months if escaped income ≥ ₹50 lakh
           </li>
           <li>
-            <strong>Respond, don't ignore</strong> — silence usually makes
+            <strong>Respond, don&apos;t ignore</strong> — silence usually makes
             the outcome worse, not better
           </li>
         </ul>
@@ -97,7 +97,7 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
         This is the most common communication every filer gets — an
         automated intimation from the Centralised Processing Centre (CPC)
         after your return is processed, comparing what you filed against
-        the department's own records (Form 26AS, AIS, TDS statements). It
+        the department&apos;s own records (Form 26AS, AIS, TDS statements). It
         shows one of three outcomes: no demand and no refund (your return
         is accepted as filed), a demand determined (you owe more tax), or
         a refund determined. It must be issued within{" "}
@@ -136,7 +136,7 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
         the Assessing Officer has reason to believe some of your income was
         never assessed to tax, often triggered by information in your AIS
         (undisclosed interest, capital gains, dividends, high-value
-        transactions) that doesn't match what you originally filed.
+        transactions) that doesn&apos;t match what you originally filed.
       </p>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-xl p-6 mb-10">
@@ -150,7 +150,7 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
           relevant assessment year. This extends to{" "}
           <strong>5 years and 3 months</strong> only where the officer has
           evidence that the escaped income is ₹50 lakh or more. This is a
-          significant cut from the earlier regime's up-to-10-year window
+          significant cut from the earlier regime&apos;s up-to-10-year window
           for high-value cases — but a lot of older articles online still
           quote that outdated 10-year figure, so always check the current
           limit against the specific notice date.
@@ -206,7 +206,7 @@ export default function IncomeTaxNoticeTypes143_1_148_139_9Explained() {
       </h2>
 
       <p className="text-gray-700 leading-8 mb-10">
-        Almost every notice today is handled through the e-filing portal's{" "}
+        Almost every notice today is handled through the e-filing portal&apos;s{" "}
         <strong>e-Proceedings</strong> facility (Dashboard → Pending
         Actions → e-Proceedings), where you can view the notice, upload
         your explanation and supporting documents, and track the response —

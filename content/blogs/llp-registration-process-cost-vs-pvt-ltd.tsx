@@ -54,7 +54,7 @@ export default function LLPRegistrationProcessCostVsPvtLtd() {
         An LLP (Limited Liability Partnership) is a popular middle ground
         for professionals and small businesses — it gives partners limited
         liability protection like a company, but with simpler compliance
-        than a Private Limited Company. Here's the registration process,
+        than a Private Limited Company. Here&apos;s the registration process,
         realistic cost, and how it actually compares to a Pvt Ltd company
         once you look past the headline fee difference.
       </p>
@@ -82,7 +82,7 @@ export default function LLPRegistrationProcessCostVsPvtLtd() {
           </li>
           <li>
             <strong>Tax rate:</strong> flat 30% — no concessional rate like
-            a Pvt Ltd company's 22%
+            a Pvt Ltd company&apos;s 22%
           </li>
           <li>
             <strong>Annual filing:</strong> Form 11 by 30 May, Form 8 by 30
@@ -153,7 +153,7 @@ export default function LLPRegistrationProcessCostVsPvtLtd() {
           loses on taxation and fundraising:
         </p>
         <ul className="list-disc pl-6 text-gray-700 leading-8">
-          <li><strong>Tax rate:</strong> LLP flat 30% (34.944% effective above ₹1 crore income with surcharge+cess) vs Pvt Ltd's 22% concessional rate (~25.17% effective) under Section 115BAA</li>
+          <li><strong>Tax rate:</strong> LLP flat 30% (34.944% effective above ₹1 crore income with surcharge+cess) vs Pvt Ltd&apos;s 22% concessional rate (~25.17% effective) under Section 115BAA</li>
           <li><strong>Audit:</strong> LLP only above ₹40L turnover/₹25L contribution; Pvt Ltd mandatory every year regardless of size</li>
           <li><strong>Fundraising:</strong> LLP cannot issue shares/ESOPs and needs government-route approval for FDI; Pvt Ltd can raise equity freely and qualifies for automatic-route FDI in most sectors</li>
           <li><strong>Annual compliance cost:</strong> roughly ₹5,000-₹10,000 for LLP vs ₹15,000-₹30,000 for Pvt Ltd</li>
@@ -191,10 +191,10 @@ export default function LLPRegistrationProcessCostVsPvtLtd() {
       <p className="text-gray-700 leading-8 mb-10">
         Both filings are mandatory every year regardless of whether the LLP
         did any business. Since April 2022, missing these deadlines no
-        longer attracts a flat ₹100/day penalty — it's now a{" "}
+        longer attracts a flat ₹100/day penalty — it&apos;s now a{" "}
         <strong>multiplier on the normal filing fee</strong> (1x within 15
         days, rising sharply the longer you delay, up to 15x-30x beyond 360
-        days depending on whether you qualify as a "small LLP"), with no
+        days depending on whether you qualify as a &quot;small LLP&quot;), with no
         overall cap. This makes even a short delay considerably more
         expensive than most people expect.
       </p>

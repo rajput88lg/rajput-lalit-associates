@@ -53,10 +53,10 @@ export default function GSTFreelancersExportOfServicesLUT() {
       <p className="text-gray-700 leading-8 mb-6">
         Indian freelancers, developers, designers and consultants working
         with clients abroad are in an unusual spot under GST — their
-        services are "exports" and taxed at zero rate, but the rules
+        services are &quot;exports&quot; and taxed at zero rate, but the rules
         around registration, invoicing and getting that zero rate to
-        actually apply confuse most people who've never dealt with them.
-        Here's how export of services works in plain terms, and when a
+        actually apply confuse most people who&apos;ve never dealt with them.
+        Here&apos;s how export of services works in plain terms, and when a
         Letter of Undertaking (LUT) makes sense.
       </p>
 
@@ -92,7 +92,7 @@ export default function GSTFreelancersExportOfServicesLUT() {
       </div>
 
       <h2 className="text-3xl font-bold text-[#002b5c] mb-6">
-        What Counts as "Export of Services"
+        What Counts as &quot;Export of Services&quot;
       </h2>
 
       <p className="text-gray-700 leading-8 mb-6">
@@ -138,9 +138,9 @@ export default function GSTFreelancersExportOfServicesLUT() {
           registration as long as their aggregate all-India turnover stays
           below ₹20 lakh (₹10 lakh in special category states). This is
           different from goods — an inter-state supplier of goods must
-          register regardless of turnover. If you're a freelancer earning
+          register regardless of turnover. If you&apos;re a freelancer earning
           purely from services and below this threshold, you are not
-          legally required to register, even though you're technically
+          legally required to register, even though you&apos;re technically
           making an inter-state (export) supply.
         </p>
       </div>
@@ -183,7 +183,7 @@ export default function GSTFreelancersExportOfServicesLUT() {
 
       <p className="text-gray-700 leading-8 mb-10">
         Almost every registered freelancer or small exporter opts for LUT
-        for exactly this reason — there's no upside to blocking your own
+        for exactly this reason — there&apos;s no upside to blocking your own
         cash with the government when a simple annual filing avoids it
         entirely. LUT eligibility is broad (any GST-registered exporter can
         file it); the only real bar is for someone previously prosecuted for
@@ -211,8 +211,8 @@ export default function GSTFreelancersExportOfServicesLUT() {
 
       <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-8 mb-10">
         <li>
-          <strong>Export invoice</strong> marked "Supply meant for export
-          under LUT without payment of IGST"
+          <strong>Export invoice</strong> marked &quot;Supply meant for export
+          under LUT without payment of IGST&quot;
         </li>
         <li>
           <strong>FIRC or BRC</strong> from your bank for every payment
