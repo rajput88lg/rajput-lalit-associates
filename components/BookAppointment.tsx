@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   CalendarDays,
   Clock,
@@ -15,6 +15,14 @@ export default function BookAppointment() {
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
   const [showForm, setShowForm] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  // Form grid ke neeche khulta hai — open hote hi us tak scroll karo
+  useEffect(() => {
+    if (showForm) {
+      formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [showForm]);
 
   const services = [
     "GST Consultation",
@@ -30,6 +38,11 @@ export default function BookAppointment() {
       return;
     }
     setMessage("");
+    if (showForm) {
+      // Form pehle se khula hai — bas us par wapas scroll karo
+      formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     setShowForm(true);
   };
 
@@ -224,13 +237,13 @@ export default function BookAppointment() {
             <button
               type="button"
               onClick={handleRequestConsultation}
-              disabled={!service || showForm}
+              disabled={!service}
               className="btn-shine mt-7 w-full flex items-center justify-center gap-3 bg-[#d99a2b] hover:bg-[#f0b84b] text-white py-4 px-5 rounded-xl font-extrabold transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none disabled:translate-y-0"
             >
               {showForm ? (
                 <>
                   <CheckCircle2 size={21} />
-                  Service Selected
+                  Service Selected — Fill Details Below
                 </>
               ) : (
                 <>
@@ -256,7 +269,7 @@ export default function BookAppointment() {
 
         {/* APPOINTMENT FORM */}
         {showForm && (
-          <div className="mt-10">
+          <div ref={formRef} className="mt-10 scroll-mt-24">
             <AppointmentForm service={service} />
           </div>
         )}
