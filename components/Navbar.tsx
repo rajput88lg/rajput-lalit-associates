@@ -104,6 +104,14 @@ export default function Navbar() {
             </Link>
 
             <Link
+              href="/business-templates"
+              title="GST, Accounting & ITR Templates"
+              className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
+            >
+              Templates
+            </Link>
+
+            <Link
               href="/nri-tax-services"
               title="NRI Tax Services"
               className="nav-link relative text-[#002b5c] font-semibold hover:text-[#d99a2b] transition"
@@ -187,6 +195,14 @@ export default function Navbar() {
                 className="px-4 py-3 rounded-lg text-[#9c680f] font-bold hover:bg-gray-50"
               >
                 Free Tools
+              </Link>
+
+              <Link
+                href="/business-templates"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg text-[#002b5c] font-semibold hover:bg-gray-50"
+              >
+                Templates (GST, Accounts &amp; ITR)
               </Link>
 
               <Link
