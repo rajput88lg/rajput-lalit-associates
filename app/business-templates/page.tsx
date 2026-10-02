@@ -1,30 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, Download, FileSpreadsheet, FileText, Package } from "lucide-react";
+import { CheckCircle2, Download, FileSpreadsheet, FileText, Headphones, Package, PhoneCall, RefreshCw } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import StoreBuyBox from "@/components/StoreBuyBox";
-import { DOWNLOAD_PRODUCTS, PAID_SERVICES, type PaidServiceKey } from "@/lib/paidServices";
+import { BUNDLE_ITEMS, BUNDLE_KEY, DOWNLOAD_PRODUCTS, PAID_SERVICES, formatPrice } from "@/lib/paidServices";
 
 const SLUG = "business-templates";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
 
-const TITLE = "GST Invoice, Bookkeeping & Notice Reply Templates — Excel & Word";
+const TITLE = "GST, Accounting, ITR & Freelancer Tax Kits — Excel & Word Templates";
 const DESCRIPTION =
-  "Ready-to-use Excel and Word kits made by a tax practice: GST invoice with auto CGST/SGST/IGST, bookkeeping registers with monthly P&L, GST notice reply formats and rent receipts. Instant download.";
+  "Excel and Word kits made by a tax practice: GST compliance (invoice, 3B working, ITC vs GSTR-2B, due dates), small business accounting with balance sheet, ITR checklist, freelancer tax kit and 14 GST notice reply formats. Instant download.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
     "GST invoice format excel",
-    "bookkeeping excel template small business India",
+    "GSTR-2B reconciliation excel",
+    "GSTR-3B working excel",
+    "accounting excel template small business India",
+    "ITR filing document checklist",
+    "freelancer tax calculator 44ADA excel",
     "GST notice reply format",
-    "ASMT-10 reply format",
+    "DRC-01 reply format",
     "rent receipt format for HRA",
-    "cash book excel format",
   ],
   alternates: { canonical: `/${SLUG}` },
   openGraph: {
@@ -37,41 +40,70 @@ export const metadata: Metadata = {
   },
 };
 
+/** Kits at or above this price include a free 15-minute setup call (set to Infinity to switch the offer off). */
+const SETUP_CALL_FROM = 999;
+
 const DETAILS: Record<string, { icon: typeof FileText; format: string; who: string; points: string[] }> = {
   "gst-invoice-kit": {
     icon: FileSpreadsheet,
-    format: "Excel (.xlsx)",
-    who: "Shops, traders and service providers who bill in Excel",
+    format: "Excel (.xlsx) · 13 sheets",
+    who: "Traders, shops and service businesses doing their own GST",
     points: [
-      "Tax invoice as per GST rules — auto CGST + SGST or IGST from place of supply",
-      "Up to 15 line items with HSN/SAC, rate and discount",
-      "Sales register with GSTR-1 style monthly totals",
-      "HSN-wise summary sheet ready for GSTR-1",
-      "Print-ready A4 layout, just add your logo",
+      "GST tax invoice — auto CGST + SGST or IGST from place of supply",
+      "Sales register with monthly GSTR-1 / GSTR-3B totals and HSN summary",
+      "Purchase register matched invoice-by-invoice with your GSTR-2B",
+      "GSTR-3B working — output tax vs matched ITC and cash to arrange",
+      "FY 2026-27 due date calendar that flags anything overdue",
+      "Late fee (with legal cap) & 18% interest calculator",
     ],
   },
   "bookkeeping-kit": {
     icon: FileSpreadsheet,
-    format: "Excel (.xlsx)",
-    who: "Small businesses and freelancers keeping their own books",
+    format: "Excel (.xlsx) · 15 sheets",
+    who: "Small businesses that don't use accounting software",
     points: [
       "Cash book and bank book with running balance",
-      "Sales, purchase and expense registers",
-      "GST input tax credit (ITC) tracker vs GSTR-2B",
-      "Automatic month-wise profit & loss summary",
-      "Built-in expense heads your CA will understand",
+      "Sales, purchase and expense registers with GST",
+      "Month-wise profit & loss — updates by itself",
+      "Receivables with ageing (0–30, 31–60, 61–90, 90+ days) and payables",
+      "Simple balance sheet with a 'balanced' check, and bank reconciliation",
+      "One-screen dashboard + ITC tracker vs GSTR-2B",
+    ],
+  },
+  "itr-organizer-kit": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx) · 7 sheets",
+    who: "Salaried people, pensioners and investors filing their own ITR",
+    points: [
+      "Which ITR form fits you — ITR-1, 2, 3 or 4",
+      "30+ item document checklist with a 'ready to file' progress bar",
+      "Income organizer for every head of income",
+      "Old-regime deductions with limits applied",
+      "AIS / Form 26AS match — the step that avoids most notices",
+    ],
+  },
+  "freelancer-tax-kit": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx) · 8 sheets",
+    who: "Freelancers, developers, designers and consultants",
+    points: [
+      "Export invoice with LUT line, or domestic invoice with GST",
+      "Income register in foreign currency + INR, with FIRA tracking",
+      "Presumptive tax (Section 58 / old 44ADA) — eligibility and 50% income",
+      "Tax estimate under the new regime, including the ₹12 lakh rebate",
+      "Advance tax planner and GST ₹20 lakh limit tracker",
     ],
   },
   "notice-reply-kit": {
     icon: FileText,
-    format: "Word (.docx)",
-    who: "Businesses that received a GST notice and want a proper first draft",
+    format: "Word (.docx) + Excel workbook",
+    who: "Businesses that received a GST notice, order or registration query",
     points: [
-      "Reply to ASMT-10 (scrutiny of return discrepancies)",
-      "Reply to GSTR-1 vs GSTR-3B and GSTR-2B vs 3B ITC mismatch",
-      "Reply to show cause notice for cancellation of registration (REG-17)",
-      "Reply to pre-show-cause intimation (DRC-01A)",
-      "Adjournment request and document cover letter",
+      "14 reply drafts: ASMT-10, DRC-01, DRC-01A/01B/01C, REG-03, REG-17, GSTR-3A",
+      "Revocation of cancellation (REG-21), rectification (Section 161), appeal grounds (APL-01)",
+      "Time limits for every notice on one page",
+      "Excel workbook: books vs GSTR-1 vs 3B, ITC vs 2B, interest & pre-deposit",
+      "Notice tracker that warns before the reply date",
     ],
   },
   "rent-receipt-kit": {
@@ -85,18 +117,20 @@ const DETAILS: Record<string, { icon: typeof FileText; format: string; who: stri
       "Reminder of when the landlord's PAN is needed",
     ],
   },
-  "business-kit-bundle": {
+  "business-tax-bundle": {
     icon: Package,
-    format: "3 Excel + 1 Word",
-    who: "Everything above in one download — best value",
-    points: [
-      "GST Invoice & Billing Kit",
-      "Small Business Bookkeeping Kit",
-      "GST Notice Reply Formats",
-      "Rent Receipt & HRA Kit",
-    ],
+    format: "4 Excel kits in one download",
+    who: "Everything a small business or freelancer needs for the year — best value",
+    points: BUNDLE_ITEMS.map((k) => `${PAID_SERVICES[k].name} (worth ${formatPrice(PAID_SERVICES[k])})`),
   },
 };
+
+const PERKS = [
+  { icon: Download, title: "Instant download", text: "Download links on screen and by email right after payment." },
+  { icon: RefreshCw, title: "Free updates for 12 months", text: "When rules or rates change, the same link gives you the new version." },
+  { icon: Headphones, title: "WhatsApp help", text: "Stuck while setting up? Message us and we'll guide you." },
+  { icon: PhoneCall, title: "Free 15-minute setup call", text: `With every kit of ₹${SETUP_CALL_FROM.toLocaleString("en-IN")} and above.` },
+];
 
 const faqs = [
   {
@@ -108,6 +142,16 @@ const faqs = [
     question: "Do I need special software?",
     answer:
       "The Excel kits work in Microsoft Excel, Google Sheets and LibreOffice. The notice formats open in Microsoft Word or Google Docs.",
+  },
+  {
+    question: "Will I get updated files when GST or income tax rules change?",
+    answer:
+      "Yes. For 12 months from purchase, your download link always gives you the latest version of the kit — we update the files when rates, limits or due dates change.",
+  },
+  {
+    question: "How does the free setup call work?",
+    answer:
+      "With kits of ₹999 and above, WhatsApp us your order ID and we'll fix a 15-minute call to help you set the file up for your business — within office hours (Mon–Sat).",
   },
   {
     question: "Are the notice reply formats enough to close my notice?",
@@ -146,7 +190,7 @@ const itemListSchema = {
       offers: {
         "@type": "Offer",
         price: String(PAID_SERVICES[key].amount),
-        priceCurrency: "INR",
+        priceCurrency: PAID_SERVICES[key].currency || "INR",
         availability: "https://schema.org/InStock",
       },
     },
@@ -154,10 +198,7 @@ const itemListSchema = {
 };
 
 const bundleSaving =
-  (["gst-invoice-kit", "bookkeeping-kit", "notice-reply-kit", "rent-receipt-kit"] as PaidServiceKey[]).reduce(
-    (s, k) => s + PAID_SERVICES[k].amount,
-    0
-  ) - PAID_SERVICES["business-kit-bundle"].amount;
+  BUNDLE_ITEMS.reduce((sum, k) => sum + PAID_SERVICES[k].amount, 0) - PAID_SERVICES[BUNDLE_KEY].amount;
 
 export default function Page() {
   return (
@@ -176,7 +217,7 @@ export default function Page() {
             </p>
             <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl">
               Business Templates &amp; Kits
-              <span className="mt-2 block text-[#f0b84b]">GST, Accounts &amp; Notices — Ready to Use</span>
+              <span className="mt-2 block text-[#f0b84b]">GST, Accounts, ITR &amp; Notices — Ready to Use</span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-blue-100">
               The same formats we use for our clients — with formulas already set up, so you just
@@ -188,25 +229,40 @@ export default function Page() {
 
         <Breadcrumb current="Business Templates" />
 
+        <section className="bg-white py-8">
+          <div className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+            {PERKS.map((perk) => (
+              <div key={perk.title} className="flex items-start gap-3 rounded-xl border border-gray-100 bg-[#f7f9fc] p-4">
+                <perk.icon className="mt-0.5 shrink-0 text-[#d99a2b]" size={22} />
+                <div>
+                  <p className="font-bold text-[#002b5c]">{perk.title}</p>
+                  <p className="mt-1 text-sm leading-6 text-gray-600">{perk.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="bg-[#f7f9fc] py-12 md:py-16">
           <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
             {DOWNLOAD_PRODUCTS.map((key) => {
               const p = PAID_SERVICES[key];
               const d = DETAILS[key];
-              const bundle = key === "business-kit-bundle";
+              const bundle = key === BUNDLE_KEY;
+              const setupCall = p.amount >= SETUP_CALL_FROM;
               return (
                 <div
                   key={key}
                   id={key}
                   className={`flex flex-col rounded-2xl border bg-white p-6 shadow-sm ${
-                    bundle ? "border-2 border-[#d99a2b] md:col-span-2 lg:col-span-1" : "border-gray-200"
+                    bundle ? "border-2 border-[#d99a2b] md:col-span-2 lg:col-span-3" : "border-gray-200"
                   }`}
                 >
                   <div className="flex items-start justify-between gap-3">
                     <d.icon className="text-[#d99a2b]" size={28} />
                     {bundle && (
                       <span className="rounded-full bg-[#d99a2b] px-3 py-1 text-xs font-bold text-white">
-                        Save ₹{bundleSaving}
+                        Save ₹{bundleSaving.toLocaleString("en-IN")}
                       </span>
                     )}
                   </div>
@@ -221,7 +277,12 @@ export default function Page() {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 text-3xl font-extrabold text-[#002b5c]">₹{p.amount}</p>
+                  <p className="mt-5 text-3xl font-extrabold text-[#002b5c]">{formatPrice(p)}</p>
+                  {setupCall && (
+                    <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-green-700">
+                      <PhoneCall size={14} /> Includes a free 15-minute setup call
+                    </p>
+                  )}
                   <div className="mt-3">
                     <StoreBuyBox service={key} highlight={bundle} />
                   </div>

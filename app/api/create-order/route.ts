@@ -32,7 +32,7 @@ export async function POST(request: Request) {
 
     // Price comes from the server-side catalog, never from the browser.
     const service = getPaidService(body?.service);
-    if (!service) {
+    if (!service || service.retired) {
       return NextResponse.json(
         { success: false, message: "Unknown service." },
         { status: 400 }

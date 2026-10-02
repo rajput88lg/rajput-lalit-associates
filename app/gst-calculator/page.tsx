@@ -148,10 +148,10 @@ export default function Page() {
         <GstCalculator />
 
         <PaidProductCta
-          title="Make GST invoices in Excel"
-          text="Invoice with automatic CGST/SGST or IGST, sales register and monthly GSTR-1/3B summary — ready to use."
+          title="Do your monthly GST in Excel"
+          text="GST invoice with automatic CGST/SGST or IGST, GSTR-3B working, ITC match with GSTR-2B and a due date calendar — ready to use."
           href="/business-templates#gst-invoice-kit"
-          cta="See the GST invoice kit"
+          cta="See the GST Compliance Kit"
         />
 
         <section className="py-20 bg-white print:hidden">

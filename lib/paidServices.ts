@@ -24,7 +24,10 @@ export type PaidServiceKey =
   | "bookkeeping-kit"
   | "notice-reply-kit"
   | "rent-receipt-kit"
+  | "itr-organizer-kit"
+  | "freelancer-tax-kit"
   | "business-kit-bundle"
+  | "business-tax-bundle"
   | "compliance-reminders"
   | "nri-health-check"
   | "nri-itr-usd"
@@ -52,13 +55,21 @@ export type PaidService = {
   checkoutDescription: string;
   /** Download kits only — ids from DIGITAL_FILES below. */
   files?: DigitalFileId[];
+  /**
+   * No longer sold — kept only so links in old orders keep working.
+   * /api/create-order refuses new orders for retired items.
+   */
+  retired?: boolean;
 };
 
 export type DigitalFileId =
   | "gst-invoice-kit"
   | "bookkeeping-kit"
   | "notice-reply-kit"
-  | "rent-receipt-kit";
+  | "notice-recon-workbook"
+  | "rent-receipt-kit"
+  | "itr-organizer-kit"
+  | "freelancer-tax-kit";
 
 /** Files live in /private-downloads (NOT /public), served only via /api/download. */
 export const DIGITAL_FILES: Record<
@@ -66,23 +77,38 @@ export const DIGITAL_FILES: Record<
   { filename: string; label: string; contentType: string }
 > = {
   "gst-invoice-kit": {
-    filename: "GST-Invoice-Billing-Kit.xlsx",
-    label: "GST Invoice & Billing Kit (Excel)",
+    filename: "GST-Compliance-Kit.xlsx",
+    label: "GST Compliance Kit (Excel)",
     contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   },
   "bookkeeping-kit": {
-    filename: "Small-Business-Bookkeeping-Kit.xlsx",
-    label: "Small Business Bookkeeping Kit (Excel)",
+    filename: "Small-Business-Accounting-Kit.xlsx",
+    label: "Small Business Accounting Kit (Excel)",
     contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   },
   "notice-reply-kit": {
     filename: "GST-Notice-Reply-Formats.docx",
-    label: "GST Notice Reply Formats (Word)",
+    label: "GST Notice Reply Formats — 14 drafts (Word)",
     contentType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  },
+  "notice-recon-workbook": {
+    filename: "GST-Notice-Reconciliation-Workbook.xlsx",
+    label: "GST Notice Reconciliation Workbook (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   },
   "rent-receipt-kit": {
     filename: "Rent-Receipt-HRA-Kit.xlsx",
     label: "Rent Receipt & HRA Kit (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "itr-organizer-kit": {
+    filename: "ITR-Filing-Checklist-Organizer.xlsx",
+    label: "ITR Filing Checklist & Organizer (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "freelancer-tax-kit": {
+    filename: "Freelancer-Tax-Kit.xlsx",
+    label: "Freelancer Tax Kit (Excel)",
     contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   },
 };
@@ -112,26 +138,26 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
   "gst-invoice-kit": {
     key: "gst-invoice-kit",
     kind: "download",
-    name: "GST Invoice & Billing Kit",
-    amount: 199,
-    checkoutDescription: "Excel GST invoice + sales register",
+    name: "GST Compliance Kit",
+    amount: 999,
+    checkoutDescription: "Invoice, registers, 3B working, ITC vs 2B, due dates",
     files: ["gst-invoice-kit"],
   },
   "bookkeeping-kit": {
     key: "bookkeeping-kit",
     kind: "download",
-    name: "Small Business Bookkeeping Kit",
-    amount: 299,
-    checkoutDescription: "Excel cash book, registers & monthly P&L",
+    name: "Small Business Accounting Kit",
+    amount: 1499,
+    checkoutDescription: "Books, P&L, receivables, balance sheet",
     files: ["bookkeeping-kit"],
   },
   "notice-reply-kit": {
     key: "notice-reply-kit",
     kind: "download",
-    name: "GST Notice Reply Formats",
-    amount: 499,
-    checkoutDescription: "Word formats for common GST notices",
-    files: ["notice-reply-kit"],
+    name: "GST Notice Reply Kit",
+    amount: 2999,
+    checkoutDescription: "14 Word reply formats + reconciliation workbook",
+    files: ["notice-reply-kit", "notice-recon-workbook"],
   },
   "rent-receipt-kit": {
     key: "rent-receipt-kit",
@@ -141,6 +167,31 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
     checkoutDescription: "12 auto-filled rent receipts + HRA check",
     files: ["rent-receipt-kit"],
   },
+  "itr-organizer-kit": {
+    key: "itr-organizer-kit",
+    kind: "download",
+    name: "ITR Filing Checklist & Organizer",
+    amount: 399,
+    checkoutDescription: "Which ITR form, document checklist, AIS match",
+    files: ["itr-organizer-kit"],
+  },
+  "freelancer-tax-kit": {
+    key: "freelancer-tax-kit",
+    kind: "download",
+    name: "Freelancer Tax Kit",
+    amount: 999,
+    checkoutDescription: "Export invoice, presumptive tax, advance tax",
+    files: ["freelancer-tax-kit"],
+  },
+  "business-tax-bundle": {
+    key: "business-tax-bundle",
+    kind: "download",
+    name: "Complete Business Tax Bundle (4 kits)",
+    amount: 2499,
+    checkoutDescription: "GST, Accounting, ITR & Freelancer kits",
+    files: ["gst-invoice-kit", "bookkeeping-kit", "itr-organizer-kit", "freelancer-tax-kit"],
+  },
+  // First-edition bundle (₹799, Sept 2026). Not sold any more — kept so old buyers' links still work.
   "business-kit-bundle": {
     key: "business-kit-bundle",
     kind: "download",
@@ -148,6 +199,7 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
     amount: 799,
     checkoutDescription: "All 4 Excel & Word kits",
     files: ["gst-invoice-kit", "bookkeeping-kit", "notice-reply-kit", "rent-receipt-kit"],
+    retired: true,
   },
   "nri-health-check": {
     key: "nri-health-check",
@@ -184,11 +236,22 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
 
 /** Download kits in the order they appear on the store page. */
 export const DOWNLOAD_PRODUCTS: PaidServiceKey[] = [
+  "business-tax-bundle",
   "gst-invoice-kit",
   "bookkeeping-kit",
+  "itr-organizer-kit",
+  "freelancer-tax-kit",
   "notice-reply-kit",
   "rent-receipt-kit",
-  "business-kit-bundle",
+];
+
+/** Kits inside the store bundle — used for the "save ₹…" badge. */
+export const BUNDLE_KEY: PaidServiceKey = "business-tax-bundle";
+export const BUNDLE_ITEMS: PaidServiceKey[] = [
+  "gst-invoice-kit",
+  "bookkeeping-kit",
+  "itr-organizer-kit",
+  "freelancer-tax-kit",
 ];
 
 export function getPaidService(key: unknown): PaidService | null {

@@ -6,7 +6,7 @@ Website par 3 naye income products live hain. Teeno Razorpay se payment lete hai
 | Product | Page | Price | Delivery |
 |---|---|---|---|
 | Personal Tax Saving Report | `/tax-saving-report` | ₹249 | Screen par turant + email link |
-| Templates Store (4 kits + bundle) | `/business-templates` | ₹99 – ₹799 | Download links (screen + email) |
+| Templates Store (6 kits + bundle) | `/business-templates` | ₹99 – ₹2,999 | Download links (screen + email) |
 | Compliance Reminder Service | `/compliance-reminders` | ₹999 / saal | Roz subah 8 baje auto email |
 
 Har sale ki copy `info@rajputlalitassociates.in` par "New sale: ..." subject se aayegi.
@@ -83,3 +83,25 @@ Har sale ki copy `info@rajputlalitassociates.in` par "New sale: ..." subject se 
 ## Note
 `/nri-tax-services` page par INR fees (NRI ITR ₹5,000 etc.) abhi bhi purani hain. USD plans usse mehenge hain —
 chahein to INR fees bhi badha lein ya dono ko same rakhein.
+
+---
+
+# Round 3 — Store upgrade (October 2026)
+
+| Kit (service key) | Price | Files |
+|---|---|---|
+| Complete Business Tax Bundle (`business-tax-bundle`) | ₹2,499 | GST + Accounting + ITR + Freelancer kits |
+| GST Compliance Kit (`gst-invoice-kit`) | ₹999 | `GST-Compliance-Kit.xlsx` |
+| Small Business Accounting Kit (`bookkeeping-kit`) | ₹1,499 | `Small-Business-Accounting-Kit.xlsx` |
+| ITR Filing Checklist & Organizer (`itr-organizer-kit`) | ₹399 | `ITR-Filing-Checklist-Organizer.xlsx` |
+| Freelancer Tax Kit (`freelancer-tax-kit`) | ₹999 | `Freelancer-Tax-Kit.xlsx` |
+| GST Notice Reply Kit (`notice-reply-kit`) | ₹2,999 | 14 Word formats + `GST-Notice-Reconciliation-Workbook.xlsx` |
+| Rent Receipt & HRA Kit (`rent-receipt-kit`) | ₹99 | unchanged |
+
+- Purane buyers ke links chalte rahenge — unhe ab upgraded file milegi. Purana ₹799 bundle (`business-kit-bundle`)
+  `retired: true` hai: naya order nahi banta, sirf purane links kaam karte hain.
+- ₹999+ kits par "free 15-minute setup call" promise hai — band karna ho to `app/business-templates/page.tsx` mein
+  `SETUP_CALL_FROM = Infinity` kar dein.
+- "Free updates for 12 months" — rules/rates badlein to `scripts/build-digital-products.py` update karke dobara chalayein;
+  same link se nayi file milegi.
+- Har saal April se pehle: GST kit ka due-date calendar aur `FY_MONTHS`, freelancer kit ke slabs, ITR kit ke due dates.
