@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, Download, FileSpreadsheet, FileText, Headphones, Package, PhoneCall, RefreshCw } from "lucide-react";
+import { CheckCircle2, Download, FileSpreadsheet, FileText, Headphones, Package, PhoneCall, RefreshCw, Wallet } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import StoreBuyBox from "@/components/StoreBuyBox";
-import { BUNDLE_ITEMS, BUNDLE_KEY, DOWNLOAD_PRODUCTS, PAID_SERVICES, formatPrice } from "@/lib/paidServices";
+import {
+  BUNDLE_ITEMS,
+  BUNDLE_KEY,
+  DOWNLOAD_PRODUCTS,
+  EVERYDAY_PRODUCTS,
+  PAID_SERVICES,
+  PERSONAL_PACK_ITEMS,
+  PERSONAL_PACK_KEY,
+  formatPrice,
+  type PaidServiceKey,
+} from "@/lib/paidServices";
 
 const SLUG = "business-templates";
 const PAGE_URL = `https://www.rajputlalitassociates.in/${SLUG}`;
 
-const TITLE = "GST, Accounting, ITR & Freelancer Tax Kits — Excel & Word Templates";
+const TITLE = "Excel Templates — GST, Accounts, Budget, Salary Slip & Inventory";
 const DESCRIPTION =
-  "Excel and Word kits made by a tax practice: GST compliance (invoice, 3B working, ITC vs GSTR-2B, due dates), small business accounting with balance sheet, ITR checklist, freelancer tax kit and 14 GST notice reply formats. Instant download.";
+  "Ready-to-use Excel templates made by a tax practice: GST compliance, accounting, ITR checklist, budget planner, debt payoff, salary sheet with slips, inventory, rental and net worth trackers. Instant download.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -28,6 +38,12 @@ export const metadata: Metadata = {
     "GST notice reply format",
     "DRC-01 reply format",
     "rent receipt format for HRA",
+    "budget planner excel",
+    "debt payoff tracker excel",
+    "salary slip format excel with attendance",
+    "inventory management excel template",
+    "rental property tracker excel",
+    "net worth tracker excel",
   ],
   alternates: { canonical: `/${SLUG}` },
   openGraph: {
@@ -117,6 +133,121 @@ const DETAILS: Record<string, { icon: typeof FileText; format: string; who: stri
       "Reminder of when the landlord's PAN is needed",
     ],
   },
+  "budget-planner": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Anyone who wants to know where the salary goes",
+    points: [
+      "Log income and expenses in seconds with drop-down categories",
+      "Month view: budget vs actual, with overspending in red",
+      "Year summary with savings rate and chart",
+      "50-30-20 check — needs, wants, savings",
+    ],
+  },
+  "debt-payoff-tracker": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Anyone paying EMIs, personal loans or credit cards",
+    points: [
+      "Up to 10 loans and cards in one place",
+      "Snowball or avalanche method — your choice",
+      "Your debt-free date and total interest, worked out for you",
+      "Month-by-month schedule and 'debt going down' chart",
+    ],
+  },
+  "savings-goal-tracker": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Saving for an emergency fund, holiday, phone or education",
+    points: [
+      "Up to 15 goals with progress bars",
+      "How much to save each month to hit the date",
+      "52-week savings challenge sheet",
+    ],
+  },
+  "bill-due-tracker": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Households juggling EMIs, cards, insurance and bills",
+    points: [
+      "Next due date for monthly, quarterly and yearly bills",
+      "Red / amber alerts for bills due this week",
+      "12-month paid register and monthly commitment total",
+    ],
+  },
+  "salary-attendance-kit": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx) · up to 50 staff",
+    who: "Shops, clinics, offices and small factories",
+    points: [
+      "Daily attendance — present, absent, half day, leave, holiday",
+      "Salary for paid days with PF, ESI, PT, TDS and advances",
+      "Employer PF / ESI and cost to company",
+      "Print-ready salary slip for each employee",
+      "Flags pay structures below the 50% 'wages' rule of the Labour Codes",
+    ],
+  },
+  "business-income-expense": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx)",
+    who: "Shops, home businesses and service providers",
+    points: [
+      "Simple daily entries — income or expense, cash or UPI",
+      "Monthly profit report with chart",
+      "Category report — where the money goes",
+      "Dashboard with margin and best month",
+    ],
+  },
+  "inventory-tracker": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx) · up to 300 items",
+    who: "Retailers, wholesalers and online sellers",
+    points: [
+      "Item master with purchase and selling rate",
+      "Stock in / stock out with item drop-down",
+      "Live stock, stock value and reorder alerts",
+      "Monthly sales and purchases on the dashboard",
+    ],
+  },
+  "rental-property-tracker": {
+    icon: FileSpreadsheet,
+    format: "Excel (.xlsx) · up to 20 properties",
+    who: "Landlords with houses, flats or shops on rent",
+    points: [
+      "Rent received vs due — arrears per property",
+      "Expenses: property tax, repairs, society, loan interest",
+      "Agreement expiry alerts",
+      "House-property income working for your ITR",
+    ],
+  },
+  "networth-tracker": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Salaried people, investors and NRIs",
+    points: [
+      "Bank, FD, PPF, EPF, NPS, mutual funds, shares, gold, property",
+      "Net worth, asset mix chart and gains",
+      "FD / policy maturity alerts and nominee list",
+      "Monthly history chart",
+    ],
+  },
+  "wedding-budget-planner": {
+    icon: Wallet,
+    format: "Excel (.xlsx)",
+    who: "Families planning a wedding",
+    points: [
+      "16 Indian wedding budget heads with suggested shares",
+      "Vendor quotes, advances and balances",
+      "Guest list with RSVP and catering count",
+      "Countdown checklist from the wedding date",
+    ],
+  },
+  "personal-finance-pack": {
+    icon: Package,
+    format: "4 Excel templates in one download",
+    who: "Take control of your money — best value",
+    points: PERSONAL_PACK_ITEMS.map((k) => `${PAID_SERVICES[k].name} (worth ${formatPrice(PAID_SERVICES[k])})`),
+  },
   "business-tax-bundle": {
     icon: Package,
     format: "4 Excel kits in one download",
@@ -178,7 +309,7 @@ const faqSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  itemListElement: DOWNLOAD_PRODUCTS.map((key, i) => ({
+  itemListElement: [...DOWNLOAD_PRODUCTS, ...EVERYDAY_PRODUCTS].map((key, i) => ({
     "@type": "ListItem",
     position: i + 1,
     item: {
@@ -197,8 +328,68 @@ const itemListSchema = {
   })),
 };
 
-const bundleSaving =
-  BUNDLE_ITEMS.reduce((sum, k) => sum + PAID_SERVICES[k].amount, 0) - PAID_SERVICES[BUNDLE_KEY].amount;
+function saving(bundle: PaidServiceKey, items: PaidServiceKey[]) {
+  return items.reduce((sum, k) => sum + PAID_SERVICES[k].amount, 0) - PAID_SERVICES[bundle].amount;
+}
+
+const SAVINGS: Partial<Record<PaidServiceKey, number>> = {
+  [BUNDLE_KEY]: saving(BUNDLE_KEY, BUNDLE_ITEMS),
+  [PERSONAL_PACK_KEY]: saving(PERSONAL_PACK_KEY, PERSONAL_PACK_ITEMS),
+};
+
+function ProductCard({ id }: { id: PaidServiceKey }) {
+  const p = PAID_SERVICES[id];
+  const d = DETAILS[id];
+  const save = SAVINGS[id];
+  const bundle = save !== undefined;
+  const setupCall = p.amount >= SETUP_CALL_FROM;
+  return (
+    <div
+      id={id}
+      className={`flex flex-col rounded-2xl border bg-white p-6 shadow-sm ${
+        bundle ? "border-2 border-[#d99a2b] md:col-span-2 lg:col-span-3" : "border-gray-200"
+      }`}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <d.icon className="text-[#d99a2b]" size={28} />
+        {bundle && (
+          <span className="rounded-full bg-[#d99a2b] px-3 py-1 text-xs font-bold text-white">
+            Save ₹{save.toLocaleString("en-IN")}
+          </span>
+        )}
+      </div>
+      <h3 className="mt-3 text-xl font-extrabold text-[#002b5c]">{p.name}</h3>
+      <p className="mt-1 text-sm text-gray-500">
+        {d.format} · {d.who}
+      </p>
+      <ul className="mt-4 flex-1 space-y-2 text-sm text-gray-700">
+        {d.points.map((pt) => (
+          <li key={pt} className="flex items-start gap-2">
+            <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-green-600" /> {pt}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-5 text-3xl font-extrabold text-[#002b5c]">{formatPrice(p)}</p>
+      {setupCall && (
+        <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-green-700">
+          <PhoneCall size={14} /> Includes a free 15-minute setup call
+        </p>
+      )}
+      <div className="mt-3">
+        <StoreBuyBox service={id} highlight={bundle} />
+      </div>
+    </div>
+  );
+}
+
+function SectionHeading({ id, title: heading, text }: { id: string; title: string; text: string }) {
+  return (
+    <div id={id} className="mx-auto mb-8 max-w-6xl scroll-mt-28 px-4 sm:px-6">
+      <h2 className="text-2xl font-extrabold text-[#002b5c] md:text-3xl">{heading}</h2>
+      <p className="mt-2 text-gray-600">{text}</p>
+    </div>
+  );
+}
 
 export default function Page() {
   return (
@@ -217,7 +408,7 @@ export default function Page() {
             </p>
             <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl">
               Business Templates &amp; Kits
-              <span className="mt-2 block text-[#f0b84b]">GST, Accounts, ITR &amp; Notices — Ready to Use</span>
+              <span className="mt-2 block text-[#f0b84b]">GST, Accounts, Budget, Salary &amp; Stock — Ready to Use</span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-blue-100">
               The same formats we use for our clients — with formulas already set up, so you just
@@ -244,55 +435,32 @@ export default function Page() {
         </section>
 
         <section className="bg-[#f7f9fc] py-12 md:py-16">
+          <SectionHeading
+            id="tax-kits"
+            title="Tax, GST & Accounting Kits"
+            text="For businesses, professionals and freelancers who handle their own compliance."
+          />
           <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
-            {DOWNLOAD_PRODUCTS.map((key) => {
-              const p = PAID_SERVICES[key];
-              const d = DETAILS[key];
-              const bundle = key === BUNDLE_KEY;
-              const setupCall = p.amount >= SETUP_CALL_FROM;
-              return (
-                <div
-                  key={key}
-                  id={key}
-                  className={`flex flex-col rounded-2xl border bg-white p-6 shadow-sm ${
-                    bundle ? "border-2 border-[#d99a2b] md:col-span-2 lg:col-span-3" : "border-gray-200"
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <d.icon className="text-[#d99a2b]" size={28} />
-                    {bundle && (
-                      <span className="rounded-full bg-[#d99a2b] px-3 py-1 text-xs font-bold text-white">
-                        Save ₹{bundleSaving.toLocaleString("en-IN")}
-                      </span>
-                    )}
-                  </div>
-                  <h2 className="mt-3 text-xl font-extrabold text-[#002b5c]">{p.name}</h2>
-                  <p className="mt-1 text-sm text-gray-500">
-                    {d.format} · {d.who}
-                  </p>
-                  <ul className="mt-4 flex-1 space-y-2 text-sm text-gray-700">
-                    {d.points.map((pt) => (
-                      <li key={pt} className="flex items-start gap-2">
-                        <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-green-600" /> {pt}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-5 text-3xl font-extrabold text-[#002b5c]">{formatPrice(p)}</p>
-                  {setupCall && (
-                    <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-green-700">
-                      <PhoneCall size={14} /> Includes a free 15-minute setup call
-                    </p>
-                  )}
-                  <div className="mt-3">
-                    <StoreBuyBox service={key} highlight={bundle} />
-                  </div>
-                </div>
-              );
-            })}
+            {DOWNLOAD_PRODUCTS.map((key) => (
+              <ProductCard key={key} id={key} />
+            ))}
           </div>
         </section>
 
         <section className="bg-white py-12 md:py-16">
+          <SectionHeading
+            id="everyday"
+            title="Everyday Templates — Money, Staff & Stock"
+            text="Simple Excel trackers people use every month: budget, EMIs, savings, salary slips, inventory, rent and more."
+          />
+          <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
+            {EVERYDAY_PRODUCTS.map((key) => (
+              <ProductCard key={key} id={key} />
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-[#f7f9fc] py-12 md:py-16">
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="text-2xl font-extrabold text-[#002b5c] md:text-3xl">Frequently asked questions</h2>
             <div className="mt-6 space-y-4">

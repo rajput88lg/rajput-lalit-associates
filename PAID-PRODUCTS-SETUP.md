@@ -105,3 +105,27 @@ chahein to INR fees bhi badha lein ya dono ko same rakhein.
 - "Free updates for 12 months" — rules/rates badlein to `scripts/build-digital-products.py` update karke dobara chalayein;
   same link se nayi file milegi.
 - Har saal April se pehle: GST kit ka due-date calendar aur `FY_MONTHS`, freelancer kit ke slabs, ITR kit ke due dates.
+
+---
+
+# Round 4 — Everyday templates (October 2026)
+
+`/business-templates#everyday` — simple Excel trackers. Files are built by `scripts/build-everyday-templates.py`
+(it reuses the styling of `build-digital-products.py`): `python scripts/build-everyday-templates.py`
+
+| Template (service key) | Price |
+|---|---|
+| Personal Finance Pack (`personal-finance-pack`) — Budget + Debt + Savings + Bills | ₹599 |
+| Monthly & Annual Budget Planner (`budget-planner`) | ₹249 |
+| Debt & EMI Payoff Tracker (`debt-payoff-tracker`) | ₹249 |
+| Savings Goal Tracker (`savings-goal-tracker`) | ₹149 |
+| Bill & EMI Due Date Tracker (`bill-due-tracker`) | ₹149 |
+| Salary Sheet + Attendance + Salary Slip Kit (`salary-attendance-kit`) | ₹499 |
+| Small Business Income & Expense Tracker (`business-income-expense`) | ₹449 |
+| Inventory & Stock Tracker (`inventory-tracker`) | ₹449 |
+| Rental Property Tracker (`rental-property-tracker`) | ₹349 |
+| Investment & Net Worth Tracker (`networth-tracker`) | ₹349 |
+| Wedding Budget Planner (`wedding-budget-planner`) | ₹349 |
+
+Har saal check karein: salary kit mein PF ceiling ₹15,000 / ESI limit ₹21,000 (Setup sheet), PF/ESI rates, aur
+rental kit ka 30% standard deduction rule.

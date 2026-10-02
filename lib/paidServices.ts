@@ -28,6 +28,17 @@ export type PaidServiceKey =
   | "freelancer-tax-kit"
   | "business-kit-bundle"
   | "business-tax-bundle"
+  | "budget-planner"
+  | "debt-payoff-tracker"
+  | "savings-goal-tracker"
+  | "bill-due-tracker"
+  | "business-income-expense"
+  | "salary-attendance-kit"
+  | "inventory-tracker"
+  | "wedding-budget-planner"
+  | "rental-property-tracker"
+  | "networth-tracker"
+  | "personal-finance-pack"
   | "compliance-reminders"
   | "nri-health-check"
   | "nri-itr-usd"
@@ -69,7 +80,17 @@ export type DigitalFileId =
   | "notice-recon-workbook"
   | "rent-receipt-kit"
   | "itr-organizer-kit"
-  | "freelancer-tax-kit";
+  | "freelancer-tax-kit"
+  | "budget-planner"
+  | "debt-payoff-tracker"
+  | "savings-goal-tracker"
+  | "bill-due-tracker"
+  | "business-income-expense"
+  | "salary-attendance-kit"
+  | "inventory-tracker"
+  | "wedding-budget-planner"
+  | "rental-property-tracker"
+  | "networth-tracker";
 
 /** Files live in /private-downloads (NOT /public), served only via /api/download. */
 export const DIGITAL_FILES: Record<
@@ -109,6 +130,56 @@ export const DIGITAL_FILES: Record<
   "freelancer-tax-kit": {
     filename: "Freelancer-Tax-Kit.xlsx",
     label: "Freelancer Tax Kit (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "budget-planner": {
+    filename: "Budget-Planner.xlsx",
+    label: "Monthly & Annual Budget Planner (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "debt-payoff-tracker": {
+    filename: "Debt-EMI-Payoff-Tracker.xlsx",
+    label: "Debt & EMI Payoff Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "savings-goal-tracker": {
+    filename: "Savings-Goal-Tracker.xlsx",
+    label: "Savings Goal Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "bill-due-tracker": {
+    filename: "Bill-EMI-Due-Date-Tracker.xlsx",
+    label: "Bill & EMI Due Date Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "business-income-expense": {
+    filename: "Small-Business-Income-Expense-Tracker.xlsx",
+    label: "Small Business Income & Expense Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "salary-attendance-kit": {
+    filename: "Salary-Attendance-Salary-Slip-Kit.xlsx",
+    label: "Salary Sheet + Attendance + Salary Slip Kit (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "inventory-tracker": {
+    filename: "Inventory-Stock-Tracker.xlsx",
+    label: "Inventory & Stock Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "wedding-budget-planner": {
+    filename: "Wedding-Budget-Planner.xlsx",
+    label: "Wedding Budget Planner (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "rental-property-tracker": {
+    filename: "Rental-Property-Tracker.xlsx",
+    label: "Rental Property Tracker (Excel)",
+    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  },
+  "networth-tracker": {
+    filename: "Investment-Net-Worth-Tracker.xlsx",
+    label: "Investment & Net Worth Tracker (Excel)",
     contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   },
 };
@@ -191,6 +262,94 @@ export const PAID_SERVICES: Record<PaidServiceKey, PaidService> = {
     checkoutDescription: "GST, Accounting, ITR & Freelancer kits",
     files: ["gst-invoice-kit", "bookkeeping-kit", "itr-organizer-kit", "freelancer-tax-kit"],
   },
+  "budget-planner": {
+    key: "budget-planner",
+    kind: "download",
+    name: "Monthly & Annual Budget Planner",
+    amount: 249,
+    checkoutDescription: "Budget vs actual, year summary, 50-30-20 check",
+    files: ["budget-planner"],
+  },
+  "debt-payoff-tracker": {
+    key: "debt-payoff-tracker",
+    kind: "download",
+    name: "Debt & EMI Payoff Tracker",
+    amount: 249,
+    checkoutDescription: "Snowball / avalanche plan and debt-free date",
+    files: ["debt-payoff-tracker"],
+  },
+  "savings-goal-tracker": {
+    key: "savings-goal-tracker",
+    kind: "download",
+    name: "Savings Goal Tracker",
+    amount: 149,
+    checkoutDescription: "Goals, monthly target and 52-week challenge",
+    files: ["savings-goal-tracker"],
+  },
+  "bill-due-tracker": {
+    key: "bill-due-tracker",
+    kind: "download",
+    name: "Bill & EMI Due Date Tracker",
+    amount: 149,
+    checkoutDescription: "Next due dates, alerts and paid register",
+    files: ["bill-due-tracker"],
+  },
+  "business-income-expense": {
+    key: "business-income-expense",
+    kind: "download",
+    name: "Small Business Income & Expense Tracker",
+    amount: 449,
+    checkoutDescription: "Daily entries, monthly profit and dashboard",
+    files: ["business-income-expense"],
+  },
+  "salary-attendance-kit": {
+    key: "salary-attendance-kit",
+    kind: "download",
+    name: "Salary Sheet + Attendance + Salary Slip Kit",
+    amount: 499,
+    checkoutDescription: "Attendance, PF/ESI salary sheet, printable slips",
+    files: ["salary-attendance-kit"],
+  },
+  "inventory-tracker": {
+    key: "inventory-tracker",
+    kind: "download",
+    name: "Inventory & Stock Tracker",
+    amount: 449,
+    checkoutDescription: "Stock in/out, stock value and reorder alerts",
+    files: ["inventory-tracker"],
+  },
+  "wedding-budget-planner": {
+    key: "wedding-budget-planner",
+    kind: "download",
+    name: "Wedding Budget Planner",
+    amount: 349,
+    checkoutDescription: "Budget heads, vendor payments, guests, checklist",
+    files: ["wedding-budget-planner"],
+  },
+  "rental-property-tracker": {
+    key: "rental-property-tracker",
+    kind: "download",
+    name: "Rental Property Tracker",
+    amount: 349,
+    checkoutDescription: "Rent received, arrears, expenses, tax working",
+    files: ["rental-property-tracker"],
+  },
+  "networth-tracker": {
+    key: "networth-tracker",
+    kind: "download",
+    name: "Investment & Net Worth Tracker",
+    amount: 349,
+    checkoutDescription: "Assets, loans, net worth and history chart",
+    files: ["networth-tracker"],
+  },
+  "personal-finance-pack": {
+    key: "personal-finance-pack",
+    kind: "download",
+    name: "Personal Finance Pack (4 templates)",
+    amount: 599,
+    checkoutDescription: "Budget, Debt payoff, Savings & Bill trackers",
+    files: ["budget-planner", "debt-payoff-tracker", "savings-goal-tracker", "bill-due-tracker"],
+  },
   // First-edition bundle (₹799, Sept 2026). Not sold any more — kept so old buyers' links still work.
   "business-kit-bundle": {
     key: "business-kit-bundle",
@@ -243,6 +402,29 @@ export const DOWNLOAD_PRODUCTS: PaidServiceKey[] = [
   "freelancer-tax-kit",
   "notice-reply-kit",
   "rent-receipt-kit",
+];
+
+/** Everyday templates (personal finance + small business), in store order. */
+export const EVERYDAY_PRODUCTS: PaidServiceKey[] = [
+  "personal-finance-pack",
+  "budget-planner",
+  "debt-payoff-tracker",
+  "savings-goal-tracker",
+  "bill-due-tracker",
+  "salary-attendance-kit",
+  "business-income-expense",
+  "inventory-tracker",
+  "rental-property-tracker",
+  "networth-tracker",
+  "wedding-budget-planner",
+];
+
+export const PERSONAL_PACK_KEY: PaidServiceKey = "personal-finance-pack";
+export const PERSONAL_PACK_ITEMS: PaidServiceKey[] = [
+  "budget-planner",
+  "debt-payoff-tracker",
+  "savings-goal-tracker",
+  "bill-due-tracker",
 ];
 
 /** Kits inside the store bundle — used for the "save ₹…" badge. */
